@@ -15,8 +15,12 @@ dist/
 build/
 .pytest_cache/
 
-# Screenshots (can get large)
+# Screenshots and large regenerated data files
 data/screenshots/
+data/opportunities_raw.json
+
+# Portal session cookies — contain auth tokens, never commit
+profile/sessions/
 
 # OS
 .DS_Store

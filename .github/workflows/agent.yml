@@ -44,6 +44,7 @@ jobs:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          PORTAL_PASSWORD: ${{ secrets.PORTAL_PASSWORD }}
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
         run: python -m agent.main
 
@@ -51,6 +52,6 @@ jobs:
         run: |
           git config user.name "scholarship-agent[bot]"
           git config user.email "scholarship-agent@noreply.github.com"
-          git add data/applications.md data/essays_needed.md data/dedup.json data/opportunities_raw.json data/run_logs/ || true
+          git add data/applications.md data/essays_needed.md data/dedup.json data/run_logs/ || true
           git diff --staged --quiet || git commit -m "agent: run $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push

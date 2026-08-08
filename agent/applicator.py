@@ -78,7 +78,16 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
                          "email", opp.tier, opp.award_value)
         return result
 
-    # Web form automation
+    # Portal account type — try session restore or auto-registration first
+    if opp.application_type == "portal_account":
+        from . import session_store
+        if session_store.has_session(opp.url):
+            print(f"[applicator] Restoring saved session for {opp.url}")
+        else:
+            print(f"[applicator] No session for portal — will attempt account creation during form fill")
+        # Fall through to form_filler which handles both cases
+
+    # Web form automation (also handles portal_account via session/registration)
     fill_result = fill_and_submit(opp, profile, dry_run=dry_run)
 
     if fill_result.downgraded:

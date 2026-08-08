@@ -5,6 +5,7 @@ from pathlib import Path
 
 from .classifier import ClassifiedOpportunity
 from .profile_loader import Profile
+from . import session_store, account_creator
 
 SCREENSHOTS_DIR = Path(__file__).parent.parent / "data" / "screenshots"
 
@@ -111,14 +112,32 @@ def fill_and_submit(opp: ClassifiedOpportunity, profile: Profile, dry_run: bool 
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
+
+        # Restore saved session if one exists for this domain
+        saved_session = session_store.load(opp.url)
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36",
+            storage_state=saved_session if saved_session else None,
         )
         page = context.new_page()
 
         try:
             page.goto(opp.url, timeout=30000, wait_until="domcontentloaded")
             page.wait_for_timeout(2000)
+
+            # If no saved session and page looks like a login wall, try account creation
+            if not saved_session:
+                content_lower = page.content().lower()
+                login_wall_signals = ["sign in to continue", "log in to apply", "create an account to", "please log in", "please sign in"]
+                if any(sig in content_lower for sig in login_wall_signals):
+                    print(f"[form_filler] Login wall detected — attempting account creation for {opp.url}")
+                    created = account_creator.register(page, opp.url, profile)
+                    if not created:
+                        browser.close()
+                        return FillResult(False, 0, 0, True, "Login wall — account creation failed", "")
+                    # Re-navigate to the application URL after registration
+                    page.goto(opp.url, timeout=30000, wait_until="domcontentloaded")
+                    page.wait_for_timeout(2000)
 
             # Check for CAPTCHA
             for sel in CAPTCHA_SELECTORS:
