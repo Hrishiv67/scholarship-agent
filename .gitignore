@@ -15,9 +15,10 @@ dist/
 build/
 .pytest_cache/
 
-# Screenshots and large regenerated data files
-data/screenshots/
-data/opportunities_raw.json
+# Screenshots, regenerated files, and run logs (covered by email digest)
+outputs/screenshots/
+outputs/opportunities_raw.json
+outputs/run_logs/
 
 # Portal session cookies — contain auth tokens, never commit
 profile/sessions/

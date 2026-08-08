@@ -5,8 +5,8 @@ from .classifier import ClassifiedOpportunity
 from .dedup import DedupStore
 from .profile_loader import Profile
 
-ESSAYS_NEEDED_PATH = Path(__file__).parent.parent / "data" / "essays_needed.md"
-ESSAY_RESPONSES_DIR = Path(__file__).parent.parent / "data" / "essay_responses"
+ESSAYS_NEEDED_PATH = Path(__file__).parent.parent / "outputs" / "essays_needed.md"
+ESSAY_RESPONSES_DIR = Path(__file__).parent.parent / "outputs" / "essay_responses"
 
 
 def queue_essay(opp: ClassifiedOpportunity) -> None:

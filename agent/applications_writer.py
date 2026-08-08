@@ -3,7 +3,7 @@ from pathlib import Path
 
 from .logger import RunResult
 
-APPLICATIONS_PATH = Path(__file__).parent.parent / "data" / "applications.md"
+APPLICATIONS_PATH = Path(__file__).parent.parent / "outputs" / "applications.md"
 
 
 def update(results: list[RunResult]) -> None:

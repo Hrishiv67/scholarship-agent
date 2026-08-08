@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 
-LOG_DIR = Path(__file__).parent.parent / "data" / "run_logs"
+LOG_DIR = Path(__file__).parent.parent / "outputs" / "run_logs"
 
 
 @dataclass

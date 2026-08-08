@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse, urlencode, parse_qs, urlunparse
 
-DEDUP_PATH = Path(__file__).parent.parent / "data" / "dedup.json"
+DEDUP_PATH = Path(__file__).parent.parent / "outputs" / "dedup.json"
 
 _TRACKING_PARAMS = {
     "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term",

@@ -1,69 +1,68 @@
 # Scholarship & Internship Agent
 
-Autonomous agent that searches for and applies to paid internships, research programs, fly-in programs, and no-essay scholarships on a schedule — runs on GitHub Actions with no computer required.
+Runs automatically Mon / Wed / Fri at 9 AM ET via GitHub Actions — no computer needed.
 
-**Schedule:** Monday / Wednesday / Friday at 9:00 AM ET, automatically.
+Finds and applies to paid internships, research programs, fly-in programs, and no-essay scholarships.
 
 ---
 
-## How It Works
+## What it does each run
 
-Each run:
-1. Searches for new opportunities (Tavily web search, 15+ queries)
-2. Classifies each one — eligible? essay required? account needed?
+1. Searches for new opportunities (Tavily, 15+ queries — RDU first, then national)
+2. Classifies each one with Gemini AI — eligible? essay required? CAPTCHA present?
 3. Auto-applies to anything it can (email applications, simple web forms)
-4. Saves essay prompts to `data/essays_needed.md` for you to fill in
-5. Emails a digest to hrishiv14@gmail.com with everything it did
+4. Saves essay prompts to `outputs/essays_needed.md` for you to fill in
+5. Emails a full digest to hrishiv14@gmail.com with results
 
 ---
 
-## Folder Structure
+## Folder structure
 
 ```
-agent/              All Python source code
-data/
-  applications.md   Master log of everything applied to
-  essays_needed.md  Essay prompts waiting for your response
-  essay_responses/  Drop your essay files here (see below)
-  dedup.json        Tracks what's been seen — prevents duplicate applications
-  run_logs/         Per-run JSON logs
+outputs/
+  applications.md      Everything applied to — master log
+  essays_needed.md     Essay prompts waiting for your response
+  essay_responses/     Drop your completed essays here
+  dedup.json           What's been seen — prevents duplicate applications
+
 profile/
-  profile.json      Your student profile (used to fill all forms)
-  cv_combined.txt   Combined professional CV
-.github/workflows/  GitHub Actions schedule
+  profile.json         Your student data (used to fill all forms)
+  cv_combined.txt      Combined CV
+
+agent/                 All Python source code
+.github/workflows/     GitHub Actions schedule
 ```
 
 ---
 
-## How to Respond to an Essay Prompt
+## How to respond to an essay prompt
 
-When the agent finds an opportunity that needs an essay, it saves it to `data/essays_needed.md` with an ID like `OPP-20270101-001`.
+When the agent finds something needing an essay, it saves it to `outputs/essays_needed.md` with an ID like `OPP-20270101-001`.
 
-To complete that application:
-1. Open `data/essays_needed.md` on GitHub — find the prompt
-2. Write your essay response
-3. Create a new file: `data/essay_responses/OPP-20270101-001.md`
-4. Paste your essay into that file and commit + push
-5. The **next scheduled run** will pick it up and finish the application automatically
+1. Open `outputs/essays_needed.md` — find the prompt
+2. Write your response
+3. Create `outputs/essay_responses/OPP-20270101-001.md` and paste your essay in
+4. Commit and push
+5. The next scheduled run picks it up and submits the application automatically
 
 ---
 
-## How to Trigger a Manual Run
+## How to trigger a manual run
 
 1. Go to the **Actions** tab on GitHub
 2. Click **Scholarship Agent** in the left sidebar
 3. Click **Run workflow** → set `dry_run: false` → **Run workflow**
 
-To test without submitting anything, set `dry_run: true`.
+Set `dry_run: true` to test without submitting anything.
 
 ---
 
-## Secrets Required (already configured)
+## Secrets (already configured in GitHub)
 
 | Secret | Purpose |
 |---|---|
-| `ANTHROPIC_API_KEY` | AI classification of opportunities |
+| `GEMINI_API_KEY` | AI classification of opportunities |
 | `TAVILY_API_KEY` | Web search for new opportunities |
-| `GMAIL_ADDRESS` | Send application emails + digest |
+| `GMAIL_ADDRESS` | Send application emails and digest |
 | `GMAIL_APP_PASSWORD` | Gmail authentication |
 | `PORTAL_PASSWORD` | Password used when creating accounts on scholarship portals |

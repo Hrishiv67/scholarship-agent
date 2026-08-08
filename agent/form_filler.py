@@ -7,7 +7,7 @@ from .classifier import ClassifiedOpportunity
 from .profile_loader import Profile
 from . import session_store, account_creator
 
-SCREENSHOTS_DIR = Path(__file__).parent.parent / "data" / "screenshots"
+SCREENSHOTS_DIR = Path(__file__).parent.parent / "outputs" / "screenshots"
 
 CAPTCHA_SELECTORS = [
     'iframe[src*="recaptcha"]',

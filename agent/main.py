@@ -21,7 +21,7 @@ from . import (
 )
 
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
-RAW_RESULTS_PATH = Path(__file__).parent.parent / "data" / "opportunities_raw.json"
+RAW_RESULTS_PATH = Path(__file__).parent.parent / "outputs" / "opportunities_raw.json"
 
 
 def run():
