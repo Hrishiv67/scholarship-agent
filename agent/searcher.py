@@ -5,42 +5,54 @@ from datetime import datetime, timezone
 from tavily import TavilyClient
 
 SEARCH_QUERIES = [
-    # Priority 1 — RDU / NC local
-    "paid internship high school students RDU Raleigh Durham 2027",
-    "paid internship high school junior STEM North Carolina summer 2027",
-    "high school research internship NC State Duke UNC summer 2027 paid stipend",
-    "engineering internship high school Cary NC 2027 application open",
-    "NC scholarship high school junior STEM leadership 2027 no essay",
-    # Priority 2 — National STEM programs
-    "paid summer research program high school 2027 STEM engineering application",
-    "research internship high school rising junior aerospace computer science 2027",
-    "RSI PRIMES Clark Scholar Siemens high school summer program 2027",
-    "NASA DOE NOAA high school internship program 2027 application",
-    "SAS Cisco Red Hat Epic Games high school internship RDU 2027",
-    # Priority 3 — Fly-in programs
-    "fly-in program high school junior 2027 STEM engineering application open",
-    "college fly-in program high school 2027 diversity STEM no essay",
-    "diversity fly-in high school junior aerospace engineering computer science 2027",
-    # Priority 4 — No-essay scholarships
-    "no essay scholarship high school junior 2027 apply",
-    "scholarship high school 11th grade no essay rolling 2026 2027",
+    # Priority 1 — RDU / NC local (direct program pages, not job boards)
+    'paid internship "high school" "apply" site:ncsu.edu OR site:duke.edu OR site:unc.edu OR site:waketech.edu 2027',
+    'paid internship "high school students" Raleigh OR Durham OR Cary NC 2027 "apply now" OR "applications open" -site:indeed.com -site:linkedin.com -site:ziprecruiter.com',
+    '"high school" research program NC State OR Duke OR UNC 2027 "stipend" OR "paid" "application" -site:reddit.com -site:quora.com',
+    '"high school" internship "Cary" OR "Research Triangle" OR "RTP" 2027 "apply" -site:indeed.com -site:glassdoor.com',
+    # Priority 2 — National STEM programs (actual program pages)
+    '"high school" "summer research" "stipend" 2027 "application deadline" -site:reddit.com -site:collegevine.com -site:niche.com',
+    '"rising junior" OR "rising senior" "high school" research program 2027 "apply" "paid" -"college students" -"undergraduate"',
+    '"Clark Scholar" OR "PRIMES" OR "RSI" OR "SSTP" 2027 application -site:reddit.com',
+    'site:nasa.gov "high school" internship OR program 2027 apply',
+    'site:energy.gov OR site:noaa.gov "high school" intern OR student program 2027',
+    # Priority 3 — Fly-in programs (actual college fly-in pages)
+    '"fly-in" "high school" "class of 2028" OR "junior" 2027 apply -site:collegevine.com -site:niche.com -site:reddit.com',
+    'site:mit.edu OR site:stanford.edu OR site:cmu.edu OR site:gatech.edu "fly-in" OR "diversity visit" "high school" apply',
+    '"all expenses paid" "high school" visit OR "fly in" OR "fly-in" engineering OR STEM 2027 apply',
+    # Priority 4 — No-essay scholarships (actual apply pages)
+    '"no essay" scholarship "high school junior" OR "11th grade" OR "class of 2028" apply 2027 -site:fastweb.com -site:scholarships.com -"list of"',
+    'scholarship "high school" "no application essay" OR "no essay required" 2026 2027 "apply" "open"',
+    '"Niche" OR "Bold.org" OR "Going Merry" scholarship "no essay" apply 2027',
 ]
 
-# High-value direct sources checked every run
+# Individual program application pages — checked every run
+# These are real application/info pages, not listing aggregators
 DIRECT_SOURCES = [
-    {"name": "Scholarships360 No-Essay List", "url": "https://scholarships360.org/scholarships/no-essay-scholarships/", "type": "scholarship_listing"},
-    {"name": "Going Merry Scholarships", "url": "https://www.goingmerry.com/scholarships", "type": "scholarship_listing"},
+    # NC / local programs
+    {"name": "NC State GRIP High School Research", "url": "https://grip.ncsu.edu/high-school/", "type": "research_program"},
+    {"name": "Duke RISE Program", "url": "https://dukelife.duke.edu/rise", "type": "research_program"},
+    {"name": "UNC BEAM High School", "url": "https://beam.unc.edu/high-school-programs/", "type": "research_program"},
     {"name": "Triangle Community Foundation Scholarships", "url": "https://www.trianglecf.org/grants-scholarships/scholarships/", "type": "local_scholarship"},
-    {"name": "NC State High School Outreach", "url": "https://www.ncsu.edu/admissions/undergraduate/explore/high-school/", "type": "program"},
-    {"name": "College Board Opportunity Scholarships", "url": "https://opportunityscholarships.collegeboard.org/", "type": "scholarship"},
-    {"name": "QuestBridge Programs", "url": "https://www.questbridge.org/high-school-students/scholar-program", "type": "fly_in_scholarship"},
-    {"name": "Niche No-Essay Scholarship", "url": "https://www.niche.com/colleges/scholarships/no-essay/", "type": "scholarship"},
+    {"name": "NCSU College of Engineering HS Programs", "url": "https://www.engr.ncsu.edu/k-12/high-school-programs/", "type": "program"},
+    # National research programs
+    {"name": "Clark Scholars Program", "url": "https://www.clarkscholars.ttu.edu/", "type": "research_program"},
+    {"name": "MIT PRIMES USA", "url": "https://math.mit.edu/research/highschool/primes/usa/", "type": "research_program"},
+    {"name": "RSI Application", "url": "https://www.cee.org/programs/research-science-institute", "type": "research_program"},
+    {"name": "NASA Glenn HS Engineering Institute", "url": "https://www.nasa.gov/learning-resources/internship-programs/", "type": "internship"},
+    {"name": "NOAA Student Opportunities", "url": "https://www.noaa.gov/education/opportunities/students", "type": "internship"},
+    {"name": "DOE Science Undergraduate Lab Internships", "url": "https://science.osti.gov/wdts/suli", "type": "internship"},
     # Fly-in programs
-    {"name": "MIT Diversity Open House", "url": "https://mitadmissions.org/apply/experience/campus-preview-weekend/", "type": "fly_in"},
-    {"name": "Stanford Engineering Diversity", "url": "https://engineering.stanford.edu/students-academics/equity-and-inclusion-initiatives/prospective-undergraduate-students/discover", "type": "fly_in"},
-    {"name": "Carnegie Mellon Pre-College", "url": "https://www.cmu.edu/pre-college/", "type": "fly_in"},
-    {"name": "Georgia Tech FOCUS", "url": "https://admission.gatech.edu/first-year/campus-visit/focus", "type": "fly_in"},
-    {"name": "Duke Engineering Fly-In", "url": "https://pratt.duke.edu/undergrad/apply/diversity", "type": "fly_in"},
+    {"name": "MIT Campus Preview Weekend", "url": "https://mitadmissions.org/apply/experience/campus-preview-weekend/", "type": "fly_in"},
+    {"name": "Stanford FEST Fly-In", "url": "https://engineering.stanford.edu/students-academics/equity-and-inclusion-initiatives/prospective-undergraduate-students/discover", "type": "fly_in"},
+    {"name": "Georgia Tech FOCUS Fly-In", "url": "https://admission.gatech.edu/first-year/campus-visit/focus", "type": "fly_in"},
+    {"name": "Duke Engineering Diversity Fly-In", "url": "https://pratt.duke.edu/undergrad/apply/diversity", "type": "fly_in"},
+    {"name": "Harvey Mudd WAVE Fellows", "url": "https://www.hmc.edu/admission/fast/", "type": "fly_in"},
+    # No-essay scholarships — direct apply pages
+    {"name": "Niche $25k No-Essay Scholarship", "url": "https://www.niche.com/colleges/scholarships/no-essay/", "type": "scholarship"},
+    {"name": "Bold.org No-Essay Scholarships", "url": "https://bold.org/scholarships/by-type/no-essay-scholarships/", "type": "scholarship"},
+    {"name": "College Board BigFuture Scholarships", "url": "https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027", "type": "scholarship"},
+    {"name": "QuestBridge College Prep Scholar", "url": "https://www.questbridge.org/high-school-students/scholar-program", "type": "fly_in_scholarship"},
 ]
 
 
