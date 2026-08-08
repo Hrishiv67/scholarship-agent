@@ -10,9 +10,6 @@ SKIP_SIGNALS = [
     "must be enrolled in college", "undergraduate student", "graduate student",
     "bachelor", "master", "phd", "doctoral", "degree required",
     "must be 18", "age 18", "age 21", "18 years of age",
-    "teacher recommendation", "letter of recommendation required",
-    "official transcript", "transcript required",
-    "financial need required", "income verification",
 ]
 
 ESSAY_SIGNALS = [
@@ -55,7 +52,7 @@ def _batch_classify(opps: list[RawOpportunity], client: anthropic.Anthropic) -> 
     for i, opp in enumerate(opps, 1):
         items += f"\n[{i}] Title: {opp.title}\nURL: {opp.url}\nSnippet: {opp.snippet[:400]}\n"
 
-    prompt = f"""You are classifying scholarship, internship, research, and fly-in program opportunities for a high school student.
+    prompt = f"""You are classifying scholarship, internship, research, and fly-in program opportunities for a high school student. Your job is to decide whether to apply, not whether he will get in.
 
 Student profile:
 - Rising 11th grade at Green Hope High School, Cary NC
@@ -64,7 +61,7 @@ Student profile:
 - Published paper on Zenodo, dual enrollment Wake Tech (4.0 GPA)
 - Community: Books for Africa (10,000+ books, $85,000+ shipped), 350+ volunteer hours
 - Skills: Python, MATLAB, 3D printing, AI/ML modeling, aerodynamics
-- Looking for: paid internships, research programs, no-essay scholarships, fly-in programs
+- This student is highly competitive. Do NOT skip prestigious programs just because they are selective or require essays/recs.
 
 Today's date: {__import__('datetime').datetime.now().strftime('%Y-%m-%d')}
 
@@ -79,10 +76,16 @@ For each opportunity below, return a JSON array. Each entry MUST have exactly th
 - "reason": one sentence explaining your tier decision
 
 Tier rules:
-- "skip": requires college enrollment, degree, age 18+, teacher rec, transcript upload, or deadline clearly passed
-- "essay_pending": requires any original essay or personal statement over 100 words
-- "semi_apply": web form requiring account creation, has CAPTCHA/Cloudflare, or multi-step portal
-- "auto_apply": email-based application, simple short web form, or fly-in with minimal requirements
+- "skip": ONLY if it requires college enrollment, a college degree, age 18+, or the deadline has clearly passed. Do NOT skip because it requires essays, teacher recs, or transcripts — those are normal for competitive programs.
+- "essay_pending": requires an original essay or personal statement. This includes ANY worthwhile program that requires written responses — RSI, Clark Scholars, NASA, fly-ins, research programs, competitive scholarships. If it is a real program and requires any writing, use this tier.
+- "semi_apply": short web form or portal requiring account creation with no essay. Also use this if the opportunity is a listing/aggregator page rather than an actual program.
+- "auto_apply": email-based application or a very simple form with no essay and no account required.
+
+Important guidance:
+- Prestigious programs (RSI, Clark Scholars, PRIMES, NASA, DOE, NOAA, fly-ins, university research programs) should almost always be "essay_pending" even if they require teacher recs or transcripts. Those are worth the effort.
+- Fly-in programs (all-expenses-paid college visits) are high value — classify as "essay_pending" or "auto_apply" depending on whether they require writing.
+- A scholarship or program page that just lists many programs is "semi_apply" not "essay_pending".
+- Generic job board pages (Indeed, LinkedIn, ZipRecruiter) should be "skip".
 
 Return ONLY valid JSON array, no other text.
 
