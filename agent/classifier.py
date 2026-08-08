@@ -2,7 +2,7 @@ import json
 import os
 from dataclasses import dataclass
 
-import anthropic
+import google.generativeai as genai
 
 from .searcher import RawOpportunity
 
@@ -33,7 +33,7 @@ class ClassifiedOpportunity:
     url: str
     snippet: str
     tier: str           # auto_apply | semi_apply | essay_pending | skip
-    application_type: str  # email | web_form | portal_account | unknown
+    application_type: str  # email | web_form | portal_account | fly_in | unknown
     deadline: str
     award_value: str
     eligible: bool
@@ -50,7 +50,7 @@ def _hard_skip(text: str) -> str | None:
     return None
 
 
-def _batch_classify(opps: list[RawOpportunity], client: anthropic.Anthropic) -> list[dict]:
+def _batch_classify(opps: list[RawOpportunity], model) -> list[dict]:
     items = ""
     for i, opp in enumerate(opps, 1):
         items += f"\n[{i}] Title: {opp.title}\nURL: {opp.url}\nSnippet: {opp.snippet[:400]}\n"
@@ -90,12 +90,8 @@ Opportunities:
 {items}"""
 
     try:
-        message = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=2048,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        text = message.content[0].text.strip()
+        response = model.generate_content(prompt)
+        text = response.text.strip()
         # Strip markdown code fences if present
         if text.startswith("```"):
             text = text.split("```")[1]
@@ -103,7 +99,7 @@ Opportunities:
                 text = text[4:]
         return json.loads(text)
     except Exception as e:
-        print(f"[classifier] Claude call failed: {e}")
+        print(f"[classifier] Gemini call failed: {e}")
         return []
 
 
@@ -112,12 +108,13 @@ def classify_all(
     dedup_store,
     dry_run: bool = False,
 ) -> list[ClassifiedOpportunity]:
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
-        print("[classifier] WARNING: ANTHROPIC_API_KEY not set")
+        print("[classifier] WARNING: GEMINI_API_KEY not set")
         return []
 
-    client = anthropic.Anthropic(api_key=api_key)
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel("gemini-2.0-flash")
     results: list[ClassifiedOpportunity] = []
 
     # First pass: hard-rule skips (no API call needed)
@@ -147,10 +144,9 @@ def classify_all(
             continue
         to_classify.append((opp_counter[0] + 1, opp))
 
-    print(f"[classifier] {len(to_classify)} opportunities to classify via Claude (after {len(raw)-len(to_classify)} hard skips/dedup)")
+    print(f"[classifier] {len(to_classify)} opportunities to classify via Gemini (after {len(raw)-len(to_classify)} hard skips/dedup)")
 
     if dry_run or not to_classify:
-        # In dry run, mark everything as semi_apply for review
         for _, opp in to_classify:
             results.append(ClassifiedOpportunity(
                 id=next_id(), title=opp.title, url=opp.url,
@@ -161,19 +157,18 @@ def classify_all(
             ))
         return results
 
-    # Batch Claude calls (5 at a time to save tokens)
+    # Batch Gemini calls (5 at a time)
     batch_size = 5
     opps_only = [opp for _, opp in to_classify]
     for i in range(0, len(opps_only), batch_size):
         batch = opps_only[i:i + batch_size]
         print(f"[classifier] Classifying batch {i//batch_size + 1}/{(len(opps_only)-1)//batch_size + 1}...")
-        classified = _batch_classify(batch, client)
+        classified = _batch_classify(batch, model)
 
         for j, opp in enumerate(batch):
             opp_id = next_id()
             match = next((c for c in classified if c.get("id") == j + 1), None)
             if not match:
-                # Fallback: can't classify → semi_apply
                 results.append(ClassifiedOpportunity(
                     id=opp_id, title=opp.title, url=opp.url,
                     snippet=opp.snippet, tier="semi_apply",
@@ -199,7 +194,6 @@ def classify_all(
                 source_query=opp.source_query,
             ))
 
-    # Count by tier
     counts = {}
     for r in results:
         counts[r.tier] = counts.get(r.tier, 0) + 1

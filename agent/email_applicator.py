@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
 
-import anthropic
+import google.generativeai as genai
 
 from .classifier import ClassifiedOpportunity
 from .profile_loader import Profile
@@ -16,27 +16,23 @@ CV_PATH = Path(__file__).parent.parent / "profile" / "cv_combined.txt"
 
 
 def _generate_intro(opp: ClassifiedOpportunity, profile: Profile) -> str:
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
         return f"I am writing to express my strong interest in the {opp.title} opportunity."
 
     try:
-        client = anthropic.Anthropic(api_key=api_key)
-        msg = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=200,
-            messages=[{
-                "role": "user",
-                "content": f"""Write exactly 2-3 sentences as the opening paragraph of a professional application email from Hrishiv Khatiwala (rising 11th grader, Green Hope High School, Cary NC) applying for this opportunity: "{opp.title}".
+        genai.configure(api_key=api_key)
+        model = genai.GenerativeModel("gemini-2.0-flash")
+        response = model.generate_content(
+            f"""Write exactly 2-3 sentences as the opening paragraph of a professional application email from Hrishiv Khatiwala (rising 11th grader, Green Hope High School, Cary NC) applying for this opportunity: "{opp.title}".
 
 Opportunity description: {opp.snippet[:300]}
 
 His strongest relevant credentials: {profile.academic.current_school}, GPA {profile.academic.gpa_weighted}W, research at Duke and NC State, 2nd of 1,001 teams at American Rocketry Challenge nationally, VEX Robotics top 150 worldwide, published paper.
 
 Be specific to this opportunity. Do not start with "I". Do not use "I am writing to". Write naturally, not generically. Return only the sentences, no subject line."""
-            }],
         )
-        return msg.content[0].text.strip()
+        return response.text.strip()
     except Exception:
         return f"I am writing to apply for the {opp.title} opportunity at your organization."
 
