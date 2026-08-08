@@ -61,7 +61,7 @@ Set `dry_run: true` to test without submitting anything.
 
 | Secret | Purpose |
 |---|---|
-| `GEMINI_API_KEY` | AI classification of opportunities |
+| `ANTHROPIC_API_KEY` | AI classification of opportunities |
 | `TAVILY_API_KEY` | Web search for new opportunities |
 | `GMAIL_ADDRESS` | Send application emails and digest |
 | `GMAIL_APP_PASSWORD` | Gmail authentication |
