@@ -56,40 +56,39 @@ class RawOpportunity:
 
 def search(dry_run: bool = False) -> list[RawOpportunity]:
     api_key = os.environ.get("TAVILY_API_KEY", "")
-    if not api_key:
-        print("[searcher] WARNING: TAVILY_API_KEY not set — skipping Tavily queries")
-        return []
-
-    client = TavilyClient(api_key=api_key)
     results: list[RawOpportunity] = []
     found_at = datetime.now(timezone.utc).isoformat()
 
-    print(f"[searcher] Running {len(SEARCH_QUERIES)} search queries...")
-    for i, query in enumerate(SEARCH_QUERIES):
-        try:
-            print(f"[searcher] Query {i+1}/{len(SEARCH_QUERIES)}: {query[:60]}...")
-            if dry_run:
-                print("[searcher] DRY_RUN: skipping actual API call")
-                continue
-            response = client.search(
-                query=query,
-                search_depth="basic",
-                max_results=8,
-                include_answer=False,
-            )
-            for r in response.get("results", []):
-                results.append(RawOpportunity(
-                    title=r.get("title", "").strip(),
-                    url=r.get("url", "").strip(),
-                    snippet=r.get("content", "").strip()[:500],
-                    source_query=query,
-                    found_at=found_at,
-                    raw_content=r.get("content", ""),
-                ))
-        except Exception as e:
-            print(f"[searcher] Query failed: {e}")
+    if not api_key:
+        print("[searcher] WARNING: TAVILY_API_KEY not set — skipping Tavily queries, checking direct sources only")
+    else:
+        client = TavilyClient(api_key=api_key)
+        print(f"[searcher] Running {len(SEARCH_QUERIES)} search queries...")
+        for i, query in enumerate(SEARCH_QUERIES):
+            try:
+                print(f"[searcher] Query {i+1}/{len(SEARCH_QUERIES)}: {query[:60]}...")
+                if dry_run:
+                    print("[searcher] DRY_RUN: skipping actual API call")
+                    continue
+                response = client.search(
+                    query=query,
+                    search_depth="basic",
+                    max_results=8,
+                    include_answer=False,
+                )
+                for r in response.get("results", []):
+                    results.append(RawOpportunity(
+                        title=r.get("title", "").strip(),
+                        url=r.get("url", "").strip(),
+                        snippet=r.get("content", "").strip()[:500],
+                        source_query=query,
+                        found_at=found_at,
+                        raw_content=r.get("content", ""),
+                    ))
+            except Exception as e:
+                print(f"[searcher] Query failed: {e}")
 
-    # Direct source scrapes
+    # Direct source scrapes (always run, even if Tavily key is missing)
     print(f"[searcher] Checking {len(DIRECT_SOURCES)} direct sources...")
     for source in DIRECT_SOURCES:
         results.append(RawOpportunity(

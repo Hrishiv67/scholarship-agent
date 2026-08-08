@@ -34,6 +34,7 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
         outcome="skipped",
         application_type=opp.application_type,
         award_value=opp.award_value,
+        deadline=opp.deadline,
     )
 
     if opp.tier == "skip" or not opp.eligible:

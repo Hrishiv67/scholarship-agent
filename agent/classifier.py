@@ -167,7 +167,7 @@ def classify_all(
 
         for j, opp in enumerate(batch):
             opp_id = next_id()
-            match = next((c for c in classified if c.get("id") == j + 1), None)
+            match = next((c for c in classified if str(c.get("id", "")) == str(j + 1)), None)
             if not match:
                 results.append(ClassifiedOpportunity(
                     id=opp_id, title=opp.title, url=opp.url,

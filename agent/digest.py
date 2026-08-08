@@ -103,9 +103,9 @@ def send(run_log: RunLog, results: list[ClassifiedOpportunity], profile: Profile
 
     run_time = datetime.now(timezone.utc).strftime("%A, %B %d %Y at %I:%M %p UTC")
 
-    submitted = [r for r in results if r.tier == "auto_apply"]
-    essays = [r for r in results if r.tier == "essay_pending"]
-    semi = [r for r in results if r.tier == "semi_apply"]
+    submitted = [r for r in run_log.results if r.outcome == "submitted"]
+    essays = [r for r in run_log.results if r.outcome == "essay_saved"]
+    semi = [r for r in run_log.results if r.outcome == "semi_queued"]
 
     stats = {
         "submitted": run_log.outcomes.get("submitted", 0),

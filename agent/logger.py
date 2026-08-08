@@ -15,8 +15,13 @@ class RunResult:
     outcome: str  # submitted | essay_saved | semi_queued | skipped | failed
     application_type: str = ""
     award_value: str = ""
+    deadline: str = ""
     error: str = ""
     notes: str = ""
+
+    @property
+    def id(self):
+        return self.opportunity_id
 
 
 @dataclass
