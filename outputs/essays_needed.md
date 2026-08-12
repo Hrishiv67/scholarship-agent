@@ -455,3 +455,135 @@ _No essays pending yet._
 
 **Instructions:** Write your response in `data/essay_responses/OPP-20260810-140.md`
 
+---
+
+### [OPP-20260812-004] Home - Internship in Science, Health Training, and Research (ISHTaR)
+**URL:** https://www.med.unc.edu/emergmed/education/ishtar
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-004.md`
+
+---
+
+### [OPP-20260812-016] Internships - Children's Research Triangle
+**URL:** https://childrensresearchtriangle.org/research/internships
+**Deadline:** 2026-10-15
+**Award:** Unknown
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-016.md`
+
+---
+
+### [OPP-20260812-020] Internships - Two Sigma
+**URL:** https://www.twosigma.com/careers/internships
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-020.md`
+
+---
+
+### [OPP-20260812-024] Application - SSP International
+**URL:** https://ssp.org/application
+**Deadline:** 2027-03-15
+**Award:** Unknown
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-024.md`
+
+---
+
+### [OPP-20260812-033] Clark Scholars application deadline 2027
+**URL:** https://riseglobaleducation.com/blogs/clark-scholars-application-deadline-2027
+**Deadline:** 2027-02-28
+**Award:** Unknown
+**Essay Prompt(s):**
+> full research proposal
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-033.md`
+
+---
+
+### [OPP-20260812-036] Engagement Opening: High School Internship Program
+**URL:** https://stemgateway.nasa.gov/s/course-offering/a0B3d0000015LFrEAM/high-school-internship-program
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-036.md`
+
+---
+
+### [OPP-20260812-037] NASA Internship Programs
+**URL:** https://www.nasa.gov/learning-resources/internship-programs
+**Deadline:** 2027-02-26
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-037.md`
+
+---
+
+### [OPP-20260812-040] U.S. Office of Coast Survey
+**URL:** https://nauticalcharts.noaa.gov/about/employment-and-internships.html
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-040.md`
+
+---
+
+### [OPP-20260812-042] Students & Recent Graduates
+**URL:** https://www.energy.gov/careers/students-recent-graduates
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-042.md`
+
+---
+
+### [OPP-20260812-043] Internships & Fellowships | Department of Energy
+**URL:** https://www.energy.gov/internships-fellowships
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-043.md`
+
+---
+
+### [OPP-20260812-045] PATH: All-Expenses-Paid College Fly-In Program for High School Seniors | Washington and Lee University
+**URL:** https://go.wlu.edu/fly-in
+**Deadline:** 2026-09-22
+**Award:** all-expenses
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-045.md`
+
+---
+
+### [OPP-20260812-051] Fall Fly-in Program: Caltech Up Close - Undergraduate Admissions
+**URL:** https://www.admissions.caltech.edu/visit/visit-campus/fall-fly-in-program-caltech-up-close
+**Deadline:** Unknown — check the application page
+**Award:** all-expenses
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260812-051.md`
+

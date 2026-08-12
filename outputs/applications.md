@@ -1,6 +1,6 @@
 # Application Log
 
-_Last updated: 2026-08-10T14:25:53.932259+00:00 | Total tracked: 79_
+_Last updated: 2026-08-12T14:22:44.356328+00:00 | Total tracked: 106_
 
 ## Summary
 - Submitted (automated): see rows marked `submitted`
@@ -90,3 +90,30 @@ _Last updated: 2026-08-10T14:25:53.932259+00:00 | Total tracked: 79_
 | OPP-20260810-138 | 2026-08-10 | [Bold.org No-Essay Scholarships](https://bold.org/scholarships/by-type/no-essay-scholarships/) | web_form | — | semi_apply | Pre-fill: 0 fields |
 | OPP-20260810-139 | 2026-08-10 | [College Board BigFuture Scholarships](https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027) | web_form | — | semi_apply | Pre-fill: 0 fields |
 | OPP-20260810-140 | 2026-08-10 | [QuestBridge College Prep Scholar](https://www.questbridge.org/high-school-students/scholar-program) | fly_in | all-expenses | essay_pending | — |
+| OPP-20260812-004 | 2026-08-12 | [Home - Internship in Science, Health Training, and](https://www.med.unc.edu/emergmed/education/ishtar) | unknown | paid | essay_pending | — |
+| OPP-20260812-006 | 2026-08-12 | [Minimum Grade Point Average From 2.6 to 3.0 Schola](https://www.scholarships.com/financial-aid/college-scholarships/scholarship-directory/grade-point-average/minimum-grade-point-average-from-2-6-to-3-0) | web_form | $1,000–$5,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-010 | 2026-08-12 | [Financial Economics Network Professional Announcem](https://www.ssrn.com/index.cfm/en/janda/professional-announcements?annsNet=203) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-015 | 2026-08-12 | [Internship Programs - North Carolina General Assem](https://ncleg.gov/About/InternshipPrograms) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-016 | 2026-08-12 | [Internships - Children's Research Triangle](https://childrensresearchtriangle.org/research/internships) | web_form | — | essay_pending | — |
+| OPP-20260812-018 | 2026-08-12 | [10 best research programs for high school students](https://riseglobaleducation.com/blogs/best-research-programs-high-school-students-north-carolina) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-020 | 2026-08-12 | [Internships - Two Sigma](https://www.twosigma.com/careers/internships) | web_form | paid | essay_pending | — |
+| OPP-20260812-024 | 2026-08-12 | [Application - SSP International](https://ssp.org/application) | web_form | — | essay_pending | — |
+| OPP-20260812-033 | 2026-08-12 | [Clark Scholars application deadline 2027](https://riseglobaleducation.com/blogs/clark-scholars-application-deadline-2027) | unknown | — | essay_pending | — |
+| OPP-20260812-035 | 2026-08-12 | [Lewis and Clark Offering $750000 in Scholarships f](https://www.lc.edu/news/2026/03/lewis-and-clark-offering-750k-in-scholarships-for-2026-2027.html?image=) | web_form | $750,000 (pool) | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-036 | 2026-08-12 | [Engagement Opening: High School Internship Program](https://stemgateway.nasa.gov/s/course-offering/a0B3d0000015LFrEAM/high-school-internship-program) | portal_account | paid | essay_pending | — |
+| OPP-20260812-037 | 2026-08-12 | [NASA Internship Programs](https://www.nasa.gov/learning-resources/internship-programs) | portal_account | paid | essay_pending | — |
+| OPP-20260812-038 | 2026-08-12 | [Explore Opportunities](https://stemgateway.nasa.gov/s/explore-opportunities) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-040 | 2026-08-12 | [U.S. Office of Coast Survey](https://nauticalcharts.noaa.gov/about/employment-and-internships.html) | portal_account | paid | essay_pending | — |
+| OPP-20260812-042 | 2026-08-12 | [Students & Recent Graduates](https://www.energy.gov/careers/students-recent-graduates) | portal_account | paid | essay_pending | — |
+| OPP-20260812-043 | 2026-08-12 | [Internships & Fellowships | Department of Energy](https://www.energy.gov/internships-fellowships) | portal_account | paid | essay_pending | — |
+| OPP-20260812-045 | 2026-08-12 | [PATH: All-Expenses-Paid College Fly-In Program for](https://go.wlu.edu/fly-in) | web_form | all-expenses | essay_pending | — |
+| OPP-20260812-051 | 2026-08-12 | [Fall Fly-in Program: Caltech Up Close - Undergradu](https://www.admissions.caltech.edu/visit/visit-campus/fall-fly-in-program-caltech-up-close) | fly_in | all-expenses | essay_pending | — |
+| OPP-20260812-054 | 2026-08-12 | [Calling all High School Juniors! 📣✨ Ready ...](https://www.instagram.com/p/DUG_AJZEvbu) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-055 | 2026-08-12 | [Scholarship Opportunities](https://www.smeaglefoundation.org/scholarship-opportunities) | web_form | $2,200 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-056 | 2026-08-12 | [Too Cool to Pay for School Scholarship - Access Sc](https://accessscholarships.com/1k-too-cool-to-pay-for-school) | web_form | $1,000 | semi_apply | Downgraded: CAPTCHA detected: .cf-turnstile |
+| OPP-20260812-060 | 2026-08-12 | [$10,000 “No Essay” Scholarship - Scholarships360](https://scholarships360.org/scholarships/search/10000-no-essay-scholarship) | web_form | $10,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-061 | 2026-08-12 | [Top 30+ No Essay Scholarships (Least Competitive) ](https://educationdata.org/no-essay-scholarships) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-062 | 2026-08-12 | [$25,000 "Be Bold" No-Essay Scholarship | Bold.org](https://bold.org/scholarships/the-be-bold-no-essay-scholarship) | web_form | $25,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-063 | 2026-08-12 | [Find College Scholarships - Niche](https://www.niche.com/colleges/scholarships) | portal_account | $1,000/month | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-064 | 2026-08-12 | [$25,000 "Be Bold" No-Essay Scholarship - Access Sc](https://accessscholarships.com/scholarship/be-bold-no-essay-scholarship) | web_form | $25,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260812-065 | 2026-08-12 | [Find Scholarships for College Students in 2026-202](https://bold.org) | portal_account | — | semi_apply | Pre-fill: 0 fields |
