@@ -587,3 +587,102 @@ _No essays pending yet._
 
 **Instructions:** Write your response in `data/essay_responses/OPP-20260812-051.md`
 
+---
+
+### [OPP-20260814-017] Occupational Health Internship Program (OHIP)
+**URL:** https://www.ohipintern.org
+**Deadline:** 2027-03-31
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260814-017.md`
+
+---
+
+### [OPP-20260814-024] Instagram
+**URL:** https://www.instagram.com/reel/Da2690QggSt
+**Deadline:** Unknown — check the application page
+**Award:** Unknown
+**Essay Prompt(s):**
+> Application for CCSE Editorial and Research Intern position (details not provided in snippet)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260814-024.md`
+
+---
+
+### [OPP-20260814-033] Instagram
+**URL:** https://www.instagram.com/reel/DRcYljuDgBP?hl=en
+**Deadline:** Unknown — check the application page
+**Award:** Unknown
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260814-033.md`
+
+---
+
+### [OPP-20260814-040] Secondary Student Training Program (SSTP) Overview, Application
+**URL:** https://www.nextfour.ai/secondary-student-training-program-(sstp)
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260814-040.md`
+
+---
+
+### [OPP-20260814-042] SSTP (Secondary Student Training Program) | University of Iowa | Snowday
+**URL:** https://www.snow.day/learning-opportunities/d5326654-68d3-4c8a-960b-f22e489c3b53/sstp-secondary-student-training-program
+**Deadline:** 2027-02-17
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260814-042.md`
+
+---
+
+### [OPP-20260814-049] Pathways Internship Employment Program (IEP) ...
+**URL:** https://etd.gsfc.nasa.gov/wp-content/uploads/2024/10/ETD_Internship_Flyer_2025-2.pdf
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260814-049.md`
+
+---
+
+### [OPP-20260814-050] Students & Recent Graduates | Department of Energy
+**URL:** https://www.energy.gov/careers/students-recent-graduates
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260814-050.md`
+
+---
+
+### [OPP-20260814-053] If you're a rising high school junior (Class of ...
+**URL:** https://www.tiktok.com/@4fglistudents/photo/7661704897980812558
+**Deadline:** Unknown — check the application page
+**Award:** all-expenses
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260814-053.md`
+
+---
+
+### [OPP-20260814-055] A college visit can change everything—and this one is ...
+**URL:** https://www.instagram.com/p/DZDMipCFFcX
+**Deadline:** Unknown — check the application page
+**Award:** all-expenses
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260814-055.md`
+

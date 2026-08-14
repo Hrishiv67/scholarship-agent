@@ -1,6 +1,6 @@
 # Application Log
 
-_Last updated: 2026-08-12T14:22:44.356328+00:00 | Total tracked: 106_
+_Last updated: 2026-08-14T14:17:52.560746+00:00 | Total tracked: 131_
 
 ## Summary
 - Submitted (automated): see rows marked `submitted`
@@ -117,3 +117,28 @@ _Last updated: 2026-08-12T14:22:44.356328+00:00 | Total tracked: 106_
 | OPP-20260812-063 | 2026-08-12 | [Find College Scholarships - Niche](https://www.niche.com/colleges/scholarships) | portal_account | $1,000/month | semi_apply | Pre-fill: 0 fields |
 | OPP-20260812-064 | 2026-08-12 | [$25,000 "Be Bold" No-Essay Scholarship - Access Sc](https://accessscholarships.com/scholarship/be-bold-no-essay-scholarship) | web_form | $25,000 | semi_apply | Pre-fill: 0 fields |
 | OPP-20260812-065 | 2026-08-12 | [Find Scholarships for College Students in 2026-202](https://bold.org) | portal_account | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-012 | 2026-08-14 | [Paid summer internship opportunities - UNC Institu](https://ie.unc.edu/news/paid-summer-internship-opportunities) | web_form | paid | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-017 | 2026-08-14 | [Occupational Health Internship Program (OHIP)](https://www.ohipintern.org) | web_form | paid | essay_pending | — |
+| OPP-20260814-018 | 2026-08-14 | [How to Apply for NC Scholarships | NCCF Applicatio](https://www.nccommunityfoundation.org/scholarships/how-to-apply) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-021 | 2026-08-14 | [Internship Opportunities | Labcorp](https://careers.labcorp.com/global/en/internship-opportunities) | portal_account | paid | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-022 | 2026-08-14 | [Cell Biology Academy - CeBA | Duke Department of C](https://www.cellbio.duke.edu/education-and-training/cell-biology-academy-ceba) | web_form | paid | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-024 | 2026-08-14 | [Instagram](https://www.instagram.com/reel/Da2690QggSt) | web_form | — | essay_pending | — |
+| OPP-20260814-032 | 2026-08-14 | [Top 16 STEM Internships for High School Students i](https://pioneeracademics.com/news/top-16-stem-internships-for-high-school-students) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-033 | 2026-08-14 | [Instagram](https://www.instagram.com/reel/DRcYljuDgBP?hl=en) | portal_account | — | essay_pending | — |
+| OPP-20260814-040 | 2026-08-14 | [Secondary Student Training Program (SSTP) Overview](https://www.nextfour.ai/secondary-student-training-program-(sstp)) | web_form | paid | essay_pending | — |
+| OPP-20260814-042 | 2026-08-14 | [SSTP (Secondary Student Training Program) | Univer](https://www.snow.day/learning-opportunities/d5326654-68d3-4c8a-960b-f22e489c3b53/sstp-secondary-student-training-program) | portal_account | paid | essay_pending | — |
+| OPP-20260814-043 | 2026-08-14 | [Tanya Khovanova's Math Blog  » Blog Archive   » PR](https://blog.tanyakhovanova.com/2010/11/primes-and-rsi) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-044 | 2026-08-14 | [Anay Aggarwal - Math @ MIT PRIMES-USA & MIT RSI - ](https://ro.linkedin.com/in/Anay-aggarwal23) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-049 | 2026-08-14 | [Pathways Internship Employment Program (IEP) ...](https://etd.gsfc.nasa.gov/wp-content/uploads/2024/10/ETD_Internship_Flyer_2025-2.pdf) | unknown | paid | essay_pending | — |
+| OPP-20260814-050 | 2026-08-14 | [Students & Recent Graduates | Department of Energy](https://www.energy.gov/careers/students-recent-graduates) | portal_account | paid | essay_pending | — |
+| OPP-20260814-051 | 2026-08-14 | [Careers & More: Internships and More](https://www.fisheries.noaa.gov/topic/careers-more/internships-and-more) | web_form | paid | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-052 | 2026-08-14 | [NOAA student opportunities database | National Oce](https://www.noaa.gov/education/opportunities/students) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-053 | 2026-08-14 | [If you're a rising high school junior (Class of ..](https://www.tiktok.com/@4fglistudents/photo/7661704897980812558) | fly_in | all-expenses | essay_pending | — |
+| OPP-20260814-054 | 2026-08-14 | [High School Junior (Class of 2028) Scholarships - ](https://www.scholarships.com/financial-aid/college-scholarships/scholarship-directory/school-year/high-school-junior) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-055 | 2026-08-14 | [A college visit can change everything—and this one](https://www.instagram.com/p/DZDMipCFFcX) | web_form | all-expenses | essay_pending | — |
+| OPP-20260814-058 | 2026-08-14 | [Exploring Fly-In Programs and Visit Experiences](https://www.coalitionforcollegeaccess.org/mycoalition-counselor-all/fly-in-programs-visits) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-059 | 2026-08-14 | [9th - 11th Grade - Scholarship Central](https://www.scholarshipcentral.net/scholarships/9th-11th-grade) | web_form | $1,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-063 | 2026-08-14 | [Featured Scholarships | Fastweb](https://www.fastweb.com/college-scholarships/featured-scholarships) | web_form | $40,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-066 | 2026-08-14 | [No-Essay College Scholarships](https://www.edvisors.com/plan-for-college/scholarships/college-scholarships/no-essay-scholarships) | unknown | $25,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-067 | 2026-08-14 | [$25,000 Be Bold No-Essay Scholarship - Scholarship](https://www.scholarships.com/scholarships/25000-be-bold-no-essay-scholarship) | web_form | $25,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260814-068 | 2026-08-14 | [The 200 Best No Essay Scholarships for 2026](https://www.unigo.com/scholarships/contests-and-sweepstakes/no-essay-scholarships) | unknown | $2,000 | semi_apply | Pre-fill: 0 fields |
