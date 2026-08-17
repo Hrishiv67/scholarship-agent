@@ -1,6 +1,6 @@
 # Application Log
 
-_Last updated: 2026-08-14T14:17:52.560746+00:00 | Total tracked: 131_
+_Last updated: 2026-08-17T13:39:56.583987+00:00 | Total tracked: 156_
 
 ## Summary
 - Submitted (automated): see rows marked `submitted`
@@ -142,3 +142,28 @@ _Last updated: 2026-08-14T14:17:52.560746+00:00 | Total tracked: 131_
 | OPP-20260814-066 | 2026-08-14 | [No-Essay College Scholarships](https://www.edvisors.com/plan-for-college/scholarships/college-scholarships/no-essay-scholarships) | unknown | $25,000 | semi_apply | Pre-fill: 0 fields |
 | OPP-20260814-067 | 2026-08-14 | [$25,000 Be Bold No-Essay Scholarship - Scholarship](https://www.scholarships.com/scholarships/25000-be-bold-no-essay-scholarship) | web_form | $25,000 | semi_apply | Pre-fill: 0 fields |
 | OPP-20260814-068 | 2026-08-14 | [The 200 Best No Essay Scholarships for 2026](https://www.unigo.com/scholarships/contests-and-sweepstakes/no-essay-scholarships) | unknown | $2,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-005 | 2026-08-17 | [Internship Opportunities | Shelton Leadership Cent](https://sheltonleadership.ncsu.edu/internship-opportunities) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-008 | 2026-08-17 | [Wake Forest School of Medicine- Biostatistics and ](https://math.sciences.ncsu.edu/2025/11/13/wake-forest-school-of-medicine-biostatistics-and-data-science-2026-summer-internship) | unknown | paid | essay_pending | — |
+| OPP-20260817-011 | 2026-08-17 | [High School Students | Robertson Scholars](https://robertsonscholars.org/high-school-students-2) | portal_account | full scholarship | essay_pending | — |
+| OPP-20260817-013 | 2026-08-17 | [🌿 Fall 2026 internships at the New Jersey Departme](https://www.instagram.com/p/DaQIqybDqCF) | unknown | paid | essay_pending | — |
+| OPP-20260817-014 | 2026-08-17 | [Internship Opportunities - Truist careers](https://careers.truist.com/us/en/urstudentinternship) | portal_account | paid | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-016 | 2026-08-17 | [Internships & Job Search | College of Communicatio](https://www.kent.edu/cci/internships-job-search) | portal_account | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-017 | 2026-08-17 | [High school students in North Carolina ...](https://riseglobaleducation.com/blogs/best-research-programs-high-school-students-north-carolina) | unknown | paid | essay_pending | — |
+| OPP-20260817-019 | 2026-08-17 | [rural-works-internships/?a=11760765](https://www.facebook.com/parkscholars/posts/help-the-class-of-2027-bridge-the-gap-between-rural-healthcare-and-pre-health-st/1724531115650432) | unknown | paid | essay_pending | — |
+| OPP-20260817-020 | 2026-08-17 | [ACS Project SEED Program - American Chemical Socie](https://www.acs.org/projectseed.html) | unknown | paid | essay_pending | — |
+| OPP-20260817-023 | 2026-08-17 | [15 Technology internships for High School Students](https://horizoninspires.com/blog/technology-internships-for-high-school-students-in-north-carolina) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-028 | 2026-08-17 | [15 free summer research programs for US high schoo](https://riseglobaleducation.com/blogs/free-summer-research-programs-us-high-school-2026) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-035 | 2026-08-17 | [Lewis and Clark Offering $750,000 in Scholarships ](https://www.lc.edu/news/2026/03/lewis-and-clark-offering-750k-in-scholarships-for-2026-2027.html?image=) | portal_account | $750,000 total | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-037 | 2026-08-17 | [Astrophysics Science Division High-School Student ](https://science.gsfc.nasa.gov/660/student_opps/highschool.html) | web_form | paid | essay_pending | — |
+| OPP-20260817-039 | 2026-08-17 | [NASA Internship Information: Frequently Asked Ques](https://www.nasa.gov/wp-content/uploads/2015/05/internships_at_wallops_flight_facility_fy_23_faq_final.pdf) | web_form | $2,400 (6-week high school session) | essay_pending | — |
+| OPP-20260817-040 | 2026-08-17 | [10 Things You Can Do Now to Prepare for a NASA Int](https://www.nasa.gov/learning-resources/internships/10-things-you-can-do-now-to-prepare-for-a-nasa-internship) | unknown | paid | essay_pending | — |
+| OPP-20260817-041 | 2026-08-17 | [Careers & More: Internships And More | NOAA Fisher](https://www.fisheries.noaa.gov/topic/careers-more/internships-and-more) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-043 | 2026-08-17 | [Class of 2027: Are you building... - Education is ](https://www.facebook.com/EducationisFreedom/posts/class-of-2027-are-you-building-your-college-list-did-you-know-that-you-can-visit/1436725178488533) | web_form | all-expenses | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-044 | 2026-08-17 | [Office of Community Health and Engagement | Office](https://med.stanford.edu/odme/high-school-students.html) | unknown | paid | essay_pending | — |
+| OPP-20260817-045 | 2026-08-17 | [These are all-expenses-paid (or travel-funded) cam](https://www.instagram.com/reel/DbGS48vOfmS) | unknown | all-expenses | essay_pending | — |
+| OPP-20260817-046 | 2026-08-17 | [Free college fly-in programs for class of 2027](https://www.facebook.com/EducationisFreedom/posts/class-of-2027-are-you-building-your-college-list-did-you-know-that-you-can-visit/1436725178488533) | unknown | all-expenses | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-047 | 2026-08-17 | [ELIGIBILITY](https://coolidgescholars.org/eligibilty) | portal_account | — | essay_pending | — |
+| OPP-20260817-048 | 2026-08-17 | [Scholarship Central - 9th - 11th Grade](https://www.scholarshipcentral.net/scholarships/9th-11th-grade) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-050 | 2026-08-17 | [Scholarships for High School Sophomores](https://jlvcollegecounseling.com/scholarships/age/hs-sophomores) | unknown | — | essay_pending | — |
+| OPP-20260817-053 | 2026-08-17 | [Top 53 No Essay Scholarships in August 2026](https://scholarships360.org/scholarships/no-essay-scholarships) | web_form | $10,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260817-054 | 2026-08-17 | [Instagram](https://www.instagram.com/p/DTJWmRFjqh8) | web_form | — | semi_apply | Pre-fill: 0 fields |

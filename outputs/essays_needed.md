@@ -686,3 +686,146 @@ _No essays pending yet._
 
 **Instructions:** Write your response in `data/essay_responses/OPP-20260814-055.md`
 
+---
+
+### [OPP-20260817-008] Wake Forest School of Medicine- Biostatistics and Data Science 2026 Summer Internship | Department of Mathematics
+**URL:** https://math.sciences.ncsu.edu/2025/11/13/wake-forest-school-of-medicine-biostatistics-and-data-science-2026-summer-internship
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-008.md`
+
+---
+
+### [OPP-20260817-011] High School Students | Robertson Scholars
+**URL:** https://robertsonscholars.org/high-school-students-2
+**Deadline:** 2026-10-15
+**Award:** full scholarship
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-011.md`
+
+---
+
+### [OPP-20260817-013] 🌿 Fall 2026 internships at the New Jersey Department of ...
+**URL:** https://www.instagram.com/p/DaQIqybDqCF
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-013.md`
+
+---
+
+### [OPP-20260817-017] High school students in North Carolina ...
+**URL:** https://riseglobaleducation.com/blogs/best-research-programs-high-school-students-north-carolina
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-017.md`
+
+---
+
+### [OPP-20260817-019] rural-works-internships/?a=11760765
+**URL:** https://www.facebook.com/parkscholars/posts/help-the-class-of-2027-bridge-the-gap-between-rural-healthcare-and-pre-health-st/1724531115650432
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-019.md`
+
+---
+
+### [OPP-20260817-020] ACS Project SEED Program - American Chemical Society
+**URL:** https://www.acs.org/projectseed.html
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-020.md`
+
+---
+
+### [OPP-20260817-037] Astrophysics Science Division High-School Student Opportunities
+**URL:** https://science.gsfc.nasa.gov/660/student_opps/highschool.html
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-037.md`
+
+---
+
+### [OPP-20260817-039] NASA Internship Information: Frequently Asked Questions
+**URL:** https://www.nasa.gov/wp-content/uploads/2015/05/internships_at_wallops_flight_facility_fy_23_faq_final.pdf
+**Deadline:** Unknown — check the application page
+**Award:** $2,400 (6-week high school session)
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-039.md`
+
+---
+
+### [OPP-20260817-040] 10 Things You Can Do Now to Prepare for a NASA Internship - NASA
+**URL:** https://www.nasa.gov/learning-resources/internships/10-things-you-can-do-now-to-prepare-for-a-nasa-internship
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-040.md`
+
+---
+
+### [OPP-20260817-044] Office of Community Health and Engagement | Office of Community Health and Engagement | Stanford Medicine
+**URL:** https://med.stanford.edu/odme/high-school-students.html
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-044.md`
+
+---
+
+### [OPP-20260817-045] These are all-expenses-paid (or travel-funded) campus visit ...
+**URL:** https://www.instagram.com/reel/DbGS48vOfmS
+**Deadline:** Unknown — check the application page
+**Award:** all-expenses
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-045.md`
+
+---
+
+### [OPP-20260817-047] ELIGIBILITY
+**URL:** https://coolidgescholars.org/eligibilty
+**Deadline:** Unknown — check the application page
+**Award:** Unknown
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-047.md`
+
+---
+
+### [OPP-20260817-050] Scholarships for High School Sophomores
+**URL:** https://jlvcollegecounseling.com/scholarships/age/hs-sophomores
+**Deadline:** Unknown — check the application page
+**Award:** Unknown
+**Essay Prompt(s):**
+> essay on an ethical topic
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260817-050.md`
+
