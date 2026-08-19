@@ -1,6 +1,6 @@
 # Application Log
 
-_Last updated: 2026-08-17T13:39:56.583987+00:00 | Total tracked: 156_
+_Last updated: 2026-08-19T13:44:57.454171+00:00 | Total tracked: 177_
 
 ## Summary
 - Submitted (automated): see rows marked `submitted`
@@ -167,3 +167,24 @@ _Last updated: 2026-08-17T13:39:56.583987+00:00 | Total tracked: 156_
 | OPP-20260817-050 | 2026-08-17 | [Scholarships for High School Sophomores](https://jlvcollegecounseling.com/scholarships/age/hs-sophomores) | unknown | — | essay_pending | — |
 | OPP-20260817-053 | 2026-08-17 | [Top 53 No Essay Scholarships in August 2026](https://scholarships360.org/scholarships/no-essay-scholarships) | web_form | $10,000 | semi_apply | Pre-fill: 0 fields |
 | OPP-20260817-054 | 2026-08-17 | [Instagram](https://www.instagram.com/p/DTJWmRFjqh8) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-002 | 2026-08-19 | [OneCarolina Summer Internship Program | UNC Giving](https://giving.unc.edu/who-we-are/join-our-team/summer-internship-program) | portal_account | internship | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-008 | 2026-08-19 | [Students and Graduates jobs | Stryker Careers](https://careers.stryker.com/students-and-graduates) | web_form | paid | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-012 | 2026-08-19 | [Instagram](https://www.instagram.com/p/DWCDu_Cjhgs) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-013 | 2026-08-19 | [Help the Class of 2027 bridge the gap... - Park Sc](https://www.facebook.com/parkscholars/posts/help-the-class-of-2027-bridge-the-gap-between-rural-healthcare-and-pre-health-st/1724531115650432) | unknown | stipend | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-014 | 2026-08-19 | [Internship jobs - Careers](https://www.ibm.com/careers/internships) | portal_account | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-015 | 2026-08-19 | [10 best research programs for high school students](https://riseglobaleducation.com/blogs/best-research-programs-for-high-school-students-washington-state) | web_form | stipend | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-016 | 2026-08-19 | [Summer Research Programs at BYU](https://reu.byu.edu/home) | web_form | — | essay_pending | — |
+| OPP-20260819-023 | 2026-08-19 | [Program Benefits & Eligibility | Clark Scholars Pr](https://www.depts.ttu.edu/clarkscholars/ProgramDetails.php) | email | paid | essay_pending | — |
+| OPP-20260819-025 | 2026-08-19 | [Clark Scholars Program | The George Washington Uni](https://engineering.gwu.edu/clark-scholars-program) | portal_account | paid | essay_pending | — |
+| OPP-20260819-026 | 2026-08-19 | [Clark Scholars Program at Texas Tech guide](https://riseglobaleducation.com/blogs/clark-scholars-program-texas-tech-guide) | unknown | paid | essay_pending | — |
+| OPP-20260819-027 | 2026-08-19 | [Texas Aerospace Scholars Junior Experience - NASA](https://www.nasa.gov/learning-resources/texas-aerospace-scholars/tas-junior-experience) | unknown | paid | essay_pending | — |
+| OPP-20260819-028 | 2026-08-19 | [NASA STEM Opportunities and Activities For Student](https://www.nasa.gov/learning-resources/nasa-stem-opportunities-activities) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-030 | 2026-08-19 | [Propel Your Passion with These STEM Internships fo](https://www.nshss.org/resources/blog/blog-posts/propel-your-passion-with-these-stem-internships-for-high-school-students) | unknown | paid | essay_pending | — |
+| OPP-20260819-031 | 2026-08-19 | [High School Students at PNNL | PNNL](https://www.pnnl.gov/high-school-students-pnnl) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-032 | 2026-08-19 | [Summer Internships for High School Students -](https://fast.stanford.edu/resources/internships) | unknown | free + stipend | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-033 | 2026-08-19 | [Top 33 Internships for High School Students in 202](https://empowerly.com/applications/extracurriculars/33-incredible-internships-for-high-school-students) | unknown | paid | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-034 | 2026-08-19 | [60 Summer Internships for High School Students (20](https://www.standoutconnect.org/post/60-summer-internships-for-high-school-students) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-039 | 2026-08-19 | [College Fly-In Programs and Free Visit Opportuniti](https://www.appily.com/guidance/counselors/college-greenlight/college-fly-in-programs-and-free-visit-opportunities) | web_form | all-expenses | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-042 | 2026-08-19 | [PATH: All-Expenses-Paid College Fly-In Program for](https://www.wlu.edu/admissions/visit/path-fly-in-program) | web_form | all-expenses-paid | essay_pending | — |
+| OPP-20260819-047 | 2026-08-19 | [Around the Corner from College $1,000 Scholarship ](https://accessscholarships.com/around-the-corner-from-college-scholarship) | web_form | $1,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260819-048 | 2026-08-19 | [90+ No Essay Scholarships (August 2026) — Apply in](https://bold.org/scholarships/by-type/no-essay-scholarships) | web_form | — | semi_apply | Pre-fill: 0 fields |

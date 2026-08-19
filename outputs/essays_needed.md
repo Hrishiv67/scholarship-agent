@@ -829,3 +829,82 @@ _No essays pending yet._
 
 **Instructions:** Write your response in `data/essay_responses/OPP-20260817-050.md`
 
+---
+
+### [OPP-20260819-016] Summer Research Programs at BYU
+**URL:** https://reu.byu.edu/home
+**Deadline:** 2026-02-07
+**Award:** Unknown
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260819-016.md`
+
+---
+
+### [OPP-20260819-023] Program Benefits & Eligibility | Clark Scholars Program
+**URL:** https://www.depts.ttu.edu/clarkscholars/ProgramDetails.php
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260819-023.md`
+
+---
+
+### [OPP-20260819-025] Clark Scholars Program | The George Washington University
+**URL:** https://engineering.gwu.edu/clark-scholars-program
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260819-025.md`
+
+---
+
+### [OPP-20260819-026] Clark Scholars Program at Texas Tech guide
+**URL:** https://riseglobaleducation.com/blogs/clark-scholars-program-texas-tech-guide
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> Personal statement
+
+> Research interest statement
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260819-026.md`
+
+---
+
+### [OPP-20260819-027] Texas Aerospace Scholars Junior Experience - NASA
+**URL:** https://www.nasa.gov/learning-resources/texas-aerospace-scholars/tas-junior-experience
+**Deadline:** 2027-04-30
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260819-027.md`
+
+---
+
+### [OPP-20260819-030] Propel Your Passion with These STEM Internships for High School Students | National Society of High School Scholars
+**URL:** https://www.nshss.org/resources/blog/blog-posts/propel-your-passion-with-these-stem-internships-for-high-school-students
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260819-030.md`
+
+---
+
+### [OPP-20260819-042] PATH: All-Expenses-Paid College Fly-In Program for High School Seniors | Washington and Lee University
+**URL:** https://www.wlu.edu/admissions/visit/path-fly-in-program
+**Deadline:** Unknown — check the application page
+**Award:** all-expenses-paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260819-042.md`
+
