@@ -908,3 +908,102 @@ _No essays pending yet._
 
 **Instructions:** Write your response in `data/essay_responses/OPP-20260819-042.md`
 
+---
+
+### [OPP-20260821-004] Junior Internship
+**URL:** https://www.seaturtlehospital.org/junior-internship.html
+**Deadline:** 2027-03-01
+**Award:** Unknown
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260821-004.md`
+
+---
+
+### [OPP-20260821-011] High School Summer Research Program
+**URL:** https://cnr.ncsu.edu/fer/extension-and-outreach/high-school-research
+**Deadline:** Unknown — check the application page
+**Award:** Unknown
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260821-011.md`
+
+---
+
+### [OPP-20260821-012] Simons Summer Research Program deadline 2027
+**URL:** https://riseglobaleducation.com/blogs/simons-summer-research-program-deadline-2027
+**Deadline:** 2027-02-15
+**Award:** Unknown
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260821-012.md`
+
+---
+
+### [OPP-20260821-013] Kenan Fellows High School Summer Internships » The Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology » The Wertheim UF Scripps Institute » University of Florida
+**URL:** https://wertheim.scripps.ufl.edu/education/kenan-fellows-high-school-summer-internships
+**Deadline:** 2026-11-30
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260821-013.md`
+
+---
+
+### [OPP-20260821-022] NASA Glenn Opens Applications for Free Summer Engineering Institute
+**URL:** https://www.nasa.gov/news-release/nasa-glenn-hosts-engineering-institute
+**Deadline:** 2027-05-01
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260821-022.md`
+
+---
+
+### [OPP-20260821-024] PPPL’s Summer Interns Experience Real-world Research | Department of Energy
+**URL:** https://www.energy.gov/articles/pppls-summer-interns-experience-real-world-research
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260821-024.md`
+
+---
+
+### [OPP-20260821-026] Exemplary Student Research Program Inspires our Next Generation of Researchers | Department of Energy
+**URL:** https://www.energy.gov/articles/exemplary-student-research-program-inspires-our-next-generation-researchers
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260821-026.md`
+
+---
+
+### [OPP-20260821-027] NSF INTERN Program | Department of Energy
+**URL:** https://www.energy.gov/hgeo/geothermal/nsf-intern-program
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260821-027.md`
+
+---
+
+### [OPP-20260821-028] Intern Uses Neural Networks to Advance Medical Imaging | Department of Energy
+**URL:** https://www.energy.gov/doe-stem/articles/intern-uses-neural-networks-advance-medical-imaging
+**Deadline:** Unknown — check the application page
+**Award:** paid
+**Essay Prompt(s):**
+> (Review the application page for the exact essay prompt)
+
+**Instructions:** Write your response in `data/essay_responses/OPP-20260821-028.md`
+

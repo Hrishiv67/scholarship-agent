@@ -1,6 +1,6 @@
 # Application Log
 
-_Last updated: 2026-08-19T13:44:57.454171+00:00 | Total tracked: 177_
+_Last updated: 2026-08-21T13:44:46.140389+00:00 | Total tracked: 193_
 
 ## Summary
 - Submitted (automated): see rows marked `submitted`
@@ -188,3 +188,19 @@ _Last updated: 2026-08-19T13:44:57.454171+00:00 | Total tracked: 177_
 | OPP-20260819-042 | 2026-08-19 | [PATH: All-Expenses-Paid College Fly-In Program for](https://www.wlu.edu/admissions/visit/path-fly-in-program) | web_form | all-expenses-paid | essay_pending | — |
 | OPP-20260819-047 | 2026-08-19 | [Around the Corner from College $1,000 Scholarship ](https://accessscholarships.com/around-the-corner-from-college-scholarship) | web_form | $1,000 | semi_apply | Pre-fill: 0 fields |
 | OPP-20260819-048 | 2026-08-19 | [90+ No Essay Scholarships (August 2026) — Apply in](https://bold.org/scholarships/by-type/no-essay-scholarships) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260821-004 | 2026-08-21 | [Junior Internship](https://www.seaturtlehospital.org/junior-internship.html) | web_form | — | essay_pending | — |
+| OPP-20260821-005 | 2026-08-21 | [Students & Internships | Verizon Careers](https://mycareer.verizon.com/life-at-verizon/early-in-career) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260821-011 | 2026-08-21 | [High School Summer Research Program](https://cnr.ncsu.edu/fer/extension-and-outreach/high-school-research) | portal_account | — | essay_pending | — |
+| OPP-20260821-012 | 2026-08-21 | [Simons Summer Research Program deadline 2027](https://riseglobaleducation.com/blogs/simons-summer-research-program-deadline-2027) | web_form | — | essay_pending | — |
+| OPP-20260821-013 | 2026-08-21 | [Kenan Fellows High School Summer Internships » The](https://wertheim.scripps.ufl.edu/education/kenan-fellows-high-school-summer-internships) | unknown | paid | essay_pending | — |
+| OPP-20260821-021 | 2026-08-21 | [Instagram](https://www.instagram.com/p/DZDJiuHhCT7) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260821-022 | 2026-08-21 | [NASA Glenn Opens Applications for Free Summer Engi](https://www.nasa.gov/news-release/nasa-glenn-hosts-engineering-institute) | web_form | paid | essay_pending | — |
+| OPP-20260821-024 | 2026-08-21 | [PPPL’s Summer Interns Experience Real-world Resear](https://www.energy.gov/articles/pppls-summer-interns-experience-real-world-research) | unknown | paid | essay_pending | — |
+| OPP-20260821-025 | 2026-08-21 | [Coastal & Marine Student, Job & Career Opportuniti](https://flowergarden.noaa.gov/document_library/eddocs/edandjobopps2011.pdf) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260821-026 | 2026-08-21 | [Exemplary Student Research Program Inspires our Ne](https://www.energy.gov/articles/exemplary-student-research-program-inspires-our-next-generation-researchers) | unknown | paid | essay_pending | — |
+| OPP-20260821-027 | 2026-08-21 | [NSF INTERN Program | Department of Energy](https://www.energy.gov/hgeo/geothermal/nsf-intern-program) | unknown | paid | essay_pending | — |
+| OPP-20260821-028 | 2026-08-21 | [Intern Uses Neural Networks to Advance Medical Ima](https://www.energy.gov/doe-stem/articles/intern-uses-neural-networks-advance-medical-imaging) | unknown | paid | essay_pending | — |
+| OPP-20260821-030 | 2026-08-21 | [Scholarship for grades 9-12 students available](https://www.facebook.com/groups/1907934546718726/posts/2101398707372308) | web_form | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260821-031 | 2026-08-21 | [April Junior Family Engagement Newsletter - AG Int](https://a-g.lausd.org/apps/pages/index.jsp?uREC_ID=4403119&type=d&pREC_ID=2737325) | unknown | — | semi_apply | Pre-fill: 0 fields |
+| OPP-20260821-033 | 2026-08-21 | [Find Free Scholarships for College (August 2026) |](https://bold.org/scholarships) | web_form | $40,000 | semi_apply | Pre-fill: 0 fields |
+| OPP-20260821-034 | 2026-08-21 | ["Be Bold" No-Essay Scholarship | Honor Society | O](https://www.honorsociety.org/scholarships/be-bold-no-essay-scholarship) | web_form | $25,000 | semi_apply | Pre-fill: 0 fields |
