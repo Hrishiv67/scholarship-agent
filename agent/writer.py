@@ -49,6 +49,8 @@ def _limit_from_prompt(prompt: str) -> tuple[int | None, int | None]:
 
 def _sanitize(text: str) -> str:
     """Enforce the hard voice rules the model sometimes ignores."""
+    # Strip any leading markdown title the model added (not wanted in a form field).
+    text = re.sub(r'^\s*#{1,6}\s.*(?:\n+|$)', '', text)
     text = text.replace("—", ", ").replace("–", ", ")   # em/en dash -> comma
     text = text.replace("…", ".").replace("...", ".")     # ellipsis -> period
     text = text.replace("!", ".")                          # no exclamation marks

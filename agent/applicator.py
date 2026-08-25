@@ -6,7 +6,7 @@ from .email_applicator import send_application
 from .form_filler import fill_and_submit
 from .logger import RunLog, RunResult
 from .profile_loader import Profile
-from . import accounts
+from . import accounts, packet
 
 _EMAIL_PATTERN = re.compile(r'[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}')
 
@@ -20,6 +20,22 @@ def _extract_email(text: str) -> str | None:
     email = match.group()
     skip = {"hrishiv14@gmail.com", "example@example.com", "info@example.com"}
     return email if email not in skip else None
+
+
+def _attach_packet(result: RunResult, opp: ClassifiedOpportunity, profile: Profile,
+                   dry_run: bool) -> None:
+    """Write a copy-paste packet (login + fields + in-voice essays) so a blocked
+    application is not work the user has to redo. Non-dry only."""
+    if dry_run:
+        return
+    try:
+        login_note = (f"Log in as {profile.personal.email} with your portal password. "
+                      f"If there is no account yet, sign up at the link above (one-time "
+                      f"CAPTCHA), then paste the answers below.")
+        packet.write(opp, profile, login_note)
+        result.notes = f"{result.notes} | Packet: outputs/application_packets/{opp.id}.md"
+    except Exception as e:
+        print(f"[applicator] packet generation failed: {e}")
 
 
 def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupStore,
@@ -52,8 +68,9 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
     if opp.route == "track_remind":
         result.outcome = "tracked"
         result.notes = opp.reason or "Tracked for reminders."
+        _attach_packet(result, opp, profile, dry_run)
         dedup_store.mark(opp.url, opp.title, "tracked", opp.id,
-                         opp.application_type, opp.route, opp.award_value, opp.reason)
+                         opp.application_type, opp.route, opp.award_value, result.notes)
         return result
 
     # ── auto_submit: attempt end-to-end; if blocked, flag (never silent) ───────
@@ -71,6 +88,8 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
         result.outcome = "submitted" if success else "tracked"
         result.notes = (f"Email sent to {to_email}" if success
                         else f"Email send failed to {to_email} - flagged for you")
+        if not success:
+            _attach_packet(result, opp, profile, dry_run)
         dedup_store.mark(opp.url, opp.title,
                          "submitted" if success else "tracked", opp.id,
                          "email", opp.route, opp.award_value, result.notes)
@@ -92,8 +111,9 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
         if any(k in reason.lower() for k in ("captcha", "cloudflare", "oauth", "sign in", "login", "account")):
             accounts.record(opp.title, opp.url, profile.personal.email, "you (manual)",
                             "needs signup", reason)
+        _attach_packet(result, opp, profile, dry_run)
         dedup_store.mark(opp.url, opp.title, "tracked", opp.id,
-                         "web_form", opp.route, opp.award_value, reason)
+                         "web_form", opp.route, opp.award_value, result.notes)
         return result
 
     if dry_run:
@@ -105,6 +125,8 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
     result.notes = (f"Fields filled: {fill_result.fields_filled}, missed: {fill_result.fields_missed}"
                     if fill_result.success
                     else "Submit not confirmed - flagged for you to finish")
+    if not fill_result.success:
+        _attach_packet(result, opp, profile, dry_run)
     dedup_store.mark(opp.url, opp.title,
                      "submitted" if fill_result.success else "tracked", opp.id,
                      "web_form", opp.route, opp.award_value, result.notes)
