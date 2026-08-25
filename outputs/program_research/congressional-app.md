@@ -1,51 +1,31 @@
 # Congressional App Challenge
 
-**URL:** https://www.congressionalappchallenge.us/  
-**Application Opens:** June 2026 (✅ already open)  
-**Deadline:** ~November 1, 2026 (check site for your NC district deadline)  
-**Award:** Winning app displayed in the US Capitol; prestige; DC recognition event  
-**Tier:** Competitive  
-**Eligibility:** HS students; compete in your congressional district — verify Cary NC address at house.gov  
-**Last Verified:** 2026-08-08
+**URL:** https://www.congressionalappchallenge.us/
+**Application Opens:** Not found on page -- typically June
+**Deadline:** Not found -- check https://www.congressionalappchallenge.us/
+**Award:** prestigious; displayed in US Capitol; internship pipeline
+**Tier:** Competitive
+**Last Verified:** 2026-08-25
+**Research Confidence:** none
 
----
-
-## EASY WITH EXISTING WORK
-
-You have two strong submissions ready right now:
-
-**Option A — pingpod.blog**  
-Full-stack web app with real users. Submit GitHub repo + 1-2 min demo video.
-
-**Option B — Hurricane ML Tracking Model**  
-Python ML project from NC State research. Submit code + video demo showing predictions.
-
-Pick whichever has cleaner code and documentation. No essay required — just the app and a video.
-
----
+## Eligibility
+Could not determine -- check program website
 
 ## Requirements
+- app_submission
+- code_project
 
-- App submitted via congressionalappchallenge.us portal
-- Must be original student work
-- 1-2 minute video demo of the app running
-- Brief project description (short form, no essay)
-- Students compete individually or in teams (up to 4)
+## Essay Prompts (2026-2027 cycle)
+Not listed on official page -- check the application portal directly.
 
-## What Strong Submissions Look Like
-
-- Solves a real problem with social or community impact
-- Actually works and is demonstrated live in the video
-- Technical depth appropriate for grade level
-- Clear README/documentation
-- Video explains the problem, solution, and impact in plain language
+## What a Strong Application Looks Like
+See program website for selection criteria.
 
 ## Recommended Prep Timeline
-
-- **Right now:** Register at congressionalappchallenge.us — find your NC congressional district
-- **August–September 2026:** Clean up code repo, write README, record 90-second demo video
-- **October 2026:** Submit — no advantage to waiting until November
+Begin preparation 2-3 months before the November deadline.
 
 ## Notes
+Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiEyKh8wG7zxY5naZ1q'}. Check https://www.congressionalappchallenge.us/ manually.
 
-Look up your congressional district at house.gov/representatives/find-your-representative — Cary NC is in NC-02 or NC-13 depending on your street address. Winners from each district are displayed in the Capitol and invited to a DC recognition event. There is also a national teacher award — worth mentioning your CS/STEM teachers.
+---
+*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*

@@ -1,30 +1,30 @@
-# Niche $25,000 No-Essay Scholarship
+# Niche $25k No-Essay Scholarship
 
-**URL:** https://www.niche.com/colleges/scholarships/no-essay/  
-**Application:** Rolling — apply every month  
-**Deadline:** Monthly (typically end of month)  
-**Award:** $25,000  
-**Tier:** Accessible (lottery-style)  
-**Eligibility:** Any student 13+ with a Niche account; US resident  
-**Last Verified:** 2026-08-08
+**URL:** https://www.niche.com/colleges/scholarships/no-essay/
+**Application Opens:** Not found on page -- typically monthly
+**Deadline:** Not found -- check https://www.niche.com/colleges/scholarships/no-essay/
+**Award:** $25,000
+**Tier:** Accessible
+**Last Verified:** 2026-08-25
+**Research Confidence:** none
 
----
+## Eligibility
+Could not determine -- check program website
 
-## How It Works
+## Requirements
+- niche_account
 
-1. Create a Niche account at niche.com
-2. Complete your profile (school, GPA, interests)
-3. Click "Apply" on the $25,000 No-Essay scholarship page — takes about 30 seconds
-4. One winner selected randomly each month from eligible applicants
+## Essay Prompts (2026-2027 cycle)
+Not listed on official page -- check the application portal directly.
 
-No essay, no recommendations, no transcript. Pure lottery. Apply every month.
+## What a Strong Application Looks Like
+See program website for selection criteria.
 
-## Strategy
-
-- Apply the first time now, then set a monthly reminder (last day of each month)
-- Complete your Niche profile fully — this may affect visibility in the drawing
-- Also browse niche.com for other smaller scholarships you're eligible for
+## Recommended Prep Timeline
+Begin preparation 2-3 months before the monthly (30th of each month) deadline.
 
 ## Notes
+Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiC6nKk38TYjzU1XHHa'}. Check https://www.niche.com/colleges/scholarships/no-essay/ manually.
 
-Odds are low (millions of applicants) but the effort is essentially zero. Apply once and then just re-apply monthly. It takes less than 2 minutes total.
+---
+*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*

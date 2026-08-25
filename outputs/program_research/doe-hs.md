@@ -1,39 +1,32 @@
-# DOE Office of Science High School Programs
+# DOE Office of Science HS Programs
 
 **URL:** https://science.osti.gov/wdts
-**Application Opens:** ~October 2026
-**Deadline:** ~January–February 2027 (varies by lab and program)
-**Award:** Paid summer research at DOE national labs; stipend ~$600–$800/week depending on lab
+**Application Opens:** Not found on page -- typically October
+**Deadline:** Not found -- check https://science.osti.gov/wdts
+**Award:** paid summer research at DOE national labs
 **Tier:** Competitive
-**Eligibility:** US citizen or permanent resident; HS junior or senior; GPA 3.0+ (competitive applicants 3.5+); must be 16+
-**Last Verified:** 2026-08-08
+**Last Verified:** 2026-08-25
+**Research Confidence:** none
 
-## Overview
-
-The Department of Energy's Workforce Development for Teachers and Scientists (WDTS) office runs multiple HS-level programs placing students at the 17 DOE national laboratories. The primary HS pathway is the **Community College Internships (CCI)** and the broader **Science Undergraduate Laboratory Internships (SULI)** at the college level, but DOE also funds lab-specific HS programs. Relevant labs for Hrishiv: Oak Ridge National Lab (ORNL) in Tennessee (computational science, energy, materials), Argonne National Lab (Illinois, physics and computing), and Lawrence Berkeley (California, climate modeling). ORNL is the closest geographically and has active ML and climate modeling groups.
+## Eligibility
+Could not determine -- check program website
 
 ## Requirements
+- application
+- transcript
+- gpa_minimum
 
-- Application through the WDTS portal at science.osti.gov/wdts
-- Official or unofficial transcript
-- Two letters of recommendation (science/math teachers or research mentors)
-- Personal essay on research interests and career goals
-- US citizenship or permanent residency
+## Essay Prompts (2026-2027 cycle)
+Not listed on official page -- check the application portal directly.
 
-## Your Profile Fit
+## What a Strong Application Looks Like
+See program website for selection criteria.
 
-Solid fit, particularly for ORNL's Computational Sciences and Data Analytics groups or any lab's climate/environmental modeling division. The hurricane ML research is directly relevant to DOE's climate science mission. ML + Python skills are highly valued. Note that DOE's focus on energy and physics may require Hrishiv to frame interests more broadly — connecting robotics (energy efficiency in autonomous systems) and atmospheric ML (climate prediction) to DOE's energy mission strengthens the application.
-
-## Prep Timeline
-
-- **October 2026:** Visit science.osti.gov/wdts; identify the specific HS program track (not all WDTS programs accept HS students — filter carefully)
-- **November 2026:** Contact ORNL Education Programs directly to ask about HS summer positions for 2027
-- **December 2026:** Draft application essays; request letters from NC State hurricane research supervisor
-- **January 2027:** Submit application; apply to 2–3 different labs to maximize chances
+## Recommended Prep Timeline
+Begin preparation 2-3 months before the January deadline.
 
 ## Notes
-
-DOE's WDTS portal is a single application for multiple labs, but you rank preferences. Not every lab accepts HS applicants through WDTS — check each lab's individual education page. ORNL, Argonne, and Pacific Northwest National Lab (PNNL) are known to accept strong HS applicants. Financial aid for travel and housing stipends vary by lab.
+Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi82RXMjGDuYhnYqpct'}. Check https://science.osti.gov/wdts manually.
 
 ---
-*Researched by `calendar_agent` on 2026-08-08. Content written manually from program knowledge.*
+*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*

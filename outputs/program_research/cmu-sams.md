@@ -1,40 +1,32 @@
 # CMU SAMS (Summer Academy for Math and Science)
 
 **URL:** https://www.cmu.edu/sams/
-**Application Opens:** ~January 2027
-**Deadline:** ~February–March 2027
-**Award:** Free, fully funded 6-week residential program at Carnegie Mellon University; room, board, tuition, and some travel covered
+**Application Opens:** Not found on page -- typically January
+**Deadline:** Not found -- check https://www.cmu.edu/sams/
+**Award:** free fully-funded 6-week program at Carnegie Mellon
 **Tier:** Competitive
-**Eligibility:** Rising HS seniors (entering 12th grade); program targets underrepresented students in STEM — primarily first-generation college students, low-income students, and/or underrepresented racial/ethnic minorities; verify current eligibility criteria
-**Last Verified:** 2026-08-08
+**Last Verified:** 2026-08-25
+**Research Confidence:** none
 
-## Overview
-
-Carnegie Mellon University's Summer Academy for Math and Science (SAMS) is a 6-week free residential program in Pittsburgh, PA designed to introduce underrepresented students to college-level STEM coursework and CMU's academic culture. Students take courses in math, science, and computing, work on research or engineering projects, and receive college prep mentorship. SAMS has a particularly strong computer science and engineering pipeline given CMU's reputation. The program runs July–August. Cohort size is approximately 80 students.
+## Eligibility
+Could not determine -- check program website
 
 ## Requirements
+- essay
+- teacher_rec
+- transcript
 
-- Application through cmu.edu/sams
-- Transcript (strong academic record)
-- Two letters of recommendation
-- Personal essays on background and STEM aspirations
-- Demonstrated underrepresentation: first-generation college student, low-income, and/or specific racial/ethnic background (Black, Hispanic/Latino, Native American, Pacific Islander typically listed)
-- No prior college coursework required
+## Essay Prompts (2026-2027 cycle)
+Not listed on official page -- check the application portal directly.
 
-## Your Profile Fit
+## What a Strong Application Looks Like
+See program website for selection criteria.
 
-Eligibility verification is the critical first step — SAMS explicitly serves underrepresented students in STEM, and South Asian males are generally not considered underrepresented in CS/engineering for these programs. If Hrishiv qualifies on first-generation or socioeconomic grounds, the STEM credentials make for a strong application. CMU's CS focus is a natural fit given Python/ML skills and web development (pingpod.blog). If demographic eligibility is uncertain, email SAMS admissions directly before investing application time. Do not assume eligibility — confirm it.
-
-## Prep Timeline
-
-- **January 2027:** Check cmu.edu/sams eligibility criteria carefully; email admissions if uncertain
-- **January–February 2027:** If eligible, draft essays focusing on STEM journey and goals; request letters of recommendation
-- **February–March 2027:** Submit application
-- **April 2027:** Await admissions decision
+## Recommended Prep Timeline
+Begin preparation 2-3 months before the February deadline.
 
 ## Notes
-
-If eligible and accepted, SAMS is a strong stepping stone — CMU's CS reputation is excellent and SAMS alumni often apply to CMU for undergrad. The Pittsburgh location is manageable (flight from RDU). Even if SAMS eligibility is not met, CMU's other HS programs (CMU AI4K12, CMU pre-college programs) are worth checking — some are fee-based but open to all students. The fully funded nature of SAMS makes the eligibility question worth investigating carefully.
+Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi6waJ5kHy9Ghr7fqkj'}. Check https://www.cmu.edu/sams/ manually.
 
 ---
-*Researched by `calendar_agent` on 2026-08-08. Content written manually from program knowledge.*
+*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*

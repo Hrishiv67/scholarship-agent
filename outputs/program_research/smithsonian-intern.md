@@ -1,39 +1,32 @@
 # Smithsonian Institution Internship
 
 **URL:** https://www.si.edu/OFI/apply
-**Application Opens:** ~November 2026
-**Deadline:** ~February 1, 2027 (summer session)
-**Award:** Paid or stipend-based; summer interns typically receive $600–$700/week; some positions are unpaid (verify per unit)
+**Application Opens:** Not found on page -- typically November
+**Deadline:** Not found -- check https://www.si.edu/OFI/apply
+**Award:** paid or stipend summer internship at Smithsonian museums/research centers
 **Tier:** Competitive
-**Eligibility:** HS students 16+; some units require college enrollment (check per unit); DC area or willing to relocate
-**Last Verified:** 2026-08-08
+**Last Verified:** 2026-08-25
+**Research Confidence:** none
 
-## Overview
-
-The Smithsonian Institution's Office of Fellowships and Internships (OFI) coordinates placements across 19 museums, 21 libraries, 9 research centers, and the National Zoo. For Hrishiv, the most relevant units are: (1) **National Air and Space Museum (NASM)** — rocket and aerospace artifacts, space history, aeronautics; (2) **Smithsonian Astrophysical Observatory (SAO)** in Cambridge MA — astrophysics research with ML/data science components; and (3) **Smithsonian Environmental Research Center (SERC)** in Edgewater MD — environmental monitoring. NASM is the flagship fit given the rocketry and aerospace background.
+## Eligibility
+Could not determine -- check program website
 
 ## Requirements
+- application
+- essay
+- transcript
 
-- Online application through si.edu/OFI
-- Cover letter or personal statement specifying which Smithsonian unit you're applying to
-- Transcript (unofficial acceptable)
-- Two letters of recommendation
-- Resume with research and extracurricular experience
+## Essay Prompts (2026-2027 cycle)
+Not listed on official page -- check the application portal directly.
 
-## Your Profile Fit
+## What a Strong Application Looks Like
+See program website for selection criteria.
 
-Strong for NASM specifically. TARC 2nd-place national in rocketry and VEX top-150 worldwide are directly relevant to NASM's mission of preserving and interpreting flight history. NASM has collections and public programming roles where a student with real rocketry experience stands out. The Books for Africa community service background strengthens the holistic application. For SAO, the ML/Python skills and Zenodo publication are the lead credentials. Apply to NASM as first choice with SAO as second.
-
-## Prep Timeline
-
-- **November 2026:** Research available summer 2027 internship listings at si.edu/OFI; NASM positions typically post by December
-- **December 2026:** Draft tailored cover letter for NASM specifically (not a generic letter)
-- **January 2027:** Request recommendation letters; prepare resume emphasizing rocketry and public engagement
-- **February 1, 2027:** Submit before deadline — Smithsonian's summer deadline is strict
+## Recommended Prep Timeline
+Begin preparation 2-3 months before the February deadline.
 
 ## Notes
-
-Smithsonian internships are competitive but accessible for motivated HS students with clear subject-matter passion. NASM has hosted HS interns in artifact research, collections, and education programming. The SAO is technically separate from the DC Smithsonian and runs its own internship program — check head.cfa.harvard.edu for SAO-specific HS programs. For DC-area internships, confirm housing situation in advance; Smithsonian does not provide housing.
+Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi7qVhdQMgLsfEa8mBG'}. Check https://www.si.edu/OFI/apply manually.
 
 ---
-*Researched by `calendar_agent` on 2026-08-08. Content written manually from program knowledge.*
+*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*

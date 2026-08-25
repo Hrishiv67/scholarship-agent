@@ -1,50 +1,33 @@
 # AIAA Foundation Scholarships
 
-**URL:** https://www.aiaa.org/get-involved/students-educators/scholarships  
-**Application Opens:** ~October 2026 (estimated)  
-**Deadline:** ~January 15, 2027 (estimated — check aiaa.org in October)  
-**Award:** $1,000–$10,000 varies by scholarship; multiple awards given  
-**Tier:** Competitive  
-**Eligibility:** HS seniors pursuing aerospace, aeronautics, or astronautics engineering; check individual scholarship requirements  
-**Last Verified:** 2026-08-08
+**URL:** https://www.aiaa.org/get-involved/students-educators/scholarships
+**Application Opens:** Not found on page -- typically October
+**Deadline:** Not found -- check https://www.aiaa.org/get-involved/students-educators/scholarships
+**Award:** $1,000-$10,000 varies by scholarship
+**Tier:** Competitive
+**Last Verified:** 2026-08-25
+**Research Confidence:** none
 
----
-
-## EASY WITH EXISTING WORK
-
-Your rocketry profile (TARC 2nd nationally, AI altitude prediction model, aerodynamics experience) is nearly tailor-made for AIAA. Essays from other applications reuse cleanly here.
-
----
-
-## Overview
-
-AIAA (American Institute of Aeronautics and Astronautics) is the major professional organization for aerospace engineering. They offer several HS scholarships. Most require pursuing aerospace-related engineering at the college level.
+## Eligibility
+Could not determine -- check program website
 
 ## Requirements
+- application
+- essay
+- transcript
+- teacher_rec
 
-- AIAA membership (~$15/year for student rate — join before applying)
-- Transcript (typically 3.3+ GPA)
-- Essay(s) about aerospace interests and career goals
-- Teacher/counselor recommendation
-- Proof of college acceptance or enrollment plan (some scholarships)
+## Essay Prompts (2026-2027 cycle)
+Not listed on official page -- check the application portal directly.
 
-## Your Profile for This Application
-
-**Extremely strong fit.** Talking points:
-- TARC 2nd nationally — the aerospace/rocketry competition
-- AI-powered altitude prediction model in Python
-- AP Physics, aerodynamics experience
-- Science Olympiad + technical breadth
-- Interest in aerospace engineering as a college major
-
-The essay should connect your TARC rocketry work to your future aerospace engineering goals. This is a 3-sentence story: "I built X, learned Y, and want to pursue Z at college."
+## What a Strong Application Looks Like
+See program website for selection criteria.
 
 ## Recommended Prep Timeline
-
-- **October 2026:** Join AIAA student membership; check scholarship page for updated list
-- **November 2026:** Draft essay; request recommendation from TARC mentor or AP Physics teacher
-- **January 2027:** Submit by deadline
+Begin preparation 2-3 months before the January deadline.
 
 ## Notes
+Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiFozPfYdUVGN1acEYo'}. Check https://www.aiaa.org/get-involved/students-educators/scholarships manually.
 
-Joining AIAA student membership ($15/year) is worthwhile independently — it gives access to conferences, journals, and networking. Some AIAA scholarships explicitly prefer current AIAA members.
+---
+*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*

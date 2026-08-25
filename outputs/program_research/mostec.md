@@ -1,39 +1,32 @@
-# MIT MOSTEC (MIT Online Science, Technology, and Engineering Community)
+# MIT MOSTEC (Online STEM)
 
 **URL:** https://oeop.mit.edu/programs/mostec
-**Application Opens:** ~October 2026
-**Deadline:** ~January 2027
-**Award:** Free 6-month online program (June–December); includes MIT summer seminars, online coursework, research projects, and college application mentorship
+**Application Opens:** Not found on page -- typically October
+**Deadline:** Not found -- check https://oeop.mit.edu/programs/mostec
+**Award:** free 6-month online STEM program with MIT mentors
 **Tier:** Competitive
-**Eligibility:** Rising HS seniors (entering 12th grade); US students; program targets students from underrepresented or underserved backgrounds; check current eligibility criteria carefully
-**Last Verified:** 2026-08-08
+**Last Verified:** 2026-08-25
+**Research Confidence:** none
 
-## Overview
-
-MOSTEC (MIT Online Science, Technology, and Engineering Community) is a free six-month online enrichment program run by MIT's Office of Engineering Outreach Programs. Unlike MITES (residential), MOSTEC is fully virtual, running June through December during students' senior year. Students participate in online STEM courses, work on research or engineering projects with MIT mentors, attend virtual seminars with MIT faculty, and receive substantial college application support. The program culminates in a December symposium. MOSTEC has roughly 80–100 students per cohort — less selective than MITES but still meaningful.
+## Eligibility
+Could not determine -- check program website
 
 ## Requirements
+- essay
+- teacher_rec
+- transcript
 
-- Online application through MIT OEOP portal
-- Transcript
-- Two letters of recommendation
-- Personal essays describing background, STEM interests, and goals
-- Demonstrated financial need or underrepresented background (program targets first-gen, low-income, and/or underrepresented students)
+## Essay Prompts (2026-2027 cycle)
+Not listed on official page -- check the application portal directly.
 
-## Your Profile Fit
+## What a Strong Application Looks Like
+See program website for selection criteria.
 
-Check eligibility carefully: MOSTEC's stated mission targets underrepresented minorities, first-generation college students, and students from low-income backgrounds. South Asian males at a competitive NC high school may or may not fall within the program's priority demographics — this is an important eligibility question to resolve before investing application time. If eligible, the STEM credentials (published ML research, rocketry, robotics, BME research) make Hrishiv a very strong candidate for technical track placements. The college application mentorship component is a valuable add-on benefit during senior year.
-
-## Prep Timeline
-
-- **October 2026:** Read the eligibility section of the MOSTEC application carefully; email MIT OEOP if unclear about eligibility
-- **October–November 2026:** If eligible, draft personal essays and request letters of recommendation
-- **January 2027:** Submit before deadline
-- **June–December 2027:** If accepted, balance MOSTEC coursework with senior year college applications (this is the primary time cost consideration)
+## Recommended Prep Timeline
+Begin preparation 2-3 months before the January deadline.
 
 ## Notes
-
-MOSTEC does not require leaving home — a significant practical advantage compared to residential programs. The college application support (MIT mentors reviewing essays and strategy) is genuinely valuable during senior year. Even if Hrishiv's demographic fit is uncertain, the application is worth completing if eligibility is confirmed — the program's acceptance rate, while lower than generic programs, is higher than MITES. Alums report strong MIT admissions outcomes, though the program does not guarantee or weight MIT admission.
+Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi6brPLJBpa4ru22aT1'}. Check https://oeop.mit.edu/programs/mostec manually.
 
 ---
-*Researched by `calendar_agent` on 2026-08-08. Content written manually from program knowledge.*
+*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*

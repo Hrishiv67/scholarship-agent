@@ -1,46 +1,32 @@
 # Duke RISE Program
 
-**URL:** https://dukelife.duke.edu/programs/internships-and-research/rise/  
-**Application Opens:** ~December 2026 (estimated)  
-**Deadline:** ~February 1, 2027 (estimated — check site in December)  
-**Award:** Paid summer research at Duke University; stipend varies; Durham NC (commutable from Cary)  
-**Tier:** Competitive  
-**Eligibility:** HS juniors and seniors; strong academic record required  
-**Last Verified:** 2026-08-08
+**URL:** https://dukelife.duke.edu/programs/internships-and-research/rise/
+**Application Opens:** Not found on page -- typically December
+**Deadline:** Not found -- check https://dukelife.duke.edu/programs/internships-and-research/rise/
+**Award:** paid summer research at Duke
+**Tier:** Competitive
+**Last Verified:** 2026-08-25
+**Research Confidence:** none
 
----
-
-## Overview
-
-RISE (Research Internships in Science & Engineering) places HS students with Duke University research labs for summer. Commutable from Cary (~20 minutes to Duke) — no housing needed. Strong connection to your existing Duke BME scaffold research.
-
----
-
-## Competitive Advantage
-
-You already have a working relationship with Duke BME faculty from your 3D scaffold research. A RISE application to continue in the same or adjacent lab is a strong application. Prior relationship with a Duke mentor is valuable.
+## Eligibility
+Could not determine -- check program website
 
 ## Requirements
+- essay
+- teacher_rec
+- transcript
 
-- Application through dukelife.duke.edu
-- Transcript
-- Personal statement (research interests, goals)
-- Teacher or mentor recommendation
-- Some tracks may require: research proposal, lab-specific match
+## Essay Prompts (2026-2027 cycle)
+Not listed on official page -- check the application portal directly.
 
 ## What a Strong Application Looks Like
-
-- Prior research experience (you have Duke BME work)
-- Well-articulated interest in a specific Duke lab or research area
-- Strong grades in science and math
-- Recommendation from existing Duke mentor (best possible letter)
+See program website for selection criteria.
 
 ## Recommended Prep Timeline
-
-- **November–December 2026:** Email your Duke BME mentor about summer 2027 — ask about RISE or direct hosting
-- **December 2026:** Application opens; apply immediately
-- **February 2027:** Submit before deadline
+Begin preparation 2-3 months before the February deadline.
 
 ## Notes
+Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi4xzZd5HLtwVhcg5hU'}. Check https://dukelife.duke.edu/programs/internships-and-research/rise/ manually.
 
-Duke is 20-25 minutes from Cary — commutable by car. No housing expense. This combined with a prior Duke relationship makes RISE your second-highest-probability local research option (after NC State GRIP). Email the mentor before the application opens.
+---
+*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
