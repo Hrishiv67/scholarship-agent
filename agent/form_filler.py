@@ -102,20 +102,66 @@ def _looks_like_application_form(page) -> int:
     return count
 
 
-def _ensure_application_page(page) -> None:
-    """If the current page is not itself an application form, follow an Apply link."""
-    if _looks_like_application_form(page) >= 3:
-        return
-    for text in APPLY_LINK_TEXTS:
-        try:
-            el = page.query_selector(f'a:has-text("{text}"), button:has-text("{text}")')
-            if el:
-                el.click()
-                page.wait_for_load_state("domcontentloaded")
-                page.wait_for_timeout(2000)
-                return
-        except Exception:
+_LINKS_JS = """() => {
+  const out = []; const seen = new Set();
+  document.querySelectorAll('a[href]').forEach(a => {
+    const href = a.href;
+    const text = (a.innerText || a.textContent || '').trim();
+    if (!href || !href.startsWith('http')) return;
+    if (seen.has(href)) return; seen.add(href);
+    out.push({text, href});
+  });
+  return out.slice(0, 80);
+}"""
+
+_LINK_SKIP = ("facebook.com", "twitter.com", "x.com", "instagram.com", "linkedin.com",
+              "youtube.com", "/donate", "/news", "/about", "/contact", "/privacy",
+              "mailto:", "tel:")
+
+
+def _collect_links(page) -> list[dict]:
+    try:
+        raw = page.evaluate(_LINKS_JS)
+    except Exception:
+        return []
+    links = []
+    for l in raw:
+        href = (l.get("href") or "")
+        text = (l.get("text") or "").strip()
+        if not href.startswith("http"):
             continue
+        if any(s in href.lower() for s in _LINK_SKIP):
+            continue
+        links.append({"i": len(links), "text": text or href, "href": href})
+    return links
+
+
+def _ensure_application_page(page, opp, max_hops: int = 3) -> None:
+    """Use the AI navigator to reach the real application, hopping up to max_hops."""
+    from . import navigator
+    for _ in range(max_hops):
+        if _looks_like_application_form(page) >= 3:
+            return
+        links = _collect_links(page)
+        if not links:
+            return
+        try:
+            excerpt = page.inner_text("body")[:1800]
+        except Exception:
+            excerpt = ""
+        decision = navigator.choose_next(opp.title, page.url, links, excerpt)
+        action = decision.get("action")
+        if action in ("THIS_PAGE", "NONE"):
+            return
+        target = next((l["href"] for l in links if l["i"] == decision.get("index")), None)
+        if not target:
+            return
+        print(f"[form_filler] navigating toward application: {target[:80]}")
+        try:
+            page.goto(target, timeout=30000, wait_until="domcontentloaded")
+            page.wait_for_timeout(2000)
+        except Exception:
+            return
 
 FIELD_MAP_PATTERNS = [
     # Parent / guardian / emergency contact (checked first so "parent email" != email)
@@ -245,8 +291,8 @@ def fill_and_submit(opp: ClassifiedOpportunity, profile: Profile, dry_run: bool 
                     page.goto(opp.url, timeout=30000, wait_until="domcontentloaded")
                     page.wait_for_timeout(2000)
 
-            # If this is a program/info page, follow an "Apply" link to the real form.
-            _ensure_application_page(page)
+            # If this is a program/info page, let the AI navigate to the real form.
+            _ensure_application_page(page, opp)
 
             # Check for CAPTCHA
             for sel in CAPTCHA_SELECTORS:

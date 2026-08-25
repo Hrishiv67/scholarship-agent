@@ -32,6 +32,10 @@ SEARCH_QUERIES = [
     'paid apprenticeship "high school" STEM OR engineering OR software 2027 apply -site:indeed.com -site:ziprecruiter.com',
     '"high school" "paid" research OR lab assistant OR intern university 2027 "stipend" apply -site:reddit.com',
     'pre-college OR "summer program" "high school" engineering OR computer science "paid" OR "stipend" OR "free" 2027 apply',
+    # Priority 6 — Schedule fit: after-school / part-time / remote / summer 2027
+    '"high school" "part-time" OR "after school" OR "evenings" paid internship STEM 2026 2027 apply -site:indeed.com',
+    'remote "high school" internship OR research "paid" OR "stipend" 2026 2027 apply flexible -site:indeed.com -site:ziprecruiter.com',
+    '"summer 2027" "high school" research OR internship OR program STEM "apply" OR "applications open" -site:reddit.com',
 ]
 
 # Individual program application pages — checked every run

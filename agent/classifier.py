@@ -86,6 +86,7 @@ class ClassifiedOpportunity:
     writing_required: bool = False
     essay_prompts: list = field(default_factory=list)
     is_real_application: bool = True
+    time_fit: str = "maybe"     # good | maybe | poor (schedule fit for the student)
     deadline: str = ""
     award_value: str = ""
     contact_email: str = ""
@@ -125,6 +126,8 @@ def _batch_classify(opps: list[RawOpportunity], client: anthropic.Anthropic) -> 
 
 Student: Hrishiv Khatiwala, rising 11th grader, Green Hope High School, Cary NC. Strong STEM (rocketry 2nd of 1,001 nationally, VEX top 150 worldwide, Duke + NC State research, published paper, NC Science Olympiad state record).
 
+Schedule: he is in school full time. He wants something MANAGEABLE - after-school, evenings, weekends, or remote/part-time during the school year, OR a summer 2027 program. A full-time weekday commitment during the school year does not fit. Summer programs and flexible/remote roles fit well.
+
 Today's date: {__import__('datetime').datetime.now().strftime('%Y-%m-%d')}
 
 For each opportunity return a JSON array. Each entry MUST have exactly these fields:
@@ -138,7 +141,8 @@ For each opportunity return a JSON array. Each entry MUST have exactly these fie
 - "deadline": ISO date "YYYY-MM-DD" or "" if unknown.
 - "award_value": string like "$2,500", "paid", "all-expenses", stipend amount, or "" if unknown.
 - "contact_email": the application or contact email address to send an application to, if one is stated anywhere in the page content. Otherwise "". Only a real email like name@org.edu, never a placeholder.
-- "reason": one sentence explaining costs_money / paid / is_real_application.
+- "time_fit": "good" if it fits his schedule (summer program, after-school, evenings, weekends, remote or part-time), "poor" if it requires a full-time weekday commitment during the school year, "maybe" if the timing is unclear.
+- "reason": one sentence explaining costs_money / paid / is_real_application / time_fit.
 
 Rules:
 - A paid stipend or wage is NOT "costs_money" — that is money TO the student. Only fees/tuition the student pays are costs_money.
@@ -268,6 +272,7 @@ def classify_all(
                 writing_required=bool(match.get("writing_required", False)),
                 essay_prompts=match.get("essay_prompts", []) or [],
                 is_real_application=is_real,
+                time_fit=match.get("time_fit", "maybe"),
                 deadline=match.get("deadline", ""),
                 award_value=match.get("award_value", ""),
                 contact_email=(match.get("contact_email", "") or "").strip(),
@@ -276,8 +281,9 @@ def classify_all(
                 source_query=opp.source_query,
             ))
 
-    # Rank: paid first, then everything else (stable within groups).
-    results.sort(key=lambda r: (not r.paid, r.route == "skip"))
+    # Rank: real applications first, then schedule-fitting, then paid, then the rest.
+    _fit_rank = {"good": 0, "maybe": 1, "poor": 2}
+    results.sort(key=lambda r: (r.route == "skip", _fit_rank.get(r.time_fit, 1), not r.paid))
 
     counts: dict[str, int] = {}
     for r in results:
