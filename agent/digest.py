@@ -89,11 +89,22 @@ a { color: #e94560; }
 </table>
 {% endif %}
 
-{% if needs_you %}
-<h2>🖐️ Needs You (Blocked — Finish These)</h2>
+{% if account_setup %}
+<h2>🔑 Set Up These Accounts Once (then the agent takes over)</h2>
+<p>Each of these needs a one-time signup where you solve a CAPTCHA. Do it once per site and the agent reuses the saved login for every future application there — you will not see it again.</p>
+<table>
+<tr><th>Portal</th><th>Step</th><th>Link</th></tr>
+{% for r in account_setup %}
+<tr><td>{{ r.title }}</td><td>{{ r.notes }}</td><td><a href="{{ r.url }}">Sign up →</a></td></tr>
+{% endfor %}
+</table>
+{% endif %}
+
+{% if other_tracked %}
+<h2>🖐️ Also Tracking</h2>
 <table>
 <tr><th>Opportunity</th><th>Why</th><th>Link</th></tr>
-{% for r in needs_you %}
+{% for r in other_tracked %}
 <tr><td>{{ r.title }}</td><td>{{ r.notes }}</td><td><a href="{{ r.url }}">Open →</a></td></tr>
 {% endfor %}
 </table>
@@ -163,6 +174,9 @@ def send(run_log: RunLog, results: list[ClassifiedOpportunity], profile: Profile
     submitted = [r for r in run_log.results if r.outcome == "submitted"]
     yours = [r for r in run_log.results if r.outcome == "yours_manual"]
     needs_you = [r for r in run_log.results if r.outcome == "tracked"]
+    _setup_kw = ("captcha", "cloudflare", "oauth", "sign in", "login", "account")
+    account_setup = [r for r in needs_you if any(k in (r.notes or "").lower() for k in _setup_kw)]
+    other_tracked = [r for r in needs_you if r not in account_setup]
 
     stats = {
         "submitted": run_log.outcomes.get("submitted", 0),
@@ -178,7 +192,8 @@ def send(run_log: RunLog, results: list[ClassifiedOpportunity], profile: Profile
         deadlines=_upcoming_deadlines(),
         submitted=submitted,
         yours=yours,
-        needs_you=needs_you,
+        account_setup=account_setup,
+        other_tracked=other_tracked,
     )
 
     subject = f"Scholarship Agent Report — {datetime.now(timezone.utc).strftime('%b %d, %Y')}"
