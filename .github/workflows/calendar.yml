@@ -1,0 +1,44 @@
+name: Calendar Refresh
+
+on:
+  schedule:
+    # 1st of every month at 08:00 UTC — refresh confirmed deadlines from official pages
+    - cron: '0 8 1 * *'
+  workflow_dispatch: {}
+
+jobs:
+  refresh-calendar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh program calendar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m calendar_agent.research
+
+      - name: Commit updated calendar
+        run: |
+          git config user.name "scholarship-agent[bot]"
+          git config user.email "scholarship-agent@noreply.github.com"
+          git add outputs/program_calendar.json outputs/CALENDAR.md outputs/program_research/ || true
+          git diff --staged --quiet || git commit -m "calendar: monthly refresh $(date -u +%Y-%m-%d)"
+          git push

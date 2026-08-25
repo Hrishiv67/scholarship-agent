@@ -96,6 +96,17 @@ class WorkExperience(BaseModel):
     description: str
 
 
+class Guardian(BaseModel):
+    full_name: str
+    first_name: str = ""
+    last_name: str = ""
+    email: str = ""
+    phone: str = ""
+    phone_formatted: str = ""
+    relationship: str = "Parent"
+    primary: bool = False
+
+
 class Skills(BaseModel):
     programming: list[str] = []
     engineering: list[str] = []
@@ -125,6 +136,7 @@ class EssaySnippets(BaseModel):
 class Profile(BaseModel):
     personal: Personal
     academic: Academic
+    guardians: list[Guardian] = []
     activities: list[Activity] = []
     research: list[Research] = []
     publications: list[Publication] = []

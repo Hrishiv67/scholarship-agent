@@ -2,8 +2,8 @@ name: Scholarship Agent
 
 on:
   schedule:
-    # Mon/Wed/Fri at 9:00 AM ET (13:00 UTC)
-    - cron: '0 13 * * 1,3,5'
+    # Every Monday at 9:00 AM ET (13:00 UTC)
+    - cron: '0 13 * * 1'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -52,6 +52,6 @@ jobs:
         run: |
           git config user.name "scholarship-agent[bot]"
           git config user.email "scholarship-agent@noreply.github.com"
-          git add outputs/applications.md outputs/essays_needed.md outputs/dedup.json outputs/essay_responses/ || true
+          git add outputs/applications.md outputs/dedup.json outputs/program_calendar.json outputs/CALENDAR.md outputs/program_research/ || true
           git diff --staged --quiet || git commit -m "agent: run $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push

@@ -14,7 +14,6 @@ from . import (
     classifier,
     dedup,
     digest,
-    essay_manager,
     logger,
     profile_loader,
     searcher,
@@ -41,11 +40,6 @@ def run():
     dedup_store = dedup.load()
     print(f"[main] Dedup store loaded: {len(dedup_store.entries)} known entries")
 
-    # ── Phase 1: Resume essay-pending applications ────────────────────────────
-    resumed = essay_manager.check_and_resume(profile, dedup_store, dry_run=DRY_RUN)
-    if resumed:
-        print(f"[main] Resumed {len(resumed)} essay-pending applications")
-
     # ── Phase 2: Search for new opportunities ─────────────────────────────────
     raw_results = searcher.search(dry_run=DRY_RUN)
     run_log.raw_results = len(raw_results)
@@ -59,10 +53,10 @@ def run():
     )
 
     # ── Phase 3: Classify ──────────────────────────────────────────────────────
-    opportunities = classifier.classify_all(raw_results, dedup_store, dry_run=DRY_RUN)
+    opportunities = classifier.classify_all(raw_results, dedup_store, dry_run=DRY_RUN, run_log=run_log)
     run_log.after_dedup = len(opportunities)
     for opp in opportunities:
-        run_log.classified[opp.tier] = run_log.classified.get(opp.tier, 0) + 1
+        run_log.classified[opp.route] = run_log.classified.get(opp.route, 0) + 1
     print(f"[main] Classified {len(opportunities)} opportunities")
 
     # ── Phase 4: Apply ────────────────────────────────────────────────────────
@@ -73,8 +67,12 @@ def run():
         results.append(result)
 
     # ── Phase 5: Persist data ─────────────────────────────────────────────────
-    dedup.save(dedup_store)
-    applications_writer.update(results)
+    # A dry run must not persist dedup/applications, or the next real run skips them.
+    if not DRY_RUN:
+        dedup.save(dedup_store)
+        applications_writer.update(results)
+    else:
+        print("[main] DRY_RUN: skipping dedup/applications persistence")
     run_log.finish()
     run_log.save()
 
@@ -83,12 +81,13 @@ def run():
 
     # Summary
     print(f"\n[main] === Run Complete ===")
-    print(f"[main]   Raw results:  {run_log.raw_results}")
-    print(f"[main]   Classified:   {run_log.after_dedup}")
-    print(f"[main]   Submitted:    {run_log.outcomes.get('submitted', 0)}")
-    print(f"[main]   Essays saved: {run_log.outcomes.get('essay_saved', 0)}")
-    print(f"[main]   Semi-queued:  {run_log.outcomes.get('semi_queued', 0)}")
-    print(f"[main]   Skipped:      {run_log.outcomes.get('skipped', 0)}")
+    print(f"[main]   Raw results:   {run_log.raw_results}")
+    print(f"[main]   Classified:    {run_log.after_dedup}")
+    print(f"[main]   Submitted:     {run_log.outcomes.get('submitted', 0)}")
+    print(f"[main]   Yours (elite): {run_log.outcomes.get('yours_manual', 0)}")
+    print(f"[main]   Tracked/flag:  {run_log.outcomes.get('tracked', 0)}")
+    print(f"[main]   Skipped:       {run_log.outcomes.get('skipped', 0)}")
+    print(f"[main]   Errors:        {len(run_log.errors)}")
     print(f"[main] ===================\n")
 
 

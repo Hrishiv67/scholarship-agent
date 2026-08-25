@@ -32,10 +32,10 @@ class RunLog:
     raw_results: int = 0
     after_dedup: int = 0
     classified: dict = field(default_factory=lambda: {
-        "auto_apply": 0, "semi_apply": 0, "essay_pending": 0, "skip": 0
+        "yours_manual": 0, "auto_submit": 0, "track_remind": 0, "skip": 0
     })
     outcomes: dict = field(default_factory=lambda: {
-        "submitted": 0, "essay_saved": 0, "semi_queued": 0, "skipped": 0, "failed": 0
+        "submitted": 0, "yours_manual": 0, "tracked": 0, "skipped": 0, "failed": 0
     })
     results: list[RunResult] = field(default_factory=list)
     errors: list[dict] = field(default_factory=list)

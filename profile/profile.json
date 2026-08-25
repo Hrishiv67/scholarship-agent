@@ -24,6 +24,28 @@
     "linkedin": "https://www.linkedin.com/in/hrishiv-khatiwala-183548398/",
     "website": ""
   },
+  "guardians": [
+    {
+      "full_name": "Bijal Khatiwala",
+      "first_name": "Bijal",
+      "last_name": "Khatiwala",
+      "email": "bijal06@gmail.com",
+      "phone": "9194545855",
+      "phone_formatted": "(919) 454-5855",
+      "relationship": "Parent",
+      "primary": true
+    },
+    {
+      "full_name": "Hemal Khatiwala",
+      "first_name": "Hemal",
+      "last_name": "Khatiwala",
+      "email": "hemalkhatiwala@gmail.com",
+      "phone": "9103522927",
+      "phone_formatted": "(910) 352-2927",
+      "relationship": "Parent",
+      "primary": false
+    }
+  ],
   "academic": {
     "current_school": "Green Hope High School",
     "school_address": "2500 Lewter Shop Road, Cary, NC 27519",

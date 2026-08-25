@@ -5,9 +5,56 @@ from pathlib import Path
 
 from .classifier import ClassifiedOpportunity
 from .profile_loader import Profile
-from . import session_store, account_creator
+from . import session_store, account_creator, writer
 
 SCREENSHOTS_DIR = Path(__file__).parent.parent / "outputs" / "screenshots"
+RESUME_PATH = Path(__file__).parent.parent / "profile" / "resume.pdf"
+DOCUMENTS_DIR = Path(__file__).parent.parent / "profile" / "documents"
+
+
+def _resolve_document(label: str) -> Path | None:
+    """Match a file-field label to a document on disk."""
+    text = (label or "").lower()
+    if re.search(r'resume|cv|curriculum', text):
+        return RESUME_PATH if RESUME_PATH.exists() else None
+    if re.search(r'transcript', text):
+        p = DOCUMENTS_DIR / "transcript.pdf"
+        return p if p.exists() else None
+    if re.search(r'portfolio', text):
+        p = DOCUMENTS_DIR / "portfolio.pdf"
+        return p if p.exists() else None
+    # Default any unmatched file field to the resume so uploads are not skipped.
+    return RESUME_PATH if RESUME_PATH.exists() else None
+
+
+def _upload_documents(page, profile: Profile) -> int:
+    """Fill file inputs with the resume / matching documents. Returns count uploaded."""
+    # Ensure a resume PDF exists.
+    if not RESUME_PATH.exists():
+        try:
+            from .email_applicator import _build_pdf_resume
+            _build_pdf_resume(profile)
+        except Exception as e:
+            print(f"[form_filler] could not build resume PDF: {e}")
+
+    uploaded = 0
+    for el in page.query_selector_all('input[type="file"]'):
+        try:
+            name = el.get_attribute("name") or ""
+            aria = el.get_attribute("aria-label") or ""
+            el_id = el.get_attribute("id")
+            label_text = ""
+            if el_id:
+                lbl = page.query_selector(f'label[for="{el_id}"]')
+                if lbl:
+                    label_text = lbl.inner_text()
+            doc = _resolve_document(" ".join([name, aria, label_text]))
+            if doc and doc.exists():
+                el.set_input_files(str(doc))
+                uploaded += 1
+        except Exception:
+            continue
+    return uploaded
 
 CAPTCHA_SELECTORS = [
     'iframe[src*="recaptcha"]',
@@ -23,6 +70,10 @@ SUCCESS_KEYWORDS = [
 ]
 
 FIELD_MAP_PATTERNS = [
+    # Parent / guardian / emergency contact (checked first so "parent email" != email)
+    (r'(parent|guardian|emergency).*(e.?mail)|consent.?email', 'guardian_email'),
+    (r'(parent|guardian|emergency).*(phone|tel|mobile|cell)', 'guardian_phone'),
+    (r'parent|guardian|emergency.?contact|mother|father', 'guardian_name'),
     # Name
     (r'first.?name|fname|given.?name', 'first_name'),
     (r'last.?name|lname|surname|family.?name', 'last_name'),
@@ -76,6 +127,13 @@ def _get_field_value(field_key: str, profile: Profile) -> str:
         'bio_150': profile.essay_snippets.bio_150,
         'linkedin': profile.personal.linkedin,
     }
+    if field_key in ("guardian_name", "guardian_email", "guardian_phone") and profile.guardians:
+        g = next((x for x in profile.guardians if x.primary), profile.guardians[0])
+        return {
+            "guardian_name": g.full_name,
+            "guardian_email": g.email,
+            "guardian_phone": g.phone_formatted or g.phone,
+        }[field_key]
     return mapping.get(field_key, "")
 
 
@@ -180,6 +238,21 @@ def fill_and_submit(opp: ClassifiedOpportunity, profile: Profile, dry_run: bool 
                     search_text = " ".join([name, placeholder, aria_label, label_text])
                     field_key = _match_field(search_text)
 
+                    tag = el.evaluate("e => e.tagName")
+
+                    # Essay / free-text field → draft in Hrishiv's voice, fitted to any limit.
+                    if tag == "TEXTAREA" and field_key in (None, "bio_150"):
+                        prompt_text = (label_text or placeholder or aria_label or name
+                                       or "Tell us about yourself and why you are applying")
+                        maxlen = el.get_attribute("maxlength")
+                        answer = writer.draft(
+                            prompt_text, profile, opp.title,
+                            max_chars=int(maxlen) if maxlen and maxlen.isdigit() else None,
+                        )
+                        el.fill(answer)
+                        filled += 1
+                        continue
+
                     if not field_key:
                         missed += 1
                         continue
@@ -210,7 +283,12 @@ def fill_and_submit(opp: ClassifiedOpportunity, profile: Profile, dry_run: bool 
                     missed += 1
                     continue
 
-            if filled == 0:
+            # Upload resume / documents to any file fields.
+            uploaded = _upload_documents(page, profile)
+            if uploaded:
+                print(f"[form_filler] uploaded {uploaded} document(s)")
+
+            if filled == 0 and uploaded == 0:
                 browser.close()
                 return FillResult(False, 0, missed, True, "No fields could be filled — likely account-required form", "")
 

@@ -1,9 +1,11 @@
+import json
 import os
 import smtplib
 import ssl
 from datetime import datetime, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from pathlib import Path
 
 from jinja2 import Template
 
@@ -11,23 +13,24 @@ from .classifier import ClassifiedOpportunity
 from .logger import RunLog
 from .profile_loader import Profile
 
+_CALENDAR_PATH = Path(__file__).parent.parent / "outputs" / "program_calendar.json"
+_MY_STATUS_PATH = Path(__file__).parent.parent / "outputs" / "my_status.json"
+
 _HTML_TEMPLATE = """<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><style>
-body { font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto; color: #333; }
+body { font-family: Arial, sans-serif; max-width: 720px; margin: 0 auto; color: #333; }
 h1 { color: #1a1a2e; border-bottom: 2px solid #e94560; padding-bottom: 8px; }
 h2 { color: #16213e; margin-top: 24px; }
 table { width: 100%; border-collapse: collapse; margin: 12px 0; }
-th { background: #16213e; color: white; padding: 8px; text-align: left; }
-td { padding: 7px 8px; border-bottom: 1px solid #eee; }
+th { background: #16213e; color: white; padding: 8px; text-align: left; font-size: 13px; }
+td { padding: 7px 8px; border-bottom: 1px solid #eee; font-size: 13px; }
 tr:hover td { background: #f9f9f9; }
-.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; }
-.submitted { background: #d4edda; color: #155724; }
-.essay { background: #fff3cd; color: #856404; }
-.semi { background: #cce5ff; color: #004085; }
-.skipped { background: #f8d7da; color: #721c24; }
-.stat { display: inline-block; background: #f0f4ff; border-radius: 8px; padding: 12px 20px; margin: 6px; text-align: center; }
-.stat .num { font-size: 28px; font-weight: bold; color: #e94560; }
+.warn { background: #fff3cd; border: 1px solid #ffe08a; padding: 12px; border-radius: 6px; }
+.yours { background: #ffe0e6; color: #8a1c34; font-weight: bold; padding: 2px 6px; border-radius: 4px; }
+.due-soon { color: #c0392b; font-weight: bold; }
+.stat { display: inline-block; background: #f0f4ff; border-radius: 8px; padding: 12px 18px; margin: 6px; text-align: center; }
+.stat .num { font-size: 26px; font-weight: bold; color: #e94560; }
 .stat .label { font-size: 12px; color: #666; }
 a { color: #e94560; }
 </style></head>
@@ -35,63 +38,117 @@ a { color: #e94560; }
 <h1>Scholarship Agent — Run Report</h1>
 <p>Run completed: <strong>{{ run_time }}</strong></p>
 
+{% if errors %}
+<div class="warn">
+<strong>{{ errors|length }} issue(s) this run</strong> — some items could not be classified and were tracked so they are not lost:
+<ul>{% for e in errors %}<li>{{ e.error }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+
 <h2>This Run at a Glance</h2>
 <div>
   <div class="stat"><div class="num">{{ stats.submitted }}</div><div class="label">Auto-Submitted</div></div>
-  <div class="stat"><div class="num">{{ stats.essay_saved }}</div><div class="label">Essays Needed</div></div>
-  <div class="stat"><div class="num">{{ stats.semi_queued }}</div><div class="label">Semi-Apply Queue</div></div>
+  <div class="stat"><div class="num">{{ stats.yours_manual }}</div><div class="label">Yours (Elite)</div></div>
+  <div class="stat"><div class="num">{{ stats.tracked }}</div><div class="label">Needs You / Tracked</div></div>
   <div class="stat"><div class="num">{{ stats.skipped }}</div><div class="label">Skipped</div></div>
 </div>
+
+{% if deadlines %}
+<h2>📅 Upcoming Deadlines</h2>
+<table>
+<tr><th>Deadline</th><th>Days Left</th><th>Program</th><th>Who</th><th>Confirmed?</th></tr>
+{% for d in deadlines %}
+<tr>
+  <td class="{{ 'due-soon' if d.days_left <= 21 else '' }}">{{ d.deadline }}</td>
+  <td class="{{ 'due-soon' if d.days_left <= 21 else '' }}">{{ d.days_left }}</td>
+  <td><a href="{{ d.url }}">{{ d.name }}</a></td>
+  <td>{% if d.elite %}<span class="yours">APPLY YOURSELF</span>{% else %}Auto{% endif %}</td>
+  <td>{{ '✅' if d.confirmed else '⚠️' }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endif %}
 
 {% if submitted %}
 <h2>✅ Applied This Run</h2>
 <table>
 <tr><th>Opportunity</th><th>Type</th><th>Award</th></tr>
 {% for r in submitted %}
-<tr>
-  <td><a href="{{ r.url }}">{{ r.title }}</a></td>
-  <td>{{ r.application_type }}</td>
-  <td>{{ r.award_value or '—' }}</td>
-</tr>
+<tr><td><a href="{{ r.url }}">{{ r.title }}</a></td><td>{{ r.application_type }}</td><td>{{ r.award_value or '—' }}</td></tr>
 {% endfor %}
 </table>
 {% endif %}
 
-{% if essays %}
-<h2>✍️ Essays Needed (Add to data/essay_responses/)</h2>
+{% if yours %}
+<h2>🎓 Reserved For You (Elite — Apply Yourself)</h2>
 <table>
-<tr><th>Opportunity</th><th>Deadline</th><th>Award</th><th>File to Create</th></tr>
-{% for r in essays %}
-<tr>
-  <td><a href="{{ r.url }}">{{ r.title }}</a></td>
-  <td>{{ r.deadline or '?' }}</td>
-  <td>{{ r.award_value or '—' }}</td>
-  <td><code>{{ r.id }}.md</code></td>
-</tr>
+<tr><th>Opportunity</th><th>Deadline</th><th>Award</th></tr>
+{% for r in yours %}
+<tr><td><a href="{{ r.url }}">{{ r.title }}</a></td><td>{{ r.deadline or '?' }}</td><td>{{ r.award_value or '—' }}</td></tr>
 {% endfor %}
 </table>
-<p><em>Write your essay response in <code>data/essay_responses/OPP-XXXXXXXX-XXX.md</code>, commit & push — the next run will finish the application.</em></p>
 {% endif %}
 
-{% if semi %}
-<h2>🖱️ Semi-Apply Queue (1 Click Needed from You)</h2>
-<p>These were pre-filled but need you to solve a CAPTCHA or create an account:</p>
+{% if needs_you %}
+<h2>🖐️ Needs You (Blocked — Finish These)</h2>
 <table>
-<tr><th>Opportunity</th><th>Award</th><th>Action</th></tr>
-{% for r in semi %}
-<tr>
-  <td>{{ r.title }}</td>
-  <td>{{ r.award_value or '—' }}</td>
-  <td><a href="{{ r.url }}">Open & Submit →</a></td>
-</tr>
+<tr><th>Opportunity</th><th>Why</th><th>Link</th></tr>
+{% for r in needs_you %}
+<tr><td>{{ r.title }}</td><td>{{ r.notes }}</td><td><a href="{{ r.url }}">Open →</a></td></tr>
 {% endfor %}
 </table>
 {% endif %}
 
 <hr>
-<p style="color:#999;font-size:12px;">Scholarship Agent running on GitHub Actions · Mon/Wed/Fri 9am ET · <a href="https://github.com/Hrishiv67/scholarship-agent">View repo</a></p>
+<p style="color:#999;font-size:12px;">Scholarship Agent on GitHub Actions · runs weekly · <a href="https://github.com/Hrishiv67/scholarship-agent">View repo</a></p>
 </body>
 </html>"""
+
+
+def _load_my_status() -> dict:
+    if _MY_STATUS_PATH.exists():
+        try:
+            return json.load(open(_MY_STATUS_PATH, encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
+def _upcoming_deadlines(limit: int = 40) -> list[dict]:
+    """Build the deadline board from program_calendar.json, silencing handled ones."""
+    if not _CALENDAR_PATH.exists():
+        return []
+    try:
+        cal = json.load(open(_CALENDAR_PATH, encoding="utf-8"))
+    except Exception:
+        return []
+
+    my_status = _load_my_status()
+    now = datetime.now(timezone.utc)
+    rows = []
+    for p in cal.get("programs", []):
+        deadline = p.get("deadline")
+        if not deadline:
+            continue
+        if my_status.get(p.get("slug", "")) in ("applied", "skip"):
+            continue
+        try:
+            dt = datetime.fromisoformat(deadline + "T00:00:00+00:00" if len(deadline) == 10 else deadline)
+        except ValueError:
+            continue
+        days_left = (dt - now).days
+        if days_left < 0:
+            continue
+        rows.append({
+            "name": p.get("name", ""),
+            "url": p.get("url", ""),
+            "deadline": deadline,
+            "days_left": days_left,
+            "confirmed": bool(p.get("deadline_confirmed")),
+            "elite": p.get("tier") == "elite",
+        })
+    rows.sort(key=lambda r: r["days_left"])
+    return rows[:limit]
 
 
 def send(run_log: RunLog, results: list[ClassifiedOpportunity], profile: Profile, dry_run: bool = False) -> None:
@@ -104,22 +161,24 @@ def send(run_log: RunLog, results: list[ClassifiedOpportunity], profile: Profile
     run_time = datetime.now(timezone.utc).strftime("%A, %B %d %Y at %I:%M %p UTC")
 
     submitted = [r for r in run_log.results if r.outcome == "submitted"]
-    essays = [r for r in run_log.results if r.outcome == "essay_saved"]
-    semi = [r for r in run_log.results if r.outcome == "semi_queued"]
+    yours = [r for r in run_log.results if r.outcome == "yours_manual"]
+    needs_you = [r for r in run_log.results if r.outcome == "tracked"]
 
     stats = {
         "submitted": run_log.outcomes.get("submitted", 0),
-        "essay_saved": run_log.outcomes.get("essay_saved", 0),
-        "semi_queued": run_log.outcomes.get("semi_queued", 0),
+        "yours_manual": run_log.outcomes.get("yours_manual", 0),
+        "tracked": run_log.outcomes.get("tracked", 0),
         "skipped": run_log.outcomes.get("skipped", 0),
     }
 
     html = Template(_HTML_TEMPLATE).render(
         run_time=run_time,
         stats=stats,
+        errors=run_log.errors,
+        deadlines=_upcoming_deadlines(),
         submitted=submitted,
-        essays=essays,
-        semi=semi,
+        yours=yours,
+        needs_you=needs_you,
     )
 
     subject = f"Scholarship Agent Report — {datetime.now(timezone.utc).strftime('%b %d, %Y')}"
@@ -132,7 +191,8 @@ def send(run_log: RunLog, results: list[ClassifiedOpportunity], profile: Profile
 
     if dry_run:
         print(f"[digest] DRY_RUN: would send digest to {gmail_address}")
-        print(f"[digest]   submitted={stats['submitted']} essays={stats['essay_saved']} semi={stats['semi_queued']}")
+        print(f"[digest]   submitted={stats['submitted']} yours={stats['yours_manual']} "
+              f"tracked={stats['tracked']} deadlines={len(_upcoming_deadlines())}")
         return
 
     try:

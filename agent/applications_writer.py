@@ -21,11 +21,11 @@ def update(results: list[RunResult]) -> None:
     new_rows = []
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     for r in results:
-        if r.outcome in ("submitted", "essay_saved", "semi_queued"):
+        if r.outcome in ("submitted", "yours_manual", "tracked"):
             status_badge = {
                 "submitted": "submitted",
-                "essay_saved": "essay_pending",
-                "semi_queued": "semi_apply",
+                "yours_manual": "yours (elite)",
+                "tracked": "needs you / tracked",
             }.get(r.outcome, r.outcome)
             row = (
                 f"| {r.opportunity_id} | {now} | "

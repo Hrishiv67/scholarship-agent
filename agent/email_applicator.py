@@ -6,36 +6,22 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
 
-import anthropic
-
 from .classifier import ClassifiedOpportunity
 from .profile_loader import Profile
+from . import writer
 
 RESUME_PATH = Path(__file__).parent.parent / "profile" / "resume.pdf"
 CV_PATH = Path(__file__).parent.parent / "profile" / "cv_combined.txt"
 
 
 def _generate_intro(opp: ClassifiedOpportunity, profile: Profile) -> str:
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if not api_key:
-        return f"I am writing to express my strong interest in the {opp.title} opportunity."
-
-    try:
-        client = anthropic.Anthropic(api_key=api_key)
-        msg = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=200,
-            messages=[{"role": "user", "content": f"""Write exactly 2-3 sentences as the opening paragraph of a professional application email from Hrishiv Khatiwala (rising 11th grader, Green Hope High School, Cary NC) applying for this opportunity: "{opp.title}".
-
-Opportunity description: {opp.snippet[:300]}
-
-His strongest relevant credentials: {profile.academic.current_school}, GPA {profile.academic.gpa_weighted}W, research at Duke and NC State, 2nd of 1,001 teams at American Rocketry Challenge nationally, VEX Robotics top 150 worldwide, published paper.
-
-Be specific to this opportunity. Do not start with "I". Do not use "I am writing to". Write naturally, not generically. Return only the sentences, no subject line."""}],
-        )
-        return msg.content[0].text.strip()
-    except Exception:
-        return f"I am writing to apply for the {opp.title} opportunity at your organization."
+    prompt = (
+        f"Write the opening 2-3 sentences of a professional application email for this "
+        f"opportunity: \"{opp.title}\". Context from the posting: {opp.snippet[:300]}. "
+        f"State genuine, specific interest and why it fits before any ask. Do not start with "
+        f"\"I am writing to\". Return only the sentences."
+    )
+    return writer.draft(prompt, profile, opp.title)
 
 
 def _build_email_body(opp: ClassifiedOpportunity, profile: Profile, intro: str) -> str:
@@ -59,7 +45,7 @@ Leadership & Competitions:
 
 I have attached my resume for your review. I would welcome the opportunity to contribute to your program and am available to discuss further.
 
-Sincerely,
+Best wishes,
 {profile.personal.full_name}
 {profile.academic.current_school}, Class of {profile.academic.graduation_year}
 {profile.personal.email} | {profile.personal.phone_formatted}
@@ -73,31 +59,37 @@ def _build_pdf_resume(profile: Profile) -> bool:
     if not CV_PATH.exists():
         print("[email] cv_combined.txt not found — cannot generate PDF")
         return False
+    def _latin1(s: str) -> str:
+        # Core fonts are latin-1 only; map common unicode then drop the rest.
+        for a, b in (("—", "-"), ("–", "-"), ("•", "-"), ("…", "..."),
+                     ("“", '"'), ("”", '"'), ("‘", "'"), ("’", "'"),
+                     ("━", ""), ("─", ""), (" ", " ")):
+            s = s.replace(a, b)
+        s = s.encode("latin-1", "replace").decode("latin-1")
+        # Break very long unbreakable tokens (e.g. URLs) so multi_cell can wrap.
+        return " ".join(
+            tok if len(tok) <= 60 else " ".join(tok[i:i + 60] for i in range(0, len(tok), 60))
+            for tok in s.split(" ")
+        )
+
     try:
         from fpdf import FPDF
 
-        class PDF(FPDF):
-            pass
-
-        pdf = PDF()
+        pdf = FPDF()
         pdf.set_margins(20, 20, 20)
+        pdf.set_auto_page_break(auto=True, margin=20)
         pdf.add_page()
         pdf.set_font("Helvetica", size=10)
 
         text = CV_PATH.read_text(encoding="utf-8")
-        for line in text.split("\n"):
-            line = line.rstrip()
-            if not line:
+        for raw_line in text.split("\n"):
+            line = _latin1(raw_line.rstrip())
+            if not line.strip():
                 pdf.ln(2)
                 continue
-            # Detect section headers (all caps or contains ━)
-            if line.isupper() or "━" in line:
-                pdf.set_font("Helvetica", style="B", size=11)
-                pdf.cell(0, 6, line.replace("━", ""), ln=True)
-                pdf.set_font("Helvetica", size=10)
-            else:
-                # Wrap long lines
-                pdf.multi_cell(0, 5, line)
+            is_header = raw_line.isupper() or "━" in raw_line
+            pdf.set_font("Helvetica", style="B" if is_header else "", size=11 if is_header else 10)
+            pdf.multi_cell(0, 6 if is_header else 5, line, new_x="LMARGIN", new_y="NEXT")
 
         pdf.output(str(RESUME_PATH))
         print(f"[email] Generated resume PDF at {RESUME_PATH}")
@@ -118,9 +110,9 @@ def send_application(opp: ClassifiedOpportunity, profile: Profile, to_email: str
     _build_pdf_resume(profile)
 
     intro = _generate_intro(opp, profile)
-    body = _build_email_body(opp, profile, intro)
+    body = writer._sanitize(_build_email_body(opp, profile, intro))
 
-    subject = f"Application for {opp.title} — {profile.personal.full_name}, Rising Junior, {profile.academic.current_school}"
+    subject = f"Application for {opp.title} - {profile.personal.full_name}, Rising Junior, {profile.academic.current_school}"
 
     msg = MIMEMultipart()
     msg["From"] = f"{profile.personal.full_name} <{gmail_address}>"
@@ -148,6 +140,43 @@ def send_application(opp: ClassifiedOpportunity, profile: Profile, to_email: str
         return True
     except Exception as e:
         print(f"[email] Failed to send email: {e}")
+        return False
+
+
+def send_handoff(opp: ClassifiedOpportunity, reason: str, dry_run: bool = False) -> bool:
+    """Immediately email a direct hand-off link when a human step blocks the agent
+    (CAPTCHA, OAuth signup). The next run resumes from the saved session."""
+    gmail_address = os.environ.get("GMAIL_ADDRESS", "")
+    gmail_password = os.environ.get("GMAIL_APP_PASSWORD", "")
+    if not gmail_address or not gmail_password:
+        return False
+
+    body = (
+        f"The agent got everything ready for this application but needs you for one step "
+        f"({reason}).\n\n"
+        f"Program: {opp.title}\n"
+        f"Open this page and complete the step:\n{opp.url}\n\n"
+        f"Once done, the next run will resume and finish the rest.\n\n"
+        f"Best wishes,\nScholarship Agent"
+    )
+    msg = MIMEMultipart()
+    msg["From"] = f"Scholarship Agent <{gmail_address}>"
+    msg["To"] = gmail_address
+    msg["Subject"] = f"Action needed ({reason}): {opp.title[:60]}"
+    msg.attach(MIMEText(body, "plain"))
+
+    if dry_run:
+        print(f"[email] DRY_RUN: would send hand-off for {opp.title[:50]} ({reason})")
+        return True
+    try:
+        context = ssl.create_default_context()
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+            server.login(gmail_address, gmail_password)
+            server.sendmail(gmail_address, gmail_address, msg.as_string())
+        print(f"[email] Hand-off email sent for {opp.title[:50]}")
+        return True
+    except Exception as e:
+        print(f"[email] Hand-off email failed: {e}")
         return False
 
 

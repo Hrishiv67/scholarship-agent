@@ -1,18 +1,23 @@
 # Scholarship & Internship Agent
 
-Runs automatically Mon / Wed / Fri at 9 AM ET via GitHub Actions — no computer needed.
+Runs automatically every week via GitHub Actions — no computer needed.
 
-Finds and applies to paid internships, research programs, fly-in programs, and no-essay scholarships.
+Finds and applies to paid internships, research programs, apprenticeships, fly-in programs, and scholarships that build a strong college-application narrative. Elite programs are tracked and reminded, but left for you to apply to yourself.
 
 ---
 
 ## What it does each run
 
-1. Searches for new opportunities (Tavily, 15+ queries — RDU first, then national)
-2. Classifies each one with Gemini AI — eligible? essay required? CAPTCHA present?
-3. Auto-applies to anything it can (email applications, simple web forms)
-4. Saves essay prompts to `outputs/essays_needed.md` for you to fill in
-5. Emails a full digest to hrishiv14@gmail.com with results
+1. Searches for opportunities (Tavily queries + a curated program calendar + direct program pages), fetching real page content.
+2. Classifies each one with the Anthropic Claude API — is it a real application, does it cost money, is it paid, does it need an essay.
+3. Routes each opportunity:
+   - **Elite** (Morehead-Cain, RSI, Clark Scholars, and the like) → tracked and reminded, **you apply yourself, no AI**.
+   - **Everything else** → applies automatically: creates the account, confirms the email, fills your details, drafts any essay in your voice (fitted to the word/character limit), attaches your resume, and submits.
+   - **Costs money** (application fee, tuition, pay-to-attend) → skipped. Money *to* you (stipends, wages, awards) is preferred and ranked first.
+4. When something genuinely blocks it (CAPTCHA, "sign in with Google", a question it has no answer for), it does not stall silently — it records why and surfaces it in the weekly digest with a link so you can finish it.
+5. Emails you a weekly digest: everything applied to, elite programs reserved for you, anything that needs you, and an **Upcoming Deadlines** board so nothing is ever missed.
+
+There is no eligibility filtering — it applies broadly. It never fabricates facts and never marks something submitted that was not.
 
 ---
 
@@ -20,49 +25,53 @@ Finds and applies to paid internships, research programs, fly-in programs, and n
 
 ```
 outputs/
-  applications.md      Everything applied to — master log
-  essays_needed.md     Essay prompts waiting for your response
-  essay_responses/     Drop your completed essays here
-  dedup.json           What's been seen — prevents duplicate applications
+  applications.md         Everything applied to / tracked — master log
+  program_calendar.json   Confirmed deadlines (refreshed monthly)
+  CALENDAR.md             Human-readable deadline calendar
+  my_status.json          You edit this to silence reminders (see below)
+  dedup.json              What has been seen — prevents duplicate applications
+  screenshots/            Proof of each submission
 
 profile/
-  profile.json         Your student data (used to fill all forms)
-  cv_combined.txt      Combined CV
+  profile.json            Your data (used to fill all forms), including guardians
+  cv_combined.txt         Combined CV (a resume PDF is generated from this)
+  writing_style.md        Your writing voice, used for all drafted prose
+  documents/              Drop transcript.pdf / portfolio.pdf here for uploads
 
-agent/                 All Python source code
-.github/workflows/     GitHub Actions schedule
+agent/                    Application pipeline (search → classify → apply → digest)
+calendar_agent/           Deadline research (programs.json + monthly refresh)
+.github/workflows/        Weekly apply run + monthly calendar refresh
 ```
 
 ---
 
-## How to respond to an essay prompt
+## Silencing a reminder
 
-When the agent finds something needing an essay, it saves it to `outputs/essays_needed.md` with an ID like `OPP-20270101-001`.
+When you have applied to (or want to ignore) a program yourself, add it to `outputs/my_status.json` keyed by its calendar slug:
 
-1. Open `outputs/essays_needed.md` — find the prompt
-2. Write your response
-3. Create `outputs/essay_responses/OPP-20270101-001.md` and paste your essay in
-4. Commit and push
-5. The next scheduled run picks it up and submits the application automatically
+```json
+{ "morehead-cain": "applied", "some-other-program": "skip" }
+```
+
+The next digest drops it from the Upcoming Deadlines board.
 
 ---
 
 ## How to trigger a manual run
 
-1. Go to the **Actions** tab on GitHub
-2. Click **Scholarship Agent** in the left sidebar
-3. Click **Run workflow** → set `dry_run: false` → **Run workflow**
+1. Go to the **Actions** tab on GitHub → **Scholarship Agent** → **Run workflow**.
+2. Set `dry_run: true` to test (search + classify, no submissions) or `false` to run for real.
 
-Set `dry_run: true` to test without submitting anything.
+Refresh deadlines any time via the **Calendar Refresh** workflow (also runs monthly on its own).
 
 ---
 
-## Secrets (already configured in GitHub)
+## Secrets (configured in GitHub)
 
 | Secret | Purpose |
 |---|---|
-| `ANTHROPIC_API_KEY` | AI classification of opportunities |
+| `ANTHROPIC_API_KEY` | AI classification and in-voice essay drafting |
 | `TAVILY_API_KEY` | Web search for new opportunities |
-| `GMAIL_ADDRESS` | Send application emails and digest |
-| `GMAIL_APP_PASSWORD` | Gmail authentication |
-| `PORTAL_PASSWORD` | Password used when creating accounts on scholarship portals |
+| `GMAIL_ADDRESS` | Send application emails, the digest, and read verification emails |
+| `GMAIL_APP_PASSWORD` | Gmail authentication (SMTP + IMAP) |
+| `PORTAL_PASSWORD` | Password used when creating accounts on portals |

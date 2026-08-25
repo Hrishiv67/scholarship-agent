@@ -64,10 +64,28 @@ def _match_reg_field(label_or_name: str) -> str | None:
     return None
 
 
-def _fetch_verification_link(gmail_address: str, gmail_password: str, sender_domain: str, timeout: int = 60) -> str | None:
+def _pick_verification_link(body: str, portal_domain: str) -> str | None:
+    """Choose the most likely verification link from an email body."""
+    all_links = re.findall(r'https?://[^\s\'"<>]+', body)
+    if not all_links:
+        return None
+    # 1) Links whose URL contains a verification keyword.
+    for link in all_links:
+        if re.search(r'verif|confirm|activate|token|validate', link, re.I):
+            return link
+    # 2) Links back to the portal domain (or a mail-tracking redirect to it).
+    for link in all_links:
+        if portal_domain and portal_domain in link:
+            return link
+    # 3) Fall back to the first prominent link.
+    return all_links[0]
+
+
+def _fetch_verification_link(gmail_address: str, gmail_password: str, sender_domain: str, timeout: int = 90) -> str | None:
     """
-    Polls Gmail IMAP for a verification email from sender_domain.
-    Returns the verification URL if found within timeout seconds.
+    Polls Gmail IMAP for a verification email. Matches by portal domain OR by a
+    verification-style subject (covers SendGrid/Mailgun senders), and extracts the
+    link even when it is opaque.
     """
     deadline = time.time() + timeout
     while time.time() < deadline:
@@ -76,29 +94,44 @@ def _fetch_verification_link(gmail_address: str, gmail_password: str, sender_dom
             mail.login(gmail_address, gmail_password)
             mail.select("inbox")
 
-            # Search for recent emails from the portal domain
-            _, data = mail.search(None, f'(FROM "@{sender_domain}" UNSEEN)')
-            ids = data[0].split()
+            ids: list[bytes] = []
+            for query in (
+                f'(FROM "@{sender_domain}" UNSEEN)',
+                '(UNSEEN SUBJECT "verify")',
+                '(UNSEEN SUBJECT "confirm")',
+                '(UNSEEN SUBJECT "activate")',
+            ):
+                try:
+                    _, data = mail.search(None, query)
+                    ids.extend(data[0].split())
+                except Exception:
+                    continue
 
-            for msg_id in reversed(ids[-5:]):  # Check last 5 matching emails
+            seen = set()
+            for msg_id in reversed(ids):
+                if msg_id in seen:
+                    continue
+                seen.add(msg_id)
                 _, msg_data = mail.fetch(msg_id, "(RFC822)")
                 raw = msg_data[0][1]
                 msg = email_lib.message_from_bytes(raw)
 
-                # Extract body text
                 body = ""
                 if msg.is_multipart():
                     for part in msg.walk():
                         if part.get_content_type() in ("text/plain", "text/html"):
-                            body += part.get_payload(decode=True).decode(errors="ignore")
+                            payload = part.get_payload(decode=True)
+                            if payload:
+                                body += payload.decode(errors="ignore")
                 else:
-                    body = msg.get_payload(decode=True).decode(errors="ignore")
+                    payload = msg.get_payload(decode=True)
+                    if payload:
+                        body = payload.decode(errors="ignore")
 
-                # Find verification/confirmation link
-                links = re.findall(r'https?://[^\s\'"<>]+(?:verif|confirm|activate|token)[^\s\'"<>]*', body, re.I)
-                if links:
+                link = _pick_verification_link(body, sender_domain)
+                if link:
                     mail.logout()
-                    return links[0]
+                    return link
 
             mail.logout()
         except Exception as e:

@@ -1,8 +1,12 @@
+import json
 import os
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from pathlib import Path
 
 from tavily import TavilyClient
+
+from calendar_agent.scraper import fetch_page
 
 SEARCH_QUERIES = [
     # Priority 1 — RDU / NC local (direct program pages, not job boards)
@@ -24,6 +28,10 @@ SEARCH_QUERIES = [
     '"no essay" scholarship "high school junior" OR "11th grade" OR "class of 2028" apply 2027 -site:fastweb.com -site:scholarships.com -"list of"',
     'scholarship "high school" "no application essay" OR "no essay required" 2026 2027 "apply" "open"',
     '"Niche" OR "Bold.org" OR "Going Merry" scholarship "no essay" apply 2027',
+    # Priority 5 — Paid apprenticeships & narrative-building programs
+    'paid apprenticeship "high school" STEM OR engineering OR software 2027 apply -site:indeed.com -site:ziprecruiter.com',
+    '"high school" "paid" research OR lab assistant OR intern university 2027 "stipend" apply -site:reddit.com',
+    'pre-college OR "summer program" "high school" engineering OR computer science "paid" OR "stipend" OR "free" 2027 apply',
 ]
 
 # Individual program application pages — checked every run
@@ -56,6 +64,9 @@ DIRECT_SOURCES = [
 ]
 
 
+_CALENDAR_PATH = Path(__file__).parent.parent / "outputs" / "program_calendar.json"
+
+
 @dataclass
 class RawOpportunity:
     title: str
@@ -64,6 +75,86 @@ class RawOpportunity:
     source_query: str
     found_at: str
     raw_content: str = ""
+    tier: str = ""      # elite | competitive | accessible (from program DB), else ""
+    slug: str = ""
+
+
+def load_calendar_sources(
+    days_until_deadline: int = 30,
+    days_since_open: int = 7,
+) -> list[RawOpportunity]:
+    """
+    Read outputs/program_calendar.json (produced by calendar_agent/research.py)
+    and return RawOpportunity objects for programs whose deadline is within
+    `days_until_deadline` days OR that opened within `days_since_open` days.
+    Safe no-op if the calendar file hasn't been generated yet.
+    """
+    if not _CALENDAR_PATH.exists():
+        return []
+
+    try:
+        with open(_CALENDAR_PATH, encoding="utf-8") as f:
+            calendar = json.load(f)
+    except Exception as e:
+        print(f"[searcher] WARNING: Could not read program_calendar.json: {e}")
+        return []
+
+    now = datetime.now(timezone.utc)
+    found_at = now.isoformat()
+    results = []
+
+    for program in calendar.get("programs", []):
+        deadline_str = program.get("deadline")
+        open_date_str = program.get("open_date")
+        include = False
+
+        if deadline_str:
+            try:
+                dt_str = deadline_str + "T00:00:00+00:00" if len(deadline_str) == 10 else deadline_str
+                deadline_dt = datetime.fromisoformat(dt_str)
+                days_left = (deadline_dt - now).days
+                if 0 <= days_left <= days_until_deadline:
+                    include = True
+            except ValueError:
+                pass
+
+        if not include and open_date_str:
+            try:
+                dt_str = open_date_str + "T00:00:00+00:00" if len(open_date_str) == 10 else open_date_str
+                open_dt = datetime.fromisoformat(dt_str)
+                days_ago = (now - open_dt).days
+                if 0 <= days_ago <= days_since_open:
+                    include = True
+            except ValueError:
+                pass
+
+        if include:
+            confirmed_tag = "[CONFIRMED]" if program.get("deadline_confirmed") else "[UNCONFIRMED DEADLINE]"
+            deadline_info = f"Deadline: {deadline_str}" if deadline_str else "Deadline: check site"
+            snippet = (
+                f"[CALENDAR] {confirmed_tag} {deadline_info}. "
+                f"Award: {program.get('award', 'see program')}. "
+                f"Tier: {program.get('tier', 'unknown')}. "
+                f"{program.get('notes', '')}".strip()
+            )
+            eligibility = program.get("eligibility", "")
+            results.append(RawOpportunity(
+                title=program["name"],
+                url=program["url"],
+                snippet=snippet[:500],
+                source_query="program_calendar",
+                found_at=found_at,
+                raw_content=f"{snippet} Eligibility: {eligibility}".strip(),
+                tier=program.get("tier", ""),
+                slug=program.get("slug", ""),
+            ))
+
+    if results:
+        print(f"[searcher] Calendar: {len(results)} programs active (due soon or recently opened)")
+    else:
+        print(f"[searcher] Calendar: no programs due within {days_until_deadline} days or opened in last {days_since_open} days")
+
+    return results
 
 
 def search(dry_run: bool = False) -> list[RawOpportunity]:
@@ -103,13 +194,20 @@ def search(dry_run: bool = False) -> list[RawOpportunity]:
     # Direct source scrapes (always run, even if Tavily key is missing)
     print(f"[searcher] Checking {len(DIRECT_SOURCES)} direct sources...")
     for source in DIRECT_SOURCES:
+        page_text = "" if dry_run else fetch_page(source["url"], timeout=12)
+        snippet = page_text[:500] if page_text else f"Direct source: {source['type']}"
         results.append(RawOpportunity(
             title=source["name"],
             url=source["url"],
-            snippet=f"Direct source: {source['type']}",
+            snippet=snippet,
             source_query="direct_source",
             found_at=found_at,
+            raw_content=page_text,
         ))
+
+    # Calendar sources (pre-researched programs — checked passively every run)
+    calendar_results = load_calendar_sources()
+    results.extend(calendar_results)
 
     print(f"[searcher] Found {len(results)} raw results total")
     return results
