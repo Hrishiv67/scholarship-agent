@@ -56,9 +56,14 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
         return result
 
     # ── auto_submit: attempt end-to-end; if blocked, flag (never silent) ───────
+    # For email-type applications, prefer the address the classifier pulled from the
+    # full page (the snippet often does not contain it), then fall back to regex.
     to_email = None
     if opp.application_type == "email":
-        to_email = _extract_email(opp.snippet) or _extract_email(opp.url)
+        if opp.contact_email and _EMAIL_PATTERN.fullmatch(opp.contact_email):
+            to_email = opp.contact_email
+        else:
+            to_email = _extract_email(opp.snippet) or _extract_email(opp.url)
 
     if to_email:
         success = send_application(opp, profile, to_email, dry_run=dry_run)

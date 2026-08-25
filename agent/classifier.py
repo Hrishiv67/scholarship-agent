@@ -88,6 +88,7 @@ class ClassifiedOpportunity:
     is_real_application: bool = True
     deadline: str = ""
     award_value: str = ""
+    contact_email: str = ""
     reason: str = ""
     # Provenance
     db_tier: str = ""               # elite | competitive | accessible (from program DB)
@@ -136,6 +137,7 @@ For each opportunity return a JSON array. Each entry MUST have exactly these fie
 - "is_real_application": true if this page is (or directly leads to) an actual application. false if it is a job-board/aggregator/listing/blog-roundup/dead page that is not itself an application.
 - "deadline": ISO date "YYYY-MM-DD" or "" if unknown.
 - "award_value": string like "$2,500", "paid", "all-expenses", stipend amount, or "" if unknown.
+- "contact_email": the application or contact email address to send an application to, if one is stated anywhere in the page content. Otherwise "". Only a real email like name@org.edu, never a placeholder.
 - "reason": one sentence explaining costs_money / paid / is_real_application.
 
 Rules:
@@ -268,6 +270,7 @@ def classify_all(
                 is_real_application=is_real,
                 deadline=match.get("deadline", ""),
                 award_value=match.get("award_value", ""),
+                contact_email=(match.get("contact_email", "") or "").strip(),
                 reason=reason,
                 db_tier=tier, slug=opp.slug,
                 source_query=opp.source_query,
