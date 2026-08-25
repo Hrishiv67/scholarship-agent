@@ -2,7 +2,7 @@ import re
 
 from .classifier import ClassifiedOpportunity
 from .dedup import DedupStore
-from .email_applicator import send_application, send_handoff
+from .email_applicator import send_application
 from .form_filler import fill_and_submit
 from .logger import RunLog, RunResult
 from .profile_loader import Profile
@@ -76,13 +76,11 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
 
     if fill_result.downgraded:
         # A real blocker (CAPTCHA / OAuth / no fields / account-required-fail).
-        # Track + flag with the reason so it surfaces in the digest - never silent.
+        # Track + flag with the reason so it surfaces in the weekly digest - never
+        # silent, but NOT an immediate per-item email (that was just noise).
         reason = fill_result.downgrade_reason or ""
         result.outcome = "tracked"
         result.notes = f"Needs you: {reason}"
-        # Human-step blockers get an immediate hand-off email so you can finish fast.
-        if any(k in reason.lower() for k in ("captcha", "cloudflare", "oauth", "sign in", "login wall")):
-            send_handoff(opp, reason, dry_run=dry_run)
         dedup_store.mark(opp.url, opp.title, "tracked", opp.id,
                          "web_form", opp.route, opp.award_value, reason)
         return result
