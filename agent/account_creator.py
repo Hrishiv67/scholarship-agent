@@ -11,7 +11,7 @@ import time
 from urllib.parse import urlparse
 
 from .profile_loader import Profile
-from . import session_store
+from . import session_store, accounts
 
 # Registration link text patterns to look for on landing pages
 SIGNUP_LINK_TEXTS = [
@@ -279,6 +279,8 @@ def register(page, url: str, profile: Profile) -> bool:
         try:
             storage = page.context.storage_state()
             session_store.save(url, storage)
+            accounts.record(domain, url, profile.personal.email, "agent",
+                            "created (no email verification)")
             print(f"[account_creator] Registered on {domain} (no email verification needed)")
             return True
         except Exception:
@@ -301,6 +303,7 @@ def register(page, url: str, profile: Profile) -> bool:
         # Save session after successful verification
         storage = page.context.storage_state()
         session_store.save(url, storage)
+        accounts.record(domain, url, profile.personal.email, "agent", "created & verified")
         print(f"[account_creator] Account created and verified on {domain}")
         return True
     except Exception as e:

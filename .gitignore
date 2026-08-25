@@ -15,8 +15,9 @@ dist/
 build/
 .pytest_cache/
 
-# Screenshots, regenerated files, and run logs (covered by email digest)
-outputs/screenshots/
+# Regenerated files and run logs (covered by email digest)
+# NOTE: outputs/screenshots/ is committed on purpose - it is your proof of what
+# was actually submitted (each submitted app has a *_post.png confirmation shot).
 outputs/opportunities_raw.json
 outputs/run_logs/
 

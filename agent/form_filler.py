@@ -69,6 +69,54 @@ SUCCESS_KEYWORDS = [
     "successfully", "confirmation", "we have received", "you have applied",
 ]
 
+# Strong, specific evidence that an APPLICATION (not a newsletter) was received.
+STRONG_SUCCESS = [
+    "application has been submitted", "application was submitted",
+    "your application has been received", "we have received your application",
+    "thank you for applying", "thank you for your application",
+    "application successfully submitted", "your application has been submitted",
+    "application complete", "confirmation number", "reference number",
+]
+_CONF_NUM = re.compile(r'(confirmation|reference|application)\s*(number|no\.?|id|#)\s*[:#]?\s*([A-Za-z0-9-]{5,})', re.I)
+
+# Links that lead from a program page to its actual application.
+APPLY_LINK_TEXTS = [
+    "start application", "begin application", "apply now", "apply online",
+    "start your application", "application form", "apply for",
+]
+
+
+def _looks_like_application_form(page) -> int:
+    """Count inputs whose label maps to a real applicant field (name/email/etc.)."""
+    count = 0
+    for el in page.query_selector_all('input:not([type="hidden"]):not([type="submit"]):not([type="button"]), textarea, select'):
+        try:
+            search = " ".join([
+                el.get_attribute("name") or "", el.get_attribute("placeholder") or "",
+                el.get_attribute("aria-label") or "",
+            ])
+            if _match_field(search):
+                count += 1
+        except Exception:
+            continue
+    return count
+
+
+def _ensure_application_page(page) -> None:
+    """If the current page is not itself an application form, follow an Apply link."""
+    if _looks_like_application_form(page) >= 3:
+        return
+    for text in APPLY_LINK_TEXTS:
+        try:
+            el = page.query_selector(f'a:has-text("{text}"), button:has-text("{text}")')
+            if el:
+                el.click()
+                page.wait_for_load_state("domcontentloaded")
+                page.wait_for_timeout(2000)
+                return
+        except Exception:
+            continue
+
 FIELD_MAP_PATTERNS = [
     # Parent / guardian / emergency contact (checked first so "parent email" != email)
     (r'(parent|guardian|emergency).*(e.?mail)|consent.?email', 'guardian_email'),
@@ -197,6 +245,9 @@ def fill_and_submit(opp: ClassifiedOpportunity, profile: Profile, dry_run: bool 
                     page.goto(opp.url, timeout=30000, wait_until="domcontentloaded")
                     page.wait_for_timeout(2000)
 
+            # If this is a program/info page, follow an "Apply" link to the real form.
+            _ensure_application_page(page)
+
             # Check for CAPTCHA
             for sel in CAPTCHA_SELECTORS:
                 if page.query_selector(sel):
@@ -288,9 +339,19 @@ def fill_and_submit(opp: ClassifiedOpportunity, profile: Profile, dry_run: bool 
             if uploaded:
                 print(f"[form_filler] uploaded {uploaded} document(s)")
 
-            if filled == 0 and uploaded == 0:
+            # Honesty guard: a real application maps several applicant fields. If we
+            # only matched 0-2, this is almost certainly a homepage / newsletter box,
+            # not an application. Do NOT submit or claim success.
+            if filled < 3:
+                screenshot_info = SCREENSHOTS_DIR / f"{opp.id}_notform.png"
+                page.screenshot(path=str(screenshot_info))
                 browser.close()
-                return FillResult(False, 0, missed, True, "No fields could be filled — likely account-required form", "")
+                return FillResult(
+                    False, filled, missed, True,
+                    f"Landed on an info/home page, not an application form "
+                    f"(only {filled} applicant fields). Needs you to start the application.",
+                    str(screenshot_info),
+                )
 
             # Take screenshot before submitting
             screenshot_pre = SCREENSHOTS_DIR / f"{opp.id}_prefill.png"
@@ -300,8 +361,8 @@ def fill_and_submit(opp: ClassifiedOpportunity, profile: Profile, dry_run: bool 
             submit = (
                 page.query_selector('button[type="submit"]') or
                 page.query_selector('input[type="submit"]') or
+                page.query_selector('button:has-text("Submit Application")') or
                 page.query_selector('button:has-text("Submit")') or
-                page.query_selector('button:has-text("Apply")') or
                 page.query_selector('button:has-text("Send")')
             )
 
@@ -309,18 +370,34 @@ def fill_and_submit(opp: ClassifiedOpportunity, profile: Profile, dry_run: bool 
                 browser.close()
                 return FillResult(False, filled, missed, True, "Submit button not found", str(screenshot_pre))
 
+            pre_url = page.url
             submit.click()
-            page.wait_for_timeout(3000)
+            page.wait_for_timeout(4000)
 
-            # Check for success
-            content = page.content().lower()
-            success = any(kw in content for kw in SUCCESS_KEYWORDS)
+            # Honest success detection: require real evidence the application was received,
+            # not just the word "thank you" (a newsletter signup shows that too).
+            raw = page.content()
+            content = raw.lower()
+            post_url = page.url
+            url_changed = pre_url.rstrip("/") != post_url.rstrip("/")
+            strong = any(p in content for p in STRONG_SUCCESS) or bool(_CONF_NUM.search(raw))
+            weak = any(kw in content for kw in SUCCESS_KEYWORDS)
+            # Still showing the same filled form with the same fields = not submitted.
+            still_on_form = (_looks_like_application_form(page) >= 3) and not url_changed
+            success = (strong or (url_changed and weak)) and not still_on_form
 
             screenshot_post = SCREENSHOTS_DIR / f"{opp.id}_post.png"
             page.screenshot(path=str(screenshot_post))
             browser.close()
 
-            return FillResult(success, filled, missed, False, "", str(screenshot_post))
+            if success:
+                return FillResult(True, filled, missed, False, "", str(screenshot_post))
+            # Filled a real form but no confirmation appeared: do not claim it applied.
+            return FillResult(
+                False, filled, missed, True,
+                "Filled the application but no confirmation appeared - please verify and submit",
+                str(screenshot_post),
+            )
 
         except Exception as e:
             try:

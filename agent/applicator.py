@@ -6,6 +6,7 @@ from .email_applicator import send_application
 from .form_filler import fill_and_submit
 from .logger import RunLog, RunResult
 from .profile_loader import Profile
+from . import accounts
 
 _EMAIL_PATTERN = re.compile(r'[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}')
 
@@ -86,6 +87,11 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
         reason = fill_result.downgrade_reason or ""
         result.outcome = "tracked"
         result.notes = f"Needs you: {reason}"
+        # If it stalled on a signup/CAPTCHA, log the portal to the accounts registry
+        # as a manual signup to do (the agent takes over once the account exists).
+        if any(k in reason.lower() for k in ("captcha", "cloudflare", "oauth", "sign in", "login", "account")):
+            accounts.record(opp.title, opp.url, profile.personal.email, "you (manual)",
+                            "needs signup", reason)
         dedup_store.mark(opp.url, opp.title, "tracked", opp.id,
                          "web_form", opp.route, opp.award_value, reason)
         return result
