@@ -169,7 +169,7 @@
   },
   {
     "slug": "army-seap",
-    "name": "Army Science and Engineering Apprenticeship Program (SEAP)",
+    "name": "Navy SEAP High School Internship",
     "url": "https://www.navalsteminterns.us/seap/",
     "type": "internship",
     "tier": "competitive",
@@ -814,5 +814,31 @@
     "award": "$1,000-$5,000 varies by scholarship",
     "requires": ["deca_membership", "essay", "transcript"],
     "notes": "EASY WITH EXISTING WORK: Active NC DECA member + ICDC qualifier; DECA membership satisfies eligibility. Multiple scholarship tracks available for active members."
+  },
+  {
+    "slug": "bofa-student-leaders",
+    "name": "Bank of America Student Leaders",
+    "url": "https://about.bankofamerica.com/en/making-an-impact/student-leaders",
+    "type": "internship",
+    "tier": "competitive",
+    "category": "business",
+    "typical_open": "December",
+    "typical_deadline": "January",
+    "award": "paid 8-week summer internship at a local nonprofit plus a Washington DC leadership summit",
+    "requires": ["essay", "transcript", "recommendation"],
+    "notes": "Paid civic leadership internship. Dates unconfirmed until the official page states the 2027 cycle."
+  },
+  {
+    "slug": "garcia-stony-brook",
+    "name": "Garcia Summer Research Program (Stony Brook)",
+    "url": "https://www.stonybrook.edu/commcms/garcia/",
+    "type": "research_program",
+    "tier": "competitive",
+    "category": "engineering",
+    "typical_open": "December",
+    "typical_deadline": "March",
+    "award": "paid summer materials research at Stony Brook",
+    "requires": ["essay", "transcript", "recommendation"],
+    "notes": "High school summer research. Dates unconfirmed until the official page states the 2027 cycle."
   }
 ]

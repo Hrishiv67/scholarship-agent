@@ -24,6 +24,7 @@ jobs:
 
       - name: Run unit tests
         run: |
+          python tests/test_calendar.py
           python tests/test_profile_loader.py
           python tests/test_dedup.py
           python tests/test_captcha.py

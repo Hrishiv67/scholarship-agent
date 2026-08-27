@@ -2,18 +2,42 @@ name: Calendar Refresh
 
 on:
   schedule:
-    # 1st of every month at 08:00 UTC — refresh confirmed deadlines from official pages
-    - cron: '0 8 1 * *'
-  workflow_dispatch: {}
+    # Every Monday at 9:00 AM ET (13:00 UTC)
+    - cron: '0 13 * * 1'
+  workflow_dispatch:
+    inputs:
+      research_limit:
+        description: 'Max official pages to re-verify this run'
+        required: false
+        default: '40'
 
 concurrency:
   group: outputs-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  refresh-calendar:
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run calendar tests
+        run: python tests/test_calendar.py
+
+  refresh-calendar:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
 
     permissions:
       contents: write
@@ -28,8 +52,10 @@ jobs:
       - name: Verify required secrets
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: |
           test -n "$ANTHROPIC_API_KEY" || { echo "ANTHROPIC_API_KEY secret is empty"; exit 1; }
+          test -n "$TAVILY_API_KEY" || { echo "TAVILY_API_KEY secret is empty"; exit 1; }
           echo "Required API keys are present"
 
       - name: Set up Python 3.12
@@ -41,21 +67,27 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Refresh program calendar
+      - name: Find programs and confirm dates
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python -m calendar_agent.research
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RESEARCH_LIMIT: ${{ github.event.inputs.research_limit || '40' }}
+          DISCOVER_LIMIT: '12'
+          PYTHONUNBUFFERED: '1'
+        run: python -m calendar_agent
 
-      - name: Commit updated calendar
+      - name: Commit calendar
         if: always()
         run: |
           git config user.name "scholarship-agent[bot]"
           git config user.email "scholarship-agent@noreply.github.com"
-          git add outputs/program_calendar.json outputs/CALENDAR.md outputs/program_research/ || true
+          git add outputs/program_calendar.json outputs/CALENDAR.md outputs/calendar.ics outputs/program_research/ calendar_agent/programs.json || true
           if git diff --staged --quiet; then
             echo "No calendar changes to commit"
             exit 0
           fi
-          git commit -m "calendar: monthly refresh $(date -u +%Y-%m-%d)"
+          git commit -m "calendar: weekly refresh $(date -u +%Y-%m-%d)"
           git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
           git push

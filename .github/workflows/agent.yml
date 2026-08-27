@@ -1,107 +1,20 @@
 name: Scholarship Agent
 
+# Auto-apply is retired. The weekly job is Calendar Refresh.
 on:
-  schedule:
-    # Every Monday at 9:00 AM ET (13:00 UTC)
-    - cron: '0 13 * * 1'
   workflow_dispatch:
     inputs:
-      dry_run:
-        description: 'Dry run (search + classify only, no submissions)'
+      notice:
+        description: 'This workflow no longer applies. Use Actions → Calendar Refresh.'
         required: false
-        default: 'false'
-
-concurrency:
-  group: outputs-${{ github.ref }}
-  cancel-in-progress: false
+        default: 'retired'
 
 jobs:
-  test:
+  retired:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python 3.12
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run unit tests
+      - name: Auto-apply is retired
         run: |
-          python tests/test_profile_loader.py
-          python tests/test_dedup.py
-          python tests/test_captcha.py
-          python tests/test_form_filler.py
-          python tests/test_page_solver.py
-          python tests/test_searcher.py
-
-  run-agent:
-    needs: test
-    runs-on: ubuntu-latest
-    timeout-minutes: 90
-
-    permissions:
-      contents: write
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
-
-      - name: Verify required secrets
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-        run: |
-          test -n "$ANTHROPIC_API_KEY" || { echo "ANTHROPIC_API_KEY secret is empty"; exit 1; }
-          test -n "$TAVILY_API_KEY" || { echo "TAVILY_API_KEY secret is empty"; exit 1; }
-          echo "Required API keys are present"
-
-      - name: Set up Python 3.12
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Install Playwright browsers
-        run: playwright install chromium --with-deps
-
-      - name: Install xvfb
-        run: sudo apt-get update && sudo apt-get install -y xvfb
-
-      - name: Run agent
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          PORTAL_PASSWORD: ${{ secrets.PORTAL_PASSWORD }}
-          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
-          HEADED: 'true'
-          APPLY_LIMIT: '15'
-          PYTHONUNBUFFERED: '1'
-        run: xvfb-run --auto-servernum python -m agent.main
-
-      - name: Commit updated data files
-        if: always()
-        run: |
-          git config user.name "scholarship-agent[bot]"
-          git config user.email "scholarship-agent@noreply.github.com"
-          git add outputs/applications.md outputs/accounts.csv outputs/application_packets/ outputs/dedup.json outputs/program_calendar.json outputs/CALENDAR.md outputs/program_research/ outputs/screenshots/ outputs/confirmations/ || true
-          if git diff --staged --quiet; then
-            echo "No output changes to commit"
-            exit 0
-          fi
-          git commit -m "agent: run $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
-          git push
+          echo "The apply agent is retired."
+          echo "Use the Calendar Refresh workflow to find programs and confirm due dates."
+          echo "Calendar is split into AI, Engineering, and Business."

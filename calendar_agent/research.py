@@ -1,17 +1,9 @@
 """
-calendar_agent/research.py
+Confirm program dates from official pages and write the calendar.
 
-Deep pre-research pipeline. Runs once manually to research known programs,
-confirm 2026-2027 deadlines from official pages, and produce:
-  - outputs/program_calendar.json  (calendar the main agent checks each run)
-  - outputs/program_research/{slug}.md  (per-program research docs)
-
-Usage:
-    python -m calendar_agent.research
-
-Takes ~15-20 minutes. Requires ANTHROPIC_API_KEY in .env or environment.
-Refresh monthly: re-run and re-commit the outputs.
+Never invent a deadline. Typical-month metadata is not a date.
 """
+from __future__ import annotations
 
 import json
 import os
@@ -23,12 +15,16 @@ from pathlib import Path
 import anthropic
 from dotenv import load_dotenv
 
+from . import categories, dates, eligibility, render
 from .scraper import fetch_page
 
 _ROOT = Path(__file__).parent.parent
+load_dotenv(_ROOT / ".env")
+
 _PROGRAMS_DB = Path(__file__).parent / "programs.json"
 _CALENDAR_OUTPUT = _ROOT / "outputs" / "program_calendar.json"
 _CALENDAR_MD = _ROOT / "outputs" / "CALENDAR.md"
+_CALENDAR_ICS = _ROOT / "outputs" / "calendar.ics"
 _RESEARCH_DIR = _ROOT / "outputs" / "program_research"
 
 _RESEARCH_MODEL = "claude-haiku-4-5-20251001"
@@ -39,95 +35,61 @@ def _build_research_prompt(program: dict, page_content: str) -> str:
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     has_content = bool(page_content) and page_content != "(page loaded but contained no readable text)"
     content_block = page_content if has_content else "(could not fetch)"
-    no_content_note = "" if has_content else "\n\nNOTE: Page could not be fetched. Research from program metadata only."
+    no_content_note = "" if has_content else (
+        "\n\nNOTE: Page could not be fetched. You MUST set both dates to null "
+        "and confirmed=false. Do not use typical months from metadata as dates."
+    )
 
-    return f"""You are researching scholarship and internship programs for a high school student applying in the 2026-2027 cycle. Today is {today}.
+    return f"""Extract facts for a high school program calendar. Today is {today}.
 
-Program metadata:
+Student (do not invent extra facts): Class of 2028, rising junior / 11th grade, male,
+US citizen, Green Hope High School, Cary NC. Date of birth is unknown.
+
+Program metadata (NOT a source of dates):
   Name: {program['name']}
   URL: {program['url']}
   Type: {program.get('type', 'unknown')}
-  Typical application open: {program.get('typical_open', 'unknown')}
-  Typical deadline: {program.get('typical_deadline', 'unknown')}
-  Known award: {program.get('award', 'unknown')}
-  Known requirements: {', '.join(program.get('requires', []))}
-  Notes: {program.get('notes', '')}
+  Suggested track: {categories.categorize(program)}
+  Typical open (unconfirmed): {program.get('typical_open', 'unknown')}
+  Typical deadline (unconfirmed): {program.get('typical_deadline', 'unknown')}
 
-Page content from official site:
+Official page text:
 ---
 {content_block}
 ---{no_content_note}
 
-Your task: extract accurate, actionable information for this student for the 2026-2027 application cycle.
+HARD RULES:
+1. open_date and deadline must be YYYY-MM-DD for the 2026, 2027, or 2028 cycle
+   AND must appear on the official page. If the page only says "typically October"
+   or uses a prior year, both dates are null and confirmed is false.
+2. deadline_quote must be a verbatim sentence from the page that contains that date.
+   If you cannot quote the sentence, deadline is null.
+3. Do not copy typical_deadline from metadata into deadline.
+4. seniors_only=true if the page is for graduating seniors / class of 2027 / 12th grade only.
+5. identity_restricted is a short label (e.g. "women-only") or empty string.
+6. costs_money=true only for application fees or tuition to attend — not a stipend paid TO the student.
+7. category is exactly one of: ai, engineering, business, general.
 
-CRITICAL RULES:
-1. Only report SPECIFIC dates (open_date, deadline) that are EXPLICITLY stated on the page for the 2026 or 2026-2027 cycle. Do NOT guess from prior years.
-2. "Typically opens in October" without a year = NOT confirmed. Set confirmed=false.
-3. "Applications open October 15, 2026" = confirmed. Set confirmed=true.
-4. If the page has no 2026-2027 dates, set both date fields to null and both confirmed fields to false.
-5. essay_prompts: list only verbatim prompts shown on this page for the current cycle.
-6. what_strong_app_looks_like and prep_timeline: use your general knowledge about this specific program — these do NOT need to come from the page.
-7. If there is an important eligibility issue (e.g., college-students-only, gender requirement), state it clearly in eligibility and notes.
-
-Return ONLY a valid JSON object with exactly these fields — no preamble, no markdown fences:
+Return ONLY JSON:
 {{
   "open_date": "YYYY-MM-DD or null",
-  "open_date_confirmed": true or false,
+  "open_date_confirmed": false,
   "deadline": "YYYY-MM-DD or null",
-  "deadline_confirmed": true or false,
-  "eligibility": "Who can apply — grade, age, citizenship, income, identity requirements",
-  "essay_prompts": ["verbatim prompt 1", "verbatim prompt 2"],
-  "award_details": "Full description of award/benefit",
-  "requirements": ["requirement 1", "requirement 2"],
-  "what_strong_app_looks_like": "2-4 sentences on what makes a competitive applicant for this specific program",
-  "prep_timeline": "Specific month-by-month prep given the typical deadline",
-  "notes": "Important caveats, eligibility warnings, or check-URL instructions",
+  "deadline_confirmed": false,
+  "deadline_quote": "",
+  "eligibility": "who can apply this cycle",
+  "grade_eligible": true,
+  "seniors_only": false,
+  "identity_restricted": "",
+  "costs_money": false,
+  "category": "engineering",
+  "essay_prompts": [],
+  "award_details": "",
+  "requirements": [],
+  "notes": "",
   "confidence": "high or medium or low or none",
-  "page_had_useful_info": true or false
+  "page_had_useful_info": false
 }}"""
-
-
-def _research_program(program: dict, client: anthropic.Anthropic) -> dict:
-    slug = program["slug"]
-    url = program["url"]
-    name = program["name"]
-
-    print(f"  Fetching: {url}")
-    page_content = fetch_page(url)
-
-    if not page_content:
-        print(f"  WARNING: fetch failed for {name} — metadata only")
-        page_content = "(page could not be fetched)"
-
-    prompt = _build_research_prompt(program, page_content)
-
-    try:
-        print(f"  Calling Claude ({_RESEARCH_MODEL})...")
-        message = client.messages.create(
-            model=_RESEARCH_MODEL,
-            max_tokens=2000,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        text = message.content[0].text.strip()
-
-        if text.startswith("```"):
-            parts = text.split("```")
-            text = parts[1] if len(parts) >= 2 else text
-            if text.startswith("json"):
-                text = text[4:].strip()
-
-        result = json.loads(text)
-        deadline = result.get("deadline")
-        confirmed = result.get("deadline_confirmed")
-        print(f"  Done -- deadline: {deadline} (confirmed: {confirmed})")
-        return result
-
-    except json.JSONDecodeError as e:
-        print(f"  ERROR: non-JSON response for {name}: {e}")
-        return _fallback_result(program, f"Claude returned non-JSON: {e}")
-    except Exception as e:
-        print(f"  ERROR: API call failed for {name}: {e}")
-        return _fallback_result(program, f"API call failed: {e}")
 
 
 def _fallback_result(program: dict, error_message: str) -> dict:
@@ -136,299 +98,304 @@ def _fallback_result(program: dict, error_message: str) -> dict:
         "open_date_confirmed": False,
         "deadline": None,
         "deadline_confirmed": False,
-        "eligibility": "Could not determine -- check program website",
+        "deadline_quote": "",
+        "eligibility": "Could not determine — check program website",
+        "grade_eligible": None,
+        "seniors_only": False,
+        "identity_restricted": "",
+        "costs_money": False,
+        "category": categories.categorize(program),
         "essay_prompts": [],
         "award_details": program.get("award", ""),
         "requirements": program.get("requires", []),
-        "what_strong_app_looks_like": "",
-        "prep_timeline": "",
         "notes": f"Research failed: {error_message}. Check {program['url']} manually.",
         "confidence": "none",
         "page_had_useful_info": False,
     }
 
 
-def _build_calendar_md(entries: list[dict]) -> str:
-    """Build a human-readable CALENDAR.md sorted by deadline date."""
-    now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+def _research_program(program: dict, client: anthropic.Anthropic) -> dict:
+    url = program["url"]
+    name = program["name"]
+    print(f"  Fetching: {url}")
+    page_content = fetch_page(url)
+    if not page_content:
+        print(f"  WARNING: fetch failed for {name} — no date will be stored")
+        return _fallback_result(program, "official page could not be fetched")
 
-    # Separate by whether deadline is known
-    with_dates = [e for e in entries if e.get("deadline")]
-    without_dates = [e for e in entries if not e.get("deadline")]
+    prompt = _build_research_prompt(program, page_content)
+    try:
+        print(f"  Calling Claude ({_RESEARCH_MODEL})...")
+        message = client.messages.create(
+            model=_RESEARCH_MODEL,
+            max_tokens=1600,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = message.content[0].text.strip()
+        if text.startswith("```"):
+            parts = text.split("```")
+            text = parts[1] if len(parts) >= 2 else text
+            if text.startswith("json"):
+                text = text[4:].strip()
+        result = json.loads(text)
+    except json.JSONDecodeError as e:
+        print(f"  ERROR: non-JSON response for {name}: {e}")
+        return _fallback_result(program, f"Claude returned non-JSON: {e}")
+    except Exception as e:
+        print(f"  ERROR: API call failed for {name}: {e}")
+        return _fallback_result(program, f"API call failed: {e}")
 
-    # Sort by deadline ascending
-    with_dates.sort(key=lambda e: e["deadline"])
+    deadline, d_ok = dates.confirm_deadline(
+        result.get("deadline"),
+        result.get("deadline_confirmed"),
+        result.get("deadline_quote") or "",
+        page_content,
+    )
+    open_iso = dates.parse_iso(result.get("open_date"))
+    if open_iso and open_iso in page_content:
+        open_date, o_ok = open_iso, bool(result.get("open_date_confirmed"))
+    else:
+        open_date, o_ok = None, False
 
-    # Group into sections by type
-    TYPE_LABELS = {
-        "internship": "Paid Internships",
-        "research_program": "Research Programs",
-        "fly_in": "Fly-In Programs",
-        "competition": "Competitions",
-        "scholarship": "Scholarships",
-        "local_scholarship": "Local / NC Scholarships",
-        "fly_in_scholarship": "Scholarships",
-        "competition_scholarship": "Competitions",
-        "senate_program": "Scholarships",
-        "governor_program": "Research Programs",
-    }
+    result["deadline"] = deadline
+    result["deadline_confirmed"] = d_ok
+    result["open_date"] = open_date
+    result["open_date_confirmed"] = o_ok
+    if result.get("category") not in categories.VALID:
+        result["category"] = categories.categorize(program)
+    print(f"  Done -- deadline: {deadline} (confirmed: {d_ok})")
+    return result
 
-    lines = [
-        "# Application Calendar 2026-2027",
-        "",
-        f"_Generated {now_str} by `calendar_agent`. Re-run `python -m calendar_agent.research` to refresh._",
-        "",
-        "> **How to read this:** Deadlines marked ✅ are confirmed from the official site this cycle.",
-        "> Deadlines marked ⚠️ are estimates from prior years — verify before the application opens.",
-        "> The GitHub Actions agent checks this calendar every run and auto-queues programs when their deadline is within 30 days.",
-        "",
-    ]
 
-    # Chronological master table
-    lines += [
-        "## All Programs by Deadline",
-        "",
-        "| Deadline | Program | Type | Award | Confirmed? |",
-        "|----------|---------|------|-------|------------|",
-    ]
-    for e in with_dates:
-        conf = "✅" if e.get("deadline_confirmed") else "⚠️"
-        ptype = TYPE_LABELS.get(e.get("type", ""), e.get("type", ""))
-        award = e.get("award", "")[:50]
-        lines.append(f"| {e['deadline']} | [{e['name']}]({e['url']}) | {ptype} | {award} | {conf} |")
-
-    if without_dates:
-        lines += [
-            "",
-            "### Deadline Not Yet Confirmed (check sites manually)",
-            "",
-            "| Program | Type | Typical Deadline | Award |",
-            "|---------|------|-----------------|-------|",
-        ]
-        for e in without_dates:
-            ptype = TYPE_LABELS.get(e.get("type", ""), e.get("type", ""))
-            award = e.get("award", "")[:50]
-            notes = e.get("notes", "")[:60]
-            lines.append(f"| [{e['name']}]({e['url']}) | {ptype} | {notes} | {award} |")
-
-    # Section by category
-    sections = {}
-    for e in entries:
-        label = TYPE_LABELS.get(e.get("type", ""), "Other")
-        sections.setdefault(label, []).append(e)
-
-    lines += ["", "---", ""]
-    for section_name in ["Paid Internships", "Research Programs", "Fly-In Programs", "Competitions", "Scholarships", "Local / NC Scholarships"]:
-        section_entries = sections.get(section_name, [])
-        if not section_entries:
-            continue
-        # Sort: confirmed deadlines first, then by date, then no-date at end
-        section_entries.sort(key=lambda e: (not bool(e.get("deadline")), e.get("deadline") or "9999"))
-        lines += [f"## {section_name}", ""]
-        for e in section_entries:
-            tier_tag = {"elite": "🔥 Elite", "competitive": "⭐ Competitive", "accessible": "✓ Accessible"}.get(e.get("tier", ""), "")
-            deadline_str = e.get("deadline", "TBD")
-            conf_str = " ✅" if e.get("deadline_confirmed") else (" ⚠️" if e.get("deadline") else "")
-            lines.append(f"### {e['name']} {tier_tag}")
-            lines.append(f"- **URL:** {e['url']}")
-            lines.append(f"- **Deadline:** {deadline_str}{conf_str}")
-            if e.get("open_date"):
-                open_conf = " ✅" if e.get("open_date_confirmed") else " ⚠️"
-                lines.append(f"- **Opens:** {e['open_date']}{open_conf}")
-            lines.append(f"- **Award:** {e.get('award', 'see site')}")
-            if e.get("eligibility"):
-                lines.append(f"- **Eligibility:** {e['eligibility']}")
-            if e.get("notes"):
-                lines.append(f"- **Notes:** {e['notes']}")
-            lines.append("")
-
-    return "\n".join(lines)
+def _is_failed(research: dict) -> bool:
+    return research.get("confidence") == "none" or not research.get("page_had_useful_info")
 
 
 def _build_calendar_entry(program: dict, research: dict) -> dict:
     now_iso = datetime.now(timezone.utc).isoformat()
-    return {
+    category = research.get("category") or categories.categorize(program)
+    entry = {
         "slug": program["slug"],
         "name": program["name"],
         "url": program["url"],
         "type": program.get("type", ""),
         "tier": program.get("tier", ""),
+        "category": category,
         "open_date": research.get("open_date"),
         "open_date_confirmed": research.get("open_date_confirmed", False),
         "deadline": research.get("deadline"),
         "deadline_confirmed": research.get("deadline_confirmed", False),
+        "deadline_quote": research.get("deadline_quote") or "",
         "last_verified": now_iso,
         "award": research.get("award_details") or program.get("award", ""),
         "requires": research.get("requirements") or program.get("requires", []),
         "eligibility": research.get("eligibility", ""),
         "confidence": research.get("confidence", "none"),
         "notes": research.get("notes", ""),
+        "seniors_only": bool(research.get("seniors_only")),
+        "identity_restricted": research.get("identity_restricted") or "",
+        "costs_money": bool(research.get("costs_money")),
     }
+    entry["status"] = eligibility.classify_status(research, program)
+    return entry
+
+
+def _keep_confirmed_if_failed(old: dict | None, new: dict) -> dict:
+    if not old:
+        return new
+    if new.get("confidence") != "none":
+        return new
+    if old.get("deadline_confirmed") and old.get("deadline"):
+        print(f"  Keeping previously confirmed deadline for {new.get('name')}")
+        kept = dict(new)
+        for key in (
+            "deadline", "deadline_confirmed", "deadline_quote",
+            "open_date", "open_date_confirmed", "eligibility", "award",
+            "category", "status",
+        ):
+            if old.get(key) not in (None, "", False) or key.endswith("confirmed"):
+                kept[key] = old.get(key)
+        kept["notes"] = (
+            f"{new.get('notes', '')} Prior confirmed deadline kept because this fetch failed."
+        ).strip()
+        return kept
+    return new
+
+
+def _load_existing() -> dict[str, dict]:
+    if not _CALENDAR_OUTPUT.exists():
+        return {}
+    try:
+        data = json.loads(_CALENDAR_OUTPUT.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return {p["slug"]: p for p in data.get("programs") or [] if p.get("slug")}
+
+
+def _priority(program: dict, existing: dict[str, dict]) -> tuple:
+    old = existing.get(program["slug"], {})
+    failed = (old.get("confidence") == "none") or not old
+    no_date = not old.get("deadline")
+    unconfirmed = bool(old.get("deadline") and not old.get("deadline_confirmed"))
+    return (not failed, not no_date, not unconfirmed, program.get("name") or "")
+
+
+def _research_limit() -> int:
+    raw = os.environ.get("RESEARCH_LIMIT", "40")
+    try:
+        return max(1, int(raw))
+    except ValueError:
+        return 40
 
 
 def _build_markdown_doc(program: dict, research: dict) -> str:
     now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    name = program["name"]
-    url = program["url"]
-    tier = program.get("tier", "").capitalize()
+    deadline = research.get("deadline") or "Not stated on official page"
+    conf = "confirmed from official page quote" if research.get("deadline_confirmed") else "not confirmed"
+    quote = research.get("deadline_quote") or "(no quote)"
+    return f"""# {program['name']}
 
-    if research.get("deadline"):
-        status = "confirmed from official site" if research.get("deadline_confirmed") else "UNCONFIRMED -- check site"
-        deadline_line = f"{research['deadline']} ({status})"
-    else:
-        deadline_line = f"Not found -- check {url}"
-
-    if research.get("open_date"):
-        open_status = "confirmed" if research.get("open_date_confirmed") else "unconfirmed"
-        open_line = f"{research['open_date']} ({open_status})"
-    else:
-        typical = program.get("typical_open", "")
-        open_line = "Not found on page" + (f" -- typically {typical}" if typical else "")
-
-    essay_prompts = research.get("essay_prompts", [])
-    prompts_content = (
-        "\n".join(f"- {p}" for p in essay_prompts)
-        if essay_prompts
-        else "Not listed on official page -- check the application portal directly."
-    )
-
-    requirements = research.get("requirements") or program.get("requires", [])
-    req_content = "\n".join(f"- {r}" for r in requirements) if requirements else "- See program website"
-
-    return f"""# {name}
-
-**URL:** {url}
-**Application Opens:** {open_line}
-**Deadline:** {deadline_line}
-**Award:** {research.get('award_details') or program.get('award', 'See program website')}
-**Tier:** {tier}
-**Last Verified:** {now_str}
-**Research Confidence:** {research.get('confidence', 'none')}
-
-## Eligibility
-{research.get('eligibility') or 'See program website.'}
-
-## Requirements
-{req_content}
-
-## Essay Prompts (2026-2027 cycle)
-{prompts_content}
-
-## What a Strong Application Looks Like
-{research.get('what_strong_app_looks_like') or 'See program website for selection criteria.'}
-
-## Recommended Prep Timeline
-{research.get('prep_timeline') or f"Begin preparation 2-3 months before the {program.get('typical_deadline', 'application')} deadline."}
+**URL:** {program['url']}
+**Track:** {categories.label(research.get('category') or categories.categorize(program))}
+**Deadline:** {deadline} ({conf})
+**Deadline quote:** {quote}
+**Opens:** {research.get('open_date') or 'Not stated on official page'}
+**Award:** {research.get('award_details') or program.get('award') or 'See program website'}
+**Eligibility:** {research.get('eligibility') or 'See program website'}
+**Status:** {eligibility.classify_status(research, program)}
+**Last verified:** {now_str}
+**Confidence:** {research.get('confidence', 'none')}
 
 ## Notes
 {research.get('notes') or ''}
 
 ---
-*Researched by `calendar_agent` on {now_str}. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*
 """
 
 
-def main() -> None:
-    load_dotenv()
+def _maybe_email(md: str, stats: dict) -> None:
+    gmail_address = os.environ.get("GMAIL_ADDRESS", "")
+    gmail_password = os.environ.get("GMAIL_APP_PASSWORD", "")
+    if not gmail_address or not gmail_password:
+        print("[research] Gmail not set — skipping calendar email")
+        return
+    import smtplib
+    import ssl
+    from email.mime.multipart import MIMEMultipart
+    from email.mime.text import MIMEText
 
+    subject = (
+        f"Program calendar — {stats['confirmed_count']} confirmed dates "
+        f"({datetime.now(timezone.utc).strftime('%b %d, %Y')})"
+    )
+    body = (
+        f"Confirmed deadlines: {stats['confirmed_count']}\n"
+        f"Unconfirmed / not on page: {stats['not_found_count']}\n"
+        f"Programs: {stats['program_count']}\n\n"
+        "Full calendar: outputs/CALENDAR.md in the repo.\n"
+        "Import outputs/calendar.ics for confirmed dates only.\n"
+    )
+    msg = MIMEMultipart("alternative")
+    msg["From"] = f"Program Calendar <{gmail_address}>"
+    msg["To"] = gmail_address
+    msg["Subject"] = subject
+    msg.attach(MIMEText(body, "plain"))
+    try:
+        context = ssl.create_default_context()
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+            server.login(gmail_address, gmail_password)
+            server.sendmail(gmail_address, gmail_address, msg.as_string())
+        print(f"[research] Calendar email sent to {gmail_address}")
+    except Exception as e:
+        print(f"[research] Failed to send email: {e}")
+
+
+def main(programs: list[dict] | None = None) -> None:
+    load_dotenv(_ROOT / ".env")
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     if not api_key:
         print("[research] ERROR: ANTHROPIC_API_KEY not set")
-        print("[research]   Add it to .env or set it as an environment variable")
         sys.exit(1)
 
-    if not _PROGRAMS_DB.exists():
-        print(f"[research] ERROR: programs.json not found at {_PROGRAMS_DB}")
-        sys.exit(1)
+    if programs is None:
+        if not _PROGRAMS_DB.exists():
+            print(f"[research] ERROR: programs.json not found at {_PROGRAMS_DB}")
+            sys.exit(1)
+        with open(_PROGRAMS_DB, encoding="utf-8") as f:
+            programs = json.load(f)
 
-    with open(_PROGRAMS_DB, encoding="utf-8") as f:
-        programs: list[dict] = json.load(f)
-
-    print(f"[research] Loaded {len(programs)} programs")
-    print(f"[research] Calendar output: {_CALENDAR_OUTPUT}")
-    print(f"[research] Research docs:   {_RESEARCH_DIR}/")
+    existing = _load_existing()
+    limit = _research_limit()
+    ordered = sorted(programs, key=lambda p: _priority(p, existing))
+    to_run = ordered[:limit]
+    print(f"[research] {len(programs)} programs, researching {len(to_run)} (RESEARCH_LIMIT={limit})")
     print(f"[research] Model: {_RESEARCH_MODEL}")
-    estimated_min = len(programs) * (_API_DELAY_SECONDS + 20) // 60 + 1
-    print(f"[research] Estimated time: ~{estimated_min} minutes\n")
 
     _CALENDAR_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     _RESEARCH_DIR.mkdir(parents=True, exist_ok=True)
 
     client = anthropic.Anthropic(api_key=api_key)
+    updated: dict[str, dict] = dict(existing)
 
-    calendar_entries: list[dict] = []
-    summary_rows: list[dict] = []
-    failed_programs: list[str] = []
-
-    for i, program in enumerate(programs, 1):
-        name = program["name"]
-        slug = program["slug"]
-        print(f"\n[{i:2d}/{len(programs)}] {name}")
-
-        research = _research_program(program, client)
-
-        entry = _build_calendar_entry(program, research)
-        calendar_entries.append(entry)
-
-        markdown = _build_markdown_doc(program, research)
-        md_path = _RESEARCH_DIR / f"{slug}.md"
-        md_path.write_text(markdown, encoding="utf-8")
-
-        summary_rows.append({
-            "name": name[:40],
-            "deadline": entry.get("deadline") or "NOT FOUND",
-            "confirmed": entry.get("deadline_confirmed", False),
-            "confidence": research.get("confidence", "none"),
-        })
-
-        if not research.get("deadline"):
-            failed_programs.append(name)
-
-        if i < len(programs):
+    for i, program in enumerate(to_run, 1):
+        print(f"\n[{i:2d}/{len(to_run)}] {program['name']}")
+        raw = _research_program(program, client)
+        entry = _build_calendar_entry(program, raw)
+        entry = _keep_confirmed_if_failed(existing.get(program["slug"]), entry)
+        updated[program["slug"]] = entry
+        md_path = _RESEARCH_DIR / f"{program['slug']}.md"
+        md_path.write_text(_build_markdown_doc(program, raw), encoding="utf-8")
+        if i < len(to_run):
             time.sleep(_API_DELAY_SECONDS)
 
+    # Include programs not researched this run (keep prior rows; add stubs for brand new)
+    for program in programs:
+        if program["slug"] in updated:
+            continue
+        updated[program["slug"]] = {
+            "slug": program["slug"],
+            "name": program["name"],
+            "url": program["url"],
+            "type": program.get("type", ""),
+            "tier": program.get("tier", ""),
+            "category": categories.categorize(program),
+            "open_date": None,
+            "open_date_confirmed": False,
+            "deadline": None,
+            "deadline_confirmed": False,
+            "deadline_quote": "",
+            "last_verified": None,
+            "award": program.get("award", ""),
+            "requires": program.get("requires", []),
+            "eligibility": "",
+            "confidence": "none",
+            "notes": "Not yet verified from official page this cycle.",
+            "status": "verify",
+            "seniors_only": False,
+            "identity_restricted": "",
+            "costs_money": False,
+        }
+
+    entries = list(updated.values())
     calendar_data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "program_count": len(calendar_entries),
-        "confirmed_count": sum(1 for e in calendar_entries if e.get("deadline_confirmed")),
-        "unconfirmed_count": sum(1 for e in calendar_entries if e.get("deadline") and not e.get("deadline_confirmed")),
-        "not_found_count": sum(1 for e in calendar_entries if not e.get("deadline")),
-        "programs": calendar_entries,
+        "program_count": len(entries),
+        "confirmed_count": sum(1 for e in entries if e.get("deadline_confirmed")),
+        "unconfirmed_count": sum(1 for e in entries if e.get("deadline") and not e.get("deadline_confirmed")),
+        "not_found_count": sum(1 for e in entries if not e.get("deadline")),
+        "programs": entries,
     }
-    with open(_CALENDAR_OUTPUT, "w", encoding="utf-8") as f:
-        json.dump(calendar_data, f, indent=2)
+    _CALENDAR_OUTPUT.write_text(json.dumps(calendar_data, indent=2), encoding="utf-8")
+    md = render.build_calendar_md(entries, calendar_data["generated_at"])
+    _CALENDAR_MD.write_text(md, encoding="utf-8")
+    _CALENDAR_ICS.write_text(render.build_ics(entries), encoding="utf-8")
 
-    # Also write human-readable CALENDAR.md
-    calendar_md = _build_calendar_md(calendar_entries)
-    _CALENDAR_MD.write_text(calendar_md, encoding="utf-8")
-
-    print(f"\n\n{'=' * 70}")
-    print("CALENDAR AGENT RESEARCH COMPLETE")
-    print(f"{'=' * 70}")
-    print(f"{'Program':<42} {'Deadline':<14} {'Conf?':<6} {'Confidence'}")
-    print(f"{'-' * 70}")
-    for row in summary_rows:
-        conf = "YES" if row["confirmed"] else "no"
-        print(f"{row['name']:<42} {row['deadline']:<14} {conf:<6} {row['confidence']}")
-
-    print(f"\nTotal programs: {len(calendar_entries)}")
-    print(f"Confirmed from site:   {calendar_data['confirmed_count']}")
-    print(f"Found but unconfirmed: {calendar_data['unconfirmed_count']}")
-    print(f"Not found on page:     {calendar_data['not_found_count']}")
-
-    if failed_programs:
-        print(f"\nCheck these manually (deadline not found on page):")
-        for n in failed_programs:
-            print(f"  - {n}")
-
-    print(f"\nCalendar JSON: {_CALENDAR_OUTPUT}")
-    print(f"Calendar MD:   {_CALENDAR_MD}")
-    print(f"Research docs: {_RESEARCH_DIR}/")
-    print("\nNext steps:")
-    print("  1. Review outputs/CALENDAR.md -- check ⚠️ unconfirmed entries manually")
-    print("  2. git add outputs/program_calendar.json outputs/CALENDAR.md outputs/program_research/")
-    print("  3. git commit -m 'calendar: research run' && git push")
-    print("  4. Re-run monthly to refresh deadlines")
+    print(f"\nConfirmed: {calendar_data['confirmed_count']}")
+    print(f"No date on page: {calendar_data['not_found_count']}")
+    print(f"Calendar: {_CALENDAR_MD}")
+    print(f"ICS (confirmed only): {_CALENDAR_ICS}")
+    _maybe_email(md, calendar_data)
 
 
 if __name__ == "__main__":
