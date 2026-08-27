@@ -6,6 +6,10 @@ on:
     - cron: '0 8 1 * *'
   workflow_dispatch: {}
 
+concurrency:
+  group: outputs-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   refresh-calendar:
     runs-on: ubuntu-latest
@@ -20,6 +24,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+
+      - name: Verify required secrets
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          test -n "$ANTHROPIC_API_KEY" || { echo "ANTHROPIC_API_KEY secret is empty"; exit 1; }
+          echo "Required API keys are present"
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
@@ -36,9 +47,15 @@ jobs:
         run: python -m calendar_agent.research
 
       - name: Commit updated calendar
+        if: always()
         run: |
           git config user.name "scholarship-agent[bot]"
           git config user.email "scholarship-agent@noreply.github.com"
           git add outputs/program_calendar.json outputs/CALENDAR.md outputs/program_research/ || true
-          git diff --staged --quiet || git commit -m "calendar: monthly refresh $(date -u +%Y-%m-%d)"
+          if git diff --staged --quiet; then
+            echo "No calendar changes to commit"
+            exit 0
+          fi
+          git commit -m "calendar: monthly refresh $(date -u +%Y-%m-%d)"
+          git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
           git push

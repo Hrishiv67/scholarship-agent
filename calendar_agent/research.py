@@ -31,7 +31,7 @@ _CALENDAR_OUTPUT = _ROOT / "outputs" / "program_calendar.json"
 _CALENDAR_MD = _ROOT / "outputs" / "CALENDAR.md"
 _RESEARCH_DIR = _ROOT / "outputs" / "program_research"
 
-_RESEARCH_MODEL = "claude-sonnet-4-5-20251015"
+_RESEARCH_MODEL = "claude-haiku-4-5-20251001"
 _API_DELAY_SECONDS = 2
 
 

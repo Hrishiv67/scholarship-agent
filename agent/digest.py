@@ -90,8 +90,8 @@ a { color: #e94560; }
 {% endif %}
 
 {% if account_setup %}
-<h2>🔑 Set Up These Accounts Once (then the agent takes over)</h2>
-<p>Each of these needs a one-time signup where you solve a CAPTCHA. Do it once per site and the agent reuses the saved login for every future application there — you will not see it again.</p>
+<h2>🔑 Needs a one-time Google/OAuth signup</h2>
+<p>The agent creates accounts and solves CAPTCHA itself. These few sites only offer Sign in with Google (or similar), which you have to do once. After that the saved session is reused.</p>
 <table>
 <tr><th>Portal</th><th>Step</th><th>Link</th></tr>
 {% for r in account_setup %}
@@ -174,7 +174,7 @@ def send(run_log: RunLog, results: list[ClassifiedOpportunity], profile: Profile
     submitted = [r for r in run_log.results if r.outcome == "submitted"]
     yours = [r for r in run_log.results if r.outcome == "yours_manual"]
     needs_you = [r for r in run_log.results if r.outcome == "tracked"]
-    _setup_kw = ("captcha", "cloudflare", "oauth", "sign in", "login", "account")
+    _setup_kw = ("oauth", "google sign", "sign in with", "continue with google")
     account_setup = [r for r in needs_you if any(k in (r.notes or "").lower() for k in _setup_kw)]
     other_tracked = [r for r in needs_you if r not in account_setup]
 

@@ -55,7 +55,7 @@ def write(opp: ClassifiedOpportunity, profile: Profile, login_note: str) -> str:
 **Account:** {login_note}
 **Status:** {opp.reason or 'needs you to finish'}
 
-Log in, paste these in, solve the CAPTCHA, and submit. The essays are written in your voice and fitted to the prompt.
+Log in if needed, then paste these. The agent submits when it can; this packet is only a backup.
 
 ## Your details
 {_fields(profile)}

@@ -3,6 +3,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from agent.dedup import DedupStore, make_key
+from agent.classifier import _derive_route
 
 
 def test_dedup_basic():
@@ -32,6 +33,31 @@ def test_dedup_normalize():
     print("PASS: URL normalization test passed")
 
 
+def test_is_done_retries_tracked():
+    store = DedupStore()
+    url = "https://example.com/apply"
+    title = "Retry Me"
+    store.mark(url, title, "tracked", "OPP-TEST-002", notes="CAPTCHA detected")
+    assert store.seen(url, title)
+    assert not store.is_done(url, title)
+    assert len(store.pending()) == 1
+
+    store.mark(url, title, "submitted", "OPP-TEST-002")
+    assert store.is_done(url, title)
+    assert store.pending() == []
+    print("PASS: unfinished applications are retried until submitted")
+
+
+def test_elite_is_auto_submitted():
+    route, _ = _derive_route("elite", False, True)
+    assert route == "auto_submit"
+    route, _ = _derive_route("elite", True, True)
+    assert route == "skip"
+    print("PASS: elite programs are auto-submitted unless they cost money")
+
+
 if __name__ == "__main__":
     test_dedup_basic()
     test_dedup_normalize()
+    test_is_done_retries_tracked()
+    test_elite_is_auto_submitted()

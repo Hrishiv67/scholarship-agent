@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urlparse, urlencode, parse_qs, urlunparse
 
 DEDUP_PATH = Path(__file__).parent.parent / "outputs" / "dedup.json"
+DONE_STATUSES = {"submitted", "skipped"}
 
 _TRACKING_PARAMS = {
     "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term",
@@ -57,6 +58,17 @@ class DedupStore:
 
     def seen(self, url: str, title: str) -> bool:
         return make_key(url, title) in self.entries
+
+    def is_done(self, url: str, title: str) -> bool:
+        """True only when we should not try this URL again (submitted or skipped)."""
+        entry = self.entries.get(make_key(url, title))
+        return bool(entry and entry.status in DONE_STATUSES)
+
+    def get(self, url: str, title: str) -> DedupEntry | None:
+        return self.entries.get(make_key(url, title))
+
+    def pending(self) -> list[DedupEntry]:
+        return [e for e in self.entries.values() if e.status not in DONE_STATUSES]
 
     def mark(self, url: str, title: str, status: str, opp_id: str,
              application_type: str = "", tier: str = "",

@@ -2,7 +2,7 @@
 
 Runs automatically every week via GitHub Actions — no computer needed.
 
-Finds and applies to paid internships, research programs, apprenticeships, fly-in programs, and scholarships that build a strong college-application narrative. Elite programs are tracked and reminded, but left for you to apply to yourself.
+Finds and applies to paid internships, research programs, apprenticeships, fly-in programs, and scholarships that build a strong college-application narrative. It submits applications itself, including account creation and CAPTCHA.
 
 ---
 
@@ -11,11 +11,10 @@ Finds and applies to paid internships, research programs, apprenticeships, fly-i
 1. Searches for opportunities (Tavily queries + a curated program calendar + direct program pages), fetching real page content.
 2. Classifies each one with the Anthropic Claude API — is it a real application, does it cost money, is it paid, does it need an essay.
 3. Routes each opportunity:
-   - **Elite** (Morehead-Cain, RSI, Clark Scholars, and the like) → tracked and reminded, **you apply yourself, no AI**.
-   - **Everything else** → applies automatically: creates the account, confirms the email, fills your details, drafts any essay in your voice (fitted to the word/character limit), attaches your resume, and submits.
    - **Costs money** (application fee, tuition, pay-to-attend) → skipped. Money *to* you (stipends, wages, awards) is preferred and ranked first.
-4. When something genuinely blocks it (CAPTCHA, "sign in with Google", a question it has no answer for), it does not stall silently — it records why and surfaces it in the weekly digest with a link so you can finish it.
-5. Emails you a weekly digest: everything applied to, elite programs reserved for you, anything that needs you, and an **Upcoming Deadlines** board so nothing is ever missed.
+   - **Everything else, including elite programs** → applies automatically: creates the account, clicks CAPTCHA checkboxes and waits for Cloudflare Turnstile to pass (no paid solver), confirms the email, fills your details, drafts any essay in your voice, attaches your resume, submits, and records confirmation (screenshot + confirmation number when the site shows one).
+4. Unfinished applications are retried on the next run until they are actually submitted. It never marks something submitted without a confirmation page.
+5. Emails you a weekly digest: everything applied to (with confirmation), anything that still needs a Google/OAuth signup, and an **Upcoming Deadlines** board.
 
 There is no eligibility filtering — it applies broadly. It never fabricates facts and never marks something submitted that was not.
 
@@ -30,7 +29,8 @@ outputs/
   CALENDAR.md             Human-readable deadline calendar
   my_status.json          You edit this to silence reminders (see below)
   dedup.json              What has been seen — prevents duplicate applications
-  screenshots/            Proof of each submission
+  screenshots/            Proof of each submission (*_post.png after submit)
+  confirmations/          Confirmation number / thank-you text saved per application
 
 profile/
   profile.json            Your data (used to fill all forms), including guardians

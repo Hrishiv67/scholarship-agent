@@ -11,7 +11,7 @@ import time
 from urllib.parse import urlparse
 
 from .profile_loader import Profile
-from . import session_store, accounts
+from . import captcha, session_store, accounts
 
 # Registration link text patterns to look for on landing pages
 SIGNUP_LINK_TEXTS = [
@@ -35,6 +35,7 @@ REG_FIELD_PATTERNS = [
     (r'school|institution|high.?school', 'school_name'),
     (r'grad(uation)?.?year|class.?of', 'graduation_year'),
     (r'grade|current.?grade', 'current_grade'),
+    (r'birth.?date|date.?of.?birth|^dob$', 'date_of_birth'),
 ]
 
 
@@ -52,6 +53,7 @@ def _get_reg_value(key: str, profile: Profile, password: str) -> str:
         'school_name': profile.academic.current_school,
         'graduation_year': str(profile.academic.graduation_year),
         'current_grade': str(profile.academic.current_grade),
+        'date_of_birth': profile.personal.date_of_birth,
     }
     return mapping.get(key, "")
 
@@ -142,6 +144,110 @@ def _fetch_verification_link(gmail_address: str, gmail_password: str, sender_dom
     return None
 
 
+def _prefer_email_signup(page) -> None:
+    """Avoid Google/Apple OAuth when an email signup path exists."""
+    for pat in (
+        r"sign ?up with email", r"continue with email", r"use email",
+        r"register with email", r"create account with email",
+    ):
+        try:
+            loc = page.get_by_role("button", name=re.compile(pat, re.I))
+            if loc.count() > 0 and loc.first.is_visible():
+                loc.first.click(timeout=4000)
+                page.wait_for_timeout(1200)
+                return
+        except Exception:
+            continue
+        try:
+            loc = page.get_by_role("link", name=re.compile(pat, re.I))
+            if loc.count() > 0 and loc.first.is_visible():
+                loc.first.click(timeout=4000)
+                page.wait_for_timeout(1200)
+                return
+        except Exception:
+            continue
+
+
+def _looks_logged_in(page) -> bool:
+    try:
+        content = page.content().lower()
+    except Exception:
+        return False
+    positives = ("sign out", "log out", "your dashboard", "my application", "welcome back")
+    negatives = ("sign in", "log in", "create an account", "password")
+    if any(p in content for p in positives) and not page.query_selector('input[type="password"]'):
+        return True
+    if page.query_selector('input[type="password"]') and any(n in content for n in negatives):
+        return False
+    return False
+
+
+def login(page, url: str, profile: Profile) -> bool:
+    """Log in with the student's email and PORTAL_PASSWORD if a login form is present."""
+    password = os.environ.get("PORTAL_PASSWORD", "")
+    if not password:
+        return False
+    email_el = (
+        page.query_selector('input[type="email"]')
+        or page.query_selector('input[name*="email" i]')
+        or page.query_selector('input[autocomplete="username"]')
+    )
+    pass_el = page.query_selector('input[type="password"]')
+    if not email_el or not pass_el:
+        return False
+    try:
+        email_el.fill(profile.personal.email)
+        pass_el.fill(password)
+    except Exception:
+        return False
+    captcha.solve_if_present(page)
+    submit = (
+        page.query_selector('button[type="submit"]')
+        or page.query_selector('input[type="submit"]')
+        or page.query_selector('button:has-text("Log in")')
+        or page.query_selector('button:has-text("Sign in")')
+        or page.query_selector('button:has-text("Login")')
+    )
+    if not submit:
+        return False
+    try:
+        submit.click()
+        page.wait_for_timeout(3000)
+        captcha.solve_if_present(page)
+        storage = page.context.storage_state()
+        session_store.save(url, storage)
+        domain = urlparse(url).netloc.lower().removeprefix("www.")
+        accounts.record(domain, url, profile.personal.email, "agent", "logged in")
+        print(f"[account_creator] Logged in on {domain}")
+        return True
+    except Exception as e:
+        print(f"[account_creator] Login failed: {e}")
+        return False
+
+
+def ensure_access(page, url: str, profile: Profile) -> bool:
+    """Login if possible, otherwise create an account. Never leaves a CAPTCHA unattempted."""
+    if _looks_logged_in(page):
+        return True
+    captcha.solve_if_present(page)
+    if page.query_selector('input[type="password"]') and page.query_selector(
+        'input[type="email"], input[name*="email" i]'
+    ):
+        # Prefer login when the wall is a sign-in form.
+        content = ""
+        try:
+            content = page.content().lower()
+        except Exception:
+            pass
+        if any(w in content for w in ("log in", "sign in", "welcome back")) and "create" not in content[:2000]:
+            if login(page, url, profile):
+                return True
+    created = register(page, url, profile)
+    if created:
+        return True
+    return login(page, url, profile)
+
+
 def register(page, url: str, profile: Profile) -> bool:
     """
     Attempt to create an account on a portal and verify email.
@@ -155,44 +261,56 @@ def register(page, url: str, profile: Profile) -> bool:
     if not password:
         print("[account_creator] PORTAL_PASSWORD not set — skipping account creation")
         return False
-    if not gmail_address or not gmail_app_password:
-        print("[account_creator] Gmail credentials not set — cannot verify email")
-        return False
 
     domain = urlparse(url).netloc.lower().removeprefix("www.")
+    already_on_form = bool(
+        page.query_selector('input[type="email"], input[name*="email" i]')
+        and page.query_selector('input[type="password"]')
+    )
 
-    # Step 1: Find signup link on current page
-    signup_link = None
-    for text in SIGNUP_LINK_TEXTS:
-        el = (
-            page.query_selector(f'a:has-text("{text}")') or
-            page.query_selector(f'button:has-text("{text}")')
-        )
-        if el:
-            signup_link = el
-            break
+    if not already_on_form:
+        signup_link = None
+        for text in SIGNUP_LINK_TEXTS:
+            el = (
+                page.query_selector(f'a:has-text("{text}")') or
+                page.query_selector(f'button:has-text("{text}")')
+            )
+            if el:
+                try:
+                    if not el.is_visible():
+                        continue
+                except Exception:
+                    continue
+                signup_link = el
+                break
 
-    if not signup_link:
-        # Try navigating to common signup URL patterns
-        for suffix in ["/signup", "/register", "/create-account", "/join"]:
-            base = f"{urlparse(url).scheme}://{urlparse(url).netloc}{suffix}"
+        if signup_link:
             try:
-                page.goto(base, timeout=10000, wait_until="domcontentloaded")
-                if page.query_selector('input[type="email"], input[name*="email"]'):
-                    break
-            except Exception:
-                continue
+                page.keyboard.press("Escape")
+                page.wait_for_timeout(300)
+                signup_link.click(timeout=8000, force=True)
+                page.wait_for_load_state("domcontentloaded")
+                page.wait_for_timeout(2000)
+            except Exception as e:
+                print(f"[account_creator] Could not click signup link: {e}")
+                return False
         else:
-            print(f"[account_creator] No signup link found on {domain}")
-            return False
-    else:
-        try:
-            signup_link.click()
-            page.wait_for_load_state("domcontentloaded")
-            page.wait_for_timeout(2000)
-        except Exception as e:
-            print(f"[account_creator] Could not click signup link: {e}")
-            return False
+            found = False
+            for suffix in ["/signup", "/register", "/create-account", "/join", "/apply"]:
+                base = f"{urlparse(url).scheme}://{urlparse(url).netloc}{suffix}"
+                try:
+                    page.goto(base, timeout=10000, wait_until="domcontentloaded")
+                    if page.query_selector('input[type="email"], input[name*="email" i]'):
+                        found = True
+                        break
+                except Exception:
+                    continue
+            if not found:
+                print(f"[account_creator] No signup link found on {domain}")
+                return False
+
+    _prefer_email_signup(page)
+    captcha.solve_if_present(page)
 
     # Step 2: Fill registration form
     filled = 0
@@ -251,7 +369,8 @@ def register(page, url: str, profile: Profile) -> bool:
         except Exception:
             continue
 
-    # Step 3: Submit registration
+    # Step 3: Solve CAPTCHA, then submit registration
+    captcha.solve_if_present(page)
     submit = (
         page.query_selector('button[type="submit"]') or
         page.query_selector('input[type="submit"]') or
@@ -267,6 +386,7 @@ def register(page, url: str, profile: Profile) -> bool:
     try:
         submit.click()
         page.wait_for_timeout(3000)
+        captcha.solve_if_present(page)
     except Exception as e:
         print(f"[account_creator] Submit click failed: {e}")
         return False
@@ -274,8 +394,15 @@ def register(page, url: str, profile: Profile) -> bool:
     # Step 4: Check if registration succeeded (look for "check your email" message)
     content = page.content().lower()
     check_email_signals = ["check your email", "verify your email", "confirmation email", "sent you an email"]
+    already_exists = any(s in content for s in (
+        "already have an account", "account already exists", "email already",
+        "already registered",
+    ))
+    if already_exists:
+        print(f"[account_creator] Account already exists on {domain} — logging in")
+        return login(page, url, profile)
+
     if not any(sig in content for sig in check_email_signals):
-        # May have succeeded without email verification — try saving session
         try:
             storage = page.context.storage_state()
             session_store.save(url, storage)
@@ -288,9 +415,13 @@ def register(page, url: str, profile: Profile) -> bool:
         print(f"[account_creator] Registration unclear on {domain}")
         return False
 
+    if not gmail_address or not gmail_app_password:
+        print("[account_creator] Gmail credentials not set — cannot verify email")
+        return False
+
     # Step 5: Fetch verification link from Gmail
     print(f"[account_creator] Waiting for verification email from {domain}...")
-    verify_link = _fetch_verification_link(gmail_address, gmail_app_password, domain, timeout=60)
+    verify_link = _fetch_verification_link(gmail_address, gmail_app_password, domain, timeout=90)
 
     if not verify_link:
         print(f"[account_creator] Verification email not received from {domain} within 60s")

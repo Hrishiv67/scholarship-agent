@@ -172,9 +172,7 @@ Opportunities:
 
 
 def _derive_route(db_tier: str, costs_money: bool, is_real_application: bool) -> tuple[str, str]:
-    """Return (route, reason_suffix)."""
-    if db_tier == "elite":
-        return "yours_manual", "elite program - reserved for you to apply personally"
+    """Return (route, reason_suffix). Elite programs are applied to like everything else."""
     if costs_money:
         return "skip", "costs money (fee/tuition/pay-to-attend) - skipped"
     if not is_real_application:
@@ -197,15 +195,21 @@ def classify_all(
     results: list[ClassifiedOpportunity] = []
 
     opp_counter = [0]
+    date = __import__("datetime").datetime.now().strftime("%Y%m%d")
+    for e in dedup_store.entries.values():
+        if e.id.startswith(f"OPP-{date}-"):
+            try:
+                opp_counter[0] = max(opp_counter[0], int(e.id.rsplit("-", 1)[-1]))
+            except ValueError:
+                pass
 
     def next_id() -> str:
         opp_counter[0] += 1
-        from datetime import datetime
-        return f"OPP-{datetime.now().strftime('%Y%m%d')}-{opp_counter[0]:03d}"
+        return f"OPP-{date}-{opp_counter[0]:03d}"
 
-    # Drop already-seen; no eligibility hard-skip anymore.
-    to_classify = [opp for opp in raw if not dedup_store.seen(opp.url, opp.title)]
-    print(f"[classifier] {len(to_classify)} to classify ({len(raw) - len(to_classify)} already seen)")
+    # Drop finished items. Retry anything previously tracked / blocked / elite-held.
+    to_classify = [opp for opp in raw if not dedup_store.is_done(opp.url, opp.title)]
+    print(f"[classifier] {len(to_classify)} to classify ({len(raw) - len(to_classify)} already done)")
 
     if dry_run or not to_classify:
         for opp in to_classify:
@@ -239,19 +243,20 @@ def classify_all(
                 print(f"[classifier] batch {batch_no} attempt {attempt} failed: {error}")
 
         for j, opp in enumerate(batch):
-            opp_id = next_id()
+            existing = dedup_store.get(opp.url, opp.title)
+            opp_id = existing.id if existing else next_id()
             tier = opp.tier or _db_tier(opp.url, opp.title)
             match = next((c for c in classified if str(c.get("id", "")) == str(j + 1)), None)
 
             if match is None:
-                # Never silently mass-default to a no-op. Track + remind, record the error.
                 if run_log is not None and error:
                     run_log.add_error(opp_id, f"classification_failed: {error}")
                 results.append(ClassifiedOpportunity(
                     id=opp_id, title=opp.title, url=opp.url, snippet=opp.snippet,
-                    route=("yours_manual" if tier == "elite" else "track_remind"),
+                    route="auto_submit",
+                    application_type=(existing.application_type if existing else "web_form"),
                     db_tier=tier, slug=opp.slug,
-                    reason=f"classification failed ({error or 'no match'}) - tracking so it is not lost",
+                    reason=f"classification failed ({error or 'no match'}) - still attempting apply",
                     source_query=opp.source_query,
                 ))
                 continue

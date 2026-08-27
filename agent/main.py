@@ -6,7 +6,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # Load .env for local development (GitHub Actions uses env vars directly)
-load_dotenv()
+load_dotenv(Path(__file__).parent.parent / ".env")
 
 from . import (
     applicator,
@@ -20,6 +20,7 @@ from . import (
 )
 
 DRY_RUN = os.environ.get("DRY_RUN", "false").lower() == "true"
+SEEDS_ONLY = os.environ.get("SEEDS_ONLY", "false").lower() == "true"
 RAW_RESULTS_PATH = Path(__file__).parent.parent / "outputs" / "opportunities_raw.json"
 
 
@@ -27,7 +28,7 @@ def run():
     run_log = logger.RunLog()
     run_log.start()
 
-    print(f"[main] Scholarship Agent starting — DRY_RUN={DRY_RUN}")
+    print(f"[main] Scholarship Agent starting — DRY_RUN={DRY_RUN} SEEDS_ONLY={SEEDS_ONLY}")
 
     # ── Phase 0: Load profile & dedup store ──────────────────────────────────
     try:
@@ -59,7 +60,17 @@ def run():
         run_log.classified[opp.route] = run_log.classified.get(opp.route, 0) + 1
     print(f"[main] Classified {len(opportunities)} opportunities")
 
-    # ── Phase 4: Apply ────────────────────────────────────────────────────────
+    # ── Phase 4: Apply (new finds + unfinished retries) ───────────────────────
+    if not SEEDS_ONLY:
+        retries = applicator.retries_from_store(dedup_store, opportunities, limit=20)
+        opportunities = list(opportunities) + retries
+    try:
+        apply_limit = int(os.environ.get("APPLY_LIMIT", "0") or "0")
+    except ValueError:
+        apply_limit = 0
+    if apply_limit > 0:
+        opportunities = opportunities[:apply_limit]
+        print(f"[main] APPLY_LIMIT={apply_limit}")
     results = []
     for opp in opportunities:
         result = applicator.dispatch(opp, profile, dedup_store, run_log, dry_run=DRY_RUN)

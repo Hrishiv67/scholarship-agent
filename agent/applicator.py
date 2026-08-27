@@ -8,6 +8,7 @@ from .logger import RunLog, RunResult
 from .profile_loader import Profile
 from . import accounts, packet
 
+_RETRY_SKIP = ("instagram.com", "facebook.com", "twitter.com", "x.com", "linkedin.com")
 _EMAIL_PATTERN = re.compile(r'[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}')
 
 
@@ -29,13 +30,44 @@ def _attach_packet(result: RunResult, opp: ClassifiedOpportunity, profile: Profi
     if dry_run:
         return
     try:
-        login_note = (f"Log in as {profile.personal.email} with your portal password. "
-                      f"If there is no account yet, sign up at the link above (one-time "
-                      f"CAPTCHA), then paste the answers below.")
+        login_note = (
+            f"Log in as {profile.personal.email} with your portal password. "
+            f"The agent creates the account and solves CAPTCHA when it can."
+        )
         packet.write(opp, profile, login_note)
         result.notes = f"{result.notes} | Packet: outputs/application_packets/{opp.id}.md"
     except Exception as e:
         print(f"[applicator] packet generation failed: {e}")
+
+
+def retries_from_store(dedup_store: DedupStore, already: list[ClassifiedOpportunity],
+                       limit: int = 30) -> list[ClassifiedOpportunity]:
+    """Re-queue unfinished applications that did not come back in this week's search."""
+    seen = {(o.url, o.title.lower().strip()) for o in already}
+    out: list[ClassifiedOpportunity] = []
+    for entry in dedup_store.pending():
+        key = (entry.url, (entry.title or "").lower().strip())
+        if key in seen:
+            continue
+        if entry.status == "skipped":
+            continue
+        if any(b in (entry.url or "").lower() for b in _RETRY_SKIP):
+            continue
+        out.append(ClassifiedOpportunity(
+            id=entry.id,
+            title=entry.title,
+            url=entry.url,
+            snippet=entry.notes or "",
+            route="auto_submit",
+            application_type=entry.application_type or "web_form",
+            award_value=entry.award_value or "",
+            reason="retry unfinished application",
+        ))
+        if len(out) >= limit:
+            break
+    if out:
+        print(f"[applicator] Retrying {len(out)} unfinished application(s)")
+    return out
 
 
 def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupStore,
@@ -56,22 +88,11 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
                          opp.application_type, opp.route, opp.award_value, opp.reason)
         return result
 
-    # ── elite: reserved for the user, no AI ────────────────────────────────────
+    # ── elite programs are applied to automatically (no manual holdback) ──────
     if opp.route == "yours_manual":
-        result.outcome = "yours_manual"
-        result.notes = "Elite - apply yourself. Tracked for deadline reminders."
-        dedup_store.mark(opp.url, opp.title, "yours_manual", opp.id,
-                         opp.application_type, opp.route, opp.award_value, opp.reason)
-        return result
+        opp.route = "auto_submit"
 
-    # ── track_remind: eligible but not auto-completable / far off ──────────────
-    if opp.route == "track_remind":
-        result.outcome = "tracked"
-        result.notes = opp.reason or "Tracked for reminders."
-        _attach_packet(result, opp, profile, dry_run)
-        dedup_store.mark(opp.url, opp.title, "tracked", opp.id,
-                         opp.application_type, opp.route, opp.award_value, result.notes)
-        return result
+    # Previously-tracked items are attempted, not parked.
 
     # ── auto_submit: attempt end-to-end; if blocked, flag (never silent) ───────
     # For email-type applications, prefer the address the classifier pulled from the
@@ -108,7 +129,7 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
         result.notes = f"Needs you: {reason}"
         # If it stalled on a signup/CAPTCHA, log the portal to the accounts registry
         # as a manual signup to do (the agent takes over once the account exists).
-        if any(k in reason.lower() for k in ("captcha", "cloudflare", "oauth", "sign in", "login", "account")):
+        if any(k in reason.lower() for k in ("oauth", "google sign", "sign in with")):
             accounts.record(opp.title, opp.url, profile.personal.email, "you (manual)",
                             "needs signup", reason)
         _attach_packet(result, opp, profile, dry_run)
@@ -122,9 +143,14 @@ def dispatch(opp: ClassifiedOpportunity, profile: Profile, dedup_store: DedupSto
         return result
 
     result.outcome = "submitted" if fill_result.success else "tracked"
-    result.notes = (f"Fields filled: {fill_result.fields_filled}, missed: {fill_result.fields_missed}"
-                    if fill_result.success
-                    else "Submit not confirmed - flagged for you to finish")
+    if fill_result.success:
+        conf = fill_result.confirmation or "thank-you / received page"
+        result.notes = (
+            f"SUBMITTED and confirmed ({conf}). "
+            f"Fields filled: {fill_result.fields_filled}, missed: {fill_result.fields_missed}"
+        )
+    else:
+        result.notes = "Submit not confirmed - flagged for you to finish"
     if not fill_result.success:
         _attach_packet(result, opp, profile, dry_run)
     dedup_store.mark(opp.url, opp.title,

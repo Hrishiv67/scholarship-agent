@@ -158,7 +158,7 @@
   {
     "slug": "nih-sip",
     "name": "NIH Summer Internship Program (SIP)",
-    "url": "https://www.training.nih.gov/programs/sip",
+    "url": "https://www.training.nih.gov/research-training/pb/sip/",
     "type": "internship",
     "tier": "competitive",
     "typical_open": "November",
@@ -170,7 +170,7 @@
   {
     "slug": "army-seap",
     "name": "Army Science and Engineering Apprenticeship Program (SEAP)",
-    "url": "https://seap.asee.org/",
+    "url": "https://www.navalsteminterns.us/seap/",
     "type": "internship",
     "tier": "competitive",
     "typical_open": "October",
