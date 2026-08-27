@@ -24,29 +24,60 @@ def _save_programs(programs: list[dict]) -> None:
         f.write("\n")
 
 
+def _worth_keeping(program: dict, raw: dict) -> bool:
+    if raw.get("deadline_confirmed"):
+        return True
+    if raw.get("confidence") in ("high", "medium"):
+        return True
+    if raw.get("page_had_useful_info"):
+        elig = (raw.get("eligibility") or "").lower()
+        if elig and "could not determine" not in elig:
+            return True
+    return False
+
+
 def run() -> None:
     load_dotenv(_ROOT / ".env")
     programs = _load_programs()
+    curated = [p for p in programs if p.get("source") != "tavily"]
+    tavily_kept = [p for p in programs if p.get("source") == "tavily"]
     existing_urls = {p.get("url") for p in programs if p.get("url")}
-    existing_slugs = {p.get("slug") for p in programs}
 
-    new_rows = discover.discover(existing_urls, max_new=int(os.environ.get("DISCOVER_LIMIT", "12")))
-    added = 0
-    for row in new_rows:
-        slug = row["slug"]
+    candidates = discover.discover(
+        existing_urls,
+        max_new=int(os.environ.get("DISCOVER_LIMIT", "8")),
+    )
+
+    raw_by_slug = research.main(
+        programs=curated + tavily_kept + candidates,
+        return_results=True,
+    )
+
+    # Drop unverified Tavily rows; keep validated discoveries
+    validated_tavily = [
+        p for p in tavily_kept
+        if _worth_keeping(p, raw_by_slug.get(p["slug"], {}))
+    ]
+    new_validated = []
+    existing_slugs = {p["slug"] for p in curated + validated_tavily}
+    for cand in candidates:
+        raw = raw_by_slug.get(cand["slug"], {})
+        if not _worth_keeping(cand, raw):
+            print(f"[pipeline] skip unverified discovery: {cand['name'][:55]}")
+            continue
+        slug = cand["slug"]
         n = 2
         while slug in existing_slugs:
-            slug = f"{row['slug']}-{n}"
+            slug = f"{cand['slug']}-{n}"
             n += 1
-        row["slug"] = slug
+        cand["slug"] = slug
         existing_slugs.add(slug)
-        programs.append(row)
-        added += 1
-    if added:
-        _save_programs(programs)
-        print(f"[pipeline] saved {added} discovered programs to programs.json")
+        new_validated.append(cand)
+        print(f"[pipeline] kept discovery: {cand['name'][:55]}")
 
-    research.main(programs=programs)
+    final = curated + validated_tavily + new_validated
+    _save_programs(final)
+    print(f"[pipeline] programs.json: {len(final)} entries ({len(curated)} curated)")
 
 
 if __name__ == "__main__":

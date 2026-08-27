@@ -76,16 +76,35 @@ def test_discover_rejects_listicles():
     assert not official_enough(
         "https://www.deltainstitute.co/blog/10-ai-summer-programs",
         "10 AI Summer Programs for High School Students",
+        set(),
     )
     assert not official_enough(
-        "https://www.ladderinternships.com/blog/ai-research-programs",
-        "14 AI Research Programs for High School Students",
+        "https://www.nist.gov/careers/student-opportunities",
+        "Student Employment",
+        set(),
     )
     assert official_enough(
         "https://intern.nasa.gov/",
-        "NASA internships",
+        "NASA internships for students",
+        set(),
     )
     print("PASS: discover rejects listicles")
+
+
+def test_dedupe_merges_subpages():
+    from calendar_agent.urls import dedupe_entries
+    entries = [
+        {"slug": "afrl-scholars", "name": "AFRL Scholars", "url": "https://afrlscholars.usra.edu/",
+         "deadline": None, "deadline_confirmed": False, "confidence": "none"},
+        {"slug": "dates-afrl", "name": "Dates - AFRL", "url": "https://afrlscholars.usra.edu/scholarsprogram/dates",
+         "deadline": "2027-01-10", "deadline_confirmed": True, "confidence": "high"},
+    ]
+    out = dedupe_entries(entries, {"afrl-scholars"})
+    assert len(out) == 1
+    assert out[0]["slug"] == "afrl-scholars"
+    assert out[0]["deadline"] == "2027-01-10"
+    assert out[0]["deadline_confirmed"] is True
+    print("PASS: dedupe merges subpage deadlines")
 
 
 if __name__ == "__main__":
@@ -95,3 +114,4 @@ if __name__ == "__main__":
     test_seniors_and_women_not_on_main_board()
     test_ics_only_confirmed()
     test_discover_rejects_listicles()
+    test_dedupe_merges_subpages()

@@ -17,6 +17,7 @@ from dotenv import load_dotenv
 
 from . import categories, dates, eligibility, render
 from .scraper import fetch_page
+from .urls import dedupe_entries
 
 _ROOT = Path(__file__).parent.parent
 load_dotenv(_ROOT / ".env")
@@ -25,6 +26,7 @@ _PROGRAMS_DB = Path(__file__).parent / "programs.json"
 _CALENDAR_OUTPUT = _ROOT / "outputs" / "program_calendar.json"
 _CALENDAR_MD = _ROOT / "outputs" / "CALENDAR.md"
 _CALENDAR_ICS = _ROOT / "outputs" / "calendar.ics"
+_WEEKLY_DIGEST = _ROOT / "outputs" / "WEEKLY_DIGEST.md"
 _RESEARCH_DIR = _ROOT / "outputs" / "program_research"
 
 _RESEARCH_MODEL = "claude-haiku-4-5-20251001"
@@ -317,7 +319,7 @@ def _maybe_email(md: str, stats: dict) -> None:
         print(f"[research] Failed to send email: {e}")
 
 
-def main(programs: list[dict] | None = None) -> None:
+def main(programs: list[dict] | None = None, return_results: bool = False) -> dict | None:
     load_dotenv(_ROOT / ".env")
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     if not api_key:
@@ -343,6 +345,8 @@ def main(programs: list[dict] | None = None) -> None:
 
     client = anthropic.Anthropic(api_key=api_key)
     updated: dict[str, dict] = dict(existing)
+    raw_by_slug: dict[str, dict] = {}
+    curated_slugs = {p["slug"] for p in programs if p.get("source") != "tavily"}
 
     for i, program in enumerate(to_run, 1):
         print(f"\n[{i:2d}/{len(to_run)}] {program['name']}")
@@ -351,6 +355,7 @@ def main(programs: list[dict] | None = None) -> None:
         except Exception as e:
             print(f"  ERROR: unhandled {type(e).__name__}: {e}")
             raw = _fallback_result(program, f"unhandled: {e}")
+        raw_by_slug[program["slug"]] = raw
         entry = _build_calendar_entry(program, raw)
         entry = _keep_confirmed_if_failed(existing.get(program["slug"]), entry)
         updated[program["slug"]] = entry
@@ -387,7 +392,7 @@ def main(programs: list[dict] | None = None) -> None:
             "costs_money": False,
         }
 
-    entries = list(updated.values())
+    entries = dedupe_entries(list(updated.values()), curated_slugs)
     calendar_data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "program_count": len(entries),
@@ -400,12 +405,19 @@ def main(programs: list[dict] | None = None) -> None:
     md = render.build_calendar_md(entries, calendar_data["generated_at"])
     _CALENDAR_MD.write_text(md, encoding="utf-8")
     _CALENDAR_ICS.write_text(render.build_ics(entries), encoding="utf-8")
+    digest = render.build_weekly_digest(entries, calendar_data["generated_at"])
+    _WEEKLY_DIGEST.write_text(digest, encoding="utf-8")
 
     print(f"\nConfirmed: {calendar_data['confirmed_count']}")
     print(f"No date on page: {calendar_data['not_found_count']}")
+    print(f"After dedup: {len(entries)} programs (was {len(updated)})")
     print(f"Calendar: {_CALENDAR_MD}")
+    print(f"Digest: {_WEEKLY_DIGEST}")
     print(f"ICS (confirmed only): {_CALENDAR_ICS}")
     _maybe_email(md, calendar_data)
+    if return_results:
+        return raw_by_slug
+    return None
 
 
 if __name__ == "__main__":

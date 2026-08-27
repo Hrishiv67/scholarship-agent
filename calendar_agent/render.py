@@ -1,7 +1,7 @@
 """Write CALENDAR.md and a confirmed-deadlines-only .ics file."""
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 from .categories import TRACKS, label
 from .dates import today_utc
@@ -40,6 +40,29 @@ def build_calendar_md(entries: list[dict], generated_at: str) -> str:
         "> ✅ = date quoted from the official page this run. "
         "No emoji date = the page did not publish a 2026–2027 deadline — do not guess.",
         "",
+    ]
+
+    due_soon = _due_soon_confirmed(entries, days=90)
+    if due_soon:
+        lines += ["## Confirmed deadlines (next 90 days)", ""]
+        for cat in TRACKS:
+            group = [e for e in due_soon if e.get("category") == cat]
+            if not group:
+                continue
+            lines.append(f"### {label(cat)}")
+            for e in sorted(group, key=lambda x: x.get("deadline") or ""):
+                lines.append(
+                    f"- **{e['deadline']}** — [{e['name']}]({e['url']})"
+                )
+            lines.append("")
+        general_due = [e for e in due_soon if e.get("category") not in TRACKS]
+        if general_due:
+            lines.append("### General")
+            for e in sorted(general_due, key=lambda x: x.get("deadline") or ""):
+                lines.append(f"- **{e['deadline']}** — [{e['name']}]({e['url']})")
+            lines.append("")
+
+    lines += [
         "## How to read this",
         "",
         "Programs are split into **AI**, **Engineering**, and **Business**. "
@@ -153,3 +176,77 @@ def build_ics(entries: list[dict]) -> str:
         ]
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"
+
+
+def _due_soon_confirmed(entries: list[dict], days: int = 90) -> list[dict]:
+    today = today_utc()
+    cutoff = today + timedelta(days=days)
+    out = []
+    for e in entries:
+        if not e.get("deadline_confirmed") or not e.get("deadline"):
+            continue
+        if e.get("status") in ("ineligible", "seniors_later"):
+            continue
+        try:
+            d = date.fromisoformat(e["deadline"])
+        except ValueError:
+            continue
+        if today <= d <= cutoff:
+            out.append(e)
+    return out
+
+
+def build_weekly_digest(entries: list[dict], generated_at: str) -> str:
+    today = today_utc()
+    lines = [
+        f"# Weekly Program Digest — {today.isoformat()}",
+        "",
+        "_Only confirmed official-page deadlines. Seniors-only tracked separately._",
+        "",
+    ]
+    for window, end, label_text in (
+        (0, 14, "Apply this week (≤14 days)"),
+        (15, 30, "Apply this month (15–30 days)"),
+        (31, 60, "Coming up (31–60 days)"),
+    ):
+        bucket = []
+        for e in entries:
+            if not e.get("deadline_confirmed") or e.get("status") in ("ineligible", "seniors_later"):
+                continue
+            try:
+                d = date.fromisoformat(e["deadline"])
+            except (ValueError, TypeError):
+                continue
+            days_out = (d - today).days
+            if window <= days_out <= end:
+                bucket.append(e)
+        lines += [f"## {label_text}", ""]
+        if not bucket:
+            lines += ["_None with confirmed deadlines in this window._", ""]
+            continue
+        for cat in TRACKS + ["general"]:
+            group = [e for e in bucket if (e.get("category") or "general") == cat]
+            if not group:
+                continue
+            title = label(cat) if cat != "general" else "General"
+            lines.append(f"### {title}")
+            for e in sorted(group, key=lambda x: x.get("deadline") or ""):
+                lines.append(
+                    f"- **{e['deadline']}** [{e['name']}]({e['url']}) — {(e.get('award') or '')[:80]}"
+                )
+            lines.append("")
+
+    seniors = [e for e in entries if e.get("status") == "seniors_later"]
+    if seniors:
+        lines += ["## Track for fall 2027 (seniors-only)", ""]
+        for e in sorted(seniors, key=_sort_key)[:20]:
+            lines.append(f"- [{e['name']}]({e['url']})")
+        lines.append("")
+
+    confirmed = sum(1 for e in entries if e.get("deadline_confirmed"))
+    lines += [
+        "---",
+        f"_Generated {generated_at[:10]}. {confirmed} confirmed deadlines across {len(entries)} programs._",
+        "",
+    ]
+    return "\n".join(lines)

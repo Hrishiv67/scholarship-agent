@@ -10,12 +10,13 @@ from urllib.parse import urlparse
 from dotenv import load_dotenv
 
 from .categories import TRACKS
+from .urls import normalize_url
 
 _ROOT = Path(__file__).parent.parent
 load_dotenv(_ROOT / ".env")
 
 _SKIP_HOSTS = (
-    "reddit.com", "www.reddit.com", "quora.com", "tiktok.com", "youtube.com",
+    "reddit.com", "quora.com", "tiktok.com", "youtube.com",
     "linkedin.com", "indeed.com", "glassdoor.com", "ziprecruiter.com",
     "collegevine.com", "collegeconfidential.com", "facebook.com", "x.com",
     "twitter.com", "pinterest.com", "medium.com", "ladderinternships.com",
@@ -25,23 +26,35 @@ _LISTICLE = re.compile(
     r"^\d+\s+.+(program|internship|scholarship|opportunit)",
     re.I,
 )
-_SKIP_PATH = ("/blog", "/blogs/", "/news/", "/article", "/list-of")
+_SKIP_PATH = (
+    "/blog", "/blogs/", "/news/", "/article", "/list-of",
+    "/dates", "/application-and-selection", "/apply-jpl", "/current-students/",
+)
+_GENERIC_TITLES = {
+    "student employment", "internship program", "student opportunities",
+    "internship programs", "summer internships for high school students -",
+    "explore programs & apply",
+}
+_ALLOW_HOSTS = {
+    "navalsteminterns.us", "about.bankofamerica.com", "bankofamerica.com",
+    "cee.org", "societyforscience.org", "afrlscholars.usra.edu",
+}
 
 QUERIES = {
     "ai": [
-        '"high school" "artificial intelligence" OR "machine learning" internship OR research 2026 OR 2027 apply deadline -site:reddit.com',
-        '"high school" "computer science" summer 2027 research OR internship paid OR stipend apply',
-        'site:nasa.gov OR site:nist.gov "high school" intern 2027 computer OR data apply',
+        '"high school" "machine learning" OR "computer science" summer research 2027 site:.edu apply deadline',
+        'site:stanford.edu OR site:mit.edu "high school" summer research internship apply',
+        'site:nasa.gov OR site:nist.gov "high school" intern apply deadline',
     ],
     "engineering": [
-        '"high school" engineering internship "summer 2027" paid OR stipend apply deadline -site:indeed.com',
-        'SEAP OR "AFRL Scholars" OR "NIH SIP" OR "NASA intern" high school 2027 apply',
-        '"high school" research program engineering NC State OR Duke OR UNC 2027 apply',
+        '"high school" engineering summer research 2027 site:.edu apply deadline',
+        'SEAP OR "AFRL Scholars" OR "NIH SIP" high school apply site:.gov OR site:.edu',
+        '"high school" paid internship NC State OR Duke OR UNC 2027 apply',
     ],
     "business": [
-        '"Bank of America Student Leaders" 2027 apply high school',
-        '"high school" business internship OR "student leaders" OR entrepreneurship 2027 apply deadline',
-        'DECA scholarship 2027 apply high school deadline',
+        '"Bank of America Student Leaders" 2027 apply',
+        'DECA scholarship high school apply deadline site:deca.org',
+        '"high school" entrepreneurship OR "student leaders" internship 2027 apply site:.edu',
     ],
 }
 
@@ -56,21 +69,9 @@ def _slug(name: str) -> str:
     return slug[:60] or "program"
 
 
-_ALLOW_HOSTS = {
-    "navalsteminterns.us",
-    "www.navalsteminterns.us",
-    "about.bankofamerica.com",
-    "www.bankofamerica.com",
-    "cee.org",
-    "www.cee.org",
-    "societyforscience.org",
-    "www.societyforscience.org",
-}
-
-
 def _host_ok(url: str) -> bool:
     parsed = urlparse(url)
-    host = (parsed.hostname or "").lower()
+    host = (parsed.hostname or "").lower().removeprefix("www.")
     path = (parsed.path or "").lower()
     if not host:
         return False
@@ -83,23 +84,34 @@ def _host_ok(url: str) -> bool:
     return host.endswith(".edu") or host.endswith(".gov")
 
 
-def official_enough(url: str, title: str) -> bool:
+def official_enough(url: str, title: str, existing_urls: set[str]) -> bool:
+    title_l = (title or "").strip().lower()
     if _LISTICLE.search(title or ""):
         return False
-    return _host_ok(url)
+    if len(title_l) < 12:
+        return False
+    if title_l in _GENERIC_TITLES:
+        return False
+    if not _host_ok(url):
+        return False
+    norm = normalize_url(url)
+    for existing in existing_urls:
+        if normalize_url(existing) == norm:
+            return False
+    return True
 
 
 def discover(existing_urls: set[str], max_new: int = 15) -> list[dict]:
     key = _tavily_key()
     if not key:
-        print("[discover] TAVILY_API_KEY not set — skipping web discovery")
+        print("[discover] TAVILY_API_KEY not set — skipping web search")
         return []
 
     from tavily import TavilyClient
 
     client = TavilyClient(api_key=key)
     found: list[dict] = []
-    seen = set(existing_urls)
+    seen = {normalize_url(u) for u in existing_urls if u}
 
     print("[discover] Tavily web search enabled")
     for category in TRACKS:
@@ -111,7 +123,7 @@ def discover(existing_urls: set[str], max_new: int = 15) -> list[dict]:
                 response = client.search(
                     query=query,
                     search_depth="basic",
-                    max_results=6,
+                    max_results=5,
                     include_answer=False,
                 )
             except Exception as e:
@@ -120,9 +132,12 @@ def discover(existing_urls: set[str], max_new: int = 15) -> list[dict]:
             for row in response.get("results") or []:
                 url = (row.get("url") or "").strip()
                 title = (row.get("title") or "").strip()
-                if not url or url in seen or not official_enough(url, title):
+                norm = normalize_url(url)
+                if not url or norm in seen:
                     continue
-                seen.add(url)
+                if not official_enough(url, title, existing_urls):
+                    continue
+                seen.add(norm)
                 found.append({
                     "slug": _slug(title),
                     "name": title[:120],
@@ -136,7 +151,7 @@ def discover(existing_urls: set[str], max_new: int = 15) -> list[dict]:
                     "requires": [],
                     "notes": (
                         f"Discovered {datetime.now(timezone.utc).date().isoformat()} "
-                        f"via Tavily ({category}). Dates unconfirmed until official page research."
+                        f"via Tavily ({category}). Pending official page verification."
                     ),
                     "source": "tavily",
                 })
