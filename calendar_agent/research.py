@@ -145,6 +145,12 @@ def _research_program(program: dict, client: anthropic.Anthropic) -> dict:
         print(f"  ERROR: API call failed for {name}: {e}")
         return _fallback_result(program, f"API call failed: {e}")
 
+    if isinstance(result, list):
+        result = next((x for x in result if isinstance(x, dict)), None)
+    if not isinstance(result, dict):
+        print(f"  ERROR: unexpected JSON shape for {name}")
+        return _fallback_result(program, "Claude JSON was not an object")
+
     deadline, d_ok = dates.confirm_deadline(
         result.get("deadline"),
         result.get("deadline_confirmed"),
@@ -340,7 +346,11 @@ def main(programs: list[dict] | None = None) -> None:
 
     for i, program in enumerate(to_run, 1):
         print(f"\n[{i:2d}/{len(to_run)}] {program['name']}")
-        raw = _research_program(program, client)
+        try:
+            raw = _research_program(program, client)
+        except Exception as e:
+            print(f"  ERROR: unhandled {type(e).__name__}: {e}")
+            raw = _fallback_result(program, f"unhandled: {e}")
         entry = _build_calendar_entry(program, raw)
         entry = _keep_confirmed_if_failed(existing.get(program["slug"]), entry)
         updated[program["slug"]] = entry

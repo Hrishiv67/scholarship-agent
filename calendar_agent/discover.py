@@ -18,8 +18,14 @@ _SKIP_HOSTS = (
     "reddit.com", "www.reddit.com", "quora.com", "tiktok.com", "youtube.com",
     "linkedin.com", "indeed.com", "glassdoor.com", "ziprecruiter.com",
     "collegevine.com", "collegeconfidential.com", "facebook.com", "x.com",
-    "twitter.com", "pinterest.com", "medium.com",
+    "twitter.com", "pinterest.com", "medium.com", "ladderinternships.com",
+    "deltainstitute.co", "teenlife.com", "internships.com",
 )
+_LISTICLE = re.compile(
+    r"^\d+\s+.+(program|internship|scholarship|opportunit)",
+    re.I,
+)
+_SKIP_PATH = ("/blog", "/blogs/", "/news/", "/article", "/list-of")
 
 QUERIES = {
     "ai": [
@@ -50,11 +56,37 @@ def _slug(name: str) -> str:
     return slug[:60] or "program"
 
 
+_ALLOW_HOSTS = {
+    "navalsteminterns.us",
+    "www.navalsteminterns.us",
+    "about.bankofamerica.com",
+    "www.bankofamerica.com",
+    "cee.org",
+    "www.cee.org",
+    "societyforscience.org",
+    "www.societyforscience.org",
+}
+
+
 def _host_ok(url: str) -> bool:
-    host = (urlparse(url).hostname or "").lower()
+    parsed = urlparse(url)
+    host = (parsed.hostname or "").lower()
+    path = (parsed.path or "").lower()
     if not host:
         return False
-    return not any(host == s or host.endswith("." + s) for s in _SKIP_HOSTS)
+    if any(host == s or host.endswith("." + s) for s in _SKIP_HOSTS):
+        return False
+    if any(p in path for p in _SKIP_PATH):
+        return False
+    if host in _ALLOW_HOSTS:
+        return True
+    return host.endswith(".edu") or host.endswith(".gov")
+
+
+def official_enough(url: str, title: str) -> bool:
+    if _LISTICLE.search(title or ""):
+        return False
+    return _host_ok(url)
 
 
 def discover(existing_urls: set[str], max_new: int = 15) -> list[dict]:
@@ -88,9 +120,7 @@ def discover(existing_urls: set[str], max_new: int = 15) -> list[dict]:
             for row in response.get("results") or []:
                 url = (row.get("url") or "").strip()
                 title = (row.get("title") or "").strip()
-                if not url or url in seen or not _host_ok(url):
-                    continue
-                if not title:
+                if not url or url in seen or not official_enough(url, title):
                     continue
                 seen.add(url)
                 found.append({

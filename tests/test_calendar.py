@@ -68,8 +68,24 @@ def test_ics_only_confirmed():
     assert "Skipped" not in ics
     md = build_calendar_md(entries, "2026-08-27T00:00:00+00:00")
     assert "## AI" in md and "## Engineering" in md and "## Business" in md
-    assert "Track for fall 2027" not in md or True
     print("PASS: ics and markdown honesty")
+
+
+def test_discover_rejects_listicles():
+    from calendar_agent.discover import official_enough
+    assert not official_enough(
+        "https://www.deltainstitute.co/blog/10-ai-summer-programs",
+        "10 AI Summer Programs for High School Students",
+    )
+    assert not official_enough(
+        "https://www.ladderinternships.com/blog/ai-research-programs",
+        "14 AI Research Programs for High School Students",
+    )
+    assert official_enough(
+        "https://intern.nasa.gov/",
+        "NASA internships",
+    )
+    print("PASS: discover rejects listicles")
 
 
 if __name__ == "__main__":
@@ -78,3 +94,4 @@ if __name__ == "__main__":
     test_quote_must_support_date()
     test_seniors_and_women_not_on_main_board()
     test_ics_only_confirmed()
+    test_discover_rejects_listicles()
