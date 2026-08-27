@@ -4,8 +4,17 @@ PRODID:-//Hrishiv Program Calendar//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Hrishiv program deadlines (confirmed)
 BEGIN:VEVENT
+UID:afrl-scholars@scholarship-agent
+DTSTAMP:20260827T235859Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270110
+SUMMARY:Air Force Research Lab (AFRL) Scholars (Engineering) due
+DESCRIPTION:https://afrlscholars.usra.edu/\nupper-level high school students pursuing STEM degrees
+URL:https://afrlscholars.usra.edu/
+END:VEVENT
+BEGIN:VEVENT
 UID:coca-cola-scholars@scholarship-agent
-DTSTAMP:20260827T234200Z
+DTSTAMP:20260827T235859Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20260930
 SUMMARY:Coca-Cola Scholars Foundation (General (not field-specific)) due
@@ -13,8 +22,17 @@ DESCRIPTION:https://www.coca-colascholarsfoundation.org/apply/\nHigh school seni
 URL:https://www.coca-colascholarsfoundation.org/apply/
 END:VEVENT
 BEGIN:VEVENT
+UID:regeneron-sts@scholarship-agent
+DTSTAMP:20260827T235859Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261105
+SUMMARY:Regeneron Science Talent Search (STS) (Engineering) due
+DESCRIPTION:https://www.societyforscience.org/regeneron-sts/\nHigh school students\; page indicates this is for 2027 cycle (STS 2027) which typically includes high school seniors and juniors
+URL:https://www.societyforscience.org/regeneron-sts/
+END:VEVENT
+BEGIN:VEVENT
 UID:deca-scholarships@scholarship-agent
-DTSTAMP:20260827T234200Z
+DTSTAMP:20260827T235859Z
 DTSTART;VALUE=DATE:20270111
 DTEND;VALUE=DATE:20270111
 SUMMARY:DECA Inc. Scholarships (Business) due
@@ -22,21 +40,12 @@ DESCRIPTION:https://www.deca.org/high-school-programs/scholarships/\nDECA member
 URL:https://www.deca.org/high-school-programs/scholarships/
 END:VEVENT
 BEGIN:VEVENT
-UID:aimi-summer-research-internship@scholarship-agent
-DTSTAMP:20260827T234200Z
+UID:stanford-aimi-summer@scholarship-agent
+DTSTAMP:20260827T235859Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270201
-SUMMARY:AIMI Summer Research Internship (AI) due
-DESCRIPTION:https://aimi.stanford.edu/education/summer-research-internship\nhigh school students
+SUMMARY:Stanford AIMI Summer Research Internship (AI) due
+DESCRIPTION:https://aimi.stanford.edu/education/summer-research-internship\n
 URL:https://aimi.stanford.edu/education/summer-research-internship
-END:VEVENT
-BEGIN:VEVENT
-UID:dates-afrl-scholars@scholarship-agent
-DTSTAMP:20260827T234200Z
-DTSTART;VALUE=DATE:20270110
-DTEND;VALUE=DATE:20270110
-SUMMARY:Dates - AFRL Scholars (Engineering) due
-DESCRIPTION:https://afrlscholars.usra.edu/scholarsprogram/dates\nNot specified on this page
-URL:https://afrlscholars.usra.edu/scholarsprogram/dates
 END:VEVENT
 END:VCALENDAR

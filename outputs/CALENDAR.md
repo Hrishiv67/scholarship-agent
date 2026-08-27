@@ -6,6 +6,11 @@ _Generated 2026-08-27 from official program pages. A date is listed as confirmed
 
 > ✅ = date quoted from the official page this run. No emoji date = the page did not publish a 2026–2027 deadline — do not guess.
 
+## Confirmed deadlines (next 90 days)
+
+### Engineering
+- **2026-11-05** — [Regeneron Science Talent Search (STS)](https://www.societyforscience.org/regeneron-sts/)
+
 ## How to read this
 
 Programs are split into **AI**, **Engineering**, and **Business**. Inside each track they are sorted by due date. Generic merit scholarships that are not field programs sit at the bottom.
@@ -14,25 +19,26 @@ Programs are split into **AI**, **Engineering**, and **Business**. Inside each t
 
 | Deadline | Status | Program | Award | Eligibility |
 |----------|--------|---------|-------|-------------|
-| 2027-02-01 | ✅ confirmed | [AIMI Summer Research Internship](https://aimi.stanford.edu/education/summer-research-internship) | mentored hands-on research experience with Stanford AIMI, wo | high school students |
+| 2027-02-01 | ✅ confirmed | [Stanford AIMI Summer Research Internship](https://aimi.stanford.edu/education/summer-research-internship) | mentored AI/health research at Stanford AIMI | verify |
+| — | — no date on page | [Astrophysics Science Division: Interns at GSFC](https://science.gsfc.nasa.gov/660/interns) | Interns receive a stipend for their work and housing assista | US citizens and foreign nationals currently enrolled in US institutions |
 | — | — no date on page | [Congressional App Challenge](https://www.congressionalappchallenge.us/) | Winners' apps displayed on official winners page; described  | US students in grades 9-12 |
 | — | — no date on page | [MIT PRIMES USA](https://math.mit.edu/research/highschool/primes/usa/) | Free program; participants work on unsolved problems in math | High school juniors and sophomores (or homeschooled students of the same age) re |
-| — | — no date on page | [NASA Internship Programs](https://www.nasa.gov/learning-resources/internship-programs) |  | verify |
-| — | — no date on page | [Research Program for HS Students – Summer 2026 - Computer Science K-12 Outreach | The University of Texas at Dallas](https://k12.utdallas.edu/research) |  | verify |
+| — | — no date on page | [Machine Learning](https://www.nyu.edu/admissions/high-school-and-middle-school-programs/high-school-programs/machine-learning.html) |  | Could not determine — check program website |
+| — | — no date on page | [Research Program for HS Students – Summer 2026](https://k12.utdallas.edu/research) | Summer Internship T-shirt, Completion certificate, Experienc | Advanced level high school students finishing 10th and 11th grade; IN-PERSON att |
+| — | — no date on page | [SAS Analytics Scholarship](https://www.sas.com/en_us/careers/students-and-graduates/scholarship.html) | $5,000 scholarship | Could not determine — check program website |
+| — | — no date on page | [SAS Institute Student Internship (Cary NC)](https://www.sas.com/en_us/careers/students-and-graduates.html) | paid summer internship at SAS HQ in Cary NC | unknown |
 | — | — no date on page | [SHIP Application and Selection Process | NIST](https://www.nist.gov/ship/ship-application-and-selection) |  | verify |
-| — | — no date on page | [Student Employment](https://www.nist.gov/careers/student-opportunities) |  | verify |
-| — | — no date on page | [Summer High School Internship Program (SHIP)](https://www.nist.gov/ship) |  | verify |
-| — | — no date on page | [Summer Internship Program (SIP)](https://www.training.nih.gov/research-training/pb/sip) |  | verify |
 | — | — no date on page | [Summer Internships for High School Students -](https://fast.stanford.edu/resources/internships) |  | verify |
+| — | — no date on page | [Young Scholars Research Program - Schar School](https://schar.gmu.edu/programs/executive-education/young-scholars-research-program) |  | verify |
 
 ## Engineering
 
 | Deadline | Status | Program | Award | Eligibility |
 |----------|--------|---------|-------|-------------|
-| 2027-01-10 | ✅ confirmed | [Dates - AFRL Scholars](https://afrlscholars.usra.edu/scholarsprogram/dates) | Stipend available (amount not specified on this page) | Not specified on this page |
+| 2026-11-05 | ✅ confirmed | [Regeneron Science Talent Search (STS)](https://www.societyforscience.org/regeneron-sts/) | $3.1 million in awards distributed annually; first place pri | High school students; page indicates this is for 2027 cycle (STS 2027) which typ |
+| 2027-01-10 | ✅ confirmed | [Air Force Research Lab (AFRL) Scholars](https://afrlscholars.usra.edu/) | stipend-paid internship; hands-on experience working with AF | upper-level high school students pursuing STEM degrees |
 | — | — no date on page | [AFCEA STEM Scholarships](https://www.afcea.org/signal-awards/scholarships) | $2,500-$5,000 | Could not determine — check program website |
 | — | — no date on page | [AIAA Foundation Scholarships](https://www.aiaa.org/get-involved/students-educators/scholarships) | $1,000-$10,000 varies by scholarship | Could not determine — check program website |
-| — | — no date on page | [Air Force Research Lab (AFRL) Scholars](https://afrlscholars.usra.edu/) | stipend-paid internship; hands-on experience working with AF | upper-level high school students pursuing STEM degrees |
 | — | — no date on page | [American Physical Society Scholarship](https://www.aps.org/programs/honors/scholarships/) | $2,000-$3,000 per year | Could not determine — check program website |
 | — | — no date on page | [Booz Allen Hamilton STEM Scholarship](https://www.boozallen.com/careers/meet-our-people/what-we-offer-students.html) | $5,000 scholarship + potential internship | Could not determine — check program website |
 | — | — no date on page | [Brown Open Campus Days](https://admission.brown.edu/connect/campus-visit-program) | all-expenses campus visit to Brown | Could not determine — check program website |
@@ -40,14 +46,28 @@ Programs are split into **AI**, **Engineering**, and **Business**. Inside each t
 | — | — no date on page | [CMU SAMS (Summer Academy for Math and Science)](https://www.cmu.edu/sams/) | free fully-funded 6-week program at Carnegie Mellon | Could not determine — check program website |
 | — | — no date on page | [Clark Scholars Program](https://www.clarkscholars.ttu.edu/) | paid 7-week research at Texas Tech, $750/week stipend | Could not determine — check program website |
 | — | — no date on page | [Davidson Fellows Scholarship](https://www.davidsongifted.org/fellows-scholarship/) | $100,000, $50,000, and $25,000 scholarships awarded | U.S. citizen or Permanent Resident residing in the United States (or stationed o |
-| — | — no date on page | [Duke Engineering Diversity Fly-In](https://pratt.duke.edu/undergrad/apply/diversity) | all-expenses fly-in to Duke Pratt School of Engineering | unknown - page not found |
+| — | — no date on page | [Duke Engineering Diversity Fly-In](https://pratt.duke.edu/undergrad/apply/diversity) | all-expenses fly-in to Duke Pratt School of Engineering | Unknown - page not found |
 | — | — no date on page | [EPA Environmental Career Opportunities](https://www.epa.gov/careers/college-and-career-resources-students) | paid summer internship at EPA offices | Could not determine — check program website |
 | — | — no date on page | [Garcia Summer Research Program (Stony Brook)](https://www.stonybrook.edu/commcms/garcia/) | paid summer materials research at Stony Brook | Not specified on page |
-| — | — no date on page | [Georgia Tech FOCUS Fly-In](https://admission.gatech.edu/first-year/campus-visit/focus) | all-expenses campus visit to Georgia Tech | unknown |
+| — | — no date on page | [Georgia Tech FOCUS Fly-In](https://admission.gatech.edu/first-year/campus-visit/focus) | all-expenses campus visit to Georgia Tech | unknown - page not accessible |
 | — | — no date on page | [Internship Program](https://www.nist.gov/careers/student-opportunities/internship-program) | Paid internship with potential conversion to full-time posit | Current high school students who are U.S. citizens, enrolled at least half-time, |
+| — | — no date on page | [Internships FAQ – JPL Internships | NASA JPL Education](https://www.jpl.nasa.gov/edu/internships/faq) | Most programs include stipend; some offer housing and/or tra | US citizens and Lawful Permanent Residents; STEM or STEM-adjacent fields; high s |
 | — | — no date on page | [Junior Science and Humanities Symposium (JSHS)](https://www.jshs.org/) | Scholarships, aid, and opportunities available | High school students |
 | — | — no date on page | [MIT Campus Preview Weekend](https://mitadmissions.org/apply/experience/campus-preview-weekend/) | all-expenses 4-day campus visit | Could not determine — check program website |
 | — | — no date on page | [MIT MOSTEC (Online STEM)](https://oeop.mit.edu/programs/mostec) | Free program; all educational, food, and boarding costs cove | 7th–12th grade students; focus on students from underserved and under-resourced  |
+| — | — no date on page | [NC Governor's School](https://www.dpi.nc.gov/students-families/enhanced-opportunities/governors-school) | free 4-week residential summer program | Could not determine — check program website |
+| — | — no date on page | [NC State College of Engineering HS Programs](https://www.engr.ncsu.edu/k-12/high-school-programs/) | varies by program | Could not determine — check program website |
+| — | — no date on page | [NC State GRIP High School Research](https://grip.ncsu.edu/high-school/) | paid 8-week summer research, stipend | Could not determine — check program website |
+| — | — no date on page | [NIST HS Honors Research Program](https://www.nist.gov/careers/summer-high-school-internship-program) | paid 8-week summer internship at NIST Gaithersburg MD | Could not determine — check program website |
+| — | — no date on page | [NOAA Student Opportunities](https://www.noaa.gov/education/opportunities/students) | Varies by specific opportunity (internships may be paid or u | High school students (no specific citizenship requirement stated for high school |
+| — | — no date on page | [Naval Research Lab (NRL) Summer Internship](https://www.nrl.navy.mil/careers/internship/) | paid 10-week internship at NRL Washington DC, competitive st | Could not determine — check program website |
+| — | — no date on page | [Navy SEAP High School Internship](https://www.navalsteminterns.us/seap/) | paid 8-week summer internship at Army research lab, $3,000-$ | Could not determine — check program website |
+| — | — no date on page | [Northwestern Frontiers Fly-In](https://www.northwestern.edu/admission/discover-northwestern/diversity-programs.html) | all-expenses campus visit to Northwestern | Could not determine — check program website |
+| — | — no date on page | [Princeton Diversity Open House](https://admission.princeton.edu/discover-princeton/programs-prospective-students) | all-expenses campus visit to Princeton | Could not determine — check program website |
+| — | — no date on page | [Regeneron ISEF](https://www.societyforscience.org/isef/) | Over $7 million in awards, prizes and scholarships across 22 | Students who have won at a Society-affiliated local, regional, state, or nationa |
+| — | — no date on page | [Research Science Institute (RSI)](https://www.cee.org/programs/research-science-institute) | Cost-free to students; 100 students selected; summer program | High school juniors only |
+| — | — no date on page | [Rice OEOP Fly-In](https://oeop.rice.edu/) | all-expenses campus visit to Rice University | Could not determine — check program website |
+| — | — no date on page | [SHTEM: Summer Internships for High Schoolers | Stanford Compression Forum](https://compression.stanford.edu/outreach/shtem-summer-internships-high-schoolers) | Unpaid internship; 8 weeks in summer 2027; research mentorsh | US Citizens and Permanent Residents who are high school juniors or seniors in th |
 | — | — no date on page | [WIE Internship Positions | A. James Clark School of Engineering, University of Maryland](https://eng.umd.edu/wie/current-students/internships) |  | verify |
 
 ## Business
@@ -62,32 +82,16 @@ Programs are split into **AI**, **Engineering**, and **Business**. Inside each t
 | Deadline | Status | Program | Award |
 |----------|--------|---------|-------|
 | — | — no date on page | [American Meteorological Society Essay Contest](https://www.ametsoc.org/index.cfm/ams/education-careers/scholarships-fellowships/) | $1,000-$5,000 scholarship |
-| — | — no date on page | [Army Science and Engineering Apprenticeship Program (SEAP)](https://seap.asee.org/) | paid 8-week summer internship at Army research lab, $3,000-$ |
 | — | — no date on page | [Bold.org No-Essay Scholarships](https://bold.org/scholarships/by-type/no-essay-scholarships/) | 90+ no-essay scholarships ranging from $500 to $10,000. Exam |
 | — | — no date on page | [Canada/USA Mathcamp](https://www.mathcamp.org/) | 5-week math intensive (~$6,500 fee, generous financial aid a |
 | — | — no date on page | [Duke RISE Program](https://dukelife.duke.edu/programs/internships-and-research/rise/) | paid summer research at Duke |
 | — | — no date on page | [Elks Most Valuable Student Scholarship](https://www.elks.org/scholars/scholarships/mvs.cfm) | $4,000-$50,000 |
 | — | — no date on page | [Horatio Alger National Scholarship](https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/) | Financial assistance and comprehensive support for education |
 | — | — no date on page | [Morehead-Cain Scholarship (UNC Chapel Hill)](https://moreheadcain.org/become-a-scholar/how-to-apply/) | fully funded UNC education plus summer enrichment; four-year |
-| — | — no date on page | [NC Governor's School](https://www.dpi.nc.gov/students-families/enhanced-opportunities/governors-school) | free 4-week residential summer program |
-| — | — no date on page | [NC State College of Engineering HS Programs](https://www.engr.ncsu.edu/k-12/high-school-programs/) | varies by program |
-| — | — no date on page | [NC State GRIP High School Research](https://grip.ncsu.edu/high-school/) | paid 8-week summer research, stipend |
-| — | — no date on page | [NIH Summer Internship Program (SIP)](https://www.training.nih.gov/programs/sip) | paid stipend ~$500-$900/week, 8-10 weeks at NIH Bethesda MD |
-| — | — no date on page | [NIST HS Honors Research Program](https://www.nist.gov/careers/summer-high-school-internship-program) | paid 8-week summer internship at NIST Gaithersburg MD |
-| — | — no date on page | [NOAA Student Opportunities](https://www.noaa.gov/education/opportunities/students) | paid internship, varies by program |
 | — | — no date on page | [National Merit Scholarship](https://www.nationalmerit.org/s/1758/interior.aspx?sid=1758&gid=2&pgid=424) | $2,500 National Merit + corporate/college scholarships |
-| — | — no date on page | [Naval Research Lab (NRL) Summer Internship](https://www.nrl.navy.mil/careers/internship/) | paid 10-week internship at NRL Washington DC, competitive st |
 | — | — no date on page | [Niche $25k No-Essay Scholarship](https://www.niche.com/colleges/scholarships/no-essay/) | $25,000 |
-| — | — no date on page | [Northwestern Frontiers Fly-In](https://www.northwestern.edu/admission/discover-northwestern/diversity-programs.html) | all-expenses campus visit to Northwestern |
-| — | — no date on page | [Princeton Diversity Open House](https://admission.princeton.edu/discover-princeton/programs-prospective-students) | all-expenses campus visit to Princeton |
 | — | — no date on page | [Prudential Spirit of Community Award](https://spirit.prudential.com/) | $1,000-$5,000 + national recognition |
 | — | — no date on page | [RTI International Student Internship (RTP)](https://www.rti.org/careers/students-and-recent-grads) | paid summer internship in Research Triangle Park NC |
-| — | — no date on page | [Regeneron ISEF](https://www.societyforscience.org/isef/) | up to $75,000 grand prize; sponsor awards |
-| — | — no date on page | [Regeneron Science Talent Search (STS)](https://www.societyforscience.org/regeneron-sts/) | top prize $250,000; 40 finalists each $25,000 |
-| — | — no date on page | [Research Science Institute (RSI)](https://www.cee.org/programs/research-science-institute) | free, all-expenses, 6 weeks at MIT, stipend |
-| — | — no date on page | [Rice OEOP Fly-In](https://oeop.rice.edu/) | all-expenses campus visit to Rice University |
-| — | — no date on page | [SAS Analytics Scholarship](https://www.sas.com/en_us/careers/students-and-graduates/scholarship.html) | $5,000 scholarship |
-| — | — no date on page | [SAS Institute Student Internship (Cary NC)](https://www.sas.com/en_us/careers/students-and-graduates.html) | paid summer internship at SAS HQ in Cary NC |
 | — | — no date on page | [Simons Summer Research Program](https://www.stonybrook.edu/simons/) | $3,000 stipend, 7-week paid research at Stony Brook Universi |
 | — | — no date on page | [Smithsonian Institution Internship](https://www.si.edu/OFI/apply) | paid or stipend summer internship at Smithsonian museums/res |
 | — | — no date on page | [Stanford FEST Fly-In](https://engineering.stanford.edu/students-academics/equity-and-inclusion-initiatives/prospective-undergraduate-students/discover) | all-expenses fly-in to Stanford Engineering |
@@ -109,6 +113,7 @@ Programs are split into **AI**, **Engineering**, and **Business**. Inside each t
 - [College Board BigFuture Scholarships](https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027) — date TBA
 - [Harvey Mudd FAST Fly-In](https://www.hmc.edu/admission/fast/) — date TBA
 - [MIT MITES Semester](https://oeop.mit.edu/programs/mites) — date TBA
+- [NIH Summer Internship Program (SIP)](https://www.training.nih.gov/research-training/pb/sip/) — date TBA
 
 ## Skipped / ineligible
 
@@ -116,7 +121,9 @@ Programs are split into **AI**, **Engineering**, and **Business**. Inside each t
 - [DOE Office of Science HS Programs](https://science.osti.gov/wdts) — This is an undergraduate program (SULI). The student is a rising junior in high school and does not meet eligibility req
 - [NASA High School Internship (OSSI)](https://www.nasa.gov/learning-resources/internship-programs/) — Page discusses NASA internship programs generally but does not provide specific 2026-2028 cycle dates. Metadata indicate
 - [Lockheed Martin STEM Scholarship](https://www.lockheedmartin.com/en-us/who-we-are/communities/stem-education/lm-scholarship-program.html) — As of the official page: '2024 STEM Scholarship Program application cycle is now closed. Lockheed Martin will not be off
-- [Explore Programs & Apply – JPL Internships | NASA JPL Education](https://www.jpl.nasa.gov/edu/internships/apply) — Student is a rising junior (11th grade) and thus ineligible for undergraduate internship programs. Page lists internship
+- [JPL Summer Internship Program – Explore Programs & Apply | NASA JPL Education](https://www.jpl.nasa.gov/edu/internships/apply/jpl-summer-internship-program) — Student is a high school rising junior (11th grade), not an undergraduate. This program requires currently enrolled unde
+- [AI for Computational Creativity | NSF REU Site | Brown Computer Science](https://aireu.cs.brown.edu) — Student is rising junior (11th grade), not yet in college. Page states high school graduates accepted to undergraduate i
+- [Genetics Research Internships and Workshops | Genetics High School Summer Internships and Workshops | Stanford Medicine](https://med.stanford.edu/genecamp.html) — Student is not in Bay Area (Cary, NC); ineligible for GRIPS. Stanford Data Ocean Online Summer Camp mentioned but lacks 
 
 ---
 _Today: 2026-08-27. Import `outputs/calendar.ics` for confirmed deadlines only._

@@ -1,31 +1,18 @@
 # NOAA Student Opportunities
 
 **URL:** https://www.noaa.gov/education/opportunities/students
-**Application Opens:** Not found on page -- typically October
-**Deadline:** Not found -- check https://www.noaa.gov/education/opportunities/students
-**Award:** paid internship, varies by program
-**Tier:** Competitive
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- application
-- transcript
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the January deadline.
+**Track:** Engineering
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
+**Opens:** Not stated on official page
+**Award:** Varies by specific opportunity (internships may be paid or unpaid; fellowships include stipends and professional development)
+**Eligibility:** High school students (no specific citizenship requirement stated for high school tier)
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** none
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi8oKksdednXkzrniif'}. Check https://www.noaa.gov/education/opportunities/students manually.
+Page provided is the NOAA Student Opportunities database landing page with general guidance on filters and opportunity types. It does not contain details for a specific program with confirmed dates. The metadata suggests typical October opening and January deadline, but these are unconfirmed and do not appear on this page. Student must use the database filters (High School audience, Engineering track, Fall/Winter application period) to find specific opportunities with published dates.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

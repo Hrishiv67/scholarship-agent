@@ -1,33 +1,18 @@
 # Research Science Institute (RSI)
 
 **URL:** https://www.cee.org/programs/research-science-institute
-**Application Opens:** Not found on page -- typically October
-**Deadline:** Not found -- check https://www.cee.org/programs/research-science-institute
-**Award:** free, all-expenses, 6 weeks at MIT, stipend
-**Tier:** Elite
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- essay
-- teacher_rec
-- transcript
-- test_scores
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the December deadline.
+**Track:** Engineering
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
+**Opens:** Not stated on official page
+**Award:** Cost-free to students; 100 students selected; summer program at MIT with one week intensive STEM classes and five week research internship
+**Eligibility:** High school juniors only
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** medium
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi6G2XN6xQHgs55EJoS'}. Check https://www.cee.org/programs/research-science-institute manually.
+Applications for RSI 2026 are now closed per the official page. Page states 'High school juniors are eligible. High school seniors are not.' Student is Class of 2028 (rising junior/11th grade), making him eligible for future cycles.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

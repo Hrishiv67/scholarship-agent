@@ -1,32 +1,18 @@
 # NIH Summer Internship Program (SIP)
 
-**URL:** https://www.training.nih.gov/programs/sip
-**Application Opens:** Not found on page -- typically November
-**Deadline:** Not found -- check https://www.training.nih.gov/programs/sip
-**Award:** paid stipend ~$500-$900/week, 8-10 weeks at NIH Bethesda MD
-**Tier:** Competitive
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- application
-- transcript
-- gpa_minimum
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the March deadline.
+**URL:** https://www.training.nih.gov/research-training/pb/sip/
+**Track:** Engineering
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** The SIP 2027 application will open in mid-November 2026. The application will close in mid-February, 2027.
+**Opens:** Not stated on official page
+**Award:** Full-time summer research internship position (May-August 2027); stipend adjusted annually based on educational level; free parking; eligible for Transhare program on some campuses; access to professional development, educational/career programming, and well-being programs
+**Eligibility:** U.S. citizen or permanent resident; must be 18 by September 30, 2027; must be enrolled as high school senior at time of application and have graduated before internship start
+**Status:** seniors_later
+**Last verified:** 2026-08-27
+**Confidence:** high
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi79dqMb9VCkW8LtXnM'}. Check https://www.training.nih.gov/programs/sip manually.
+This student is a rising junior (Class of 2028), not a senior, and therefore ineligible for the 2027 cycle. Student may be eligible for the 2028 cycle when graduating senior. Selection is decentralized by individual PIs; interviews begin early January with positions filled by April 1. Student should note NIH nepotism policy if family member works at NIH.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

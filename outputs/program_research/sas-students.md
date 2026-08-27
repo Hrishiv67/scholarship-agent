@@ -1,32 +1,18 @@
 # SAS Institute Student Internship (Cary NC)
 
 **URL:** https://www.sas.com/en_us/careers/students-and-graduates.html
-**Application Opens:** Not found on page -- typically January
-**Deadline:** Not found -- check https://www.sas.com/en_us/careers/students-and-graduates.html
+**Track:** AI
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
+**Opens:** Not stated on official page
 **Award:** paid summer internship at SAS HQ in Cary NC
-**Tier:** Competitive
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- application
-- transcript
-- programming_skills
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the March deadline.
+**Eligibility:** unknown
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** none
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi8TVQPCEBq6EfSJQ5b'}. Check https://www.sas.com/en_us/careers/students-and-graduates.html manually.
+Official page text provided appears to be incomplete (only shows '*Our Future folder | SAS'). No substantive program details, dates, or eligibility information present.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

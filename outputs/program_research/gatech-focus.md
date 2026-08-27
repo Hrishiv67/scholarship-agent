@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** all-expenses campus visit to Georgia Tech
-**Eligibility:** unknown
+**Eligibility:** unknown - page not accessible
 **Status:** eligible
 **Last verified:** 2026-08-27
 **Confidence:** none
 
 ## Notes
-Official page returned 404 error. No usable information available from the provided page text.
+Official page returned 404 error. No dates or eligibility information available from the provided source.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

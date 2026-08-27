@@ -1,32 +1,18 @@
 # National Merit Scholarship
 
 **URL:** https://www.nationalmerit.org/s/1758/interior.aspx?sid=1758&gid=2&pgid=424
-**Application Opens:** Not found on page -- typically N/A (PSAT-based)
-**Deadline:** Not found -- check https://www.nationalmerit.org/s/1758/interior.aspx?sid=1758&gid=2&pgid=424
+**Track:** General (not field-specific)
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
+**Opens:** Not stated on official page
 **Award:** $2,500 National Merit + corporate/college scholarships
-**Tier:** Competitive
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- psat_score
-- application
-- essay
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the N/A — PSAT taken October junior year deadline.
+**Eligibility:** Unknown - page content not provided
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** none
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiHC3ibzBVYvkXWgGbx'}. Check https://www.nationalmerit.org/s/1758/interior.aspx?sid=1758&gid=2&pgid=424 manually.
+Student is rising junior (Class of 2028), eligible for PSAT in October 2026. Official page text only shows login screen with no substantive content.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

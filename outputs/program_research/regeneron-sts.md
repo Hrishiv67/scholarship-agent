@@ -1,33 +1,18 @@
 # Regeneron Science Talent Search (STS)
 
 **URL:** https://www.societyforscience.org/regeneron-sts/
-**Application Opens:** Not found on page -- typically September
-**Deadline:** Not found -- check https://www.societyforscience.org/regeneron-sts/
-**Award:** top prize $250,000; 40 finalists each $25,000
-**Tier:** Elite
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- research_paper
-- essay
-- teacher_rec
-- transcript
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the November deadline.
+**Track:** Engineering
+**Deadline:** 2026-11-05 (confirmed from official page quote)
+**Deadline quote:** Application Deadline is November 5, 2026 at 8pm ET.
+**Opens:** Not stated on official page
+**Award:** $3.1 million in awards distributed annually; first place prize of $250,000; top 40 finalists receive more than $1.8 million in awards
+**Eligibility:** High school students; page indicates this is for 2027 cycle (STS 2027) which typically includes high school seniors and juniors
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** high
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiEbrrcjyyxA4UBNH8U'}. Check https://www.societyforscience.org/regeneron-sts/ manually.
+Student is rising junior (Class of 2028) and therefore eligible for STS 2027 cycle. STS 2027 application period is June 1 – November 5, 2026. Top 300 Scholars announced January 7, 2027; Top 40 Finalists announced January 21, 2027; Finals Week March 11-17, 2027; Winners announced March 16, 2027.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*
