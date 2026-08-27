@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hrishiv Program Calendar//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hrishiv program deadlines (confirmed)
+BEGIN:VEVENT
+UID:coca-cola-scholars@scholarship-agent
+DTSTAMP:20260827T234200Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20260930
+SUMMARY:Coca-Cola Scholars Foundation (General (not field-specific)) due
+DESCRIPTION:https://www.coca-colascholarsfoundation.org/apply/\nHigh school seniors (Class of 2027) graduating during 2026-2027 school year\, enrolled in US school (50 states\, DC\, Puerto Rico\, or select DoD schools)\, US citizen or permanent resident\, minimum 3.0 GPA\, planning to attend accredited US post-secondary institution. Not eligible: children/grandchildren of Coca-Cola Company employees/retirees\, international students\, temporary residents.
+URL:https://www.coca-colascholarsfoundation.org/apply/
+END:VEVENT
+BEGIN:VEVENT
+UID:deca-scholarships@scholarship-agent
+DTSTAMP:20260827T234200Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270111
+SUMMARY:DECA Inc. Scholarships (Business) due
+DESCRIPTION:https://www.deca.org/high-school-programs/scholarships/\nDECA members\; specific scholarships have additional criteria (e.g.\, IBM SkillsBuild certification\, NTHS membership\, RISE Up credential\, school-based enterprise work\, employer association)
+URL:https://www.deca.org/high-school-programs/scholarships/
+END:VEVENT
+BEGIN:VEVENT
+UID:aimi-summer-research-internship@scholarship-agent
+DTSTAMP:20260827T234200Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270201
+SUMMARY:AIMI Summer Research Internship (AI) due
+DESCRIPTION:https://aimi.stanford.edu/education/summer-research-internship\nhigh school students
+URL:https://aimi.stanford.edu/education/summer-research-internship
+END:VEVENT
+BEGIN:VEVENT
+UID:dates-afrl-scholars@scholarship-agent
+DTSTAMP:20260827T234200Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270110
+SUMMARY:Dates - AFRL Scholars (Engineering) due
+DESCRIPTION:https://afrlscholars.usra.edu/scholarsprogram/dates\nNot specified on this page
+URL:https://afrlscholars.usra.edu/scholarsprogram/dates
+END:VEVENT
+END:VCALENDAR

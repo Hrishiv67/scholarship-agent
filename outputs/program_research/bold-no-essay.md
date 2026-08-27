@@ -1,30 +1,18 @@
 # Bold.org No-Essay Scholarships
 
 **URL:** https://bold.org/scholarships/by-type/no-essay-scholarships/
-**Application Opens:** Not found on page -- typically rolling
-**Deadline:** Not found -- check https://bold.org/scholarships/by-type/no-essay-scholarships/
-**Award:** $250-$25,000 varies per scholarship
-**Tier:** Accessible
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- bold_account
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the rolling deadline.
+**Track:** General (not field-specific)
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** Deadline: Aug 31, 2026
+**Opens:** Not stated on official page
+**Award:** 90+ no-essay scholarships ranging from $500 to $10,000. Examples: SoFi $2,500 monthly, Bold.org $10,000 (1000 Bold Points), $5,000 (Community/Bold Points), multiple $1,000 scholarships.
+**Eligibility:** Multiple scholarships with varying eligibility. Most are open to 'Any' education level. Some require High School students. Some require faith-based college interest. Most require no essays.
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** high
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiCH2y2bSGE1fpzpFcD'}. Check https://bold.org/scholarships/by-type/no-essay-scholarships/ manually.
+Page updated August 24, 2026. Student is rising junior (11th grade), so most scholarships marked 'High School' are eligible. Several deadlines are Aug 29 or Aug 31, 2026 (imminent). Eitel Scholarship (Aug 29) restricted to female undergrad/grad students at Baptist colleges—not eligible for this rising junior.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

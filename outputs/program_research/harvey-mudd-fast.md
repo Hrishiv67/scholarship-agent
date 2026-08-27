@@ -1,30 +1,18 @@
 # Harvey Mudd FAST Fly-In
 
 **URL:** https://www.hmc.edu/admission/fast/
-**Application Opens:** Not found on page -- typically November
-**Deadline:** Not found -- check https://www.hmc.edu/admission/fast/
-**Award:** all-expenses campus visit to Harvey Mudd
-**Tier:** Competitive
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- application
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the December deadline.
+**Track:** Engineering
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** the 2026 FAST application will be live on June 3 and is now due on Aug. 9 at 11:59 p.m. PDT
+**Opens:** Not stated on official page
+**Award:** Fee waiver for first-year application to Harvey Mudd College; all travel, lodging, and meals provided during the two-day program
+**Eligibility:** U.S. citizens and permanent residents who live in the United States and its territories; high school seniors (or equivalent) intending to enter college in fall 2027
+**Status:** seniors_later
+**Last verified:** 2026-08-27
+**Confidence:** high
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiAJGaBGGvuBuNw35eu'}. Check https://www.hmc.edu/admission/fast/ manually.
+Student is rising junior (Class of 2028) and therefore ineligible for fall 2027 entry requirement. Application deadline has already passed (today is 2026-08-27). Two program dates offered: Sept. 13–15 and Oct. 25–27, 2026. Around 40-50 students invited per program. FAST results do not affect first-year HMC application.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

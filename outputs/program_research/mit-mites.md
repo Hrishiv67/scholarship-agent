@@ -1,32 +1,18 @@
 # MIT MITES Semester
 
 **URL:** https://oeop.mit.edu/programs/mites
-**Application Opens:** Not found on page -- typically October
-**Deadline:** Not found -- check https://oeop.mit.edu/programs/mites
-**Award:** free fully-funded residential 6-week program at MIT
-**Tier:** Elite
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- essay
-- teacher_rec
-- transcript
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the January deadline.
+**Track:** Engineering
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
+**Opens:** Not stated on official page
+**Award:** All educational, food, and boarding costs covered. Students pay only transportation to/from MIT. Travel scholarships available for MITES Summer.
+**Eligibility:** Rising high school seniors (12th grade); 7th–12th grade students for other MITES programs
+**Status:** seniors_later
+**Last verified:** 2026-08-27
+**Confidence:** high
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi6SEwPmR4x3zSnqFeV'}. Check https://oeop.mit.edu/programs/mites manually.
+Student is Class of 2028 (rising junior/11th grade), not a rising senior. MITES Semester is for rising high school seniors only (June through December). Page does not specify 2026-2027 cycle open or deadline dates—only states programs are 'typically' October open and January deadline in metadata, which are unconfirmed.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

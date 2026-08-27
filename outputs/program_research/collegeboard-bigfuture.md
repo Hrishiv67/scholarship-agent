@@ -1,30 +1,18 @@
 # College Board BigFuture Scholarships
 
 **URL:** https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027
-**Application Opens:** Not found on page -- typically September
-**Deadline:** Not found -- check https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027
-**Award:** monthly drawings and event prizes
-**Tier:** Accessible
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- collegeboard_account
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the June deadline.
+**Track:** General (not field-specific)
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
+**Opens:** Not stated on official page
+**Award:** $500 and $40,000 scholarships; increased chances if family earns less than $60k/year
+**Eligibility:** Class of 2027 (seniors); page also mentions sophomores but student is rising junior (Class of 2028)
+**Status:** seniors_later
+**Last verified:** 2026-08-27
+**Confidence:** high
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiCSwGuvcM8mma65CxG'}. Check https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027 manually.
+This scholarship is for Class of 2027 (seniors). Student is Class of 2028 (rising junior) and therefore ineligible for this cycle.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

@@ -1,32 +1,18 @@
 # DOE Office of Science HS Programs
 
 **URL:** https://science.osti.gov/wdts
-**Application Opens:** Not found on page -- typically October
-**Deadline:** Not found -- check https://science.osti.gov/wdts
-**Award:** paid summer research at DOE national labs
-**Tier:** Competitive
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- application
-- transcript
-- gpa_minimum
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the January deadline.
+**Track:** Engineering
+**Deadline:** 2026-09-30 (confirmed from official page quote)
+**Deadline quote:** Applications are due September 30, 2026 at 5:00pm ET.
+**Opens:** Not stated on official page
+**Award:** Internship at DOE national laboratories
+**Eligibility:** Science Undergraduate Laboratory Internships (SULI) Program for Spring 2027 Term - typically for undergraduate students; high school students may not be eligible
+**Status:** ineligible
+**Last verified:** 2026-08-27
+**Confidence:** high
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNi82RXMjGDuYhnYqpct'}. Check https://science.osti.gov/wdts manually.
+This is an undergraduate program (SULI). The student is a rising junior in high school and does not meet eligibility requirements. The metadata suggests a high school program exists within DOE Office of Science HS Programs, but no specific high school program details appear on this official page.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

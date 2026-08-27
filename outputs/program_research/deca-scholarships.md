@@ -1,32 +1,18 @@
 # DECA Inc. Scholarships
 
 **URL:** https://www.deca.org/high-school-programs/scholarships/
-**Application Opens:** Not found on page -- typically January
-**Deadline:** Not found -- check https://www.deca.org/high-school-programs/scholarships/
-**Award:** $1,000-$5,000 varies by scholarship
-**Tier:** Competitive
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- deca_membership
-- essay
-- transcript
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the March deadline.
+**Track:** Business
+**Deadline:** 2027-01-11 (confirmed from official page quote)
+**Deadline quote:** Applications will open soon and will remain open until January 11, 2027.
+**Opens:** Not stated on official page
+**Award:** Over $200,000 total in merit-based scholarships. Individual scholarships range from $1,000 to $2,500. Examples: ConQUERing ($2,500, 1 award), IBM SkillsBuild ($1,000, 5 awards), NRF Foundation RISE Up ($2,000, 5 awards), DECA Inc. ($2,000, 5 awards)
+**Eligibility:** DECA members; specific scholarships have additional criteria (e.g., IBM SkillsBuild certification, NTHS membership, RISE Up credential, school-based enterprise work, employer association)
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** high
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiJEa3sVHMmKLnwi9mT'}. Check https://www.deca.org/high-school-programs/scholarships/ manually.
+Rising junior (11th grade) is eligible, as NRF Foundation RISE Up specifically mentions 'juniors or seniors.' Student must be DECA member at Green Hope High School. No preliminary round for 2026-2027 cycle. All required items must be submitted by January 11, 2027.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

@@ -1,33 +1,18 @@
 # Horatio Alger National Scholarship
 
 **URL:** https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/
-**Application Opens:** Not found on page -- typically April
-**Deadline:** Not found -- check https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/
-**Award:** $25,000 scholarship
-**Tier:** Competitive
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- application
-- essay
-- financial_need
-- transcript
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the October deadline.
+**Track:** General (not field-specific)
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
+**Opens:** Not stated on official page
+**Award:** Financial assistance and comprehensive support for education; 1,246 scholarships awarded in 2025
+**Eligibility:** Deserving young people overcoming significant challenges and committed to pursuing higher education
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** low
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiCypu5p48DGXykmwBV'}. Check https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/ manually.
+Page contains general program overview but no specific 2026-2027 cycle dates. Student is rising junior (11th grade), not yet a senior. Program metadata indicates typical April open and October deadline, but these are unconfirmed and do not appear on the official page.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

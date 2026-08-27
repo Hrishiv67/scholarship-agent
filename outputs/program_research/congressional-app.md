@@ -1,31 +1,18 @@
 # Congressional App Challenge
 
 **URL:** https://www.congressionalappchallenge.us/
-**Application Opens:** Not found on page -- typically June
-**Deadline:** Not found -- check https://www.congressionalappchallenge.us/
-**Award:** prestigious; displayed in US Capitol; internship pipeline
-**Tier:** Competitive
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- app_submission
-- code_project
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the November deadline.
+**Track:** AI
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
+**Opens:** Not stated on official page
+**Award:** Winners' apps displayed on official winners page; described as most prestigious prize in student computer science
+**Eligibility:** US students in grades 9-12
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** low
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiEyKh8wG7zxY5naZ1q'}. Check https://www.congressionalappchallenge.us/ manually.
+Page shows 2025 winners and calls for 2026 registration but provides no specific open or deadline dates for the 2026 cycle. Metadata indicates typical deadline is November but this is unconfirmed on the official page.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

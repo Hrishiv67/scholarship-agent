@@ -8,7 +8,13 @@
     "typical_open": "August",
     "typical_deadline": "October (school nomination) / November-December",
     "award": "fully funded UNC education plus summer enrichment; four-year merit scholarship",
-    "requires": ["essay", "nomination", "teacher_rec", "transcript", "interview"],
+    "requires": [
+      "essay",
+      "nomination",
+      "teacher_rec",
+      "transcript",
+      "interview"
+    ],
     "notes": "Flagship merit scholarship at UNC Chapel Hill; usually requires school nomination first; ELITE - Hrishiv applies personally, no AI"
   },
   {
@@ -20,7 +26,11 @@
     "typical_open": "January",
     "typical_deadline": "February",
     "award": "paid 8-week summer research, stipend",
-    "requires": ["essay", "teacher_rec", "transcript"],
+    "requires": [
+      "essay",
+      "teacher_rec",
+      "transcript"
+    ],
     "notes": "NC State summer research; priority for NC residents; strong fit given existing NC State research experience"
   },
   {
@@ -32,7 +42,11 @@
     "typical_open": "December",
     "typical_deadline": "February",
     "award": "paid summer research at Duke",
-    "requires": ["essay", "teacher_rec", "transcript"],
+    "requires": [
+      "essay",
+      "teacher_rec",
+      "transcript"
+    ],
     "notes": "Duke summer research for HS juniors/seniors; existing Duke research experience is a major advantage"
   },
   {
@@ -44,7 +58,11 @@
     "typical_open": "January",
     "typical_deadline": "March",
     "award": "summer research experience at UNC",
-    "requires": ["essay", "teacher_rec", "transcript"],
+    "requires": [
+      "essay",
+      "teacher_rec",
+      "transcript"
+    ],
     "notes": "UNC Biomedical Engineering and Medicine program; MATLAB + biomedical background from Duke is a strong fit"
   },
   {
@@ -56,7 +74,10 @@
     "typical_open": "January",
     "typical_deadline": "February",
     "award": "$500-$5,000 varies by scholarship",
-    "requires": ["essay", "transcript"],
+    "requires": [
+      "essay",
+      "transcript"
+    ],
     "notes": "Multiple scholarships for Triangle-area NC students; Cary resident eligible"
   },
   {
@@ -68,7 +89,9 @@
     "typical_open": "December",
     "typical_deadline": "February",
     "award": "varies by program",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Multiple HS programs under NC State Engineering umbrella; prior NC State research is strong advantage"
   },
   {
@@ -80,7 +103,12 @@
     "typical_open": "November",
     "typical_deadline": "February",
     "award": "paid 7-week research at Texas Tech, $750/week stipend",
-    "requires": ["essay", "teacher_rec", "transcript", "test_scores"],
+    "requires": [
+      "essay",
+      "teacher_rec",
+      "transcript",
+      "test_scores"
+    ],
     "notes": "Only 12 scholars selected nationally; rocketry + ML + published paper make this a realistic target"
   },
   {
@@ -92,7 +120,11 @@
     "typical_open": "September",
     "typical_deadline": "December",
     "award": "year-long mentored math research, free (virtual)",
-    "requires": ["math_competition_scores", "essay", "teacher_rec"],
+    "requires": [
+      "math_competition_scores",
+      "essay",
+      "teacher_rec"
+    ],
     "notes": "Requires strong AMC/AIME/Olympiad scores; year-round virtual not summer; only apply if math competition background is strong"
   },
   {
@@ -104,7 +136,12 @@
     "typical_open": "October",
     "typical_deadline": "December",
     "award": "free, all-expenses, 6 weeks at MIT, stipend",
-    "requires": ["essay", "teacher_rec", "transcript", "test_scores"],
+    "requires": [
+      "essay",
+      "teacher_rec",
+      "transcript",
+      "test_scores"
+    ],
     "notes": "Most competitive HS research program in US; ~80 selected worldwide; Duke + NC State research + Zenodo paper make this a genuine application"
   },
   {
@@ -116,8 +153,12 @@
     "typical_open": "October",
     "typical_deadline": "January",
     "award": "free fully-funded residential 6-week program at MIT",
-    "requires": ["essay", "teacher_rec", "transcript"],
-    "notes": "For underrepresented HS juniors in STEM; South Asian applicant — check current eligibility criteria carefully"
+    "requires": [
+      "essay",
+      "teacher_rec",
+      "transcript"
+    ],
+    "notes": "For underrepresented HS juniors in STEM; South Asian applicant \u2014 check current eligibility criteria carefully"
   },
   {
     "slug": "mostec",
@@ -128,7 +169,11 @@
     "typical_open": "October",
     "typical_deadline": "January",
     "award": "free 6-month online STEM program with MIT mentors",
-    "requires": ["essay", "teacher_rec", "transcript"],
+    "requires": [
+      "essay",
+      "teacher_rec",
+      "transcript"
+    ],
     "notes": "Online version of MITES; less selective; leads to MIT connections; strong fit given STEM research background"
   },
   {
@@ -140,7 +185,11 @@
     "typical_open": "January",
     "typical_deadline": "February",
     "award": "4-week STEM residential at UC campus (~$4,500 fee, financial aid available)",
-    "requires": ["essay", "teacher_rec", "transcript"],
+    "requires": [
+      "essay",
+      "teacher_rec",
+      "transcript"
+    ],
     "notes": "UC Davis, UC San Diego, UC Irvine, UC Santa Cruz; strong STEM match; fee with financial aid"
   },
   {
@@ -152,7 +201,11 @@
     "typical_open": "January",
     "typical_deadline": "February",
     "award": "free fully-funded 6-week program at Carnegie Mellon",
-    "requires": ["essay", "teacher_rec", "transcript"],
+    "requires": [
+      "essay",
+      "teacher_rec",
+      "transcript"
+    ],
     "notes": "For underrepresented students; CS + engineering focus; strong pipeline to CMU"
   },
   {
@@ -164,7 +217,11 @@
     "typical_open": "November",
     "typical_deadline": "March",
     "award": "paid stipend ~$500-$900/week, 8-10 weeks at NIH Bethesda MD",
-    "requires": ["application", "transcript", "gpa_minimum"],
+    "requires": [
+      "application",
+      "transcript",
+      "gpa_minimum"
+    ],
     "notes": "Open to HS students 16+; biomedical research; Duke BME + MATLAB skills are direct fit; apply via NIH IRTA portal"
   },
   {
@@ -176,7 +233,12 @@
     "typical_open": "October",
     "typical_deadline": "January",
     "award": "paid 8-week summer internship at Army research lab, $3,000-$4,000 stipend",
-    "requires": ["application", "transcript", "gpa_minimum", "us_citizen"],
+    "requires": [
+      "application",
+      "transcript",
+      "gpa_minimum",
+      "us_citizen"
+    ],
     "notes": "US citizen required; placed at Army labs nationwide; rocketry + aerodynamics background is strong fit"
   },
   {
@@ -188,8 +250,12 @@
     "typical_open": "October",
     "typical_deadline": "January",
     "award": "paid 10-week internship at NRL Washington DC, competitive stipend",
-    "requires": ["application", "transcript", "us_citizen"],
-    "notes": "US citizen required; HS track available; aeronautics + physics + CS research — direct match"
+    "requires": [
+      "application",
+      "transcript",
+      "us_citizen"
+    ],
+    "notes": "US citizen required; HS track available; aeronautics + physics + CS research \u2014 direct match"
   },
   {
     "slug": "afrl-scholars",
@@ -200,7 +266,11 @@
     "typical_open": "October",
     "typical_deadline": "December",
     "award": "paid 10-week summer internship at AFRL, $600-$800/week",
-    "requires": ["application", "transcript", "us_citizen"],
+    "requires": [
+      "application",
+      "transcript",
+      "us_citizen"
+    ],
     "notes": "US citizen required; multiple AFRL lab locations; aerospace + AI/ML + rocketry is ideal profile"
   },
   {
@@ -212,7 +282,11 @@
     "typical_open": "November",
     "typical_deadline": "February",
     "award": "paid or stipend summer internship at Smithsonian museums/research centers",
-    "requires": ["application", "essay", "transcript"],
+    "requires": [
+      "application",
+      "essay",
+      "transcript"
+    ],
     "notes": "Multiple programs; science and engineering tracks; Washington DC; STEM research background is strong fit"
   },
   {
@@ -224,7 +298,11 @@
     "typical_open": "October",
     "typical_deadline": "January",
     "award": "paid summer research at DOE national labs",
-    "requires": ["application", "transcript", "gpa_minimum"],
+    "requires": [
+      "application",
+      "transcript",
+      "gpa_minimum"
+    ],
     "notes": "Multiple programs at national labs; check WDTS page for HS-specific listings; ML + engineering background is strong"
   },
   {
@@ -236,7 +314,10 @@
     "typical_open": "January",
     "typical_deadline": "March",
     "award": "paid summer internship in Research Triangle Park NC",
-    "requires": ["application", "transcript"],
+    "requires": [
+      "application",
+      "transcript"
+    ],
     "notes": "RTP-based research org in Cary/Durham area; occasional HS intern openings; check careers page seasonally"
   },
   {
@@ -248,7 +329,11 @@
     "typical_open": "January",
     "typical_deadline": "March",
     "award": "paid summer internship at SAS HQ in Cary NC",
-    "requires": ["application", "transcript", "programming_skills"],
+    "requires": [
+      "application",
+      "transcript",
+      "programming_skills"
+    ],
     "notes": "SAS HQ is in Cary; Python + ML + analytics background is perfect fit; check careers page for HS-specific openings"
   },
   {
@@ -260,7 +345,11 @@
     "typical_open": "October",
     "typical_deadline": "January",
     "award": "paid internship $500-$800/week, varies by center",
-    "requires": ["essay", "transcript", "gpa_minimum"],
+    "requires": [
+      "essay",
+      "transcript",
+      "gpa_minimum"
+    ],
     "notes": "Apply via NASA OSSI portal; rocketry + aerodynamics + AI modeling is ideal NASA profile"
   },
   {
@@ -272,7 +361,10 @@
     "typical_open": "October",
     "typical_deadline": "January",
     "award": "paid internship, varies by program",
-    "requires": ["application", "transcript"],
+    "requires": [
+      "application",
+      "transcript"
+    ],
     "notes": "Hurricane ML model from NC State research is a direct match for NOAA atmospheric science work"
   },
   {
@@ -284,7 +376,11 @@
     "typical_open": "October",
     "typical_deadline": "February",
     "award": "paid 8-week summer internship at NIST Gaithersburg MD",
-    "requires": ["application", "transcript", "teacher_rec"],
+    "requires": [
+      "application",
+      "transcript",
+      "teacher_rec"
+    ],
     "notes": "National Institute of Standards and Technology; physics + engineering + CS background is strong fit"
   },
   {
@@ -296,7 +392,10 @@
     "typical_open": "November",
     "typical_deadline": "February",
     "award": "paid summer internship at EPA offices",
-    "requires": ["application", "transcript"],
+    "requires": [
+      "application",
+      "transcript"
+    ],
     "notes": "Check EPA careers page for HS-specific environmental science/policy internship listings"
   },
   {
@@ -308,8 +407,10 @@
     "typical_open": "February",
     "typical_deadline": "March",
     "award": "all-expenses 4-day campus visit",
-    "requires": ["mit_admission_required"],
-    "notes": "Only for students admitted to MIT — confirm if separate open application exists for 2026-2027"
+    "requires": [
+      "mit_admission_required"
+    ],
+    "notes": "Only for students admitted to MIT \u2014 confirm if separate open application exists for 2026-2027"
   },
   {
     "slug": "stanford-fest",
@@ -320,8 +421,11 @@
     "typical_open": "January",
     "typical_deadline": "February",
     "award": "all-expenses fly-in to Stanford Engineering",
-    "requires": ["short_essay", "application"],
-    "notes": "For underrepresented HS juniors in engineering; South Asian — check current eligibility"
+    "requires": [
+      "short_essay",
+      "application"
+    ],
+    "notes": "For underrepresented HS juniors in engineering; South Asian \u2014 check current eligibility"
   },
   {
     "slug": "gatech-focus",
@@ -332,8 +436,10 @@
     "typical_open": "January",
     "typical_deadline": "February",
     "award": "all-expenses campus visit to Georgia Tech",
-    "requires": ["application"],
-    "notes": "Diversity fly-in for HS juniors; GaTech is strong in engineering and CS — great fit"
+    "requires": [
+      "application"
+    ],
+    "notes": "Diversity fly-in for HS juniors; GaTech is strong in engineering and CS \u2014 great fit"
   },
   {
     "slug": "duke-engineering-fly-in",
@@ -344,7 +450,10 @@
     "typical_open": "November",
     "typical_deadline": "January",
     "award": "all-expenses fly-in to Duke Pratt School of Engineering",
-    "requires": ["application", "essay"],
+    "requires": [
+      "application",
+      "essay"
+    ],
     "notes": "Existing Duke research relationship may help; for HS juniors from underrepresented groups"
   },
   {
@@ -356,7 +465,9 @@
     "typical_open": "November",
     "typical_deadline": "December",
     "award": "all-expenses campus visit to Harvey Mudd",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Confirm if pre-admission or post-admission fly-in for 2026-2027; Harvey Mudd is top engineering school"
   },
   {
@@ -368,7 +479,9 @@
     "typical_open": "October",
     "typical_deadline": "November",
     "award": "all-expenses 2-day campus visit to Yale",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Yale diversity fly-in for HS juniors; check admissions page for current program name"
   },
   {
@@ -380,7 +493,9 @@
     "typical_open": "October",
     "typical_deadline": "November",
     "award": "all-expenses campus visit to Princeton",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Princeton diversity program for HS juniors; check admissions page for current cycle"
   },
   {
@@ -392,7 +507,9 @@
     "typical_open": "October",
     "typical_deadline": "November",
     "award": "all-expenses campus visit to Brown",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Brown diversity fly-in for HS juniors; check admissions page for current fly-in program"
   },
   {
@@ -404,7 +521,9 @@
     "typical_open": "September",
     "typical_deadline": "October",
     "award": "all-expenses campus visit to Northwestern",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Earlier deadline than most fly-ins (September-October); strong engineering program"
   },
   {
@@ -416,7 +535,9 @@
     "typical_open": "October",
     "typical_deadline": "November",
     "award": "all-expenses campus visit to Rice University",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Rice is strong in engineering and CS; Houston TX; diversity fly-in for underrepresented students"
   },
   {
@@ -428,7 +549,9 @@
     "typical_open": "September",
     "typical_deadline": "October",
     "award": "all-expenses campus visit to Vanderbilt",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Young Emerging Scholars; earlier deadline (September-October); Vanderbilt strong in engineering + pre-med"
   },
   {
@@ -440,8 +563,10 @@
     "typical_open": "October",
     "typical_deadline": "November",
     "award": "all-expenses campus visit to Carnegie Mellon",
-    "requires": ["application"],
-    "notes": "CMU diversity fly-in; top CS and robotics school — strong match for robotics + CS background"
+    "requires": [
+      "application"
+    ],
+    "notes": "CMU diversity fly-in; top CS and robotics school \u2014 strong match for robotics + CS background"
   },
   {
     "slug": "michigan-engx",
@@ -452,7 +577,9 @@
     "typical_open": "September",
     "typical_deadline": "October",
     "award": "all-expenses campus visit to U of Michigan Engineering",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Engineering-focused diversity fly-in; top engineering school; earlier deadline"
   },
   {
@@ -464,7 +591,9 @@
     "typical_open": "October",
     "typical_deadline": "November",
     "award": "all-expenses campus visit to Washington University in St. Louis",
-    "requires": ["application"],
+    "requires": [
+      "application"
+    ],
     "notes": "Strong in engineering and medicine; good fit for biomedical + STEM research background"
   },
   {
@@ -476,7 +605,9 @@
     "typical_open": "monthly",
     "typical_deadline": "monthly (30th of each month)",
     "award": "$25,000",
-    "requires": ["niche_account"],
+    "requires": [
+      "niche_account"
+    ],
     "notes": "Monthly drawing; takes 30 seconds; apply every single month"
   },
   {
@@ -488,7 +619,9 @@
     "typical_open": "rolling",
     "typical_deadline": "rolling",
     "award": "$250-$25,000 varies per scholarship",
-    "requires": ["bold_account"],
+    "requires": [
+      "bold_account"
+    ],
     "notes": "Multiple rolling no-essay scholarships; apply to all HS-eligible ones"
   },
   {
@@ -500,7 +633,9 @@
     "typical_open": "September",
     "typical_deadline": "June",
     "award": "monthly drawings and event prizes",
-    "requires": ["collegeboard_account"],
+    "requires": [
+      "collegeboard_account"
+    ],
     "notes": "Log in to College Board and complete profile/planning tasks to enter drawings automatically"
   },
   {
@@ -512,7 +647,13 @@
     "typical_open": "August",
     "typical_deadline": "October",
     "award": "$20,000 scholarship",
-    "requires": ["application", "essay", "teacher_rec", "transcript", "test_scores"],
+    "requires": [
+      "application",
+      "essay",
+      "teacher_rec",
+      "transcript",
+      "test_scores"
+    ],
     "notes": "One of most prestigious HS scholarships; 150 scholars nationally; leadership focus; Books for Africa + rocketry founder story is very strong"
   },
   {
@@ -524,7 +665,12 @@
     "typical_open": "September",
     "typical_deadline": "November",
     "award": "$4,000-$50,000",
-    "requires": ["application", "essay", "transcript", "gpa_minimum"],
+    "requires": [
+      "application",
+      "essay",
+      "transcript",
+      "gpa_minimum"
+    ],
     "notes": "Apply through local Cary/Raleigh Elks lodge; leadership + academics focus; strong fit"
   },
   {
@@ -536,7 +682,12 @@
     "typical_open": "April",
     "typical_deadline": "October",
     "award": "$25,000 scholarship",
-    "requires": ["application", "essay", "financial_need", "transcript"],
+    "requires": [
+      "application",
+      "essay",
+      "financial_need",
+      "transcript"
+    ],
     "notes": "For students who overcame adversity; financial need required; Books for Africa + community service narrative is strong"
   },
   {
@@ -548,7 +699,11 @@
     "typical_open": "September",
     "typical_deadline": "November",
     "award": "$1,000-$5,000 + national recognition",
-    "requires": ["application", "essay", "community_service_project"],
+    "requires": [
+      "application",
+      "essay",
+      "community_service_project"
+    ],
     "notes": "Books for Africa ($85,000 shipped) is a standout application; state + national awards"
   },
   {
@@ -560,7 +715,13 @@
     "typical_open": "October",
     "typical_deadline": "January",
     "award": "intensive 6-week research (~$8,000 fee, strong need-blind financial aid)",
-    "requires": ["application", "essay", "teacher_rec", "math_placement_test", "transcript"],
+    "requires": [
+      "application",
+      "essay",
+      "teacher_rec",
+      "math_placement_test",
+      "transcript"
+    ],
     "notes": "Astrophysics, biochemistry, or genomics; extremely selective; astrophysics track fits rocketry + ML background well"
   },
   {
@@ -572,7 +733,9 @@
     "typical_open": "September",
     "typical_deadline": "November",
     "award": "$2,000-$12,000 scholarship prizes at national level",
-    "requires": ["original_research_paper"],
+    "requires": [
+      "original_research_paper"
+    ],
     "notes": "EASY WITH EXISTING WORK: Zenodo publication on health literacy qualifies directly as the research paper. Submit to NC regional affiliate. Minimal additional work beyond the application form."
   },
   {
@@ -584,8 +747,11 @@
     "typical_open": "September",
     "typical_deadline": "varies by affiliate fair",
     "award": "up to $75,000 grand prize; sponsor awards",
-    "requires": ["independent_research", "affiliate_fair_qualification"],
-    "notes": "Duke BME or NC State hurricane ML research qualifies as the project. Must register with Triangle Science Fair (affiliate) separately — that is the main additional step. Worth doing given existing research."
+    "requires": [
+      "independent_research",
+      "affiliate_fair_qualification"
+    ],
+    "notes": "Duke BME or NC State hurricane ML research qualifies as the project. Must register with Triangle Science Fair (affiliate) separately \u2014 that is the main additional step. Worth doing given existing research."
   },
   {
     "slug": "regeneron-sts",
@@ -596,7 +762,12 @@
     "typical_open": "September",
     "typical_deadline": "November",
     "award": "top prize $250,000; 40 finalists each $25,000",
-    "requires": ["research_paper", "essay", "teacher_rec", "transcript"],
+    "requires": [
+      "research_paper",
+      "essay",
+      "teacher_rec",
+      "transcript"
+    ],
     "notes": "EASY WITH EXISTING WORK: Zenodo publication is the research paper. Essays draw from existing leadership + research narrative. This is one of the highest-ROI applications given already having a published paper."
   },
   {
@@ -608,7 +779,11 @@
     "typical_open": "January",
     "typical_deadline": "February",
     "award": "$10,000-$50,000 scholarship",
-    "requires": ["significant_project", "essay", "recommendations"],
+    "requires": [
+      "significant_project",
+      "essay",
+      "recommendations"
+    ],
     "notes": "Rocketry AI altitude prediction model or Duke 3D scaffold MATLAB work could qualify as the significant project. Very selective but worth attempting with existing work."
   },
   {
@@ -620,7 +795,10 @@
     "typical_open": "June",
     "typical_deadline": "November",
     "award": "prestigious; displayed in US Capitol; internship pipeline",
-    "requires": ["app_submission", "code_project"],
+    "requires": [
+      "app_submission",
+      "code_project"
+    ],
     "notes": "EASY WITH EXISTING WORK: pingpod.blog web app or the hurricane ML Python model can be submitted directly. Compete in NC-13 or current congressional district. Just requires submitting existing code + short description."
   },
   {
@@ -632,7 +810,11 @@
     "typical_open": "October",
     "typical_deadline": "April",
     "award": "$2,500-$5,000",
-    "requires": ["essay", "transcript", "gpa_minimum"],
+    "requires": [
+      "essay",
+      "transcript",
+      "gpa_minimum"
+    ],
     "notes": "Armed Forces Communications and Electronics Association; multiple scholarship categories; military research background from SEAP/NRL applications strengthens this"
   },
   {
@@ -644,7 +826,11 @@
     "typical_open": "January",
     "typical_deadline": "February",
     "award": "free 4-week residential summer program",
-    "requires": ["school_nomination", "essay", "teacher_rec"],
+    "requires": [
+      "school_nomination",
+      "essay",
+      "teacher_rec"
+    ],
     "notes": "Must be nominated by Green Hope HS guidance counselor; NC residents only; ask counselor in January"
   },
   {
@@ -656,7 +842,12 @@
     "typical_open": "September",
     "typical_deadline": "October",
     "award": "$10,000 scholarship + week in Washington DC",
-    "requires": ["student_government_officer_position", "school_nomination", "essay", "teacher_rec"],
+    "requires": [
+      "student_government_officer_position",
+      "school_nomination",
+      "essay",
+      "teacher_rec"
+    ],
     "notes": "Must hold elected student government office; nominated via NC DPI; 2 students per state. Check if any current student government role qualifies."
   },
   {
@@ -668,7 +859,12 @@
     "typical_open": "October",
     "typical_deadline": "January",
     "award": "$1,000-$10,000 varies by scholarship",
-    "requires": ["application", "essay", "transcript", "teacher_rec"],
+    "requires": [
+      "application",
+      "essay",
+      "transcript",
+      "teacher_rec"
+    ],
     "notes": "EASY WITH EXISTING WORK: American Institute of Aeronautics and Astronautics; rocketry 2nd nationally + aerodynamics + AI modeling = ideal profile. Essays are largely reusable from other applications."
   },
   {
@@ -680,7 +876,10 @@
     "typical_open": "February",
     "typical_deadline": "April",
     "award": "5-week math intensive (~$6,500 fee, generous financial aid available)",
-    "requires": ["qualifying_quiz", "teacher_rec"],
+    "requires": [
+      "qualifying_quiz",
+      "teacher_rec"
+    ],
     "notes": "Admission by qualifying quiz (math problem set); financial aid available; only apply if strong in proof-based math"
   },
   {
@@ -692,7 +891,13 @@
     "typical_open": "November",
     "typical_deadline": "January",
     "award": "$3,000 stipend, 7-week paid research at Stony Brook University",
-    "requires": ["application", "essay", "teacher_rec", "transcript", "test_scores"],
+    "requires": [
+      "application",
+      "essay",
+      "teacher_rec",
+      "transcript",
+      "test_scores"
+    ],
     "notes": "Highly selective; NY preferred but open nationally; strong lab research background is key asset"
   },
   {
@@ -704,7 +909,11 @@
     "typical_open": "December",
     "typical_deadline": "February",
     "award": "$500-$5,000 varies by scholarship",
-    "requires": ["application", "essay", "transcript"],
+    "requires": [
+      "application",
+      "essay",
+      "transcript"
+    ],
     "notes": "Multiple scholarships specifically for Wake County public school students; Green Hope HS is directly eligible"
   },
   {
@@ -716,7 +925,11 @@
     "typical_open": "January",
     "typical_deadline": "March",
     "award": "$1,000-$2,500",
-    "requires": ["application", "essay", "community_service"],
+    "requires": [
+      "application",
+      "essay",
+      "community_service"
+    ],
     "notes": "Cary resident; Books for Africa + Robotics for All community service is a strong application"
   },
   {
@@ -728,7 +941,12 @@
     "typical_open": "November",
     "typical_deadline": "February",
     "award": "$5,000 scholarship",
-    "requires": ["application", "essay", "transcript", "gpa_minimum"],
+    "requires": [
+      "application",
+      "essay",
+      "transcript",
+      "gpa_minimum"
+    ],
     "notes": "SAS HQ is in Cary; Python + ML + data analytics background is a direct fit; local advantage"
   },
   {
@@ -738,9 +956,13 @@
     "type": "scholarship",
     "tier": "competitive",
     "typical_open": "N/A (PSAT-based)",
-    "typical_deadline": "N/A — PSAT taken October junior year",
+    "typical_deadline": "N/A \u2014 PSAT taken October junior year",
     "award": "$2,500 National Merit + corporate/college scholarships",
-    "requires": ["psat_score", "application", "essay"],
+    "requires": [
+      "psat_score",
+      "application",
+      "essay"
+    ],
     "notes": "Entry via PSAT score (taken October of junior year); semifinalists notified September of senior year. Ensure PSAT is registered for October 2026."
   },
   {
@@ -752,7 +974,11 @@
     "typical_open": "September",
     "typical_deadline": "January",
     "award": "$5,000 scholarship + potential internship",
-    "requires": ["application", "essay", "transcript"],
+    "requires": [
+      "application",
+      "essay",
+      "transcript"
+    ],
     "notes": "Defense/government STEM firm; scholarship + internship pipeline; Python + ML + engineering background is strong"
   },
   {
@@ -764,7 +990,12 @@
     "typical_open": "October",
     "typical_deadline": "February",
     "award": "$10,000/year scholarship",
-    "requires": ["application", "essay", "transcript", "gpa_minimum"],
+    "requires": [
+      "application",
+      "essay",
+      "transcript",
+      "gpa_minimum"
+    ],
     "notes": "Top aerospace/defense company; rocketry 2nd nationally + aerodynamics + AI modeling = near-perfect profile fit"
   },
   {
@@ -776,7 +1007,12 @@
     "typical_open": "November",
     "typical_deadline": "February",
     "award": "$2,000-$3,000 per year",
-    "requires": ["application", "essay", "transcript", "teacher_rec"],
+    "requires": [
+      "application",
+      "essay",
+      "transcript",
+      "teacher_rec"
+    ],
     "notes": "For students pursuing physics; rocketry + Science Olympiad + AP Physics background applies; check HS vs college-only eligibility"
   },
   {
@@ -788,7 +1024,10 @@
     "typical_open": "October",
     "typical_deadline": "February",
     "award": "$1,000-$5,000 scholarship",
-    "requires": ["essay", "transcript"],
+    "requires": [
+      "essay",
+      "transcript"
+    ],
     "notes": "EASY WITH EXISTING WORK: Hurricane ML tracking model from NC State research is a direct, compelling submission. Essay can be adapted directly from existing research description."
   },
   {
@@ -800,7 +1039,11 @@
     "typical_open": "January",
     "typical_deadline": "March",
     "award": "$500-$5,000 varies",
-    "requires": ["vex_participation", "essay", "transcript"],
+    "requires": [
+      "vex_participation",
+      "essay",
+      "transcript"
+    ],
     "notes": "EASY WITH EXISTING WORK: Already competing VEX (top 150 worldwide, US Open invite); participation record directly satisfies the main eligibility requirement. Essays reuse existing leadership narrative."
   },
   {
@@ -812,7 +1055,11 @@
     "typical_open": "January",
     "typical_deadline": "March",
     "award": "$1,000-$5,000 varies by scholarship",
-    "requires": ["deca_membership", "essay", "transcript"],
+    "requires": [
+      "deca_membership",
+      "essay",
+      "transcript"
+    ],
     "notes": "EASY WITH EXISTING WORK: Active NC DECA member + ICDC qualifier; DECA membership satisfies eligibility. Multiple scholarship tracks available for active members."
   },
   {
@@ -825,7 +1072,11 @@
     "typical_open": "December",
     "typical_deadline": "January",
     "award": "paid 8-week summer internship at a local nonprofit plus a Washington DC leadership summit",
-    "requires": ["essay", "transcript", "recommendation"],
+    "requires": [
+      "essay",
+      "transcript",
+      "recommendation"
+    ],
     "notes": "Paid civic leadership internship. Dates unconfirmed until the official page states the 2027 cycle."
   },
   {
@@ -838,7 +1089,179 @@
     "typical_open": "December",
     "typical_deadline": "March",
     "award": "paid summer materials research at Stony Brook",
-    "requires": ["essay", "transcript", "recommendation"],
+    "requires": [
+      "essay",
+      "transcript",
+      "recommendation"
+    ],
     "notes": "High school summer research. Dates unconfirmed until the official page states the 2027 cycle."
+  },
+  {
+    "slug": "aimi-summer-research-internship",
+    "name": "AIMI Summer Research Internship",
+    "url": "https://aimi.stanford.edu/education/summer-research-internship",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "research-program-for-hs-students-summer-2026-computer-scienc",
+    "name": "Research Program for HS Students \u2013 Summer 2026 - Computer Science K-12 Outreach | The University of Texas at Dallas",
+    "url": "https://k12.utdallas.edu/research",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "summer-internship-program-sip",
+    "name": "Summer Internship Program (SIP)",
+    "url": "https://www.training.nih.gov/research-training/pb/sip",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "summer-internships-for-high-school-students",
+    "name": "Summer Internships for High School Students -",
+    "url": "https://fast.stanford.edu/resources/internships",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "summer-high-school-internship-program-ship",
+    "name": "Summer High School Internship Program (SHIP)",
+    "url": "https://www.nist.gov/ship",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "internship-program",
+    "name": "Internship Program",
+    "url": "https://www.nist.gov/careers/student-opportunities/internship-program",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "nasa-internship-programs",
+    "name": "NASA Internship Programs",
+    "url": "https://www.nasa.gov/learning-resources/internship-programs",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "student-employment",
+    "name": "Student Employment",
+    "url": "https://www.nist.gov/careers/student-opportunities",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "explore-programs-apply-jpl-internships-nasa-jpl-education",
+    "name": "Explore Programs & Apply \u2013 JPL Internships | NASA JPL Education",
+    "url": "https://www.jpl.nasa.gov/edu/internships/apply",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "ship-application-and-selection-process-nist",
+    "name": "SHIP Application and Selection Process | NIST",
+    "url": "https://www.nist.gov/ship/ship-application-and-selection",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "ai",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (ai). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "wie-internship-positions-a-james-clark-school-of-engineering",
+    "name": "WIE Internship Positions | A. James Clark School of Engineering, University of Maryland",
+    "url": "https://eng.umd.edu/wie/current-students/internships",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "engineering",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (engineering). Dates unconfirmed until official page research.",
+    "source": "tavily"
+  },
+  {
+    "slug": "dates-afrl-scholars",
+    "name": "Dates - AFRL Scholars",
+    "url": "https://afrlscholars.usra.edu/scholarsprogram/dates",
+    "type": "unknown",
+    "tier": "unknown",
+    "category": "engineering",
+    "typical_open": "",
+    "typical_deadline": "",
+    "award": "",
+    "requires": [],
+    "notes": "Discovered 2026-08-27 via Tavily (engineering). Dates unconfirmed until official page research.",
+    "source": "tavily"
   }
 ]

@@ -1,32 +1,18 @@
 # Davidson Fellows Scholarship
 
 **URL:** https://www.davidsongifted.org/fellows-scholarship/
-**Application Opens:** Not found on page -- typically January
-**Deadline:** Not found -- check https://www.davidsongifted.org/fellows-scholarship/
-**Award:** $10,000-$50,000 scholarship
-**Tier:** Elite
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- significant_project
-- essay
-- recommendations
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the February deadline.
+**Track:** Engineering
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
+**Opens:** Not stated on official page
+**Award:** $100,000, $50,000, and $25,000 scholarships awarded
+**Eligibility:** U.S. citizen or Permanent Resident residing in the United States (or stationed overseas on active military duty), 18 years old or under as of application deadline, completed a significant piece of work in one of the submission categories
+**Status:** eligible
+**Last verified:** 2026-08-27
+**Confidence:** medium
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiEoHwPdXdBdfWPDRNk'}. Check https://www.davidsongifted.org/fellows-scholarship/ manually.
+Page states '2026 application is closed. The 2027 application will open in the Fall of 2026.' No specific 2027 open or deadline dates provided. Student (Class of 2028, rising junior) will be eligible for 2027 cycle if age requirement met at deadline. Categories include Science, Technology, Engineering, Mathematics, Literature, Music, Philosophy, and Outside the Box.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*
