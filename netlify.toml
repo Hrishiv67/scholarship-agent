@@ -1,0 +1,4 @@
+# Netlify serves docs/ as a static site (free, works with private GitHub repos).
+[build]
+  publish = "docs"
+  command = "echo 'Site is built by calendar_agent in GitHub Actions'"

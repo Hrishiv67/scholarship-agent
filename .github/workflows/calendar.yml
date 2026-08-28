@@ -93,32 +93,3 @@ jobs:
           git commit -m "calendar: weekly refresh $(date -u +%Y-%m-%d)"
           git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
           git push
-
-  deploy-site:
-    needs: refresh-calendar
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Build site
-        run: |
-          mkdir -p _site
-          cp docs/index.html _site/index.html
-          cp docs/calendar.ics _site/calendar.ics
-          ls -la _site/
-
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      - id: deployment
-        uses: actions/deploy-pages@v4

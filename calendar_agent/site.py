@@ -384,8 +384,8 @@ def build_calendar_html(entries: list[dict], generated_at: str) -> str:
       <p class="updated">Last updated {_esc(generated_at[:10])} · auto-refreshes every Monday via GitHub</p>
       <div class="follow">
         <a href="calendar.ics">📅 Download calendar (.ics)</a>
-        <a href="webcal://hrishiv67.github.io/scholarship-agent/calendar.ics">🍎 Subscribe (Apple Calendar)</a>
-        <a href="https://calendar.google.com/calendar/r?cid=https%3A%2F%2Fhrishiv67.github.io%2Fscholarship-agent%2Fcalendar.ics" target="_blank" rel="noopener">➕ Add to Google Calendar</a>
+        <a id="apple-sub" href="calendar.ics">🍎 Subscribe (Apple Calendar)</a>
+        <a id="gcal-sub" href="#" target="_blank" rel="noopener">➕ Add to Google Calendar</a>
         <a href="https://github.com/Hrishiv67/scholarship-agent" target="_blank" rel="noopener">↻ View on GitHub</a>
       </div>
     </header>
@@ -440,6 +440,14 @@ def build_calendar_html(entries: list[dict], generated_at: str) -> str:
     </footer>
   </div>
   <script>
+    (function() {{
+      const ics = new URL('calendar.ics', location.href).href;
+      const apple = document.getElementById('apple-sub');
+      const gcal = document.getElementById('gcal-sub');
+      if (apple) apple.href = ics.replace(/^https?:/, 'webcal:');
+      if (gcal) gcal.href = 'https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(ics);
+    }})();
+
     const EVENTS = {events_json};
     const TRACK_COLORS = {{ ai: '#a78bfa', engineering: '#38bdf8', business: '#fbbf24', general: '#94a3b8' }};
     let viewMonth = new Date();
