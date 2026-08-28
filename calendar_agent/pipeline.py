@@ -24,7 +24,10 @@ def _save_programs(programs: list[dict]) -> None:
         f.write("\n")
 
 
-def _worth_keeping(program: dict, raw: dict) -> bool:
+def _worth_keeping(program: dict, raw: dict, *, new_discovery: bool = False) -> bool:
+    if new_discovery:
+        # New finds must have a confirmed official deadline
+        return bool(raw.get("deadline_confirmed"))
     if raw.get("deadline_confirmed"):
         return True
     if raw.get("confidence") in ("high", "medium"):
@@ -60,10 +63,13 @@ def run() -> None:
     ]
     new_validated = []
     existing_slugs = {p["slug"] for p in curated + validated_tavily}
+    seen_urls = {p.get("url") for p in curated + validated_tavily if p.get("url")}
     for cand in candidates:
         raw = raw_by_slug.get(cand["slug"], {})
-        if not _worth_keeping(cand, raw):
+        if not _worth_keeping(cand, raw, new_discovery=True):
             print(f"[pipeline] skip unverified discovery: {cand['name'][:55]}")
+            continue
+        if cand.get("url") in seen_urls:
             continue
         slug = cand["slug"]
         n = 2
@@ -72,6 +78,7 @@ def run() -> None:
             n += 1
         cand["slug"] = slug
         existing_slugs.add(slug)
+        seen_urls.add(cand.get("url"))
         new_validated.append(cand)
         print(f"[pipeline] kept discovery: {cand['name'][:55]}")
 

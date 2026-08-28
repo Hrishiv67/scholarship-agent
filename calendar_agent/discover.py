@@ -35,6 +35,7 @@ _GENERIC_TITLES = {
     "internship programs", "summer internships for high school students -",
     "explore programs & apply",
 }
+_SKIP_TITLE_FRAGMENTS = ("faq", "frequently asked", "internships -", "resources/internships")
 _ALLOW_HOSTS = {
     "navalsteminterns.us", "about.bankofamerica.com", "bankofamerica.com",
     "cee.org", "societyforscience.org", "afrlscholars.usra.edu",
@@ -91,6 +92,8 @@ def official_enough(url: str, title: str, existing_urls: set[str]) -> bool:
     if len(title_l) < 12:
         return False
     if title_l in _GENERIC_TITLES:
+        return False
+    if any(f in title_l for f in _SKIP_TITLE_FRAGMENTS):
         return False
     if not _host_ok(url):
         return False
