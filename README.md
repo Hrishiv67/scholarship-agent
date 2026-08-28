@@ -6,28 +6,17 @@ Deep-researches AI, Engineering, and Business opportunities for high school stud
 
 ---
 
-## Live site (free hosting)
+## Live site
 
-GitHub Pages on a **private** repo requires a paid GitHub plan. Use one of these **free** options instead:
+**https://hrishiv67.github.io/scholarship-agent/**
 
-### Option A — Netlify (recommended, keep repo private)
+- **Calendar view** — month grid with deadlines
+- **All programs** — searchable cards by track
+- **Subscribe** — Google Calendar / Apple Calendar / `.ics` download
 
-1. Sign up at [netlify.com](https://www.netlify.com/) (free)
-2. **Add new site** → **Import an existing project** → connect GitHub → pick this repo
-3. Build settings: **Build command** = leave empty · **Publish directory** = `docs`
-4. Deploy → you get a URL like `https://your-name.netlify.app`
-5. Run **Calendar Refresh** on GitHub — each run updates `docs/` and Netlify auto-redeploys
+Updates every Monday via GitHub Actions (or run **Calendar Refresh** manually).
 
-### Option B — GitHub Pages (free if repo is public)
-
-1. Repo **Settings → General → Danger zone → Change visibility → Public**  
-   (No API keys are in the repo — only calendar data.)
-2. **Settings → Pages** → Source: **Deploy from a branch** → branch `master` → folder `/docs`
-3. Live at `https://hrishiv67.github.io/scholarship-agent/`
-
-### Option C — Open locally (always works)
-
-After a refresh, open `docs/index.html` in your browser.
+> Hosting uses free GitHub Pages (repo is public; API keys stay in GitHub Secrets only).
 
 ---
 
