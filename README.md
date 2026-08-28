@@ -12,8 +12,10 @@ Tracks: **AI**, **Engineering**, **Business**. Generic merit scholarships that a
 2. Fetches each program page and extracts a deadline **only if the page states a 2026–2028 date**. Typical months from last year are not dates.
 3. Skips or files aside programs that still fail the standing rules: seniors-only (track for fall 2027), women-only, need-only, FRC/FTC-only. Date of birth is unknown and is never invented.
 4. Writes:
-   - `outputs/CALENDAR.md` — human calendar by track, then due date
-   - `outputs/program_calendar.json` — machine copy
+   - `outputs/calendar.html` — **visual dashboard** (search, filters, cards by track)
+   - `docs/index.html` — same page for [GitHub Pages](https://hrishiv67.github.io/scholarship-agent/)
+   - `outputs/CALENDAR.md` — markdown fallback
+   - `outputs/WEEKLY_DIGEST.md` — confirmed deadlines by urgency
    - `outputs/calendar.ics` — **confirmed** deadlines only (safe to import)
 5. Commits those files (rebase-then-push so the job is not rejected) and emails a short count if Gmail secrets are set.
 
@@ -36,9 +38,11 @@ python -m calendar_agent
 
 ## How to read the calendar
 
-- **✅ confirmed** — the official page quoted a date for this cycle.
-- **— no date on page** — do not guess; it will be retried next week.
-- Import `outputs/calendar.ics` into Google Calendar. Unconfirmed dates are never added as events.
+Open **`outputs/calendar.html`** in your browser (or enable GitHub Pages on the `docs/` folder).
+
+- Filter by **AI / Engineering / Business** or search by name
+- **Green dates** = confirmed on the official page
+- Import `outputs/calendar.ics` into Google Calendar for confirmed dates only
 
 ---
 

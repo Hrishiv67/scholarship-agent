@@ -17,6 +17,7 @@ from dotenv import load_dotenv
 
 from . import categories, dates, eligibility, render
 from .scraper import fetch_page
+from .site import build_calendar_html
 from .urls import dedupe_entries
 
 _ROOT = Path(__file__).parent.parent
@@ -26,6 +27,8 @@ _PROGRAMS_DB = Path(__file__).parent / "programs.json"
 _CALENDAR_OUTPUT = _ROOT / "outputs" / "program_calendar.json"
 _CALENDAR_MD = _ROOT / "outputs" / "CALENDAR.md"
 _CALENDAR_ICS = _ROOT / "outputs" / "calendar.ics"
+_CALENDAR_HTML = _ROOT / "outputs" / "calendar.html"
+_DOCS_INDEX = _ROOT / "docs" / "index.html"
 _WEEKLY_DIGEST = _ROOT / "outputs" / "WEEKLY_DIGEST.md"
 _RESEARCH_DIR = _ROOT / "outputs" / "program_research"
 
@@ -407,11 +410,16 @@ def main(programs: list[dict] | None = None, return_results: bool = False) -> di
     _CALENDAR_ICS.write_text(render.build_ics(entries), encoding="utf-8")
     digest = render.build_weekly_digest(entries, calendar_data["generated_at"])
     _WEEKLY_DIGEST.write_text(digest, encoding="utf-8")
+    html_page = build_calendar_html(entries, calendar_data["generated_at"])
+    _CALENDAR_HTML.write_text(html_page, encoding="utf-8")
+    _DOCS_INDEX.parent.mkdir(parents=True, exist_ok=True)
+    _DOCS_INDEX.write_text(html_page, encoding="utf-8")
 
     print(f"\nConfirmed: {calendar_data['confirmed_count']}")
     print(f"No date on page: {calendar_data['not_found_count']}")
     print(f"After dedup: {len(entries)} programs (was {len(updated)})")
     print(f"Calendar: {_CALENDAR_MD}")
+    print(f"Website: {_CALENDAR_HTML}")
     print(f"Digest: {_WEEKLY_DIGEST}")
     print(f"ICS (confirmed only): {_CALENDAR_ICS}")
     _maybe_email(md, calendar_data)

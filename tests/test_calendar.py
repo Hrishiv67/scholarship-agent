@@ -107,6 +107,20 @@ def test_dedupe_merges_subpages():
     print("PASS: dedupe merges subpage deadlines")
 
 
+def test_html_dashboard_builds():
+    from calendar_agent.site import build_calendar_html
+    entries = [
+        {"slug": "x", "name": "Test AI Program", "url": "https://example.edu/x",
+         "category": "ai", "deadline": "2027-02-01", "deadline_confirmed": True,
+         "status": "eligible", "award": "stipend", "eligibility": "HS juniors"},
+    ]
+    html = build_calendar_html(entries, "2026-08-27T00:00:00Z")
+    assert "<!DOCTYPE html>" in html
+    assert "Test AI Program" in html
+    assert "filter" in html
+    print("PASS: html dashboard builds")
+
+
 if __name__ == "__main__":
     test_tracks()
     test_no_invented_dates()
@@ -115,3 +129,4 @@ if __name__ == "__main__":
     test_ics_only_confirmed()
     test_discover_rejects_listicles()
     test_dedupe_merges_subpages()
+    test_html_dashboard_builds()
