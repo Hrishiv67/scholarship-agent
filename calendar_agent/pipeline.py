@@ -25,17 +25,15 @@ def _save_programs(programs: list[dict]) -> None:
 
 
 def _worth_keeping(program: dict, raw: dict, *, new_discovery: bool = False) -> bool:
-    if new_discovery:
-        # New finds must have a confirmed official deadline
-        return bool(raw.get("deadline_confirmed"))
     if raw.get("deadline_confirmed"):
         return True
     if raw.get("confidence") in ("high", "medium"):
         return True
     if raw.get("page_had_useful_info"):
-        elig = (raw.get("eligibility") or "").lower()
-        if elig and "could not determine" not in elig:
-            return True
+        return True
+    elig = (raw.get("eligibility") or "").lower()
+    if elig and "could not determine" not in elig and "check program" not in elig:
+        return True
     return False
 
 
@@ -48,7 +46,7 @@ def run() -> None:
 
     candidates = discover.discover(
         existing_urls,
-        max_new=int(os.environ.get("DISCOVER_LIMIT", "8")),
+        max_new=int(os.environ.get("DISCOVER_LIMIT", "30")),
     )
 
     raw_by_slug = research.main(

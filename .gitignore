@@ -15,11 +15,16 @@ dist/
 build/
 .pytest_cache/
 
-# Regenerated files and run logs (covered by email digest)
-# NOTE: outputs/screenshots/ is committed on purpose - it is your proof of what
-# was actually submitted (each submitted app has a *_post.png confirmation shot).
+# Regenerated run logs
 outputs/opportunities_raw.json
 outputs/run_logs/
+outputs/application_packets/
+outputs/screenshots/
+outputs/applications.md
+outputs/dedup.json
+outputs/accounts.csv
+outputs/confirmations/
+outputs/essay_responses/
 
 # Portal session cookies — contain auth tokens, never commit
 profile/sessions/

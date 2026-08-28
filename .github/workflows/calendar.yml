@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       research_limit:
-        description: 'Max official pages to re-verify this run'
+        description: 'Programs to research (0 = all)'
         required: false
-        default: '40'
+        default: '0'
 
 concurrency:
   group: outputs-${{ github.ref }}
@@ -37,7 +37,7 @@ jobs:
   refresh-calendar:
     needs: test
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 180
 
     permissions:
       contents: write
@@ -67,14 +67,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Find programs and confirm dates
+      - name: Deep research — find programs and confirm dates
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          RESEARCH_LIMIT: ${{ github.event.inputs.research_limit || '40' }}
-          DISCOVER_LIMIT: '12'
+          RESEARCH_LIMIT: ${{ github.event.inputs.research_limit || '0' }}
+          DISCOVER_LIMIT: '30'
+          DEEP_RESEARCH: '1'
+          TAVILY_DEPTH: 'advanced'
           PYTHONUNBUFFERED: '1'
         run: python -m calendar_agent
 
@@ -91,3 +93,32 @@ jobs:
           git commit -m "calendar: weekly refresh $(date -u +%Y-%m-%d)"
           git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
           git push
+
+  deploy-site:
+    needs: refresh-calendar
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build site
+        run: |
+          mkdir -p _site
+          cp docs/index.html _site/index.html
+          cp docs/calendar.ics _site/calendar.ics
+          ls -la _site/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

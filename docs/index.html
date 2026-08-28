@@ -151,6 +151,59 @@
     }
     .follow a:hover { border-color: #38bdf8; background: rgba(56,189,248,0.15); }
     .updated { font-size: 0.8rem; color: var(--muted); margin-top: 0.75rem; }
+    .view-tabs {
+      display: flex; gap: 0.5rem; margin-bottom: 1.5rem;
+    }
+    .view-tab {
+      padding: 0.55rem 1.1rem; border-radius: 10px; border: 1px solid var(--border);
+      background: transparent; color: var(--muted); font: inherit; font-weight: 600;
+      cursor: pointer;
+    }
+    .view-tab.active { background: #1e293b; color: var(--text); border-color: #475569; }
+    .month-panel {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.25rem; margin-bottom: 2rem;
+    }
+    .month-head {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1rem; gap: 1rem;
+    }
+    .month-head h2 { font-size: 1.2rem; }
+    .month-nav button {
+      background: var(--bg2); border: 1px solid var(--border); color: var(--text);
+      border-radius: 8px; padding: 0.4rem 0.75rem; cursor: pointer; font: inherit;
+    }
+    .month-nav button:hover { border-color: #64748b; }
+    .cal-grid {
+      display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;
+    }
+    .cal-dow {
+      font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
+      color: var(--muted); text-align: center; padding: 0.35rem 0;
+    }
+    .cal-day {
+      min-height: 72px; border: 1px solid var(--border); border-radius: 8px;
+      padding: 0.35rem; background: rgba(255,255,255,0.02); font-size: 0.72rem;
+    }
+    .cal-day.other { opacity: 0.35; }
+    .cal-day.today { border-color: #38bdf8; box-shadow: 0 0 0 1px rgba(56,189,248,0.25); }
+    .cal-num { font-weight: 700; font-size: 0.75rem; margin-bottom: 0.2rem; }
+    .cal-ev {
+      display: block; border-radius: 4px; padding: 0.15rem 0.3rem; margin-top: 0.15rem;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-decoration: none;
+      color: #e2e8f0; background: rgba(56,189,248,0.15);
+    }
+    .cal-ev.confirmed { background: rgba(34,197,94,0.2); color: #bbf7d0; }
+    .cal-ev.unconfirmed { background: rgba(251,191,36,0.15); color: #fde68a; }
+    .cal-ev:hover { filter: brightness(1.15); }
+    .cal-legend { display: flex; gap: 1rem; margin-top: 1rem; font-size: 0.75rem; color: var(--muted); }
+    .cal-legend span::before {
+      content: ''; display: inline-block; width: 10px; height: 10px;
+      border-radius: 3px; margin-right: 0.35rem; vertical-align: middle;
+    }
+    .cal-legend .c::before { background: rgba(34,197,94,0.5); }
+    .cal-legend .u::before { background: rgba(251,191,36,0.5); }
+    #list-view.hidden, #cal-view.hidden { display: none; }
     @media (max-width: 600px) {
       .card-top { flex-direction: column; }
       .chips { justify-content: flex-start; }
@@ -160,11 +213,11 @@
 <body>
   <div class="wrap">
     <header class="hero">
-      <p class="eyebrow">Class of 2028 · Rising Junior</p>
-      <h1>Program Calendar</h1>
+      <p class="eyebrow">Class of 2028 · Rising Junior · Research calendar</p>
+      <h1>Opportunity Calendar</h1>
       <p class="sub">
-        AI, Engineering &amp; Business opportunities for Hrishiv Khatiwala.
-        Deadlines are shown only when confirmed on the official page this cycle.
+        Deep-researched AI, Engineering &amp; Business programs for Hrishiv Khatiwala.
+        Deadlines appear only when confirmed on the official page this cycle.
       </p>
       <div class="stats">
         <div class="stat"><b>8</b><span>Confirmed dates</span></div>
@@ -181,6 +234,29 @@
       </div>
     </header>
 
+    <div class="view-tabs">
+      <button class="view-tab active" data-view="cal">📅 Calendar</button>
+      <button class="view-tab" data-view="list">📋 All programs</button>
+    </div>
+
+    <section id="cal-view" class="month-panel">
+      <div class="month-head">
+        <div class="month-nav">
+          <button type="button" id="prev-month">←</button>
+          <button type="button" id="today-btn" style="margin:0 0.35rem">Today</button>
+          <button type="button" id="next-month">→</button>
+        </div>
+        <h2 id="month-label"></h2>
+      </div>
+      <div class="cal-grid" id="cal-dows"></div>
+      <div class="cal-grid" id="cal-days"></div>
+      <div class="cal-legend">
+        <span class="c">Confirmed on official page</span>
+        <span class="u">Unconfirmed / verify</span>
+      </div>
+    </section>
+
+    <div id="list-view" class="hidden">
     <div class="toolbar">
       <input class="search" type="search" id="q" placeholder="Search programs…" autocomplete="off"/>
       <div class="filters">
@@ -1242,6 +1318,7 @@
     </article></div></section>
 
     <aside class='aside'><h3>Track for fall 2027 (seniors-only)</h3><ul><li><a href="https://www.coca-colascholarsfoundation.org/apply/" target="_blank" rel="noopener">Coca-Cola Scholars Foundation</a> <span class="muted">— 2026-09-30</span></li><li><a href="https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027" target="_blank" rel="noopener">College Board BigFuture Scholarships</a> <span class="muted">— date TBA</span></li><li><a href="https://www.hmc.edu/admission/fast/" target="_blank" rel="noopener">Harvey Mudd FAST Fly-In</a> <span class="muted">— date TBA</span></li><li><a href="https://oeop.mit.edu/programs/mites" target="_blank" rel="noopener">MIT MITES Semester</a> <span class="muted">— date TBA</span></li><li><a href="https://www.training.nih.gov/research-training/pb/sip/" target="_blank" rel="noopener">NIH Summer Internship Program (SIP)</a> <span class="muted">— date TBA</span></li></ul></aside>
+    </div>
 
     <footer>
       Generated 2026-08-27 from official program pages.
@@ -1250,6 +1327,57 @@
     </footer>
   </div>
   <script>
+    const EVENTS = [{"date": "2027-01-10", "name": "Air Force Research Lab (AFRL) Scholars", "url": "https://afrlscholars.usra.edu/", "track": "engineering", "confirmed": true, "status": "eligible"}, {"date": "2026-09-30", "name": "Coca-Cola Scholars Foundation", "url": "https://www.coca-colascholarsfoundation.org/apply/", "track": "general", "confirmed": true, "status": "seniors_later"}, {"date": "2026-11-05", "name": "Regeneron Science Talent Search (STS)", "url": "https://www.societyforscience.org/regeneron-sts/", "track": "engineering", "confirmed": true, "status": "eligible"}, {"date": "2027-01-11", "name": "DECA Inc. Scholarships", "url": "https://www.deca.org/high-school-programs/scholarships/", "track": "business", "confirmed": true, "status": "eligible"}, {"date": "2027-02-01", "name": "Stanford AIMI Summer Research Internship", "url": "https://aimi.stanford.edu/education/summer-research-internship", "track": "ai", "confirmed": true, "status": "verify"}];
+    const TRACK_COLORS = { ai: '#a78bfa', engineering: '#38bdf8', business: '#fbbf24', general: '#94a3b8' };
+    let viewMonth = new Date();
+    viewMonth.setDate(1);
+
+    document.querySelectorAll('.view-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.view-tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cal = btn.dataset.view === 'cal';
+        document.getElementById('cal-view').classList.toggle('hidden', !cal);
+        document.getElementById('list-view').classList.toggle('hidden', cal);
+      });
+    });
+
+    function renderMonth() {
+      const y = viewMonth.getFullYear();
+      const m = viewMonth.getMonth();
+      document.getElementById('month-label').textContent =
+        viewMonth.toLocaleString('default', { month: 'long', year: 'numeric' });
+      const dows = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+      document.getElementById('cal-dows').innerHTML =
+        dows.map(d => `<div class="cal-dow">${d}</div>`).join('');
+      const first = new Date(y, m, 1);
+      const start = new Date(first);
+      start.setDate(start.getDate() - start.getDay());
+      const today = new Date();
+      today.setHours(0,0,0,0);
+      let cells = '';
+      for (let i = 0; i < 42; i++) {
+        const d = new Date(start);
+        d.setDate(start.getDate() + i);
+        const iso = d.toISOString().slice(0,10);
+        const other = d.getMonth() !== m;
+        const isToday = d.getTime() === today.getTime();
+        const dayEvents = EVENTS.filter(e => e.date === iso);
+        const evHtml = dayEvents.map(e => {
+          const cls = e.confirmed ? 'confirmed' : 'unconfirmed';
+          const name = e.name.replace(/"/g, '&quot;');
+          return `<a class="cal-ev ${cls}" href="${e.url}" target="_blank" rel="noopener" title="${name}">${name.slice(0,28)}${name.length>28?'…':''}</a>`;
+        }).join('');
+        cells += `<div class="cal-day${other?' other':''}${isToday?' today':''}">
+          <div class="cal-num">${d.getDate()}</div>${evHtml}</div>`;
+      }
+      document.getElementById('cal-days').innerHTML = cells;
+    }
+    document.getElementById('prev-month').onclick = () => { viewMonth.setMonth(viewMonth.getMonth()-1); renderMonth(); };
+    document.getElementById('next-month').onclick = () => { viewMonth.setMonth(viewMonth.getMonth()+1); renderMonth(); };
+    document.getElementById('today-btn').onclick = () => { viewMonth = new Date(); viewMonth.setDate(1); renderMonth(); };
+    renderMonth();
+
     const q = document.getElementById('q');
     const cards = () => document.querySelectorAll('.card');
     let track = 'all';

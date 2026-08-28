@@ -20,7 +20,8 @@ _SKIP_HOSTS = (
     "linkedin.com", "indeed.com", "glassdoor.com", "ziprecruiter.com",
     "collegevine.com", "collegeconfidential.com", "facebook.com", "x.com",
     "twitter.com", "pinterest.com", "medium.com", "ladderinternships.com",
-    "deltainstitute.co", "teenlife.com", "internships.com",
+    "deltainstitute.co", "teenlife.com", "internships.com", "niche.com",
+    "bold.org", "scholarships.com", "fastweb.com", "chegg.com",
 )
 _LISTICLE = re.compile(
     r"^\d+\s+.+(program|internship|scholarship|opportunit)",
@@ -39,23 +40,34 @@ _SKIP_TITLE_FRAGMENTS = ("faq", "frequently asked", "internships -", "resources/
 _ALLOW_HOSTS = {
     "navalsteminterns.us", "about.bankofamerica.com", "bankofamerica.com",
     "cee.org", "societyforscience.org", "afrlscholars.usra.edu",
+    "deca.org", "coca-colascholarsfoundation.org",
 }
 
 QUERIES = {
     "ai": [
-        '"high school" "machine learning" OR "computer science" summer research 2027 site:.edu apply deadline',
-        'site:stanford.edu OR site:mit.edu "high school" summer research internship apply',
-        'site:nasa.gov OR site:nist.gov "high school" intern apply deadline',
+        '"high school" "machine learning" OR "artificial intelligence" summer research 2027 site:.edu apply deadline',
+        'site:stanford.edu OR site:mit.edu OR site:berkeley.edu "high school" summer research internship apply',
+        'site:nasa.gov OR site:nist.gov OR site:nsf.gov "high school" intern OR research apply deadline',
+        '"PRIMES" OR "RSI" OR "SSP" OR "SIMR" high school research apply deadline site:.edu',
+        '"computer science" "high school" summer program paid research NC OR Virginia apply',
+        'site:cmu.edu OR site:gatech.edu "high school" AI OR CS summer apply deadline',
     ],
     "engineering": [
-        '"high school" engineering summer research 2027 site:.edu apply deadline',
-        'SEAP OR "AFRL Scholars" OR "NIH SIP" high school apply site:.gov OR site:.edu',
-        '"high school" paid internship NC State OR Duke OR UNC 2027 apply',
+        '"high school" engineering summer research internship 2027 site:.edu apply deadline',
+        'SEAP OR "AFRL Scholars" OR "NIH SIP" OR "NASA OSTEM" high school apply site:.gov OR site:.edu',
+        '"high school" paid engineering internship NC State OR Duke OR UNC OR Wake apply',
+        'site:jpl.nasa.gov OR site:anl.gov OR site:ornl.gov high school intern apply',
+        '"Regeneron STS" OR "Siemens" OR "ISEF" high school science competition apply deadline',
+        '"Girls Who Code" OR "engineering" "high school" summer camp apply site:.edu OR site:.org',
+        'site:engineering.purdue.edu OR site:engineering.cornell.edu high school summer program apply',
     ],
     "business": [
-        '"Bank of America Student Leaders" 2027 apply',
+        '"Bank of America Student Leaders" 2027 apply deadline',
         'DECA scholarship high school apply deadline site:deca.org',
-        '"high school" entrepreneurship OR "student leaders" internship 2027 apply site:.edu',
+        '"high school" entrepreneurship OR "student leaders" OR "young entrepreneurs" 2027 apply site:.edu',
+        '"NFTE" OR "Junior Achievement" OR "DECA" high school scholarship apply',
+        'site:fbla.org OR site:bpa.org high school scholarship competition apply deadline',
+        '"business" "high school" summer program internship apply site:.edu',
     ],
 }
 
@@ -104,7 +116,7 @@ def official_enough(url: str, title: str, existing_urls: set[str]) -> bool:
     return True
 
 
-def discover(existing_urls: set[str], max_new: int = 15) -> list[dict]:
+def discover(existing_urls: set[str], max_new: int = 30) -> list[dict]:
     key = _tavily_key()
     if not key:
         print("[discover] TAVILY_API_KEY not set — skipping web search")
@@ -115,8 +127,9 @@ def discover(existing_urls: set[str], max_new: int = 15) -> list[dict]:
     client = TavilyClient(api_key=key)
     found: list[dict] = []
     seen = {normalize_url(u) for u in existing_urls if u}
+    depth = os.environ.get("TAVILY_DEPTH", "advanced")
 
-    print("[discover] Tavily web search enabled")
+    print(f"[discover] Tavily deep search enabled (depth={depth})")
     for category in TRACKS:
         for query in QUERIES[category]:
             if len(found) >= max_new:
@@ -125,8 +138,8 @@ def discover(existing_urls: set[str], max_new: int = 15) -> list[dict]:
                 print(f"[discover] {category}: {query[:70]}...")
                 response = client.search(
                     query=query,
-                    search_depth="basic",
-                    max_results=5,
+                    search_depth=depth,
+                    max_results=8,
                     include_answer=False,
                 )
             except Exception as e:

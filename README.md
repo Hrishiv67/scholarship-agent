@@ -1,88 +1,83 @@
-# Program calendar (AI / Engineering / Business)
+# Program Research Calendar
 
-Runs on GitHub Actions every Monday. It finds high-school programs, reads the **official page**, and files them on a due-date calendar. It does **not** submit applications.
+Deep-researches AI, Engineering, and Business opportunities for high school students. Reads **official program pages** (plus apply/deadline subpages), confirms dates when stated, and publishes a live calendar website.
 
-Tracks: **AI**, **Engineering**, **Business**. Generic merit scholarships that are not field programs are listed separately.
+**No auto-apply.** This tool finds and tracks — you apply yourself.
+
+---
+
+## Live site (bookmark this)
+
+**https://hrishiv67.github.io/scholarship-agent/**
+
+- **Calendar view** — month grid with deadlines
+- **All programs** — searchable cards by track
+- **Subscribe** — Google Calendar / Apple Calendar / `.ics` download (confirmed dates only)
+
+Updates every Monday via GitHub Actions, or run manually anytime.
 
 ---
 
 ## What each run does
 
-1. Searches (Tavily) for new official program pages in the three tracks.
-2. Fetches each program page and extracts a deadline **only if the page states a 2026–2028 date**. Typical months from last year are not dates.
-3. Skips or files aside programs that still fail the standing rules: seniors-only (track for fall 2027), women-only, need-only, FRC/FTC-only. Date of birth is unknown and is never invented.
-4. Writes:
-   - `outputs/calendar.html` — **visual dashboard** (search, filters, cards by track)
-   - `docs/index.html` — same page for [GitHub Pages](https://hrishiv67.github.io/scholarship-agent/)
-   - `outputs/CALENDAR.md` — markdown fallback
-   - `outputs/WEEKLY_DIGEST.md` — confirmed deadlines by urgency
-   - `outputs/calendar.ics` — **confirmed** deadlines only (safe to import)
-5. Commits those files (rebase-then-push so the job is not rejected) and emails a short count if Gmail secrets are set.
+1. **Discover** — Tavily advanced search across `.edu` / `.gov` for new programs (AI, Engineering, Business)
+2. **Deep research** — fetches each official page + linked apply/deadline pages; Claude extracts facts
+3. **Date honesty** — deadlines only when the page states a 2026–2028 date with a verbatim quote
+4. **Filter** — seniors-only → track for fall 2027; skip women-only, need-only, FRC/FTC-only
+5. **Publish** — commits results and deploys the website automatically
 
 ---
 
-## How to run it
+## Run it
 
-1. GitHub → **Actions** → **Calendar Refresh** → **Run workflow**.
-2. Optional: lower `research_limit` for a shorter run (default 40 pages).
+**GitHub:** Actions → **Calendar Refresh** → Run workflow  
+(Optional: set `research_limit` to cap how many programs to re-verify; `0` = all)
 
-The job uses these secrets: `ANTHROPIC_API_KEY`, `TAVILY_API_KEY`, and optionally `GMAIL_ADDRESS` / `GMAIL_APP_PASSWORD`.
+**Locally** (`.env` with `ANTHROPIC_API_KEY` + `TAVILY_API_KEY`):
 
-Locally (same keys in `.env`):
-
-```
+```bash
+pip install -r requirements.txt
 python -m calendar_agent
 ```
 
 ---
 
-## Follow the calendar (live website)
+## One-time Pages setup (if site 404s)
 
-**Bookmark:** [https://hrishiv67.github.io/scholarship-agent/](https://hrishiv67.github.io/scholarship-agent/)
-
-The site auto-updates every Monday when the GitHub **Calendar Refresh** workflow runs.
-
-- **Add to Google Calendar:** use the button on the site (confirmed deadlines only)
-- **Apple Calendar:** use the Subscribe link on the site (`webcal://…`)
-- **Download `.ics`:** from the site or `docs/calendar.ics` in the repo
-
-### One-time setup (if the link 404s)
-
-1. Open [repo Settings → Pages](https://github.com/Hrishiv67/scholarship-agent/settings/pages)
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**
-3. Go to [Actions → Deploy calendar website](https://github.com/Hrishiv67/scholarship-agent/actions/workflows/pages.yml) and click **Run workflow**
-4. After ~1 minute, the live URL above should work
-
-If the repo is private, you may need to make it public (or use a paid plan) for the Pages site to be reachable without logging in.
-
-## How to read the calendar
-
-Open **`outputs/calendar.html`** in your browser (or enable GitHub Pages on the `docs/` folder).
-
-- Filter by **AI / Engineering / Business** or search by name
-- **Green dates** = confirmed on the official page
-- Import `outputs/calendar.ics` into Google Calendar for confirmed dates only
+1. [Settings → Pages](https://github.com/Hrishiv67/scholarship-agent/settings/pages) → Source: **GitHub Actions**
+2. Run **Calendar Refresh** once — it deploys the site at the end
 
 ---
 
-## Folder structure
+## Outputs
 
-```
-calendar_agent/           Discover + confirm dates (this is the product)
-outputs/CALENDAR.md       Calendar by AI / Engineering / Business
-outputs/calendar.ics      Confirmed deadlines only
-outputs/program_calendar.json
-profile/profile.json      Student facts used for eligibility notes
-.github/workflows/        Weekly calendar job + tests
-```
+| File | What it is |
+|------|------------|
+| `docs/index.html` | Live website |
+| `docs/calendar.ics` | Subscribe in Google/Apple Calendar |
+| `outputs/program_calendar.json` | Full data |
+| `outputs/program_research/*.md` | Per-program research notes |
+| `outputs/CALENDAR.md` | Markdown fallback |
 
 ---
 
 ## Secrets
 
 | Secret | Purpose |
-|---|---|
-| `ANTHROPIC_API_KEY` | Read official pages and extract stated dates |
-| `TAVILY_API_KEY` | Find new program pages |
-| `GMAIL_ADDRESS` | Optional calendar email |
-| `GMAIL_APP_PASSWORD` | Optional calendar email |
+|--------|---------|
+| `ANTHROPIC_API_KEY` | Read and extract from official pages |
+| `TAVILY_API_KEY` | Discover new program pages |
+| `GMAIL_ADDRESS` | Optional weekly email summary |
+| `GMAIL_APP_PASSWORD` | Optional weekly email summary |
+
+---
+
+## Repo layout
+
+```
+calendar_agent/     Research pipeline (discover → scrape → extract → render)
+docs/               Deployed website (GitHub Pages)
+outputs/            Generated calendar data + research notes
+profile/            Student profile for eligibility context
+.github/workflows/  Weekly research + deploy
+```

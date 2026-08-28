@@ -118,6 +118,8 @@ def test_html_dashboard_builds():
     assert "<!DOCTYPE html>" in html
     assert "Test AI Program" in html
     assert "filter" in html
+    assert "cal-grid" in html
+    assert "EVENTS" in html
     print("PASS: html dashboard builds")
 
 

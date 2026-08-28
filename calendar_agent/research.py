@@ -16,7 +16,7 @@ import anthropic
 from dotenv import load_dotenv
 
 from . import categories, dates, eligibility, render
-from .scraper import fetch_page
+from .scraper import fetch_deep, fetch_page
 from .site import build_calendar_html
 from .urls import dedupe_entries
 
@@ -124,7 +124,8 @@ def _research_program(program: dict, client: anthropic.Anthropic) -> dict:
     url = program["url"]
     name = program["name"]
     print(f"  Fetching: {url}")
-    page_content = fetch_page(url)
+    deep = os.environ.get("DEEP_RESEARCH", "1").lower() not in ("0", "false", "no")
+    page_content = fetch_deep(url) if deep else fetch_page(url)
     if not page_content:
         print(f"  WARNING: fetch failed for {name} — no date will be stored")
         return _fallback_result(program, "official page could not be fetched")
@@ -252,12 +253,14 @@ def _priority(program: dict, existing: dict[str, dict]) -> tuple:
     return (not failed, not no_date, not unconfirmed, program.get("name") or "")
 
 
-def _research_limit() -> int:
-    raw = os.environ.get("RESEARCH_LIMIT", "40")
+def _research_limit(program_count: int) -> int:
+    raw = os.environ.get("RESEARCH_LIMIT", "0").strip().lower()
+    if raw in ("0", "all", ""):
+        return program_count
     try:
-        return max(1, int(raw))
+        return max(1, min(int(raw), program_count))
     except ValueError:
-        return 40
+        return program_count
 
 
 def _build_markdown_doc(program: dict, research: dict) -> str:
@@ -338,10 +341,10 @@ def main(programs: list[dict] | None = None, return_results: bool = False) -> di
             programs = json.load(f)
 
     existing = _load_existing()
-    limit = _research_limit()
+    limit = _research_limit(len(programs))
     ordered = sorted(programs, key=lambda p: _priority(p, existing))
     to_run = ordered[:limit]
-    print(f"[research] {len(programs)} programs, researching {len(to_run)} (RESEARCH_LIMIT={limit})")
+    print(f"[research] {len(programs)} programs, researching {len(to_run)} (RESEARCH_LIMIT={'all' if limit == len(programs) else limit})")
     print(f"[research] Model: {_RESEARCH_MODEL}")
 
     _CALENDAR_OUTPUT.parent.mkdir(parents=True, exist_ok=True)

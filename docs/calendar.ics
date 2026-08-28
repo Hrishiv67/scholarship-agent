@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Hrishiv program deadlines (confirmed)
 BEGIN:VEVENT
 UID:afrl-scholars@scholarship-agent
-DTSTAMP:20260828T004119Z
+DTSTAMP:20260828T005152Z
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270110
 SUMMARY:Air Force Research Lab (AFRL) Scholars (Engineering) due
@@ -14,7 +14,7 @@ URL:https://afrlscholars.usra.edu/
 END:VEVENT
 BEGIN:VEVENT
 UID:coca-cola-scholars@scholarship-agent
-DTSTAMP:20260828T004119Z
+DTSTAMP:20260828T005152Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20260930
 SUMMARY:Coca-Cola Scholars Foundation (General (not field-specific)) due
@@ -23,7 +23,7 @@ URL:https://www.coca-colascholarsfoundation.org/apply/
 END:VEVENT
 BEGIN:VEVENT
 UID:regeneron-sts@scholarship-agent
-DTSTAMP:20260828T004119Z
+DTSTAMP:20260828T005152Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261105
 SUMMARY:Regeneron Science Talent Search (STS) (Engineering) due
@@ -32,7 +32,7 @@ URL:https://www.societyforscience.org/regeneron-sts/
 END:VEVENT
 BEGIN:VEVENT
 UID:deca-scholarships@scholarship-agent
-DTSTAMP:20260828T004119Z
+DTSTAMP:20260828T005152Z
 DTSTART;VALUE=DATE:20270111
 DTEND;VALUE=DATE:20270111
 SUMMARY:DECA Inc. Scholarships (Business) due
@@ -41,7 +41,7 @@ URL:https://www.deca.org/high-school-programs/scholarships/
 END:VEVENT
 BEGIN:VEVENT
 UID:stanford-aimi-summer@scholarship-agent
-DTSTAMP:20260828T004119Z
+DTSTAMP:20260828T005152Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270201
 SUMMARY:Stanford AIMI Summer Research Internship (AI) due
