@@ -83,7 +83,7 @@ jobs:
         run: |
           git config user.name "scholarship-agent[bot]"
           git config user.email "scholarship-agent@noreply.github.com"
-          git add outputs/program_calendar.json outputs/CALENDAR.md outputs/calendar.ics outputs/calendar.html outputs/WEEKLY_DIGEST.md outputs/program_research/ calendar_agent/programs.json docs/index.html || true
+          git add outputs/program_calendar.json outputs/CALENDAR.md outputs/calendar.ics outputs/calendar.html outputs/WEEKLY_DIGEST.md outputs/program_research/ calendar_agent/programs.json docs/index.html docs/calendar.ics || true
           if git diff --staged --quiet; then
             echo "No calendar changes to commit"
             exit 0

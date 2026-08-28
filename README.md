@@ -36,6 +36,15 @@ python -m calendar_agent
 
 ---
 
+## Follow the calendar (live website)
+
+**Bookmark:** [https://hrishiv67.github.io/scholarship-agent/](https://hrishiv67.github.io/scholarship-agent/)
+
+The site auto-updates every Monday when the GitHub **Calendar Refresh** workflow runs.
+
+- **Add to Google Calendar:** use the button on the site (confirmed deadlines only)
+- **Download `.ics`:** from the site or `outputs/calendar.ics` in the repo
+
 ## How to read the calendar
 
 Open **`outputs/calendar.html`** in your browser (or enable GitHub Pages on the `docs/` folder).

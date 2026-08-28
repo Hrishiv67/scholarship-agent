@@ -29,6 +29,7 @@ _CALENDAR_MD = _ROOT / "outputs" / "CALENDAR.md"
 _CALENDAR_ICS = _ROOT / "outputs" / "calendar.ics"
 _CALENDAR_HTML = _ROOT / "outputs" / "calendar.html"
 _DOCS_INDEX = _ROOT / "docs" / "index.html"
+_DOCS_ICS = _ROOT / "docs" / "calendar.ics"
 _WEEKLY_DIGEST = _ROOT / "outputs" / "WEEKLY_DIGEST.md"
 _RESEARCH_DIR = _ROOT / "outputs" / "program_research"
 
@@ -407,13 +408,15 @@ def main(programs: list[dict] | None = None, return_results: bool = False) -> di
     _CALENDAR_OUTPUT.write_text(json.dumps(calendar_data, indent=2), encoding="utf-8")
     md = render.build_calendar_md(entries, calendar_data["generated_at"])
     _CALENDAR_MD.write_text(md, encoding="utf-8")
-    _CALENDAR_ICS.write_text(render.build_ics(entries), encoding="utf-8")
+    ics_content = render.build_ics(entries)
+    _CALENDAR_ICS.write_text(ics_content, encoding="utf-8")
     digest = render.build_weekly_digest(entries, calendar_data["generated_at"])
     _WEEKLY_DIGEST.write_text(digest, encoding="utf-8")
     html_page = build_calendar_html(entries, calendar_data["generated_at"])
     _CALENDAR_HTML.write_text(html_page, encoding="utf-8")
     _DOCS_INDEX.parent.mkdir(parents=True, exist_ok=True)
     _DOCS_INDEX.write_text(html_page, encoding="utf-8")
+    _DOCS_ICS.write_text(ics_content, encoding="utf-8")
 
     print(f"\nConfirmed: {calendar_data['confirmed_count']}")
     print(f"No date on page: {calendar_data['not_found_count']}")
