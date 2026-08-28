@@ -306,6 +306,7 @@ def build_calendar_html(entries: list[dict], generated_at: str) -> str:
       <p class="updated">Last updated {_esc(generated_at[:10])} · auto-refreshes every Monday via GitHub</p>
       <div class="follow">
         <a href="calendar.ics">📅 Download calendar (.ics)</a>
+        <a href="webcal://hrishiv67.github.io/scholarship-agent/calendar.ics">🍎 Subscribe (Apple Calendar)</a>
         <a href="https://calendar.google.com/calendar/r?cid=https%3A%2F%2Fhrishiv67.github.io%2Fscholarship-agent%2Fcalendar.ics" target="_blank" rel="noopener">➕ Add to Google Calendar</a>
         <a href="https://github.com/Hrishiv67/scholarship-agent" target="_blank" rel="noopener">↻ View on GitHub</a>
       </div>

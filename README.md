@@ -43,7 +43,17 @@ python -m calendar_agent
 The site auto-updates every Monday when the GitHub **Calendar Refresh** workflow runs.
 
 - **Add to Google Calendar:** use the button on the site (confirmed deadlines only)
-- **Download `.ics`:** from the site or `outputs/calendar.ics` in the repo
+- **Apple Calendar:** use the Subscribe link on the site (`webcal://…`)
+- **Download `.ics`:** from the site or `docs/calendar.ics` in the repo
+
+### One-time setup (if the link 404s)
+
+1. Open [repo Settings → Pages](https://github.com/Hrishiv67/scholarship-agent/settings/pages)
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**
+3. Go to [Actions → Deploy calendar website](https://github.com/Hrishiv67/scholarship-agent/actions/workflows/pages.yml) and click **Run workflow**
+4. After ~1 minute, the live URL above should work
+
+If the repo is private, you may need to make it public (or use a paid plan) for the Pages site to be reachable without logging in.
 
 ## How to read the calendar
 
