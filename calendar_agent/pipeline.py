@@ -25,6 +25,11 @@ def _save_programs(programs: list[dict]) -> None:
 
 
 def _worth_keeping(program: dict, raw: dict, *, new_discovery: bool = False) -> bool:
+    from .eligibility import classify_status
+
+    status = classify_status(raw, program)
+    if status == "ineligible":
+        return False
     if raw.get("deadline_confirmed"):
         return True
     if raw.get("confidence") in ("high", "medium"):

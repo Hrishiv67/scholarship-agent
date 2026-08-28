@@ -47,7 +47,24 @@ def test_seniors_and_women_not_on_main_board():
         {"eligibility": "This program is women-only", "identity_restricted": "women-only"},
         {},
     ) == "ineligible"
+    assert classify_status(
+        {"eligibility": "Must be enrolled in college", "degree_required": True, "url_ok": True},
+        {},
+    ) == "ineligible"
+    assert classify_status(
+        {"eligibility": "Unpaid internship", "is_paid": False, "program_type": "internship", "url_ok": True},
+        {"type": "internship"},
+    ) == "ineligible"
     print("PASS: eligibility gates")
+
+
+def test_program_types():
+    from calendar_agent.program_types import classify_type, label
+    assert classify_type({"name": "NASA High School Internship", "type": "internship"}) == "internship"
+    assert classify_type({"name": "DECA Scholarships", "type": "scholarship"}) == "scholarship"
+    assert classify_type({"name": "MIT CPW Fly-In", "type": "fly_in"}) == "fly_in"
+    assert label("apprenticeship") == "Apprenticeships"
+    print("PASS: program types")
 
 
 def test_ics_only_confirmed():
@@ -120,6 +137,7 @@ def test_html_dashboard_builds():
     assert "filter" in html
     assert "cal-grid" in html
     assert "EVENTS" in html
+    assert "data-kind" in html
     print("PASS: html dashboard builds")
 
 
@@ -128,6 +146,7 @@ if __name__ == "__main__":
     test_no_invented_dates()
     test_quote_must_support_date()
     test_seniors_and_women_not_on_main_board()
+    test_program_types()
     test_ics_only_confirmed()
     test_discover_rejects_listicles()
     test_dedupe_merges_subpages()

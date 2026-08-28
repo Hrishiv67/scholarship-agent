@@ -5,15 +5,30 @@ import html
 import json
 from datetime import date, timedelta
 
-from .categories import TRACKS, label
+from .categories import TRACKS, label as track_label
 from .dates import today_utc
+from .program_types import PROGRAM_TYPES, classify_type, label as type_label
+from .eligibility import is_paid as check_paid
 from .render import _due_soon_confirmed, _sort_key
 
-_TRACK_STYLE = {
-    "ai": ("#a78bfa", "#7c3aed", "AI"),
-    "engineering": ("#38bdf8", "#0284c7", "Engineering"),
-    "business": ("#fbbf24", "#d97706", "Business"),
-    "general": ("#94a3b8", "#64748b", "General"),
+
+def _enrich(entry: dict) -> dict:
+    e = dict(entry)
+    if not e.get("program_type"):
+        e["program_type"] = classify_type(e)
+    if e.get("is_paid") is None:
+        e["is_paid"] = check_paid(e, e)
+    if "url_ok" not in e:
+        e["url_ok"] = True
+    return e
+
+_TYPE_STYLE = {
+    "internship": "#38bdf8",
+    "scholarship": "#fbbf24",
+    "fly_in": "#c4b5fd",
+    "apprenticeship": "#fb923c",
+    "research": "#86efac",
+    "competition": "#f472b6",
 }
 
 
@@ -43,7 +58,14 @@ def _deadline_label(entry: dict) -> tuple[str, str, int | None]:
 
 def _card(entry: dict) -> str:
     cat = entry.get("category") or "general"
-    accent, _, _ = _TRACK_STYLE.get(cat, _TRACK_STYLE["general"])
+    ptype = entry.get("program_type") or "research"
+    accent = _TYPE_STYLE.get(ptype, "#64748b")
+    track_accent, _, _ = {
+        "ai": ("#a78bfa", "", "AI"),
+        "engineering": ("#38bdf8", "", "Eng"),
+        "business": ("#fbbf24", "", "Bus"),
+        "general": ("#94a3b8", "", "Gen"),
+    }.get(cat, ("#94a3b8", "", "Gen"))
     deadline_txt, deadline_cls, days = _deadline_label(entry)
     status = entry.get("status") or "verify"
     name = _esc(entry.get("name"))
@@ -58,25 +80,33 @@ def _card(entry: dict) -> str:
         days_badge = '<span class="days past">passed</span>'
 
     status_chip = {
-        "eligible": '<span class="chip ok">Eligible</span>',
+        "eligible": '<span class="chip ok">HS eligible</span>',
         "verify": '<span class="chip warn">Verify</span>',
         "seniors_later": '<span class="chip later">Seniors 2027</span>',
         "ineligible": '<span class="chip skip">Skipped</span>',
     }.get(status, '<span class="chip warn">Verify</span>')
 
-    conf = ""
-    if entry.get("deadline_confirmed"):
-        conf = '<span class="chip confirmed">Official date</span>'
+    conf = '<span class="chip confirmed">Official date</span>' if entry.get("deadline_confirmed") else ""
+    paid = entry.get("is_paid")
+    paid_chip = (
+        '<span class="chip paid">Paid / stipend</span>' if paid is True
+        else '<span class="chip warn">Pay unclear</span>' if paid is None
+        else ""
+    )
+    link_chip = '<span class="chip skip">Broken link</span>' if not entry.get("url_ok", True) else ""
+    track_chip = f'<span class="chip track" style="border-color:{track_accent}">{track_label(cat).split()[0]}</span>'
 
     return f"""
-    <article class="card" data-track="{_esc(cat)}" data-status="{_esc(status)}"
+    <article class="card" data-track="{_esc(cat)}" data-kind="{_esc(ptype)}"
+             data-status="{_esc(status)}" data-paid="{'1' if paid is True else '0'}"
              data-deadline="{_esc(entry.get('deadline') or '')}"
              data-confirmed="{'1' if entry.get('deadline_confirmed') else '0'}"
              style="--accent:{accent}">
       <div class="card-top">
         <div class="deadline {deadline_cls}">{_esc(deadline_txt)}{days_badge}</div>
-        <div class="chips">{conf}{status_chip}</div>
+        <div class="chips">{conf}{paid_chip}{track_chip}{status_chip}{link_chip}</div>
       </div>
+      <p class="type-tag">{_esc(type_label(ptype))}</p>
       <h3><a href="{url}" target="_blank" rel="noopener">{name}</a></h3>
       <p class="award">{award or "See program site for award details."}</p>
       <p class="elig">{elig or "Eligibility not confirmed from official page yet."}</p>
@@ -109,13 +139,14 @@ def _events_json(entries: list[dict]) -> str:
 
 
 def build_calendar_html(entries: list[dict], generated_at: str) -> str:
+    entries = [_enrich(e) for e in entries]
     today = today_utc()
     due_soon = _due_soon_confirmed(entries, days=90)
     confirmed = sum(1 for e in entries if e.get("deadline_confirmed"))
     active = [e for e in entries if e.get("status") not in ("ineligible",)]
 
-    by_track: dict[str, list] = {c: [] for c in TRACKS}
-    general, seniors, skipped = [], [], []
+    by_type: dict[str, list] = {t: [] for t in PROGRAM_TYPES}
+    seniors, skipped = [], []
     for e in entries:
         st = e.get("status") or "verify"
         if st == "ineligible":
@@ -124,29 +155,27 @@ def build_calendar_html(entries: list[dict], generated_at: str) -> str:
         if st == "seniors_later":
             seniors.append(e)
             continue
-        cat = e.get("category") or "general"
-        if cat in TRACKS:
-            by_track[cat].append(e)
-        else:
-            general.append(e)
+        ptype = e.get("program_type") or "research"
+        if ptype not in by_type:
+            ptype = "research"
+        by_type[ptype].append(e)
 
     due_cards = "".join(_card(e) for e in sorted(due_soon, key=lambda x: x.get("deadline") or ""))
 
-    track_sections = []
-    for cat in TRACKS:
-        group = sorted(by_track[cat], key=_sort_key)
-        accent, accent2, title = _TRACK_STYLE[cat]
-        cards = "".join(_card(e) for e in group) or '<p class="empty">No programs in this track yet.</p>'
-        track_sections.append(f"""
-        <section class="track-section" id="track-{cat}" data-track="{cat}">
-          <div class="track-header" style="--accent:{accent};--accent2:{accent2}">
+    type_sections = []
+    for ptype in PROGRAM_TYPES:
+        group = sorted(by_type[ptype], key=_sort_key)
+        accent = _TYPE_STYLE.get(ptype, "#64748b")
+        title = type_label(ptype)
+        cards = "".join(_card(e) for e in group) or '<p class="empty">No programs in this category yet.</p>'
+        type_sections.append(f"""
+        <section class="track-section" id="type-{ptype}" data-kind="{ptype}">
+          <div class="track-header" style="--accent:{accent}">
             <h2>{title}</h2>
             <span class="count">{len(group)} programs</span>
           </div>
           <div class="grid">{cards}</div>
         </section>""")
-
-    general_cards = "".join(_card(e) for e in sorted(general, key=_sort_key))
     senior_items = "".join(
         f'<li><a href="{_esc(e.get("url"))}" target="_blank" rel="noopener">{_esc(e.get("name"))}</a>'
         f' <span class="muted">— {_esc(e.get("deadline") or "date TBA")}</span></li>'
@@ -263,6 +292,9 @@ def build_calendar_html(entries: list[dict], generated_at: str) -> str:
     .chip.warn {{ background: rgba(251,191,36,0.12); color: #fcd34d; }}
     .chip.later {{ background: rgba(167,139,250,0.12); color: #c4b5fd; }}
     .chip.skip {{ background: rgba(248,113,113,0.1); color: #fca5a5; }}
+    .chip.paid {{ background: rgba(34,197,94,0.12); color: #86efac; }}
+    .chip.track {{ background: transparent; border: 1px solid; }}
+    .type-tag {{ font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem; }}
     .card h3 {{ font-size: 1rem; line-height: 1.35; margin-bottom: 0.5rem; }}
     .card h3 a {{ color: inherit; text-decoration: none; }}
     .card h3 a:hover {{ color: #7dd3fc; }}
@@ -372,8 +404,8 @@ def build_calendar_html(entries: list[dict], generated_at: str) -> str:
       <p class="eyebrow">Class of 2028 · Rising Junior · Research calendar</p>
       <h1>Opportunity Calendar</h1>
       <p class="sub">
-        Deep-researched AI, Engineering &amp; Business programs for Hrishiv Khatiwala.
-        Deadlines appear only when confirmed on the official page this cycle.
+        Deep-researched paid opportunities for high school students — internships, scholarships,
+        fly-ins, apprenticeships, research &amp; competitions. College-only and unpaid programs are filtered out.
       </p>
       <div class="stats">
         <div class="stat"><b>{confirmed}</b><span>Confirmed dates</span></div>
@@ -417,18 +449,23 @@ def build_calendar_html(entries: list[dict], generated_at: str) -> str:
       <input class="search" type="search" id="q" placeholder="Search programs…" autocomplete="off"/>
       <div class="filters">
         <button class="filter active" data-t="all">All</button>
-        <button class="filter" data-t="ai">AI</button>
-        <button class="filter" data-t="engineering">Engineering</button>
+        <button class="filter" data-t="internship">Internships</button>
+        <button class="filter" data-t="scholarship">Scholarships</button>
+        <button class="filter" data-t="fly_in">Fly-ins</button>
+        <button class="filter" data-t="apprenticeship">Apprenticeships</button>
+        <button class="filter" data-t="research">Research</button>
+        <button class="filter" data-t="competition">Competitions</button>
+        <button class="filter" data-t="ai">AI track</button>
+        <button class="filter" data-t="engineering">Eng track</button>
         <button class="filter" data-t="business">Business</button>
-        <button class="filter" data-t="confirmed">Confirmed only</button>
+        <button class="filter" data-t="paid">Paid only</button>
+        <button class="filter" data-t="confirmed">Confirmed dates</button>
       </div>
     </div>
 
     {"<section><h2 class='section-title'>Due soon (confirmed)</h2><div class='grid' id='due-soon'>" + due_cards + "</div></section>" if due_cards else ""}
 
-    {"".join(track_sections)}
-
-    {"<section class='track-section' id='track-general'><div class='track-header' style='--accent:#94a3b8'><h2>General</h2><span class='count'>" + str(len(general)) + " programs</span></div><div class='grid'>" + general_cards + "</div></section>" if general_cards else ""}
+    {"".join(type_sections)}
 
     {"<aside class='aside'><h3>Track for fall 2027 (seniors-only)</h3><ul>" + senior_items + "</ul></aside>" if senior_items else ""}
     </div>
@@ -516,11 +553,16 @@ def build_calendar_html(entries: list[dict], generated_at: str) -> str:
       cards().forEach(c => {{
         const text = c.textContent.toLowerCase();
         const t = c.dataset.track;
+        const kind = c.dataset.kind;
         const conf = c.dataset.confirmed === '1';
-        const matchTrack = track === 'all' || track === t || (track === 'confirmed' && conf);
-        const matchConf = track !== 'confirmed' || conf;
+        const paid = c.dataset.paid === '1';
+        let match = track === 'all';
+        if (!match && track === 'confirmed') match = conf;
+        else if (!match && track === 'paid') match = paid;
+        else if (!match && ['ai','engineering','business'].includes(track)) match = t === track;
+        else if (!match) match = kind === track;
         const matchSearch = !term || text.includes(term);
-        c.classList.toggle('hidden', !(matchTrack && matchConf && matchSearch));
+        c.classList.toggle('hidden', !(match && matchSearch));
       }});
       document.querySelectorAll('.track-section').forEach(sec => {{
         const visible = [...sec.querySelectorAll('.card')].some(c => !c.classList.contains('hidden'));

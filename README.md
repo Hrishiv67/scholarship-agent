@@ -22,11 +22,11 @@ Updates every Monday via GitHub Actions (or run **Calendar Refresh** manually).
 
 ## What each run does
 
-1. **Discover** — Tavily advanced search across `.edu` / `.gov` for new programs
-2. **Deep research** — official page + apply/deadline subpages; Claude extracts facts
-3. **Date honesty** — deadlines only when the page states a 2026–2028 date with a quote
-4. **Filter** — seniors-only → track for fall 2027; skip women-only, need-only, FRC/FTC-only
-5. **Publish** — commits `docs/index.html` + `docs/calendar.ics` (your host redeploys)
+1. **Discover** — Tavily search for paid HS opportunities: internships, scholarships, fly-ins, apprenticeships, research, competitions
+2. **Verify links** — broken URLs are flagged and filtered out
+3. **Deep research** — official page + apply/deadline subpages; Claude extracts facts
+4. **Filter** — skips college/degree-only, unpaid internships, women-only, need-only; seniors-only → fall 2027
+5. **Publish** — commits `docs/` (site groups programs by type, with AI/Eng/Business track badges)
 
 ---
 

@@ -1,7 +1,15 @@
-"""Normalize program URLs for dedup and matching."""
+"""Normalize program URLs for dedup, matching, and link checks."""
 from __future__ import annotations
 
+import requests
 from urllib.parse import urlparse, urlunparse
+
+_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    ),
+}
 
 
 def normalize_url(url: str) -> str:
@@ -72,3 +80,23 @@ def dedupe_entries(entries: list[dict], curated_slugs: set[str]) -> list[dict]:
         if not prev or score(e) > score(prev):
             by_url[key] = e
     return list(by_url.values())
+
+
+def check_url(url: str, timeout: int = 12) -> dict:
+    """Return url_ok, url_status, url_final. Uses GET if HEAD is rejected."""
+    if not url or not url.startswith("http"):
+        return {"url_ok": False, "url_status": 0, "url_final": url or ""}
+    try:
+        r = requests.head(url, headers=_HEADERS, timeout=timeout, allow_redirects=True)
+        if r.status_code >= 400 or r.status_code == 405:
+            r = requests.get(url, headers=_HEADERS, timeout=timeout, allow_redirects=True, stream=True)
+            r.close()
+        ok = r.status_code < 400
+        return {"url_ok": ok, "url_status": r.status_code, "url_final": r.url or url}
+    except requests.RequestException:
+        try:
+            r = requests.get(url, headers=_HEADERS, timeout=timeout, allow_redirects=True, stream=True)
+            r.close()
+            return {"url_ok": r.status_code < 400, "url_status": r.status_code, "url_final": r.url or url}
+        except requests.RequestException:
+            return {"url_ok": False, "url_status": 0, "url_final": url}

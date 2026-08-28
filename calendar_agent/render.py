@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from datetime import date, datetime, timedelta, timezone
 
-from .categories import TRACKS, label
+from .categories import TRACKS, label as track_label
 from .dates import today_utc
 
 _ROOT_CALENDAR_TITLE = "Program Calendar — AI / Engineering / Business"
@@ -49,7 +49,7 @@ def build_calendar_md(entries: list[dict], generated_at: str) -> str:
             group = [e for e in due_soon if e.get("category") == cat]
             if not group:
                 continue
-            lines.append(f"### {label(cat)}")
+            lines.append(f"### {track_label(cat)}")
             for e in sorted(group, key=lambda x: x.get("deadline") or ""):
                 lines.append(
                     f"- **{e['deadline']}** — [{e['name']}]({e['url']})"
@@ -91,7 +91,7 @@ def build_calendar_md(entries: list[dict], generated_at: str) -> str:
 
     for cat in TRACKS:
         group = sorted(by_cat[cat], key=_sort_key)
-        lines += [f"## {label(cat)}", ""]
+        lines += [f"## {track_label(cat)}", ""]
         if not group:
             lines += ["_No programs in this track yet._", ""]
             continue
@@ -160,7 +160,7 @@ def build_ics(entries: list[dict]) -> str:
             continue
         day = e["deadline"].replace("-", "")
         uid = f"{e.get('slug', 'prog')}@scholarship-agent"
-        cat = label(e.get("category") or "general")
+        cat = track_label(e.get("category") or "general")
         summary = _ics_escape(f"{e['name']} ({cat}) due")
         desc = _ics_escape(f"{e.get('url', '')}\n{e.get('eligibility', '')}")
         lines += [
@@ -228,7 +228,7 @@ def build_weekly_digest(entries: list[dict], generated_at: str) -> str:
             group = [e for e in bucket if (e.get("category") or "general") == cat]
             if not group:
                 continue
-            title = label(cat) if cat != "general" else "General"
+            title = track_label(cat) if cat != "general" else "General"
             lines.append(f"### {title}")
             for e in sorted(group, key=lambda x: x.get("deadline") or ""):
                 lines.append(

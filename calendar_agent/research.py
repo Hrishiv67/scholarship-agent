@@ -16,9 +16,10 @@ import anthropic
 from dotenv import load_dotenv
 
 from . import categories, dates, eligibility, render
+from .program_types import classify_type
 from .scraper import fetch_deep, fetch_page
 from .site import build_calendar_html
-from .urls import dedupe_entries
+from .urls import check_url, dedupe_entries
 
 _ROOT = Path(__file__).parent.parent
 load_dotenv(_ROOT / ".env")
@@ -75,6 +76,11 @@ HARD RULES:
 5. identity_restricted is a short label (e.g. "women-only") or empty string.
 6. costs_money=true only for application fees or tuition to attend — not a stipend paid TO the student.
 7. category is exactly one of: ai, engineering, business, general.
+8. program_type is exactly one of: internship, scholarship, fly_in, apprenticeship, research, competition.
+9. high_school_ok=true if current high school students (grades 9-12) can apply. false if college/degree required only.
+10. degree_required=true if a college degree or college enrollment is required (not just HS).
+11. is_paid=true if students receive stipend, scholarship money, wages, OR fly-in is all-expenses-covered.
+    false if clearly unpaid with no compensation. null if unknown.
 
 Return ONLY JSON:
 {{
@@ -89,6 +95,10 @@ Return ONLY JSON:
   "identity_restricted": "",
   "costs_money": false,
   "category": "engineering",
+  "program_type": "internship",
+  "high_school_ok": true,
+  "degree_required": false,
+  "is_paid": true,
   "essay_prompts": [],
   "award_details": "",
   "requirements": [],
@@ -111,6 +121,12 @@ def _fallback_result(program: dict, error_message: str) -> dict:
         "identity_restricted": "",
         "costs_money": False,
         "category": categories.categorize(program),
+        "program_type": classify_type(program),
+        "high_school_ok": None,
+        "degree_required": False,
+        "is_paid": None,
+        "url_ok": False,
+        "url_status": 0,
         "essay_prompts": [],
         "award_details": program.get("award", ""),
         "requirements": program.get("requires", []),
@@ -123,6 +139,14 @@ def _fallback_result(program: dict, error_message: str) -> dict:
 def _research_program(program: dict, client: anthropic.Anthropic) -> dict:
     url = program["url"]
     name = program["name"]
+    link = check_url(url)
+    if link["url_final"] and link["url_ok"] and link["url_final"] != url:
+        print(f"  Redirect: {url} -> {link['url_final']}")
+        program["url"] = link["url_final"]
+        url = link["url_final"]
+    elif not link["url_ok"]:
+        print(f"  WARNING: link check failed ({link['url_status']}) for {url}")
+
     print(f"  Fetching: {url}")
     deep = os.environ.get("DEEP_RESEARCH", "1").lower() not in ("0", "false", "no")
     page_content = fetch_deep(url) if deep else fetch_page(url)
@@ -176,7 +200,14 @@ def _research_program(program: dict, client: anthropic.Anthropic) -> dict:
     result["open_date_confirmed"] = o_ok
     if result.get("category") not in categories.VALID:
         result["category"] = categories.categorize(program)
-    print(f"  Done -- deadline: {deadline} (confirmed: {d_ok})")
+    ptype = (result.get("program_type") or "").strip().lower()
+    if ptype not in ("internship", "scholarship", "fly_in", "apprenticeship", "research", "competition"):
+        result["program_type"] = classify_type(program, result)
+    result["url_ok"] = link["url_ok"] or bool(page_content and page_content != "(could not fetch)")
+    result["url_status"] = link["url_status"]
+    if not result["url_ok"] and not page_content:
+        result["notes"] = (result.get("notes") or "") + " Official link appears broken."
+    print(f"  Done -- deadline: {deadline} (confirmed: {d_ok}) type: {result.get('program_type')}")
     return result
 
 
@@ -192,6 +223,7 @@ def _build_calendar_entry(program: dict, research: dict) -> dict:
         "name": program["name"],
         "url": program["url"],
         "type": program.get("type", ""),
+        "program_type": research.get("program_type") or classify_type(program, research),
         "tier": program.get("tier", ""),
         "category": category,
         "open_date": research.get("open_date"),
@@ -208,8 +240,17 @@ def _build_calendar_entry(program: dict, research: dict) -> dict:
         "seniors_only": bool(research.get("seniors_only")),
         "identity_restricted": research.get("identity_restricted") or "",
         "costs_money": bool(research.get("costs_money")),
+        "high_school_ok": research.get("high_school_ok"),
+        "degree_required": bool(research.get("degree_required")),
+        "is_paid": research.get("is_paid"),
+        "url_ok": research.get("url_ok", True),
+        "url_status": research.get("url_status", 0),
     }
     entry["status"] = eligibility.classify_status(research, program)
+    paid = research.get("is_paid")
+    if paid is None:
+        paid = eligibility.is_paid(research, program)
+    entry["is_paid"] = paid
     return entry
 
 
@@ -397,6 +438,12 @@ def main(programs: list[dict] | None = None, return_results: bool = False) -> di
             "seniors_only": False,
             "identity_restricted": "",
             "costs_money": False,
+            "program_type": classify_type(program),
+            "high_school_ok": None,
+            "degree_required": False,
+            "is_paid": None,
+            "url_ok": True,
+            "url_status": 0,
         }
 
     entries = dedupe_entries(list(updated.values()), curated_slugs)

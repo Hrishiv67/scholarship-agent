@@ -9,8 +9,9 @@ from urllib.parse import urlparse
 
 from dotenv import load_dotenv
 
-from .categories import TRACKS
-from .urls import normalize_url
+from .categories import TRACKS, categorize
+from .program_types import PROGRAM_TYPES
+from .urls import check_url, normalize_url
 
 _ROOT = Path(__file__).parent.parent
 load_dotenv(_ROOT / ".env")
@@ -30,45 +31,56 @@ _LISTICLE = re.compile(
 _SKIP_PATH = (
     "/blog", "/blogs/", "/news/", "/article", "/list-of",
     "/dates", "/application-and-selection", "/apply-jpl", "/current-students/",
+    "/careers/", "/jobs/", "/faculty/", "/staff/",
 )
 _GENERIC_TITLES = {
     "student employment", "internship program", "student opportunities",
     "internship programs", "summer internships for high school students -",
-    "explore programs & apply",
+    "explore programs & apply", "careers", "job openings",
 }
-_SKIP_TITLE_FRAGMENTS = ("faq", "frequently asked", "internships -", "resources/internships")
+_SKIP_TITLE_FRAGMENTS = (
+    "faq", "frequently asked", "internships -", "resources/internships",
+    "for employers", "alumni", "graduate", "faculty",
+)
 _ALLOW_HOSTS = {
     "navalsteminterns.us", "about.bankofamerica.com", "bankofamerica.com",
     "cee.org", "societyforscience.org", "afrlscholars.usra.edu",
-    "deca.org", "coca-colascholarsfoundation.org",
+    "deca.org", "coca-colascholarsfoundation.org", "intern.nasa.gov",
 }
 
-QUERIES = {
-    "ai": [
-        '"high school" "machine learning" OR "artificial intelligence" summer research 2027 site:.edu apply deadline',
-        'site:stanford.edu OR site:mit.edu OR site:berkeley.edu "high school" summer research internship apply',
-        'site:nasa.gov OR site:nist.gov OR site:nsf.gov "high school" intern OR research apply deadline',
-        '"PRIMES" OR "RSI" OR "SSP" OR "SIMR" high school research apply deadline site:.edu',
-        '"computer science" "high school" summer program paid research NC OR Virginia apply',
-        'site:cmu.edu OR site:gatech.edu "high school" AI OR CS summer apply deadline',
+TYPE_QUERIES: dict[str, list[str]] = {
+    "internship": [
+        '"high school" paid summer internship stipend site:.edu OR site:.gov apply',
+        'NASA OR NIH OR NIST "high school" intern stipend apply deadline',
+        '"high school" engineering internship paid NC OR Cary apply site:.edu',
     ],
-    "engineering": [
-        '"high school" engineering summer research internship 2027 site:.edu apply deadline',
-        'SEAP OR "AFRL Scholars" OR "NIH SIP" OR "NASA OSTEM" high school apply site:.gov OR site:.edu',
-        '"high school" paid engineering internship NC State OR Duke OR UNC OR Wake apply',
-        'site:jpl.nasa.gov OR site:anl.gov OR site:ornl.gov high school intern apply',
-        '"Regeneron STS" OR "Siemens" OR "ISEF" high school science competition apply deadline',
-        '"Girls Who Code" OR "engineering" "high school" summer camp apply site:.edu OR site:.org',
-        'site:engineering.purdue.edu OR site:engineering.cornell.edu high school summer program apply',
+    "scholarship": [
+        '"high school" STEM scholarship apply deadline site:.edu OR site:.org',
+        'DECA OR "science talent" OR Davidson scholarship high school apply',
+        'merit scholarship high school junior apply site:.edu',
     ],
-    "business": [
-        '"Bank of America Student Leaders" 2027 apply deadline',
-        'DECA scholarship high school apply deadline site:deca.org',
-        '"high school" entrepreneurship OR "student leaders" OR "young entrepreneurs" 2027 apply site:.edu',
-        '"NFTE" OR "Junior Achievement" OR "DECA" high school scholarship apply',
-        'site:fbla.org OR site:bpa.org high school scholarship competition apply deadline',
-        '"business" "high school" summer program internship apply site:.edu',
+    "fly_in": [
+        '"fly-in" OR "fly in" high school engineering diversity campus visit apply site:.edu',
+        '"preview weekend" OR "open house" high school students engineering apply',
     ],
+    "apprenticeship": [
+        '"high school" apprenticeship paid STEM site:.gov OR site:.edu apply',
+        'pre-apprenticeship high school paid manufacturing OR engineering',
+    ],
+    "research": [
+        '"high school" summer research stipend paid site:.edu apply deadline',
+        'RSI OR PRIMES OR "summer science" high school research apply site:.edu',
+    ],
+    "competition": [
+        'Regeneron STS OR ISEF OR JSHS high school competition apply deadline',
+        'high school science olympiad OR math competition scholarship apply',
+    ],
+}
+
+TRACK_HINTS = {
+    "ai": ("machine learning", "computer science", "artificial intelligence", "data science", "primes"),
+    "engineering": ("engineering", "nasa", "physics", "robotics", "stem", "nist", "afrl"),
+    "business": ("business", "deca", "entrepreneur", "finance", "student leaders"),
 }
 
 
@@ -97,6 +109,16 @@ def _host_ok(url: str) -> bool:
     return host.endswith(".edu") or host.endswith(".gov")
 
 
+def _infer_category(title: str, url: str, query_track: str = "") -> str:
+    blob = f"{title} {url}".lower()
+    for track, hints in TRACK_HINTS.items():
+        if any(h in blob for h in hints):
+            return track
+    if query_track in TRACKS:
+        return query_track
+    return categorize({"name": title, "url": url, "type": "unknown"})
+
+
 def official_enough(url: str, title: str, existing_urls: set[str]) -> bool:
     title_l = (title or "").strip().lower()
     if _LISTICLE.search(title or ""):
@@ -113,6 +135,9 @@ def official_enough(url: str, title: str, existing_urls: set[str]) -> bool:
     for existing in existing_urls:
         if normalize_url(existing) == norm:
             return False
+    link = check_url(url)
+    if not link["url_ok"]:
+        return False
     return True
 
 
@@ -130,16 +155,16 @@ def discover(existing_urls: set[str], max_new: int = 30) -> list[dict]:
     depth = os.environ.get("TAVILY_DEPTH", "advanced")
 
     print(f"[discover] Tavily deep search enabled (depth={depth})")
-    for category in TRACKS:
-        for query in QUERIES[category]:
+    for ptype in PROGRAM_TYPES:
+        for query in TYPE_QUERIES.get(ptype, []):
             if len(found) >= max_new:
                 break
             try:
-                print(f"[discover] {category}: {query[:70]}...")
+                print(f"[discover] {ptype}: {query[:70]}...")
                 response = client.search(
                     query=query,
                     search_depth=depth,
-                    max_results=8,
+                    max_results=6,
                     include_answer=False,
                 )
             except Exception as e:
@@ -153,12 +178,15 @@ def discover(existing_urls: set[str], max_new: int = 30) -> list[dict]:
                     continue
                 if not official_enough(url, title, existing_urls):
                     continue
-                seen.add(norm)
+                link = check_url(url)
+                final_url = link["url_final"] if link["url_ok"] else url
+                seen.add(normalize_url(final_url))
+                category = _infer_category(title, final_url)
                 found.append({
                     "slug": _slug(title),
                     "name": title[:120],
-                    "url": url,
-                    "type": "unknown",
+                    "url": final_url,
+                    "type": ptype,
                     "tier": "unknown",
                     "category": category,
                     "typical_open": "",
@@ -167,7 +195,7 @@ def discover(existing_urls: set[str], max_new: int = 30) -> list[dict]:
                     "requires": [],
                     "notes": (
                         f"Discovered {datetime.now(timezone.utc).date().isoformat()} "
-                        f"via Tavily ({category}). Pending official page verification."
+                        f"via Tavily ({ptype}). Pending official page verification."
                     ),
                     "source": "tavily",
                 })
@@ -176,5 +204,5 @@ def discover(existing_urls: set[str], max_new: int = 30) -> list[dict]:
         if len(found) >= max_new:
             break
 
-    print(f"[discover] {len(found)} new official-looking pages")
+    print(f"[discover] {len(found)} new official-looking pages (links verified)")
     return found
