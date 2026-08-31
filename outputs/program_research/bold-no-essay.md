@@ -3,16 +3,16 @@
 **URL:** https://bold.org/scholarships/by-type/no-essay-scholarships/
 **Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** Deadline: Aug 31, 2026
+**Deadline quote:** The application deadline is Aug 31, 2026.
 **Opens:** Not stated on official page
-**Award:** 90+ no-essay scholarships ranging from $500 to $10,000. Examples: SoFi $2,500 monthly, Bold.org $10,000 (1000 Bold Points), $5,000 (Community/Bold Points), multiple $1,000 scholarships.
-**Eligibility:** Multiple scholarships with varying eligibility. Most are open to 'Any' education level. Some require High School students. Some require faith-based college interest. Most require no essays.
+**Award:** Multiple no-essay scholarships ranging from $500–$10,000. Best Faith-Based Colleges scholarship: $1,000 (1 winner). Nielsen Rewards scholarship: $1,000 (1 winner). SoFi: $2,500 monthly giveaway. Sallie: $2,000 monthly giveaway. Bold Points scholarships up to $10,000 based on profile engagement.
+**Eligibility:** High school students interested in faith-based colleges; ages 18+ for Nielsen scholarship
 **Status:** eligible
-**Last verified:** 2026-08-27
+**Last verified:** 2026-08-31
 **Confidence:** high
 
 ## Notes
-Page updated August 24, 2026. Student is rising junior (11th grade), so most scholarships marked 'High School' are eligible. Several deadlines are Aug 29 or Aug 31, 2026 (imminent). Eitel Scholarship (Aug 29) restricted to female undergrad/grad students at Baptist colleges—not eligible for this rising junior.
+This is a scholarship directory listing 90+ no-essay scholarships, many with TODAY'S deadline (Aug 31, 2026). Student is currently 11th grade, so eligible for high school scholarships. Most scholarships are rolling with early-applicant advantage. Winners announced at various dates (Oct 1, Nov 1, etc.). Student is a US citizen and meets basic eligibility but age requirement (18+) may exclude application to some scholarships depending on birthdate.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

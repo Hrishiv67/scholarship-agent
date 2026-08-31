@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Cost-free to students; 100 students selected; summer program at MIT with one week intensive STEM classes and five week research internship
-**Eligibility:** High school juniors only
+**Award:** 100 students selected. Cost-free to students. Summer program at MIT combining coursework and 5-week research internship.
+**Eligibility:** High school juniors (rising seniors / grade 11) who are U.S. citizens or permanent residents. Rising seniors (grade 12) are not eligible.
 **Status:** eligible
-**Last verified:** 2026-08-27
-**Confidence:** medium
+**Last verified:** 2026-08-31
+**Confidence:** high
 
 ## Notes
-Applications for RSI 2026 are now closed per the official page. Page states 'High school juniors are eligible. High school seniors are not.' Student is Class of 2028 (rising junior/11th grade), making him eligible for future cycles.
+Applications for RSI 2026 are closed. The student (rising junior) would be eligible to apply for RSI 2027 (summer before senior year). Metadata indicates typical opening in October and typical deadline in December, but no confirmed dates appear on the official page for any upcoming cycle.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Scholarships, aid, and opportunities available
-**Eligibility:** High school students
-**Status:** eligible
-**Last verified:** 2026-08-27
-**Confidence:** low
+**Award:** $2,000-$12,000 scholarship prizes at national level
+**Eligibility:** Could not determine — check program website
+**Status:** ineligible
+**Last verified:** 2026-08-31
+**Confidence:** none
 
 ## Notes
-Page indicates annual symposium and competition with year-round digital programming. Backed by Department of War and administered by NSTA. No specific 2026-2027 cycle dates found on page.
+Research failed: official page could not be fetched. Check https://www.jshs.org/ manually.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

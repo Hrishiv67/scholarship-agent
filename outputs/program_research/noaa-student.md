@@ -1,18 +1,18 @@
 # NOAA Student Opportunities
 
 **URL:** https://www.noaa.gov/education/opportunities/students
-**Track:** Engineering
+**Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Varies by specific opportunity (internships may be paid or unpaid; fellowships include stipends and professional development)
-**Eligibility:** High school students (no specific citizenship requirement stated for high school tier)
-**Status:** eligible
-**Last verified:** 2026-08-27
+**Award:** paid internship, varies by program
+**Eligibility:** This is a database/directory page, not a specific program application page
+**Status:** ineligible
+**Last verified:** 2026-08-31
 **Confidence:** none
 
 ## Notes
-Page provided is the NOAA Student Opportunities database landing page with general guidance on filters and opportunity types. It does not contain details for a specific program with confirmed dates. The metadata suggests typical October opening and January deadline, but these are unconfirmed and do not appear on this page. Student must use the database filters (High School audience, Engineering track, Fall/Winter application period) to find specific opportunities with published dates.
+Page is the main NOAA student opportunities database hub, not a specific program. It describes how to search 57 opportunities using filters (audience, type, citizenship, application period, location). Example programs listed include Alaska Beluga Monitoring Program (volunteer/citizen science, no citizenship requirement, multi-season applications) and American Meteorological Society Graduate Fellowship (graduate students only, $25,000 stipend, fall application period). No specific dates appear for any program. Student should use database filters: Audience=High school, Citizenship=U.S. citizen, Track=Engineering to find relevant opportunities.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Free program; participants work on unsolved problems in mathematics and applied mathematics; projects mentored by graduate students and faculty from MIT and partner universities; research papers may be submitted to national science competitions and professional journals
-**Eligibility:** High school juniors and sophomores (or homeschooled students of the same age) residing in the United States outside the Greater Boston area
-**Status:** eligible
-**Last verified:** 2026-08-27
-**Confidence:** low
+**Award:** Free program. Selected students receive mentorship from MIT graduate students and faculty, work on original research projects in mathematics and applied mathematics (theoretical computer science, computational biology). Final papers may be submitted to national science competitions or professional journals.
+**Eligibility:** High school juniors and sophomores residing in the United States outside Greater Boston area. 2027 cycle application link will appear in September 2026; 2026 cycle deadline has passed (was December 1, 2025).
+**Status:** ineligible
+**Last verified:** 2026-08-31
+**Confidence:** high
 
 ## Notes
-Program operates in four phases throughout the calendar year: Phase I (Jan 1 - Pi Day, ~Mar 14): Advanced reading period with 5-page report due; Phase II (Mar 14 - Jun 15): Active research with interim report due; Phase III (Jun 15 - Aug 31): Independent study; Phase IV (Sep 1 - Dec 31): Write-up period with conference presentation mid-October and final paper due Jan 15. Juniors work on individual or group projects; sophomores work on group projects. Page states 'Typical open (unconfirmed): September' and 'Typical deadline (unconfirmed): December' in metadata, but no specific 2026-2027 cycle dates appear on the official page.
+Student is rising junior (Class of 2028), eligible for 2027 cycle. 2027 application link appears September 2026. Preferable (not required) to meet one criterion: USAMO/USAJMO qualifier, grade A in college proof-based math, summer math program participation, or college math professor letter. Very advanced mathematical background expected. Free program with flexible summer schedule.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -1,18 +1,18 @@
 # AI for Computational Creativity | NSF REU Site | Brown Computer Science
 
-**URL:** https://aireu.cs.brown.edu
+**URL:** https://aireu.cs.brown.edu/
 **Track:** AI
 **Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** The application deadline is February 3, 2026.
+**Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** $6,300 stipend paid in three installments; housing and travel costs covered; 9-week residential program June 1 - July 31
-**Eligibility:** US citizens or permanent residents enrolled in a degree program leading to a baccalaureate or associate degree. High school graduates accepted to an undergraduate institution but not yet started are eligible. Must have completed introductory computer science course sequence and mathematics courses covering calculus, linear algebra, and probability.
+**Award:** $6,300 stipend (3 installments), housing covered, travel covered
+**Eligibility:** For Summer 2027: US citizens or permanent residents enrolled in a degree program leading to a baccalaureate or associate degree. High school graduates accepted to an undergraduate institution but not yet started are eligible. Completed introductory CS course sequence, calculus, linear algebra, and probability required.
 **Status:** ineligible
-**Last verified:** 2026-08-27
-**Confidence:** medium
+**Last verified:** 2026-08-31
+**Confidence:** low
 
 ## Notes
-Student is rising junior (11th grade), not yet in college. Page states high school graduates accepted to undergraduate institutions are eligible, but this student has not yet graduated. The deadline listed (February 3, 2026) is in the past relative to today (2026-08-27). Page indicates 'Admissions for Summer '26 are now complete' and directs interested applicants to check back in late fall for Summer '27 information. Student does not currently meet eligibility requirements.
+Program runs June 1 - July 31 (9 weeks). Page states 'check back in late fall for updated information' on Summer 2027 dates. Student is rising junior (11th grade) as of 2026-08-31, so would be rising senior in 2027 and graduating senior in 2028. Page indicates high school graduates accepted to college are eligible. Deadline February 3, 2026 was for Summer 2026 cycle (now closed). No confirmed dates available for Summer 2027 cycle.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

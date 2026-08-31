@@ -1,34 +1,18 @@
 # Simons Summer Research Program
 
 **URL:** https://www.stonybrook.edu/simons/
-**Application Opens:** Not found on page -- typically November
-**Deadline:** Not found -- check https://www.stonybrook.edu/simons/
-**Award:** $3,000 stipend, 7-week paid research at Stony Brook University
-**Tier:** Elite
-**Last Verified:** 2026-08-25
-**Research Confidence:** none
-
-## Eligibility
-Could not determine -- check program website
-
-## Requirements
-- application
-- essay
-- teacher_rec
-- transcript
-- test_scores
-
-## Essay Prompts (2026-2027 cycle)
-Not listed on official page -- check the application portal directly.
-
-## What a Strong Application Looks Like
-See program website for selection criteria.
-
-## Recommended Prep Timeline
-Begin preparation 2-3 months before the January deadline.
+**Track:** Engineering
+**Deadline:** 2026-02-05 (confirmed from official page quote)
+**Deadline quote:** The deadline for students to apply to the Simons SRP program is: THURSDAY, FEBRUARY 5, 2026 @ 11:59 PM (EST).
+**Opens:** Not stated on official page
+**Award:** Fellows work with distinguished faculty mentors, learn laboratory techniques and tools, become part of active research teams, and experience life at a research university
+**Eligibility:** Currently in 11th grade (junior year) at time of application, US citizen or permanent resident, at least 16 years old by program start, nominated by high school (max 2 per school)
+**Status:** eligible
+**Last verified:** 2026-08-31
+**Confidence:** high
 
 ## Notes
-Research failed: API call failed: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-5-20251015'}, 'request_id': 'req_011CeNiGFXnbk7N5k1aLHPoF'}. Check https://www.stonybrook.edu/simons/ manually.
+Applications for 2026 cycle are closed. Program dates were June 29 - August 7, 2026. This student is currently rising junior (will be 11th grade in 2026-27 school year), so would be eligible for 2027 cycle. Must confirm nomination status with Green Hope High School's designated official before submitting online application. No late applications accepted.
 
 ---
-*Researched by `calendar_agent` on 2026-08-25. Re-run `python -m calendar_agent.research` to refresh.*
+*Dates are stored only when the official page states them for this cycle.*

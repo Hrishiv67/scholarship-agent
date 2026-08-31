@@ -1,18 +1,18 @@
 # Horatio Alger National Scholarship
 
-**URL:** https://scholars.horatioalger.org/scholarships/about-our-scholarship-programs/
+**URL:** https://horatioalger.org/scholarships-and-services/
 **Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Financial assistance and comprehensive support for education; 1,246 scholarships awarded in 2025
-**Eligibility:** Deserving young people overcoming significant challenges and committed to pursuing higher education
+**Award:** 1,246 scholarships awarded in 2025; 73% Scholar graduation rate; Scholar Services and Alumni Association support
+**Eligibility:** Deserving young people overcoming significant challenges committed to pursuing higher education
 **Status:** eligible
-**Last verified:** 2026-08-27
+**Last verified:** 2026-08-31
 **Confidence:** low
 
 ## Notes
-Page contains general program overview but no specific 2026-2027 cycle dates. Student is rising junior (11th grade), not yet a senior. Program metadata indicates typical April open and October deadline, but these are unconfirmed and do not appear on the official page.
+Program metadata lists typical open (April) and typical deadline (October) as unconfirmed. Official page contains no specific dates for 2026-2027 cycle. Class of 2027 National Scholarship Recipients announced 06.10.26 but no application timeline provided.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

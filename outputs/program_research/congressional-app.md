@@ -1,18 +1,18 @@
 # Congressional App Challenge
 
 **URL:** https://www.congressionalappchallenge.us/
-**Track:** AI
+**Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Winners' apps displayed on official winners page; described as most prestigious prize in student computer science
-**Eligibility:** US students in grades 9-12
+**Award:** Winners' apps are displayed on winners page; Congressional recognition and prestige
+**Eligibility:** US high school students; no specific grade restrictions mentioned on page
 **Status:** eligible
-**Last verified:** 2026-08-27
+**Last verified:** 2026-08-31
 **Confidence:** low
 
 ## Notes
-Page shows 2025 winners and calls for 2026 registration but provides no specific open or deadline dates for the 2026 cycle. Metadata indicates typical deadline is November but this is unconfirmed on the official page.
+Page says 'REGISTER FOR THE 2026 APP CHALLENGE NOW' but provides no specific open or deadline dates. Metadata indicates typical open in June and typical deadline in November, but these are unconfirmed and do not appear on the official page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

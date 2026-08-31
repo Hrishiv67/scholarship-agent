@@ -1,18 +1,18 @@
 # COSMOS (UC System Summer Program)
 
-**URL:** https://cosmos-ucop.ucdavis.edu/
-**Track:** Engineering
+**URL:** https://cosmos-ucop.ucdavis.edu/app/main
+**Track:** General (not field-specific)
 **Deadline:** 2026-02-06 (confirmed from official page quote)
 **Deadline quote:** DEADLINE FOR ALL APPLICATION MATERIAL:  FEBRUARY 6, 2026, 11:59 PM
 **Opens:** Not stated on official page
-**Award:** Four-week intensive residential summer program at one of six UC campuses (Davis, Irvine, Los Angeles, Merced, San Diego, Santa Cruz). Each campus accommodates approximately 160-200 participants.
+**Award:** 4-week STEM residential at UC campus (~$4,500 fee, financial aid available)
 **Eligibility:** California high school students only, grades 8-12
 **Status:** ineligible
-**Last verified:** 2026-08-27
+**Last verified:** 2026-08-31
 **Confidence:** high
 
 ## Notes
-Student is ineligible: attends Green Hope High School in Cary, NC (not California). Program is limited to California high school students only.
+COSMOS is limited to California high-school students only. Student attends Green Hope High School in Cary, NC (not California), so is ineligible. Four-week full residential in-person program.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
