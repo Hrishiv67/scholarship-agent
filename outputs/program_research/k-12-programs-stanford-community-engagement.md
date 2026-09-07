@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** High school students entering 9th-12th grade in the fall who want to apply technical skills to real-world clinical problems
+**Eligibility:** High school students entering 9th-12th grade in the fall who want to apply their technical skills to real-world clinical problems
 **Status:** eligible
-**Last verified:** 2026-08-31
+**Last verified:** 2026-09-07
 **Confidence:** medium
 
 ## Notes
-Two-week virtual program. Applications described as 'now live' but no specific deadline provided on this page.
+Two-week virtual program with expert-led sessions, hands-on project, and mentorship from Stanford researchers. Applications are currently live.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

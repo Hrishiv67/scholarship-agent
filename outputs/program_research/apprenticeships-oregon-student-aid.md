@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Registered Apprenticeship Programs (RAPs) provide paid on-the-job training (OJT) combined with related classroom instruction (RT) in high-wage, high-demand fields including manufacturing, healthcare, IT, and construction.
-**Eligibility:** The page describes apprenticeship programs in Oregon generally but does not specify eligibility requirements or application deadlines for a specific 2026-2027 cycle.
+**Award:** Paid on-the-job training (OJT) combined with related instruction (RT); "Earn & Learn" programs in high-wage, high-demand industries including manufacturing, health care, IT, and construction
+**Eligibility:** Oregon residents interested in registered apprenticeship programs; specific eligibility varies by individual apprenticeship program
 **Status:** eligible
-**Last verified:** 2026-08-31
+**Last verified:** 2026-09-07
 **Confidence:** low
 
 ## Notes
-Student is not an Oregon resident (NC resident at Green Hope High School, Cary NC). Page provides general apprenticeship guidance and research resources but no specific cycle dates. Individual apprenticeship postings have their own application deadlines and point systems found on the Oregon Apprenticeship Openings by Geographical Area website.
+Student is in North Carolina (Green Hope HS, Cary NC) but this program is Oregon-specific. Student would need to establish Oregon residency or relocate to be eligible. Page describes research resources and application process but no specific 2026-2027 cycle dates provided. Apprenticeships are offered through individual programs with separate application timelines managed by local JATCs.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -8,11 +8,11 @@
 **Award:** $2,500 National Merit + corporate/college scholarships
 **Eligibility:** Unable to determine from provided page content
 **Status:** eligible
-**Last verified:** 2026-08-31
+**Last verified:** 2026-09-07
 **Confidence:** none
 
 ## Notes
-Official page content provided is a login screen with no substantive information about the National Merit Scholarship program, eligibility, or timeline. Student is rising junior (Class of 2028) and would be eligible to take the PSAT in October 2026 during junior year, which is the typical entry point for National Merit consideration.
+Page content only shows login screen with no substantive program information. PSAT typically administered in October of junior year (would be October 2026 for this student), but no specific dates confirmed on the provided page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

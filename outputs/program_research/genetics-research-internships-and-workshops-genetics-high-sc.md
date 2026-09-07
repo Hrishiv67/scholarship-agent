@@ -8,11 +8,11 @@
 **Award:** Free internship program (donations appreciated); $55 application fee; 8-week placement in research laboratory
 **Eligibility:** Bay Area high school students only; student is in NC and ineligible
 **Status:** eligible
-**Last verified:** 2026-08-31
-**Confidence:** medium
+**Last verified:** 2026-09-07
+**Confidence:** high
 
 ## Notes
-Two programs listed: GRIPS (in-person, Bay Area only, 2026 cycle closed as of 2026-08-31) and Stanford Data Ocean Online Summer Camp (self-paced online). Student attends Green Hope HS in Cary NC—geographically ineligible for GRIPS. Online camp details insufficient to extract dates/deadlines.
+2026 cycle deadlines have already passed (application deadline was 2026-02-28, internship dates were 2026-06-15 to 2026-08-06). Student is from Cary, NC and does not meet Bay Area geographic requirement. Stanford Data Ocean Online Summer Camp mentioned but lacks 2026 application/deadline dates on this page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

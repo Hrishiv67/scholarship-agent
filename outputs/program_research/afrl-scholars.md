@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** stipend-paid internship; internship opportunities typically 12-16 weeks, minimum 8 weeks
-**Eligibility:** upper-level high school students, undergraduate and graduate STEM students
+**Award:** stipend-paid internship opportunities; hands-on experiences working with full-time AFRL scientists and engineers on cutting-edge research and technology
+**Eligibility:** undergraduate and graduate-level university students pursuing STEM degrees, as well as upper-level high school students
 **Status:** eligible
-**Last verified:** 2026-08-31
+**Last verified:** 2026-09-07
 **Confidence:** medium
 
 ## Notes
-Page metadata indicates typical open in October and typical deadline in December, but no confirmed dates for 2026/2027/2028 cycle appear on official pages. Student is rising 11th grade (Class of 2028) and meets basic eligibility as an upper-level high school student pursuing STEM.
+Program metadata indicates typical open in October and typical deadline in December, but official pages do not confirm specific 2026–2027 cycle dates. Related page mentions internships are typically 12–16 weeks with minimum 8 weeks requirement, but is focused on graduate-level Joint Staff (J-7) Pentagon partnership. Main page confirms high school students are eligible.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

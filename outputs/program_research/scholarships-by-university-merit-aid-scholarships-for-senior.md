@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Multiple merit scholarships ranging from $6,000–$40,000+ depending on university and program; some full-tuition or full-ride options (Cooper Union, Colorado School of Mines Van Voris, Bard Conservatory, etc.)
-**Eligibility:** High school seniors (Class of 2027) applying to universities listed. Student is Class of 2028 (rising junior), not yet eligible.
+**Award:** Multiple merit scholarships listed by university, ranging from $6,000 to full tuition/room and board depending on university and scholarship
+**Eligibility:** This page is for Brooklyn Technical High School seniors only. Student attends Green Hope High School in Cary, NC and is a rising junior (Class of 2028), not a senior.
 **Status:** seniors_later
-**Last verified:** 2026-08-31
+**Last verified:** 2026-09-07
 **Confidence:** high
 
 ## Notes
-This is a curated list of merit scholarships by university, compiled by Brooklyn Technical High School for their seniors. Page contains many specific programs with deadlines ranging November 15 – February 15, but no single 'program' deadline. Student is currently a rising junior (Class of 2028) and will not be eligible until senior year (2027–2028 cycle). Page explicitly states this is not exhaustive and encourages students to research institutions directly.
+Page is specifically for Brooklyn Technical High School seniors (Class of 2027). Student is at different high school and is rising junior. Page contains mostly typical deadlines from prior years (January, December, February, November) without confirmed dates for 2026-2027 cycle.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

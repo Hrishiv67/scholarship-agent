@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** five-week residential summer research experience on college campus in astrophysics, biochemistry, bacterial genomics, or synthetic chemistry
+**Award:** intensive 6-week research (~$8,000 fee, strong need-blind financial aid)
 **Eligibility:** rising high school seniors with passion for science
 **Status:** seniors_later
-**Last verified:** 2026-08-31
-**Confidence:** medium
+**Last verified:** 2026-09-07
+**Confidence:** high
 
 ## Notes
-Student is Class of 2028 (rising junior/11th grade), but program explicitly states 'Are you a rising high school senior' and 'designed for highly motivated high school juniors' appears to conflict—page text indicates seniors only. Student will be eligible in 2027 cycle when entering senior year. No specific 2026-2027 cycle dates found on page; metadata lists typical October open and January deadline but these are unconfirmed and not on official page.
+Student is Class of 2028 (rising junior/11th grade), but program explicitly requires 'rising high school senior' applicants. Student will be eligible in 2027 cycle. Official page does not specify 2026-2027 cycle open/deadline dates; only metadata provides 'typical' dates (October open, January deadline) which are not confirmed on the official page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

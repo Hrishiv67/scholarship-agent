@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** Application Deadline: March 22, 2026, 11:59 PM CST
 **Opens:** Not stated on official page
-**Award:** Limited need-based scholarships available (stipend + free tuition). NSC309 UT Extension college credit (3 credit hours). Printed research poster and HSRA t-shirt.
-**Eligibility:** Texas residents, 15+ by June 1, rising sophomore/junior/senior for 2027-28 academic year (preference for rising juniors/seniors), available for 5 consecutive weeks June 8 - July 15, 2027
-**Status:** eligible
-**Last verified:** 2026-08-31
-**Confidence:** medium
+**Award:** Participants earn NSC309 UT extension course credit (3 credit hours), HSRA t-shirt, and printed research poster. Limited need-based scholarships available (stipend + free tuition). Program cost is $4,000 per student; $400 non-refundable deposit due upon acceptance.
+**Eligibility:** Texas residents, age 15+ by June 1, rising sophomore/junior/senior for 2026-27 academic year (preference for rising juniors/seniors). Student is a rising junior, male, Texas resident (NC resident), so NOT eligible due to state residency requirement.
+**Status:** ineligible
+**Last verified:** 2026-09-07
+**Confidence:** high
 
 ## Notes
-Program dates for 2027 cycle not yet confirmed; dates shown are for 2026 cycle (June 8 - July 15, 2026). Application opens late January 2027. Selection based on personal essay and research interests, not GPA/transcripts/recommendations. Non-refundable $400 deposit due upon acceptance. Full tuition ($4,000) due by May 15 after lab placement. Student is currently ineligible for Summer 2026 (already past deadline and currently rising junior for 2026-27 year); would be eligible for Summer 2027 as rising senior.
+This student is ineligible: Green Hope High School is in Cary, NC. Program explicitly states 'We currently prioritize Texas Residents at this time' and 'We are currently unable to accept out-of-state or international applicants.' Although the deadline date shown (March 22, 2026) is in the past relative to today (2026-09-07), the FAQ states 'HSRA Application will open again January 2027!' confirming a 2027 cycle exists. For that cycle, the deadline would be March 22, 2027.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

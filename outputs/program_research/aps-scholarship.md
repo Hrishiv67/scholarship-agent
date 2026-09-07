@@ -8,7 +8,7 @@
 **Award:** $2,000-$3,000 per year
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-08-31
+**Last verified:** 2026-09-07
 **Confidence:** none
 
 ## Notes

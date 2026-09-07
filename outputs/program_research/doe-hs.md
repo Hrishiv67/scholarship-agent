@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Access to DOE national laboratories, training with world-class scientists and engineers
-**Eligibility:** Undergraduate students; SULI and CCI programs listed but eligibility criteria not detailed on main page
+**Award:** paid summer research at DOE national labs
+**Eligibility:** Not specified for high school students on this page
 **Status:** ineligible
-**Last verified:** 2026-08-31
+**Last verified:** 2026-09-07
 **Confidence:** low
 
 ## Notes
-Main page is a hub for multiple WDTS programs. SULI and CCI are explicitly for undergraduates/college students, not high school students. The metadata suggests a HS program, but the official page text does not confirm a high school-specific internship program with confirmed 2026-2027 dates. SULI Spring 2027 deadline is 2026-09-30, but SULI requires college enrollment. Student is currently a rising junior (11th grade) and would not be eligible for SULI until college enrollment.
+The official page describes six core WDTS programs: SULI and CCI (postsecondary/undergraduate), SCGSR (graduate), VFP (faculty), AEF (K-12 educators), and NSB (K-12 students). The student is a rising 11th grader (high school). Only NSB appears to be for current K-12 students. The metadata suggested track 'engineering' and 'typical deadline January' are unconfirmed. The page shows Spring 2027 SULI/CCI deadlines (Sept 30, 2026) but these are for undergraduate/community college students, not high schoolers. No confirmed dates for a high school-specific program matching the metadata description.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
