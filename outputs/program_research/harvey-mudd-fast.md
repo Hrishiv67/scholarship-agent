@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** No-cost overnight fly-in experience. Fee waiver for first-year application to Harvey Mudd College.
-**Eligibility:** High school seniors (Class of 2027) who are US citizens or permanent residents intending to enter college in Fall 2027. The student is Class of 2028 (rising junior/11th grade) and therefore ineligible for the 2026 FAST program.
+**Award:** No-cost overnight fly-in program. Fee waiver for first-year application to Harvey Mudd College. Two program dates offered: Sept. 13–15 and Oct. 25–27, 2026. Around 40-50 students invited per program.
+**Eligibility:** High school seniors (Class of 2027) intending to enter college in fall 2027. U.S. citizens and permanent residents living in the United States and its territories. Undocumented students may apply but would be treated as international for financial aid purposes.
 **Status:** seniors_later
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-2026 applications closed on Aug 9, 2026. Program dates offered Sept 13-15 and Oct 25-27 (two separate two-day programs). Students are invited to only one program and indicate preference. Around 40-50 students per program. Undocumented students may apply but would be treated as international for admissions/aid purposes.
+Student is Class of 2028 (rising junior/11th grade), NOT a high school senior, so ineligible for 2026 FAST cycle. The 2026 FAST application closed on Aug. 9, 2026. The program is designed for high school seniors only. Page indicates applications are now closed for 2026.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

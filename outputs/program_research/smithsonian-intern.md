@@ -8,7 +8,7 @@
 **Award:** paid or stipend summer internship at Smithsonian museums/research centers
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** none
 
 ## Notes

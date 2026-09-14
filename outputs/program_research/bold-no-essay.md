@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** The application deadline is Sep 30, 2026.
 **Opens:** Not stated on official page
-**Award:** 90+ no-essay scholarships ranging from $500–$10,000. Primary featured scholarship: Best Faith-Based Colleges No-Essay Scholarship ($1,000, 1 winner); SoFi $2,500 monthly giveaway; Sallie $2,000 monthly; multiple Bold.org-funded scholarships ($1,000–$10,000). Total scholarships awarded: $17,525,128.
-**Eligibility:** High school students interested in faith-based colleges; ages 18+ for some scholarships (e.g., Nielsen, SoFi)
+**Award:** $1,000 award to 1 winner
+**Eligibility:** High school students interested in faith-based colleges
 **Status:** eligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-This is a scholarship directory/aggregator page featuring 90+ no-essay opportunities. Multiple scholarships listed share Sep 30, 2026 deadline. Student is currently 11th grade (rising junior); most scholarships listed accept 'High School' education level. The student may not meet age requirement (18+) for some individual scholarships (e.g., SoFi, Nielsen) depending on birthdate. Page updated Sep 7, 2026. Rolling monthly deadlines mentioned for several scholarships.
+This is a no-essay scholarship with rolling monthly deadlines; students applying earlier have greater chance of winning. Winners announced Nov 1, 2026. Student is eligible as a rising junior (11th grade) in high school. Multiple other no-essay scholarships listed on the main page with Sep 30, 2026 deadline, including Niche $40,000 (Oct 15 deadline, high school only), SoFi $2,500 (requires age 18+, student's age unknown), and others.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

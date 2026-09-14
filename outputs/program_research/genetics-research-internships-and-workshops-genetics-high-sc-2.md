@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Free internship program; $55 application fee required; 8-week summer placement in research laboratory
-**Eligibility:** Bay Area high school students only; student is in NC and ineligible
-**Status:** eligible
-**Last verified:** 2026-09-07
+**Award:** Free internship program; $55 application fee; 8-week summer placement in research laboratory with lab mentor supervision
+**Eligibility:** Bay Area high school students only
+**Status:** ineligible
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-GRIPS 2026 cycle had deadline 2026-02-28 (now past as of 2026-09-07). Stanford Data Ocean Online Summer Camp lacks 2026 dates and details. Student is ineligible: resides in Cary, NC; program restricted to Bay Area.
+GRIPS 2026 cycle has already closed (deadline was 2026-02-28, internship dates were 2026-06-15 to 2026-08-06). Student is in Cary, NC and program is Bay Area only—ineligible by geography. Stanford Data Ocean Online Summer Camp mentioned but lacks 2026 application/deadline dates on this page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

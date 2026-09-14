@@ -3,16 +3,16 @@
 **URL:** https://admission.tulane.edu/tuition-aid/merit-scholarships
 **Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** January 15 - First-Year Regular Decision Application Due
+**Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Merit scholarships ranging from $1,000 to full tuition or full cost of attendance. Partial scholarships up to $32,000/year awarded by admission office. Full tuition scholarships (Dean's Honor Scholarship, Grossman & Cohen Scholarship ~$400,000 total value) require CSS Profile and FAFSA completion. Stamps Scholarship covers total cost of attendance plus enrichment fund. Community Service Fellowship includes service requirement. FIRST Scholarship $15,000-$30,000 for FIRST robotics participants.
-**Eligibility:** First-year applicants applying for fall 2027 entry; U.S. citizens applying Regular Decision
+**Award:** Multiple merit scholarships available ranging from $1,000 to full cost of attendance (tuition, fees, housing, meals). Includes Dean's Honor Scholarship (full tuition), Stamps Scholarship (full cost of attendance plus enrichment fund), Grossman & Cohen Scholarship (~$400,000 total over 4 years), FIRST Scholarship ($15,000-$30,000 for FIRST participants), and Community Service Fellowship. All scholarships are renewable for 4 years.
+**Eligibility:** First-year applicants to Tulane University applying in Fall 2027 (Class of 2027 graduates); specific deadlines vary by application round (Early Decision, Early Action, Early Decision II, Regular Decision)
 **Status:** seniors_later
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-Student is currently Class of 2028 (rising junior/11th grade), so will be Class of 2027 senior when applying in 2027. Tulane no longer requires separate application for full tuition merit scholarships as of Class of 2026+. All applicants considered for partial merit via Common App. Financial aid deadline for Regular Decision is February 15 (CSS Profile and FAFSA by). Stamps Scholarship semifinalists notified by January 5 for supplements; finalists interview in spring. Dean's Honor Scholarship typical recipients: ACT 33+, SAT 1500+, unweighted GPA 3.7+. Grossman & Cohen Scholarship is new and highly selective. Portfolio/auditions optional and deadline February 1 for Regular Decision.
+Student is rising junior (Class of 2028), not graduating senior (Class of 2027). This program is for seniors applying to Tulane in fall 2025 for enrollment in Fall 2026. Student will not be eligible until senior year (fall 2027 application cycle). Specific deadlines depend on application round chosen: Early Decision (Nov 1), Early Action (Nov 10), Early Decision II (Jan 15), Regular Decision (Jan 15). No separate application required for partial merit scholarships or full tuition Dean's Honor Scholarship. Test scores required only for Pathways to Medicine program.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

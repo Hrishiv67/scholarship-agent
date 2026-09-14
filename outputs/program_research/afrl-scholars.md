@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** stipend-paid internship opportunities; hands-on experiences working with full-time AFRL scientists and engineers on cutting-edge research and technology
-**Eligibility:** undergraduate and graduate-level university students pursuing STEM degrees, as well as upper-level high school students
-**Status:** eligible
-**Last verified:** 2026-09-07
+**Award:** stipend-paid internship; typically 12-16 weeks (minimum 8 weeks for some tracks)
+**Eligibility:** upper-level high school students, undergraduate and graduate students pursuing STEM degrees
+**Status:** ineligible
+**Last verified:** 2026-09-14
 **Confidence:** medium
 
 ## Notes
-Program metadata indicates typical open in October and typical deadline in December, but official pages do not confirm specific 2026–2027 cycle dates. Related page mentions internships are typically 12–16 weeks with minimum 8 weeks requirement, but is focused on graduate-level Joint Staff (J-7) Pentagon partnership. Main page confirms high school students are eligible.
+Page mentions 'Typical open (unconfirmed): October' and 'Typical deadline (unconfirmed): December' in metadata but provides no specific confirmed dates for 2026 cycle. Student qualifies as upper-level high school student (rising junior). Contact: afrlscholars@usra.edu
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

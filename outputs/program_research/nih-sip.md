@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** The SIP 2027 application will open in mid-November 2026. The application will close in mid-February, 2027.
 **Opens:** Not stated on official page
-**Award:** Stipend adjusted annually based on educational level. Free parking on NIH campuses. Some campuses offer Transhare program. Must provide proof of health insurance.
-**Eligibility:** For Summer 2027: U.S. citizen or permanent resident, age 18 by September 30, 2027. Must be (1) graduating high school senior at time of application who has graduated before internship start, OR (2) enrolled at least half-time in accredited college/university/community college, OR (3) accepted into accredited graduate program for fall with expectation of half-time enrollment. High school graduates with one gap year starting college in fall are also eligible.
-**Status:** eligible
-**Last verified:** 2026-09-07
+**Award:** Full-time summer research internship at NIH Intramural Research Program (May-August). Stipend adjusted annually based on educational level. Free parking. May be eligible for Transhare program on some campuses. No housing provided.
+**Eligibility:** Graduating high school seniors (Class of 2027) who will be 18 by Sept 30, 2027, OR college/university students. Must be U.S. citizen or permanent resident.
+**Status:** ineligible
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-Student is rising 11th grade (Class of 2028), not a high school senior. Currently ineligible for Summer 2027 cycle. Would be eligible for Summer 2028 cycle if a high school senior at time of application and graduation before internship start. Application via NIH Application Center. PIs conduct individual selection, not centralized review. Interviews begin early January; selection completed by April 1.
+Student is Class of 2028 (rising junior), so NOT currently eligible for 2027 cycle (which is for graduating HS seniors and current college students). Would be eligible for 2028 cycle if attending college by then. PIs conduct individual selection starting early January; process completes by April 1. Summer 2027 internship runs May-August.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

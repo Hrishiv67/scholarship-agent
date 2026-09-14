@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** paid summer research at DOE national labs
-**Eligibility:** Not specified for high school students on this page
+**Award:** Access to DOE national laboratories, collaboration with world-class scientists and engineers, stipend (inferred from program description)
+**Eligibility:** Primarily undergraduate and graduate students; high school students may be ineligible for most core WDTS programs
 **Status:** ineligible
-**Last verified:** 2026-09-07
-**Confidence:** low
+**Last verified:** 2026-09-14
+**Confidence:** high
 
 ## Notes
-The official page describes six core WDTS programs: SULI and CCI (postsecondary/undergraduate), SCGSR (graduate), VFP (faculty), AEF (K-12 educators), and NSB (K-12 students). The student is a rising 11th grader (high school). Only NSB appears to be for current K-12 students. The metadata suggested track 'engineering' and 'typical deadline January' are unconfirmed. The page shows Spring 2027 SULI/CCI deadlines (Sept 30, 2026) but these are for undergraduate/community college students, not high schoolers. No confirmed dates for a high school-specific program matching the metadata description.
+The official page lists six core WDTS programs: SULI (undergraduates), CCI (community college), VFP (visiting faculty), SCGSR (graduate), AEF (educators), and NSB (K-12 students). This rising 11th-grade high school student does not meet eligibility for any listed program. NSB (National Science Bowl) is K-12 eligible but is a competition, not an internship. No specific 2026-2027 cycle dates appear on the page for programs eligible to this student.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

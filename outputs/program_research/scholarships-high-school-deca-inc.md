@@ -5,14 +5,14 @@
 **Deadline:** 2027-01-11 (confirmed from official page quote)
 **Deadline quote:** Applications will open soon and will remain open until January 11, 2027.
 **Opens:** Not stated on official page
-**Award:** Over $200,000 total in merit-based scholarships from corporate partners. Individual scholarships range from $1,000–$2,500. Examples: ConQUERing (1 × $2,500), IBM SkillsBuild (5 × $1,000), Leadership Initiatives (2 × $2,500), DECA Inc. (5 × $2,000), NRF Foundation–RISE Up (5 × $2,000).
-**Eligibility:** DECA members (high school or collegiate). Specific scholarships have additional criteria (e.g., field of study, employment, certifications, regional membership).
+**Award:** Over $200,000 in merit-based scholarships available. Individual awards range from $1,000 to $2,500. Examples: ConQUERing ($2,500, 1 award), IBM SkillsBuild ($1,000 each, 5 awards), NRF Foundation RISE UP ($2,000 each, 5 awards for juniors/seniors), DECA Inc. ($2,000 each, 5 awards)
+**Eligibility:** DECA members; specific scholarships have additional criteria (e.g., intended major, employment, certifications, regional membership)
 **Status:** eligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-No preliminary round for 2026–2027 cycle. All required items must be submitted by January 11, 2027. Student is a rising junior (Class of 2028) and is eligible to apply. Student attends Green Hope High School in Cary, NC (Central Region DECA). North Carolina is in Southern Region per DECA structure; eligibility depends on DECA chapter membership and region.
+Student is rising junior (11th grade), meets basic eligibility as high school DECA member. Must be DECA member to apply. Multiple corporate and regional scholarships available with varying specific criteria. No preliminary round for 2026-2027 cycle.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

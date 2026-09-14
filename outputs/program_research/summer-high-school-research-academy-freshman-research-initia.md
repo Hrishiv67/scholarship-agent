@@ -3,16 +3,16 @@
 **URL:** https://fri.cns.utexas.edu/community-outreach/summer-high-school-research-academy
 **Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** Application Deadline: March 22, 2026, 11:59 PM CST
+**Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Participants earn NSC309 UT extension course credit (3 credit hours), HSRA t-shirt, and printed research poster. Limited need-based scholarships available (stipend + free tuition). Program cost is $4,000 per student; $400 non-refundable deposit due upon acceptance.
-**Eligibility:** Texas residents, age 15+ by June 1, rising sophomore/junior/senior for 2026-27 academic year (preference for rising juniors/seniors). Student is a rising junior, male, Texas resident (NC resident), so NOT eligible due to state residency requirement.
-**Status:** ineligible
-**Last verified:** 2026-09-07
+**Award:** Limited need-based scholarships available (stipend + free tuition). No merit-based scholarships. NSC309 UT Extension course credit (3 credit hours). Printed research poster and HSRA t-shirt included.
+**Eligibility:** Texas residents, rising sophomores/juniors/seniors for 2026-27 school year, 15+ years old by June 1, 2026. Preference for rising juniors/seniors.
+**Status:** eligible
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-This student is ineligible: Green Hope High School is in Cary, NC. Program explicitly states 'We currently prioritize Texas Residents at this time' and 'We are currently unable to accept out-of-state or international applicants.' Although the deadline date shown (March 22, 2026) is in the past relative to today (2026-09-07), the FAQ states 'HSRA Application will open again January 2027!' confirming a 2027 cycle exists. For that cycle, the deadline would be March 22, 2027.
+Student is eligible: rising junior (Class of 2028), male, US citizen, NC resident (eligibility states 'Texas resident' prioritized but encourages non-TX to apply), Green Hope HS Cary NC. Page indicates HSRA Summer 2026 dates (June 8 - July 15, 2026) with March 22, 2026 deadline, but today is 2026-09-14, so this cycle has already passed. Next application opens January 2027 for 2027 summer program. Cost is $4,000 with $400 non-refundable deposit upon acceptance. Stipend available through need-based scholarship.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

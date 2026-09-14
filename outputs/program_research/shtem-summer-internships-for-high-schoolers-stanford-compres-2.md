@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Unpaid internship; 8 weeks in summer 2027; in-person at Stanford; students grouped in mentored projects (2-5 person groups); research spanning information science, engineering, arts, linguistics, psychology, biology, neuroscience, computer science, technology, philosophy, design
-**Eligibility:** US Citizens and Permanent Residents; must be high school junior or senior in 2026-2027 school year; must be at least 14 by June 20, 2027
+**Award:** See program website
+**Eligibility:** US Citizens and Permanent Residents who are high school juniors or seniors in the 2026-2027 school year, at least 14 years old by June 20, 2027
 **Status:** ineligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-Application fee: $95 (nonrefundable). Housing not provided; students arrange own accommodation and transportation. Financial assistance available for those with hardship. No prior research experience required. No interview component. Application expected to open December 2026; decisions expected end of March or early April 2027. Program dates to be announced Fall 2026. Single round of applications with waiting list expected.
+Application expected to open December 2026; decisions expected end of March or early April 2027. Program runs 8 weeks summer 2027, dates TBA Fall 2026. In-person at Stanford. No housing provided. Unpaid internship but financial assistance considered upon request. Group mentoring in groups of 2-5. No prior research experience required. No interview component.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

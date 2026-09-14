@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** $100,000, $50,000, or $25,000 scholarships; travel expenses and lodging to Washington DC awards reception provided
-**Eligibility:** 2027 application cycle opens Fall 2026; must be 18 or younger as of deadline; U.S. citizen or permanent resident residing in US; have completed significant work in one of eight categories; able to attend in-person awards event in Washington DC in September with parent/guardian
+**Award:** $100,000, $50,000, and $25,000 scholarships awarded; winners attend awards reception in Washington, D.C. in September (travel and lodging provided)
+**Eligibility:** U.S. citizen or Permanent Resident residing in the United States, 18 or younger as of application deadline, completed significant work in one of eight categories (Science, Technology, Engineering, Mathematics, Literature, Music, Philosophy, Outside the Box)
 **Status:** eligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** medium
 
 ## Notes
-2026 application cycle is closed. 2027 application will open Fall 2026 (specific date not provided on official page). Student is Class of 2028 (11th grade as of Sept 2026), so will be eligible for 2027 cycle as a senior. Application has two parts: initial eligibility screening, then nominator/parent forms and category requirements. Teams of up to 2 people eligible. No minimum age. Projects in visual arts (photography, sculpture, film) not eligible.
+Page states '2026 application is now closed. The 2027 application will open in Fall of 2026.' The 2027 cycle is the next available for this student. Metadata indicates typical deadline February but official page only references 'Fall of 2026' for opening with no confirmed deadline date visible for 2027 cycle. A prior year deadline (February 18, 2026) is shown but is not for the 2027 cycle this student would enter.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

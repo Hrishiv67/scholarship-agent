@@ -8,11 +8,11 @@
 **Award:** 1,246 scholarships awarded in 2025; financial assistance and comprehensive support provided to scholars
 **Eligibility:** Deserving young people overcoming significant challenges committed to pursuing higher education
 **Status:** eligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** low
 
 ## Notes
-Page contains general overview of Horatio Alger Association scholarships but no specific cycle dates, eligibility requirements, or application details. The metadata indicates typical April opening and October deadline, but these are unconfirmed and do not appear on the official page text provided. Student is Class of 2028 (rising junior/11th grade), so is not seniors-only restricted.
+Program metadata indicates typical April open and October deadline, but official page does not specify 2026/2027/2028 cycle dates. Metadata suggests engineering track but main page describes general scholarship program. Scholar graduation rate: 73%; 15,000 active alumni nationwide.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

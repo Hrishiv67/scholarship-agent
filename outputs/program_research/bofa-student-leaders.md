@@ -5,14 +5,14 @@
 **Deadline:** 2026-03-16 (confirmed from official page quote)
 **Deadline quote:** The deadline for the Student Leaders® application is March 16, 2026, at 11:59 pm eastern/ 8:59 pm pacific.
 **Opens:** Not stated on official page
-**Award:** Paid 6-week full-time (minimum 35 hours weekly) internship at local nonprofit June-July 2026. Internship wage $17/hour. All expenses for 3-day Leadership Summit (June 16-18, 2026) paid by program.
-**Eligibility:** Post-secondary students (college/university enrolled) only. Must be at least 18, have earned 12-18 college credits, have HS diploma within last 2 years, be legally authorized to work in US, reside in eligible program location during summer 2026, not previously selected as HS student, not BoA employee/immediate family.
+**Award:** $17/hour for 6-week full-time (35+ hours weekly) paid internship at nonprofit. Leadership Summit (June 16-18, 2026) with paid expenses included.
+**Eligibility:** College students who have earned 12-18 post-secondary credit hours within the last 2 years and reside in an eligible program location during summer 2026. Former high school students only.
 **Status:** ineligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-Student is currently in 11th grade (rising junior, Class of 2028) and therefore ineligible. Program requires post-secondary enrollment (college) with 12-18 credit hours earned. Student would need to graduate high school, enroll in college, earn college credits, and be at least 18 by application date to be eligible for future cycle.
+Student is currently in 11th grade (rising junior, Class of 2028) and is therefore ineligible. The program is for post-secondary students who have completed high school within the last 2 years and earned 12-18 college credit hours. Applicant would need to complete freshman and sophomore years of college, earn required credit hours, and apply as a college student.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

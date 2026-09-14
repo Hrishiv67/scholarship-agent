@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** all-expenses fly-in to Duke Pratt School of Engineering
-**Eligibility:** Unknown - page not found
+**Eligibility:** Unknown - official page not accessible
 **Status:** eligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** none
 
 ## Notes
-Official program page returned 404 error. No current cycle dates or eligibility information available. Metadata lists typical open (November) and typical deadline (January) but these are unconfirmed and do not appear on the official page.
+Official program page (https://pratt.duke.edu/undergrad/apply/diversity) returned 404 error. No current cycle dates or program details available. Metadata indicates typical opening in November and deadline in January, but per HARD RULE 1, these cannot be used without confirmation on official page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

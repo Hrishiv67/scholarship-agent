@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** ACCESS to Acceleration: $65/semester credit hour (up to $2,000/year); Arkansas Academic Challenge: varies by institution; Arkansas Future Grant: tuition and general mandatory fees for STEM/high-demand certificate and Associate degree programs.
-**Eligibility:** Multiple scholarships listed; student is rising junior (11th grade) and would be eligible for several programs as a high school student, but most require Arkansas residency which is not confirmed. Key programs: ACCESS to Acceleration (HS freshmen-seniors), Arkansas Academic Challenge (traditional students applying for upcoming academic year after HS graduation), Arkansas Future Grant (after HS graduation, STEM/high-demand areas), Arkansas Heroes (military/first responder dependents).
+**Award:** ACCESS to Acceleration (A2A): $65/semester credit hour (up to $2,000/year); Arkansas Academic Challenge: varies by college; Arkansas Future Grant: tuition and general mandatory fees for STEM/high-demand programs
+**Eligibility:** Arkansas residents; high school students (freshman, sophomore, junior, senior) for A2A; high school graduates for ACST and ArFuture; varies by specific scholarship
 **Status:** eligible
-**Last verified:** 2026-09-07
-**Confidence:** low
+**Last verified:** 2026-09-14
+**Confidence:** medium
 
 ## Notes
-Student is located in North Carolina (Green Hope High School, Cary NC) and ADHE scholarships are for Arkansas residents. No confirmed open or deadline dates for 2026-2028 cycle found on page. PDF appears to be a checklist document (SURF Checklist 2023) with corrupted/unreadable content. This program is not applicable to out-of-state high school students unless Arkansas residency requirement is met.
+Student is in North Carolina (Green Hope HS, Cary NC), not Arkansas. These are Arkansas-specific scholarships for Arkansas residents/high school graduates. Student does not appear eligible. PDF document (SURF Checklist 2023) was unreadable and provided no usable information.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

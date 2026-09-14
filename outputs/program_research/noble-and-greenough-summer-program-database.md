@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Cost-free to students; 80 participants selected worldwide
-**Eligibility:** Rising Class I students (seniors/12th grade)
+**Award:** Cost-free to students; approximately 80 students selected
+**Eligibility:** Rising Class I students (rising seniors/Class of 2027)
 **Status:** seniors_later
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-14
 **Confidence:** high
 
 ## Notes
-RSI is for rising seniors only (Class I = 12th grade). Student is rising junior (11th grade) and therefore ineligible. Program includes one week intensive STEM classes plus five-week research internship at MIT, culminating in conference-style presentations.
+Student is rising junior (Class of 2028), not eligible for this cycle which requires rising seniors. Program includes one week intensive STEM classes followed by five-week research internship at MIT. No specific 2026-2028 cycle dates found on page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
