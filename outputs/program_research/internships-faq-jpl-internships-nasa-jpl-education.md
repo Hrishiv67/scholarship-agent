@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Most internship programs come with a stipend. Some programs offer housing and/or travel allowances for students residing outside 50-mile radius of JPL.
-**Eligibility:** High school students age 16+ may apply to JPL SpaceSHIP program if offered. Must be US citizen or Lawful Permanent Resident. Check program page December/January for summer opportunities.
+**Award:** Most programs include stipend; some offer housing and/or travel allowances for students outside 50-mile radius of JPL; minimum 10-week commitment typical
+**Eligibility:** High school students age 16+ studying STEM or STEM-adjacent fields; US citizens only (foreign nationals on limited basis through separate program); must meet individual program requirements
 **Status:** eligible
-**Last verified:** 2026-09-14
-**Confidence:** medium
+**Last verified:** 2026-09-21
+**Confidence:** low
 
 ## Notes
-High school internships (JPL SpaceSHIP) are not consistently funded. Student should check program page in December/January for summer availability. Internships typically mid-June start. Most Academic Engagement Office internships require minimum 10-week commitment. Applications stay active 8 months. For college-bound internships, recommended application window is October-February.
+This is an FAQ page, not a specific program listing. Actual program deadlines and dates vary by program and are found on individual program pages. For summer internships, applications recommended October–February. High school internships (JPL SpaceSHIP) funding varies year-to-year; students should check program page December/January for summer availability. Applications remain active for 8 months. Student must check specific program page for confirmed dates.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

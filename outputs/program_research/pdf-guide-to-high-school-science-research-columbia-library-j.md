@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** Unable to determine - page content blocked by Anubis bot protection
-**Status:** verify
-**Last verified:** 2026-09-14
+**Eligibility:** Could not determine — check program website
+**Status:** ineligible
+**Last verified:** 2026-09-21
 **Confidence:** none
 
 ## Notes
-PDF resource blocked by Anubis proof-of-work protection. No program details accessible. User would need to visit the URL directly with JavaScript enabled to view content.
+Research failed: official page could not be fetched. Check https://journals.library.columbia.edu/index.php/cusj/libraryFiles/downloadPublic/136 manually.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

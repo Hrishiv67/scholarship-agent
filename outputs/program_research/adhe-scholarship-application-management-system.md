@@ -1,18 +1,18 @@
 # ADHE Scholarship Application Management System
 
 **URL:** https://sams.adhe.edu/Scholarship
-**Track:** General (not field-specific)
+**Track:** Engineering
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** ACCESS to Acceleration (A2A): $65/semester credit hour (up to $2,000/year); Arkansas Academic Challenge: varies by college; Arkansas Future Grant: tuition and general mandatory fees for STEM/high-demand programs
-**Eligibility:** Arkansas residents; high school students (freshman, sophomore, junior, senior) for A2A; high school graduates for ACST and ArFuture; varies by specific scholarship
+**Award:** A2A: $65/semester credit hour (up to $2,000/year); ACST: varies by institution; ArFuture: tuition and general mandatory fees
+**Eligibility:** Arkansas residents; high school students (Freshman-Senior) for A2A; graduates from AR high school, AR homeschool, or GED program for ArFuture; traditional or non-traditional students for ACST
 **Status:** eligible
-**Last verified:** 2026-09-14
-**Confidence:** medium
+**Last verified:** 2026-09-21
+**Confidence:** low
 
 ## Notes
-Student is in North Carolina (Green Hope HS, Cary NC), not Arkansas. These are Arkansas-specific scholarships for Arkansas residents/high school graduates. Student does not appear eligible. PDF document (SURF Checklist 2023) was unreadable and provided no usable information.
+Student is rising junior (11th grade) in North Carolina, not Arkansas. Page shows multiple programs; none specify exact 2026-2027 or 2027-2028 cycle dates. ACST lists 'Annual Deadline July 1' but no year specified. ArFuture lists 'Fall Deadline July 1' and 'Spring Deadline January 10' without year. Student likely ineligible for Arkansas-specific programs due to NC residency.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

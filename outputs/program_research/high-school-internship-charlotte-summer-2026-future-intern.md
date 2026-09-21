@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 8-to-10-week paid summer internship; positions in field, manufacturing, project management, engineering, BIM/VDC, safety, accounting, HR, education, IT, and marketing; professional development including resume building, interview prep, and capstone presentation; potential full-time employment opportunities
-**Eligibility:** High school students; pursuing or interested in construction, engineering, business, safety, or trades-related fields
+**Award:** 8-to-10-week paid internship. Positions available in Field, Manufacturing, Project Management, Engineering, BIM/VDC, Safety, and Corporate roles (Accounting, HR, Education, IT, Marketing). Benefits include on-the-job training, networking with industry professionals, potential full-time employment opportunities, resume development, interview prep, professional headshots, and academic capstone presentation or craft skills assessment. Locations: Indianapolis IN, South Bend IN, West Lafayette IN, Columbus IN, Louisville KY, Columbus OH, Cincinnati OH, Nashville TN, Huntsville AL, Atlanta GA, Charlotte NC, Fort Myers FL, Orlando FL, Tampa FL.
+**Eligibility:** High school students pursuing degrees/interests in Construction Management, Engineering (Architectural, Electrical, Civil, Construction), Occupational Health & Safety, Business, Finance, Marketing, Accounting, or related fields. Must be willing to travel to internship locations.
 **Status:** eligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-21
 **Confidence:** medium
 
 ## Notes
-Program posted April 11, 2026; appears to be for Summer 2026 which has already occurred (today is Sept 7, 2026). No explicit application deadline provided on the page. Multiple internship locations across US including Charlotte, NC.
+Posted April 11, 2026. Fetched April 13, 2026. Program is currently accepting applications. Over 200 students participate annually across 70+ institutions. No specific application deadline date provided on the page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

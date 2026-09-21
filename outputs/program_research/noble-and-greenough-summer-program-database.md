@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Cost-free to students; approximately 80 students selected
-**Eligibility:** Rising Class I students (rising seniors/Class of 2027)
+**Award:** Cost-free to students; includes on-campus coursework and five-week research internship at MIT
+**Eligibility:** Rising Class I students (seniors/Class of 2027)
 **Status:** seniors_later
-**Last verified:** 2026-09-14
+**Last verified:** 2026-09-21
 **Confidence:** high
 
 ## Notes
-Student is rising junior (Class of 2028), not eligible for this cycle which requires rising seniors. Program includes one week intensive STEM classes followed by five-week research internship at MIT. No specific 2026-2028 cycle dates found on page.
+Student is rising junior (Class of 2028) and therefore ineligible for this program, which is restricted to rising seniors. Page metadata lists typical deadline as unconfirmed with no specific dates provided on the official page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

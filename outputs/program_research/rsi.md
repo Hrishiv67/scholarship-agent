@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 100 students selected. Summer program at MIT. Includes one week intensive STEM classes and five week research internship. Cost-free to students.
-**Eligibility:** High school juniors (grade 11) who are U.S. citizens or permanent residents with one year remaining before graduation. Seniors are not eligible. This student is a rising junior (Class of 2028), so eligible for the 2027 cycle.
+**Award:** 100 students selected annually. Cost-free to students. Five-week research internship at MIT with mentorship from experienced scientists.
+**Eligibility:** High school juniors (grade 11) who are U.S. citizens or permanent residents with one year remaining before graduation. Not eligible for seniors.
 **Status:** eligible
-**Last verified:** 2026-09-14
-**Confidence:** high
+**Last verified:** 2026-09-21
+**Confidence:** medium
 
 ## Notes
-Applications for RSI 2026 are closed. Metadata indicates typical opening in October and typical deadline in December, but these are unconfirmed and no specific dates appear on the official pages for the 2027 cycle. Student should monitor CEE website or sign up for email/text updates for 2027 cycle dates.
+Applications for RSI 2026 are now closed. Page states 'Typically, this means students apply in the middle of their junior year' but provides no specific 2027 cycle dates. Student is currently grade 11 (Class of 2028) and would be eligible to apply in 2026-2027 cycle if dates were available.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

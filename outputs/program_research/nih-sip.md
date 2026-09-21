@@ -2,17 +2,17 @@
 
 **URL:** https://www.training.nih.gov/research-training/pb/sip/
 **Track:** Engineering
-**Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** The SIP 2027 application will open in mid-November 2026. The application will close in mid-February, 2027.
+**Deadline:** 2027-01-26 (confirmed from official page quote)
+**Deadline quote:** The application will close on Tuesday, January 26, 2027 at 12 pm (noon) ET.
 **Opens:** Not stated on official page
-**Award:** Full-time summer research internship at NIH Intramural Research Program (May-August). Stipend adjusted annually based on educational level. Free parking. May be eligible for Transhare program on some campuses. No housing provided.
-**Eligibility:** Graduating high school seniors (Class of 2027) who will be 18 by Sept 30, 2027, OR college/university students. Must be U.S. citizen or permanent resident.
-**Status:** ineligible
-**Last verified:** 2026-09-14
+**Award:** Full-time paid research internship, May 10 – August 31, 2027. Stipend adjusted annually based on educational level. Free parking on NIH campuses; some campuses offer Transhare program. No housing provided.
+**Eligibility:** Graduating high school seniors who will be 18 by September 30, 2027, enrolled at least half-time as a senior in high school at time of application, and have graduated before internship start. U.S. citizen or permanent resident required.
+**Status:** seniors_later
+**Last verified:** 2026-09-21
 **Confidence:** high
 
 ## Notes
-Student is Class of 2028 (rising junior), so NOT currently eligible for 2027 cycle (which is for graduating HS seniors and current college students). Would be eligible for 2028 cycle if attending college by then. PIs conduct individual selection starting early January; process completes by April 1. Summer 2027 internship runs May-August.
+Student qualifies as graduating senior (Class of 2028 = will graduate June 2027). Application opens October 13, 2026; reference letters due February 2, 2027. PIs begin interviewing in early January; selection process complete by April 1. Note: Student's age/birthdate unknown—must verify will be 18 by September 30, 2027. Suggested track (engineering) aligns with program's stated engineering welcome.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

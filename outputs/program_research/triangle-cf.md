@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Triangle Community Foundation administers 35 scholarship funds with amounts ranging from $1,000 to $80,000 depending on the specific scholarship.
-**Eligibility:** Student is a rising junior (11th grade) at Green Hope High School in Cary, NC. Most scholarships on this page are for graduating seniors only (class of 2027). The student does not meet the eligibility criteria for any of the 35 scholarship funds listed, as they will not be a high school senior in the 2026-2027 cycle when most deadlines occur.
+**Award:** 35 scholarship funds administered; amounts range from $1,000 to $80,000 depending on specific scholarship
+**Eligibility:** Student is not eligible. Most scholarships require graduating seniors (Class of 2027/12th grade). Student is Class of 2028/11th grade. Green Hope High School (Cary, NC) is in Wake County, but no scholarship listed is specific to Green Hope High School or explicitly open to rising juniors.
 **Status:** seniors_later
-**Last verified:** 2026-09-14
+**Last verified:** 2026-09-21
 **Confidence:** high
 
 ## Notes
-The student is currently a rising junior and will not be eligible for these scholarships until the 2027-2028 cycle when they become a graduating senior. The page indicates students must log into a scholarship portal and take an eligibility quiz to discover which scholarships they qualify for. Open and deadline dates for the 2026 cycle are listed for individual scholarships, but the student's current grade level makes them ineligible for application in 2026.
+Portal-based application with dynamic eligibility quiz. Student should revisit after becoming a senior (Class of 2027). Most 2026 cycle scholarships had January 7 open and March 9 deadline, but these are past for this student's current grade level.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

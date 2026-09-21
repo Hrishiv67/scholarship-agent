@@ -1,18 +1,18 @@
 # NOAA Student Opportunities
 
 **URL:** https://www.noaa.gov/education/opportunities/students
-**Track:** Engineering
+**Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** paid internship, varies by program
-**Eligibility:** High school, undergraduate, graduate, postdoc, recent graduates; U.S. citizen, national, permanent resident, or international student at U.S. institution
+**Eligibility:** High school students, US citizens, permanent residents, nationals, and international students at US institutions
 **Status:** eligible
-**Last verified:** 2026-09-14
+**Last verified:** 2026-09-21
 **Confidence:** low
 
 ## Notes
-Page provided is the NOAA Student Opportunities database homepage with general instructions and filters. Specific program details are incomplete (text cuts off mid-sentence). The two example programs shown (Alaska Beluga Monitoring Program and American Meteorological Society Graduate Fellowship) have different eligibility criteria and types. Program metadata indicates typical October open and January deadline, but these are unconfirmed and do not appear on the official page text provided.
+Page is a directory/database landing page with general information about NOAA student opportunities. No specific program details, dates, or requirements are provided. The metadata indicates typical opening in October and typical deadline in January, but these are unconfirmed and do not appear on the official page text provided. Students must use the database filters to find specific high school internship opportunities.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

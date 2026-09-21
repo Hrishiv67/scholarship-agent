@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** Majority of interns receive paid stipend award based on academic level and session duration
-**Eligibility:** Students of various academic levels; high school students eligible for OSTEM internships
+**Eligibility:** Students; high school students eligible for OSTEM internships
 **Status:** eligible
-**Last verified:** 2026-09-14
+**Last verified:** 2026-09-21
 **Confidence:** medium
 
 ## Notes
-Page confirms NASA offers OSTEM and Pathways internship programs with 2,000+ student placements annually. However, no specific 2026-2027 cycle open or deadline dates appear on the provided page text. Program metadata suggests typical October open and January deadline, but these are unconfirmed and do not appear in official page content.
+Page confirms NASA offers OSTEM Internships (Office of STEM Engagement) providing 2,000+ students annually with paid internship opportunities. Program builds technical skills and provides hands-on mission exposure. No specific 2026-2027 cycle dates found on provided pages.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

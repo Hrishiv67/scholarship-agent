@@ -1,4 +1,4 @@
-# Weekly Program Digest — 2026-09-14
+# Weekly Program Digest — 2026-09-21
 
 _Only confirmed official-page deadlines. Seniors-only tracked separately._
 
@@ -18,16 +18,18 @@ _None with confirmed deadlines in this window._
 
 - [Coca-Cola Scholars Foundation](https://www.coca-colascholarsfoundation.org/apply/)
 - [Regeneron Science Talent Search (STS)](https://www.societyforscience.org/regeneron-sts/)
+- [NIH Summer Internship Program (SIP)](https://www.training.nih.gov/research-training/pb/sip/)
 - [College Board BigFuture Scholarships](https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027)
 - [Harvey Mudd FAST Fly-In](https://www.hmc.edu/admission/fast/)
 - [High School Summer Internship Program - USC Dornsife Center for the Political Future](https://dornsife.usc.edu/center-for-political-future/jesse-m-unruh-institute-of-politics/high-school-summer-internship-program/)
 - [Indigenous Fly-In Program | Dartmouth Admissions](https://admissions.dartmouth.edu/visit/visitation-programs/indigenous-fly-program)
 - [Merit Scholarships](https://admission.tulane.edu/tuition-aid/merit-scholarships)
-- [Navy SEAP High School Internship](https://www.navalsteminterns.us/seap/)
+- [New York State Scholarships – The City University of New York](https://www.cuny.edu/financial-aid/scholarships/new-york-state-scholarships/)
 - [Noble and Greenough Summer Program Database](https://nobilis.nobles.edu/SummerPrograms/vehicle-details.php?id=339)
 - [Scholarships By University (Merit Aid) - Scholarships for Seniors - Brooklyn Technical High School](https://www.bths.edu/apps/pages/index.jsp?uREC_ID=390452&type=d&termREC_ID=&pREC_ID=731638)
+- [Scholar­ships | Admissions - The University of Utah](https://admissions.utah.edu/financial-aid-scholarships/scholarships/)
 - [Summer Science Program (SSP)](https://ssp.org/)
 - [Triangle Community Foundation Scholarships](https://trianglecf.org/apply/scholarships-for-students/)
 
 ---
-_Generated 2026-09-14. 12 confirmed deadlines across 124 programs._
+_Generated 2026-09-21. 13 confirmed deadlines across 133 programs._

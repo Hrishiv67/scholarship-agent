@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Free, year-long research program. Participants work on unsolved problems in mathematics and bioinformatics. Juniors work on individual or group projects; sophomores work on group projects. Projects mentored by graduate students and faculty from MIT and other universities via teleconferencing or local mentors.
+**Award:** Free, year-long research program. No application fees or tuition.
 **Eligibility:** High school juniors and sophomores (including homeschooled) residing in the United States outside Greater Boston area
 **Status:** ineligible
-**Last verified:** 2026-09-14
-**Confidence:** high
+**Last verified:** 2026-09-21
+**Confidence:** medium
 
 ## Notes
-Program operates in four phases: Phase I (Jan 1 - Pi Day, ~Mar 14): reading period with 5-page report due early March; Phase II (Pi+0.01 - Jun 15): active research; Phase III (Jun 15 - Aug 31): independent study; Phase IV (Sep 1 - Dec 31): write-up period with mid-October conference presentation and Dec 1 penultimate draft deadline, Jan 15 final paper deadline. Student is rising junior (Class of 2028) in NC, which is outside Greater Boston area, making him eligible. Page mentions 'typically September' opening and 'typically December' deadline in metadata only, not confirmed on official pages.
+Program operates in four phases: Phase I (Jan 1-Mar 14): Advanced reading, Phase II (Mar 14-Jun 15): Active research, Phase III (Jun 15-Aug 31): Independent study, Phase IV (Sep 1-Dec 31): Write-up and presentation. Time commitment: at least 10 hours/week during Phases I-II. Projects mentored by MIT and university graduate students/faculty. Student is eligible as rising junior (Class of 2028). Green Hope High School is in Cary, NC which is outside Greater Boston area. Preferable but not required: USAMO/USAJMO qualifier, college-level proof-based math course, summer math program participation, or college professor recommendation.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** NC State students; high school students should email Ashton Poplaski for Summer 2026 opportunities
+**Eligibility:** College students (NC State); high school students must email for Summer 2026 opportunities
 **Status:** ineligible
-**Last verified:** 2026-09-07
-**Confidence:** low
+**Last verified:** 2026-09-21
+**Confidence:** medium
 
 ## Notes
-Page states internships 'will begin posting in November 2025 and be available on a rolling basis through March 2026' but those dates are in the past relative to today (2026-09-07). For current high school students seeking Summer 2026 opportunities, the page directs them to email Ashton Poplaski at [email protected]. No specific 2026 dates for high school applicants are provided on this page.
+Page states 'Rural Works! Internships will begin posting in November 2025 and be available on a rolling basis through March 2026.' These dates are in the past relative to today (2026-09-21). The page explicitly directs high school students to email for Summer 2026 opportunities but provides no specific dates. Multiple internship positions listed across engineering disciplines at NC companies.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

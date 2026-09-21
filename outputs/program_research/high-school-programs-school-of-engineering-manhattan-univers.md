@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** Currently enrolled in 10th or 11th grade, age 16 or older at time of attendance
+**Eligibility:** Currently enrolled in 10th or 11th grade, must be 16+ at time of attendance
 **Status:** eligible
-**Last verified:** 2026-08-31
+**Last verified:** 2026-09-21
 **Confidence:** high
 
 ## Notes
-Program ran August 2-8, 2026 (already past). Page states 'This program is no longer accepting applications for Summer 2026. The site will reopen in December 2026 to accept applications for Summer 2027.' For 2027 cycle: Applications opened January 16, 2026 and closed February 28, 2026 (historical data). Cost: $2,500 total ($1,000 non-refundable deposit). Student is rising junior (Class of 2028) and thus eligible for this program if 16+ years old.
+Program ran August 2-8, 2026 but is no longer accepting applications for Summer 2026. Site will reopen December 2026 for Summer 2027 applications. Cost: $2,500 total ($1,000 non-refundable deposit). Historical dates from page: applications opened January 16, 2026, closed February 28, 2026, acceptances by March 15, 2026, final registration due April 15, 2026. Student is ineligible for 2026 cycle (already passed); would be eligible for 2027 cycle as rising senior.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

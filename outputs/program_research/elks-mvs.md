@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** $4,000-$50,000
-**Eligibility:** Unknown - official page contains insufficient information
+**Eligibility:** Unknown - page content insufficient
 **Status:** eligible
-**Last verified:** 2026-09-14
+**Last verified:** 2026-09-21
 **Confidence:** none
 
 ## Notes
-Official page provided only navigation links and no substantive program details. Dates cannot be confirmed from page content - only metadata suggests typical September open/November deadline.
+Official page contains only navigation elements and no substantive program details. Typical open/deadline from metadata (September/November) cannot be used per HARD RULES - must appear on official page with specific dates.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

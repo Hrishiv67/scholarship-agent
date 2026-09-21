@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** $2,500 National Merit + corporate/college scholarships
-**Eligibility:** Unable to determine from page content
+**Eligibility:** Unable to determine—official page did not load with usable content
 **Status:** eligible
-**Last verified:** 2026-09-14
+**Last verified:** 2026-09-21
 **Confidence:** none
 
 ## Notes
-Official page only shows login screen; no substantive content accessible. PSAT typically administered in October of junior year (2026-10); however, no specific dates or deadlines for 2026 cycle appear on provided page content.
+Official page returned only login prompt with no substantive content. Student is rising junior (Class of 2028); PSAT would typically be taken October 2026. Dates cannot be confirmed from page source.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

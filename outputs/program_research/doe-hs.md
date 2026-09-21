@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Access to DOE national laboratories, collaboration with world-class scientists and engineers, stipend (inferred from program description)
-**Eligibility:** Primarily undergraduate and graduate students; high school students may be ineligible for most core WDTS programs
+**Award:** paid summer research at DOE national labs
+**Eligibility:** Not found on page for high school students
 **Status:** ineligible
-**Last verified:** 2026-09-14
-**Confidence:** high
+**Last verified:** 2026-09-21
+**Confidence:** low
 
 ## Notes
-The official page lists six core WDTS programs: SULI (undergraduates), CCI (community college), VFP (visiting faculty), SCGSR (graduate), AEF (educators), and NSB (K-12 students). This rising 11th-grade high school student does not meet eligibility for any listed program. NSB (National Science Bowl) is K-12 eligible but is a competition, not an internship. No specific 2026-2027 cycle dates appear on the page for programs eligible to this student.
+The DOE Office of Science HS Programs page describes six core programs. All explicitly listed programs are for undergraduate students or above (SULI, CCI, VFP, SCGSR, AEF, NSB). No specific eligibility criteria for high school students appear on this main page. The student is in 11th grade and would not qualify for SULI (undergraduate), CCI (community college), or SCGSR (graduate). AEF is for educators. NSB may be relevant but no details appear here. The metadata indicates 'HS Programs' but the page content does not confirm high school eligibility for any program listed.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

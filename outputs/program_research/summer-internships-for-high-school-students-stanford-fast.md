@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Paid internship; exact stipend amount TBD. 8 weeks, 6 hours/day, Monday-Friday, June-August (flexible dates).
+**Award:** Paid internship; exact stipend amount TBD. 8 weeks between June and August 2027 (tentative). 6 hours/day, Monday-Friday.
 **Eligibility:** Current FAST students only. At least 16 years old. Not a graduating senior.
 **Status:** eligible
-**Last verified:** 2026-09-14
-**Confidence:** medium
+**Last verified:** 2026-09-21
+**Confidence:** low
 
 ## Notes
-Student is Class of 2028 (rising junior), so age requirement and senior restriction are potentially eligible. However, student must already be enrolled in FAST program to apply. Program dates and application deadline listed as TBD on the official page.
+Student is Class of 2028 (rising junior), so age and senior eligibility depend on DOB (unknown). Student is not listed as current FAST student, so eligibility is questionable. Program dates (June-August) and exact deadline are marked TBD on official page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

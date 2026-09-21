@@ -6,13 +6,13 @@
 **Deadline quote:** Application Deadline:  February 1, 2027
 **Opens:** Not stated on official page
 **Award:** mentored AI/health research at Stanford AIMI
-**Eligibility:** high school students
+**Eligibility:** High school students
 **Status:** eligible
-**Last verified:** 2026-09-14
+**Last verified:** 2026-09-21
 **Confidence:** high
 
 ## Notes
-Information session held Tuesday, November 10, 2026, 5–6 PM PT. Contact: aimi-hs-programs@stanford.edu. Program is mentored, hands-on research with real-world health data at the intersection of AI and medicine.
+Information session held November 10, 2026, 5–6 PM PT. Student is currently eligible (rising 11th grade, applying for Summer 2027 program).
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

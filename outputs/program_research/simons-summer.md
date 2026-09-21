@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** The deadline for students to apply to the Simons SRP program is: THURSDAY, FEBRUARY 5, 2026 @ 11:59 PM (EST).
 **Opens:** Not stated on official page
-**Award:** Simons Fellows work with distinguished faculty mentors, learn laboratory techniques and tools, and become part of active research teams at Stony Brook University for summer 2027
-**Eligibility:** Current 11th grade (junior year) US citizens and/or permanent residents; must be at least 16 years old by program start; school nomination required (max 2 per school)
+**Award:** Simons Summer Research Fellowship (June 29 - August 7, 2026 was past cycle; 2027 dates not specified). Work with faculty mentors, learn laboratory techniques, join active research teams.
+**Eligibility:** Current 11th grade (junior) US citizens or permanent residents, age 16+ by program start, nominated by high school (max 2 per school)
 **Status:** eligible
-**Last verified:** 2026-09-14
+**Last verified:** 2026-09-21
 **Confidence:** high
 
 ## Notes
-Student is currently rising junior (11th grade) for 2026-2027 school year and meets grade eligibility. Applications for 2027 cycle open late November 2026. Teacher recommendations due by February 13, 2027. Student must secure school nomination first before applying. Green Hope High School must have a designated nomination official.
+Applications for 2027 cycle posted in late November (per main page text). Teacher recommendations due by February 13, 2027. Student must obtain school nomination before applying. No late or independently submitted applications accepted. Green Hope High School must have designated nomination contact.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

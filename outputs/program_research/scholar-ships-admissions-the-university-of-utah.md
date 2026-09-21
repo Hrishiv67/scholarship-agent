@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** Submit your application for admission to the U by December 1.
 **Opens:** Not stated on official page
-**Award:** Merit-based scholarships ranging from $3,000–$10,000 annually based on unweighted GPA: President John R. Park ($10k at 4.0), Provost's ($8k at 3.9), Bonneville ($6k at 3.8), Red Rock ($4k at 3.7), Great Salt Lake ($3k at 3.5). Renewable for up to 4 years. WUE-eligible students receive WUE tuition rate if 3.3+ GPA and meet December 1 deadline.
-**Eligibility:** Incoming freshman students entering summer or fall 2026 terms. US citizens and non-residents not from WUE states eligible for merit scholarships based on unweighted high school GPA.
-**Status:** eligible
-**Last verified:** 2026-09-14
+**Award:** Merit-based scholarships ranging $3,000–$10,000 annually based on unweighted high school GPA: President John R. Park ($10k for 4.0), Provost's ($8k for 3.9), Bonneville ($6k for 3.8), Red Rock ($4k for 3.7), Great Salt Lake ($3k for 3.5). Renewable up to 4 years if terms met.
+**Eligibility:** Incoming freshman students entering summer or fall 2026; US citizens and non-WUE state residents with unweighted GPA 3.5+; WUE state residents with minimum 3.3 GPA
+**Status:** seniors_later
+**Last verified:** 2026-09-21
 **Confidence:** high
 
 ## Notes
-Student is rising junior (11th grade) in 2026-2027 school year; will be senior (12th grade) in 2027-2028 when this deadline applies. Scholarships awarded based on cumulative unweighted GPA at time of application submission. Homeschooled/GED students must submit official ACT or SAT score. February 1 is Financial Aid Priority Date for need-based aid consideration.
+Student is rising junior (Class of 2028), not a senior, so will apply in 2027–2028 cycle. This deadline applies to summer/fall 2026 entrants (current seniors). Also requires FAFSA completion by February 1 priority date for need-based aid. Page notes course/grade consideration at time of application completion.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

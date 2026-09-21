@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Limited need-based scholarships available (stipend + free tuition). No merit-based scholarships. NSC309 UT Extension course credit (3 credit hours). Printed research poster and HSRA t-shirt included.
-**Eligibility:** Texas residents, rising sophomores/juniors/seniors for 2026-27 school year, 15+ years old by June 1, 2026. Preference for rising juniors/seniors.
+**Award:** Need-based scholarships available (limited number): stipend + free tuition. No merit-based scholarships. NSC309 UT Extension course credit (3 credit hours), printed research poster, HSRA t-shirt included with tuition.
+**Eligibility:** Texas residents, age 15+ by June 1, rising sophomores/juniors/seniors for 2026-27 academic year (preference for rising juniors/seniors). Must be able to commit to five consecutive weeks June 8 - July 15, 2026, and arrange own housing/transportation.
 **Status:** eligible
-**Last verified:** 2026-09-14
+**Last verified:** 2026-09-21
 **Confidence:** high
 
 ## Notes
-Student is eligible: rising junior (Class of 2028), male, US citizen, NC resident (eligibility states 'Texas resident' prioritized but encourages non-TX to apply), Green Hope HS Cary NC. Page indicates HSRA Summer 2026 dates (June 8 - July 15, 2026) with March 22, 2026 deadline, but today is 2026-09-14, so this cycle has already passed. Next application opens January 2027 for 2027 summer program. Cost is $4,000 with $400 non-refundable deposit upon acceptance. Stipend available through need-based scholarship.
+Program dates: June 8 - July 15, 2026 (off June 19, July 3). Student is rising junior, Texas resident (NC resident—ineligible for current cycle). Application for Summer 2026 closed March 22, 2026. Application for 2027 opens January 2027. Cost: $4,000 total ($400 non-refundable deposit due upon acceptance, full tuition due May 15). 15-25 hrs/week in lab. In-person, non-residential program at UT Austin. CNS laboratory research in biochemistry, biology, environmental science, genetics, neuroscience, genome engineering, data analytics, ecology.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
