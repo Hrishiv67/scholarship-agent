@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 100 students selected annually. Cost-free to students. Five-week research internship at MIT with mentorship from experienced scientists.
-**Eligibility:** High school juniors (grade 11) who are U.S. citizens or permanent residents with one year remaining before graduation. Not eligible for seniors.
+**Award:** Cost-free to students. 100 students selected. Six-week summer program at MIT consisting of one week intensive STEM classes and five weeks individual research internship.
+**Eligibility:** High school juniors (grade 11) who are U.S. citizens or permanent residents with one year remaining before graduation. Seniors are not eligible.
 **Status:** eligible
-**Last verified:** 2026-09-21
-**Confidence:** medium
+**Last verified:** 2026-09-28
+**Confidence:** high
 
 ## Notes
-Applications for RSI 2026 are now closed. Page states 'Typically, this means students apply in the middle of their junior year' but provides no specific 2027 cycle dates. Student is currently grade 11 (Class of 2028) and would be eligible to apply in 2026-2027 cycle if dates were available.
+Applications for RSI 2026 are now closed. Metadata indicates typical opening in October and typical deadline in December, but no specific dates for 2027 cycle are published on the page. Student is currently a rising junior (Class of 2028), making him eligible to apply in fall 2026 for summer 2027 program, but that application window has passed. He would be eligible again in fall 2027 for summer 2028 if he has not yet graduated.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

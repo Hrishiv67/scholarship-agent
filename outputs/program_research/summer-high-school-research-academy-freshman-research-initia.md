@@ -3,16 +3,16 @@
 **URL:** https://fri.cns.utexas.edu/community-outreach/summer-high-school-research-academy
 **Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** (no quote)
+**Deadline quote:** Application Deadline: March 22, 2026, 11:59 PM CST
 **Opens:** Not stated on official page
-**Award:** Need-based scholarships available (limited number): stipend + free tuition. No merit-based scholarships. NSC309 UT Extension course credit (3 credit hours), printed research poster, HSRA t-shirt included with tuition.
-**Eligibility:** Texas residents, age 15+ by June 1, rising sophomores/juniors/seniors for 2026-27 academic year (preference for rising juniors/seniors). Must be able to commit to five consecutive weeks June 8 - July 15, 2026, and arrange own housing/transportation.
+**Award:** Limited need-based scholarships available (stipend + free tuition). No merit-based scholarships. Tuition: $4,000/student. Includes 3-credit UT course (NSC309), research poster, HSRA t-shirt, guest speakers, closing symposium.
+**Eligibility:** Texas residents, age 15+ by June 1, rising sophomore/junior/senior (preference for rising juniors/seniors), available for 5 consecutive weeks June 8 - July 15, 2027
 **Status:** eligible
-**Last verified:** 2026-09-21
+**Last verified:** 2026-09-28
 **Confidence:** high
 
 ## Notes
-Program dates: June 8 - July 15, 2026 (off June 19, July 3). Student is rising junior, Texas resident (NC resident—ineligible for current cycle). Application for Summer 2026 closed March 22, 2026. Application for 2027 opens January 2027. Cost: $4,000 total ($400 non-refundable deposit due upon acceptance, full tuition due May 15). 15-25 hrs/week in lab. In-person, non-residential program at UT Austin. CNS laboratory research in biochemistry, biology, environmental science, genetics, neuroscience, genome engineering, data analytics, ecology.
+Application opens January 2027 (exact date TBD, page says 'late January'). This is the 2027 cycle (for summer 2027). Student is rising junior in 2026-27, so will be rising senior in 2027-28 and eligible for 2027 cycle. In-person program at UT Austin, non-residential. Selection based on essay and research interests, NOT GPA/transcript/teacher recs. Placement in research group determined by lab availability and fit; no switching allowed. First round notifications April 22, 2027; second round May 4, 2027. Non-refundable $400 deposit required upon acceptance.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

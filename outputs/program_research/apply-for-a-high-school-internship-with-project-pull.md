@@ -6,9 +6,9 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** Unknown - page could not be fetched
+**Eligibility:** unknown - page could not be fetched
 **Status:** verify
-**Last verified:** 2026-09-21
+**Last verified:** 2026-09-28
 **Confidence:** none
 
 ## Notes

@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** $2,500 National Merit + corporate/college scholarships
-**Eligibility:** Unable to determine—official page did not load with usable content
+**Eligibility:** Unable to determine from provided page text
 **Status:** eligible
-**Last verified:** 2026-09-21
+**Last verified:** 2026-09-28
 **Confidence:** none
 
 ## Notes
-Official page returned only login prompt with no substantive content. Student is rising junior (Class of 2028); PSAT would typically be taken October 2026. Dates cannot be confirmed from page source.
+Official page displays only a login screen with no program details, dates, or eligibility information. Student is Class of 2028 (rising junior/11th grade), eligible to take PSAT in October 2026 for National Merit consideration. Actual program details unavailable from provided page text.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -8,7 +8,7 @@
 **Award:** paid 8-week summer research, stipend
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-09-21
+**Last verified:** 2026-09-28
 **Confidence:** none
 
 ## Notes

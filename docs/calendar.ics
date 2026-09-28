@@ -4,71 +4,53 @@ PRODID:-//Hrishiv Program Calendar//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Hrishiv program deadlines (confirmed)
 BEGIN:VEVENT
-UID:cosmos@scholarship-agent
-DTSTAMP:20260921T184459Z
-DTSTART;VALUE=DATE:20260206
-DTEND;VALUE=DATE:20260206
-SUMMARY:COSMOS (UC System Summer Program) (Engineering) due
-DESCRIPTION:https://cosmos-ucop.ucdavis.edu/app/main\nCalifornia high school students only\, grades 8-12. Student is from North Carolina and ineligible.
-URL:https://cosmos-ucop.ucdavis.edu/app/main
-END:VEVENT
-BEGIN:VEVENT
 UID:nih-sip@scholarship-agent
-DTSTAMP:20260921T184459Z
+DTSTAMP:20260928T201452Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270126
 SUMMARY:NIH Summer Internship Program (SIP) (Engineering) due
-DESCRIPTION:https://www.training.nih.gov/research-training/pb/sip/\nGraduating high school seniors who will be 18 by September 30\, 2027\, enrolled at least half-time as a senior in high school at time of application\, and have graduated before internship start. U.S. citizen or permanent resident required.
+DESCRIPTION:https://www.training.nih.gov/research-training/pb/sip/\nFor Summer 2027: U.S. citizen or permanent resident\, age 18 by September 30\, 2027 (with exceptions for high school seniors turning 18 by Sept 30)\, enrolled at least half-time as HS senior at time of application AND graduated before internship start\, or enrolled in accredited college/university/community college at time of application\, or accepted into accredited graduate program for fall. Student is rising junior (11th grade) in Sept 2026\, so would need to be HS senior at application time (Jan 2027) and graduate before May 10\, 2027 start date — unlikely unless graduating early.
 URL:https://www.training.nih.gov/research-training/pb/sip/
 END:VEVENT
 BEGIN:VEVENT
 UID:coca-cola-scholars@scholarship-agent
-DTSTAMP:20260921T184459Z
+DTSTAMP:20260928T201452Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20260930
 SUMMARY:Coca-Cola Scholars Foundation (General (not field-specific)) due
-DESCRIPTION:https://www.coca-colascholarsfoundation.org/apply/\nHigh school seniors (graduating 2026-2027 school year) who are U.S. Citizens or eligible permanent residents\, attending school in one of 50 U.S. states\, D.C.\, Puerto Rico\, or select DoD schools\, with minimum 3.0 GPA\, planning to pursue degree at accredited U.S. post-secondary institution. Not eligible if related to Coca-Cola Company/bottling company employees.
+DESCRIPTION:https://www.coca-colascholarsfoundation.org/apply/\nHigh school seniors (Class of 2027) graduating during 2026-2027 school year\, attending school in one of 50 U.S. states\, D.C.\, Puerto Rico\, or select DoD schools. Must be U.S. Citizen\, U.S. National\, U.S. Permanent Resident\, Refugee\, Asylee\, Cuban-Haitian Entrant\, or Humanitarian Parolee. Must have minimum 3.0 GPA. Cannot be child/grandchild of Coca-Cola Company employees or retirees receiving benefits.
 URL:https://www.coca-colascholarsfoundation.org/apply/
 END:VEVENT
 BEGIN:VEVENT
 UID:regeneron-sts@scholarship-agent
-DTSTAMP:20260921T184459Z
+DTSTAMP:20260928T201452Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261105
 SUMMARY:Regeneron Science Talent Search (STS) (General (not field-specific)) due
-DESCRIPTION:https://www.societyforscience.org/regeneron-sts/\nAny student living in and attending their last year of secondary school in the US and its territories\; US citizens living abroad may also qualify. Independent\, individual research only—team research is not eligible.
+DESCRIPTION:https://www.societyforscience.org/regeneron-sts/\nAny student living in and attending their last year of secondary school in the US and its territories may apply\, regardless of citizenship. US citizens living abroad may also qualify. Students must be high school seniors conducting independent\, individual research.
 URL:https://www.societyforscience.org/regeneron-sts/
 END:VEVENT
 BEGIN:VEVENT
-UID:senate-youth@scholarship-agent
-DTSTAMP:20260921T184459Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261201
-SUMMARY:US Senate Youth Program (General (not field-specific)) due
-DESCRIPTION:https://ussenateyouth.org/\nRising high school juniors and seniors actively serving in elected or appointed leadership positions representing a constituency in student government\, education\, public affairs\, or community service. Must be enrolled in high school and living in the state they represent for the entire 2026–2027 academic year.
-URL:https://ussenateyouth.org/
-END:VEVENT
-BEGIN:VEVENT
 UID:deca-scholarships@scholarship-agent
-DTSTAMP:20260921T184459Z
+DTSTAMP:20260928T201452Z
 DTSTART;VALUE=DATE:20270111
 DTEND;VALUE=DATE:20270111
 SUMMARY:DECA Inc. Scholarships (Business) due
-DESCRIPTION:https://www.deca.org/scholarships\nDECA members (high school and collegiate). Specific scholarships have additional criteria (e.g.\, IBM SkillsBuild certification\, NTHS membership\, employment at specific companies\, interest in hospitality/entrepreneurship/finance/management/marketing\, property management interest\, or regional DECA membership).
+DESCRIPTION:https://www.deca.org/scholarships\nDECA members applying for merit-based scholarships. Student is not confirmed to be a DECA member.
 URL:https://www.deca.org/scholarships
 END:VEVENT
 BEGIN:VEVENT
 UID:stanford-aimi-summer@scholarship-agent
-DTSTAMP:20260921T184459Z
+DTSTAMP:20260928T201452Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270201
 SUMMARY:Stanford AIMI Summer Research Internship (AI) due
-DESCRIPTION:https://aimi.stanford.edu/education/summer-research-internship\nHigh school students
+DESCRIPTION:https://aimi.stanford.edu/education/summer-research-internship\nhigh school students
 URL:https://aimi.stanford.edu/education/summer-research-internship
 END:VEVENT
 BEGIN:VEVENT
 UID:bcc-summer-research-program-centers-institutes@scholarship-agent
-DTSTAMP:20260921T184459Z
+DTSTAMP:20260928T201452Z
 DTSTART;VALUE=DATE:20260405
 DTEND;VALUE=DATE:20260405
 SUMMARY:BCC Summer Research Program | Centers & Institutes (General (not field-specific)) due
@@ -77,7 +59,7 @@ URL:https://centers.louisville.edu/brown-cancer-center/prospective-students/summ
 END:VEVENT
 BEGIN:VEVENT
 UID:engineering-exploration-program-for-high-school-students-cen@scholarship-agent
-DTSTAMP:20260921T184459Z
+DTSTAMP:20260928T201452Z
 DTSTART;VALUE=DATE:20260630
 DTEND;VALUE=DATE:20260630
 SUMMARY:Engineering Exploration Program for High School Students - Center for Science\, Technology\, Engineering and Mathematics ( (Engineering) due
@@ -85,12 +67,12 @@ DESCRIPTION:https://cstem.charlotte.edu/hsengineering\nHigh school students grad
 URL:https://cstem.charlotte.edu/hsengineering
 END:VEVENT
 BEGIN:VEVENT
-UID:engineering-open-house@scholarship-agent
-DTSTAMP:20260921T184459Z
-DTSTART;VALUE=DATE:20260909
-DTEND;VALUE=DATE:20260909
-SUMMARY:Engineering Open House (Engineering) due
-DESCRIPTION:https://www.ou.edu/coe/explore/k-12-outreach/engineering-open-house\nHigh school students ages 9-12\, including home-schooled students. No state residency requirement.
-URL:https://www.ou.edu/coe/explore/k-12-outreach/engineering-open-house
+UID:nmnh-summer-high-school-internship-office-of-academic-appoin@scholarship-agent
+DTSTAMP:20260928T201452Z
+DTSTART;VALUE=DATE:20260320
+DTEND;VALUE=DATE:20260320
+SUMMARY:NMNH Summer High School Internship | Office of Academic Appointments and Internships (General (not field-specific)) due
+DESCRIPTION:https://internships.si.edu/opportunity/nmnh-summer-high-school-internship\nCurrent high school students ages 15-18 (grades 9-12)\, US citizen or permanent resident\, fluent in English
+URL:https://internships.si.edu/opportunity/nmnh-summer-high-school-internship
 END:VEVENT
 END:VCALENDAR

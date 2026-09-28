@@ -8,11 +8,11 @@
 **Award:** $4,000-$50,000
 **Eligibility:** Unknown - page content insufficient
 **Status:** eligible
-**Last verified:** 2026-09-21
+**Last verified:** 2026-09-28
 **Confidence:** none
 
 ## Notes
-Official page contains only navigation elements and no substantive program details. Typical open/deadline from metadata (September/November) cannot be used per HARD RULES - must appear on official page with specific dates.
+Official page provided only navigation elements (Lodge Locator, Register, Login) with no substantive program details, dates, or eligibility criteria. Metadata indicates typical September open and November deadline, but per HARD RULE 1, these unconfirmed typical dates cannot be used.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

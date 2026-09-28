@@ -8,7 +8,7 @@
 **Award:** free fully-funded 6-week program at Carnegie Mellon
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-09-21
+**Last verified:** 2026-09-28
 **Confidence:** none
 
 ## Notes

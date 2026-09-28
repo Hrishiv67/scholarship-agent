@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** One of two written assignments published online. Public recognition as official Summer Research Intern for USC Center for the Political Future and USC Wrigley Institute for Environment and Sustainability.
-**Eligibility:** Rising sophomores, juniors, or seniors (not graduating seniors). Minimum 3.5 unweighted GPA. Available May 26–August 14. Strong interest in climate change, politics, and USC.
+**Award:** One of two assignments published online. Public recognition as official 'Summer Research Intern for the USC Center for the Political Future and the USC Wrigley Institute for Environment and Sustainability.'
+**Eligibility:** Rising sophomore, junior, or senior in high school (not graduating seniors). Minimum 3.5 unweighted GPA. Available May 26–August 14. Strong interest in climate change, politics, and USC.
 **Status:** seniors_later
-**Last verified:** 2026-09-21
+**Last verified:** 2026-09-28
 **Confidence:** high
 
 ## Notes
-2026 Summer program deadline is CLOSED. Page states: 'The application deadline for the Summer 2026 USC CPF/Wrigley High School Internship Program is CLOSED.' No 2027 dates announced yet. Newsletter signup recommended for 2027 opening announcement. Student (Class of 2028, rising junior) is eligible by grade and citizenship but cannot apply for 2026 cycle.
+2026 application deadline is CLOSED. Page instructs to sign up for CPF newsletter for 2027 program announcement. Dates listed (May 26–August 14) are noted as 'may change for 2027.' Student is eligible (rising junior, presumably meets GPA requirement, is US citizen). No compensation information provided on page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

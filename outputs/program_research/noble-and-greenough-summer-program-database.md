@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Cost-free to students; includes on-campus coursework and five-week research internship at MIT
-**Eligibility:** Rising Class I students (seniors/Class of 2027)
+**Award:** Cost-free to students; 80 participants selected
+**Eligibility:** Rising Class I students (typically rising seniors/Class of 2027)
 **Status:** seniors_later
-**Last verified:** 2026-09-21
+**Last verified:** 2026-09-28
 **Confidence:** high
 
 ## Notes
-Student is rising junior (Class of 2028) and therefore ineligible for this program, which is restricted to rising seniors. Page metadata lists typical deadline as unconfirmed with no specific dates provided on the official page.
+Student is rising junior (Class of 2028), not rising senior (Class of 2027). This program targets rising seniors only. Official page provides no specific open or deadline dates for any cycle.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

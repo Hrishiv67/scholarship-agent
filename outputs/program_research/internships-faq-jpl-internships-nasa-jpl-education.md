@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Most programs include stipend; some offer housing and/or travel allowances for students outside 50-mile radius of JPL; minimum 10-week commitment typical
-**Eligibility:** High school students age 16+ studying STEM or STEM-adjacent fields; US citizens only (foreign nationals on limited basis through separate program); must meet individual program requirements
-**Status:** eligible
-**Last verified:** 2026-09-21
-**Confidence:** low
+**Award:** Most internship programs come with a stipend. Some programs offer housing and/or travel allowances for students residing outside 50-mile radius of JPL. Student Independent Research Internship (SIRI) offers optional course credit.
+**Eligibility:** High school students age 16+ may be eligible for JPL SpaceSHIP program if offered; requires checking program page in December/January for summer opportunities. Most other JPL internship programs require undergraduate or graduate enrollment.
+**Status:** ineligible
+**Last verified:** 2026-09-28
+**Confidence:** medium
 
 ## Notes
-This is an FAQ page, not a specific program listing. Actual program deadlines and dates vary by program and are found on individual program pages. For summer internships, applications recommended October–February. High school internships (JPL SpaceSHIP) funding varies year-to-year; students should check program page December/January for summer availability. Applications remain active for 8 months. Student must check specific program page for confirmed dates.
+High school internships (SpaceSHIP) have limited funding and are not offered as open call every year. Student must check program page in December/January timeframe for summer opportunities. Applications stay active for 8 months. Recommend submitting applications October-February for summer internships. No specific 2026-2027 dates provided on page. Background investigation, federal funding availability, and continued student status are contingencies for participation.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

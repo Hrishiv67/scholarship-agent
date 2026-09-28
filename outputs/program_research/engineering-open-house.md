@@ -2,17 +2,17 @@
 
 **URL:** https://www.ou.edu/coe/explore/k-12-outreach/engineering-open-house
 **Track:** Engineering
-**Deadline:** 2026-09-09 (confirmed from official page quote)
-**Deadline quote:** Registration will close on September 9, 2026!
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Each member of a winning competition team is awarded an OU engineering scholarship.
-**Eligibility:** High school students ages 9-12, including home-schooled students. No state residency requirement.
+**Award:** Each member of a winning team in engineering competitions is awarded an OU engineering scholarship.
+**Eligibility:** High school students grades 9-12, any state, homeschooled students welcome. Does not require Oklahoma high school enrollment.
 **Status:** eligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-09-28
 **Confidence:** high
 
 ## Notes
-Event on Tuesday, September 22, 2026 at University of Oklahoma, Norman. Two competition tracks: Egg Car (less engineering experience) and Design, Build, Fly Glider (more engineering experience). Also includes info sessions, tours, majors fair, and hands-on activities. Students can register individually or through schools.
+Event date for 2027 is September 22, 2027. Event date for 2028 is September 27, 2028. Registration opens in August of each respective year. The student (Class of 2028, rising junior) is eligible. Page indicates this is a 114-year tradition since 1912 with design competitions and hands-on activities.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

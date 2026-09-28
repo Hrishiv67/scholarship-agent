@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Scholarships available; specific amounts not listed on provided pages
+**Award:** Scholarships available; approximately 65 new students enrolled each summer
 **Eligibility:** mathematically talented students ages 13–18
 **Status:** ineligible
-**Last verified:** 2026-09-21
-**Confidence:** high
+**Last verified:** 2026-09-28
+**Confidence:** medium
 
 ## Notes
-Mathcamp 2026 has closed applications as of 2026-09-21. The page states 'We are no longer accepting applications for Mathcamp 2026.' Dates and location for Mathcamp 2027 will be announced in December. Typical open date (February) and deadline (April) are metadata only and do not appear on the official pages provided. Student is eligible by age/grade for future cycles. Approximately 65 new students admitted each summer.
+Mathcamp 2026 already occurred (June 28 – August 2, 2026) and is no longer accepting applications. Dates and location for Mathcamp 2027 to be announced in December 2026. Typical deadline is April (unconfirmed metadata), typical open is February (unconfirmed metadata). No specific 2027 or 2028 cycle dates found on current official pages.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

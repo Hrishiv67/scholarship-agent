@@ -8,7 +8,7 @@
 **Award:** $500-$5,000 varies by scholarship
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-09-21
+**Last verified:** 2026-09-28
 **Confidence:** none
 
 ## Notes
