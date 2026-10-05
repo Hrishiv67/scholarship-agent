@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** All educational, food, and boarding costs covered. Students only pay for transportation to and from MIT. Travel scholarships available for MITES Summer students.
-**Eligibility:** 7th–12th grade students; focus on students from underserved and under-resourced backgrounds
+**Award:** Free program; all educational, food, and boarding costs covered. Students only pay for transportation to/from MIT.
+**Eligibility:** 7th–12th grade students; MITES Semester is for rising high school seniors only
 **Status:** seniors_later
-**Last verified:** 2026-09-28
-**Confidence:** medium
+**Last verified:** 2026-10-05
+**Confidence:** high
 
 ## Notes
-Page describes three separate programs: MITES Saturdays (multi-year Boston/Cambridge/Lawrence MA), MITES Semester (6-month June-December for rising seniors), and MITES Summer (6-week residential for rising seniors). Student is rising junior (11th grade), so would be eligible for MITES Saturdays or MITES Semester but not MITES Summer (seniors only). No 2026-2027 cycle dates provided on page.
+Student is Class of 2028 (rising junior/11th grade), not a rising senior. Therefore ineligible for MITES Semester. The program formerly known as MOSTEC is now called MITES Semester. Official page does not contain specific 2026–2027 cycle open or deadline dates.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

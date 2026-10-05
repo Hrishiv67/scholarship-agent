@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Full-time, eight-week summer internship (June 5 to July 31, 2026); $4,480 stipend; 40 hours per week in laboratory setting
-**Eligibility:** U.S. citizens or permanent residents entering junior or senior year at Palm Beach or Martin County high schools; minimum 3.0 GPA; at least 14 years old. 2026 application period is now closed.
+**Award:** $4,480 stipend for 8-week internship
+**Eligibility:** U.S. citizens or permanent residents entering junior or senior year at a Palm Beach or Martin County high school. Minimum 3.0 GPA. At least 14 years old.
 **Status:** ineligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** high
 
 ## Notes
-Student is located in Cary, NC (not Palm Beach or Martin County, FL) and therefore does NOT meet geographic eligibility requirement. 2026 application period is closed; next cycle (2027) applications will open in fall 2026.
+Student is from Cary, NC (not Palm Beach or Martin County, FL), so ineligible. 2026 application period is closed. Page states 'Please revisit the website in the fall to learn about the application period for the summer of 2027.' No 2027 dates are provided on this page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** NC State students; high school students should email for Summer 2026 opportunities
-**Status:** eligible
-**Last verified:** 2026-09-28
-**Confidence:** low
+**Eligibility:** College students; high school students must contact program directly
+**Status:** ineligible
+**Last verified:** 2026-10-05
+**Confidence:** medium
 
 ## Notes
-Page states internships 'will begin posting in November 2025 and be available on a rolling basis through March 2026' but those dates are in the past. For current student, must contact program directly. Multiple internship positions listed across Mechanical/Industrial/Aerospace, Biology/Chemical/Medical, Electrical/Computer, and Civil/Construction/Environmental categories, all located in North Carolina.
+Page states 'Rural Works! Internships will begin posting in November 2025 and be available on a rolling basis through March 2026.' This refers to past dates relative to today (2026-10-05). For Summer 2026 opportunities, students must email Ashton Poplaski at [email protected]. This appears to be a college internship program; high school students would need to contact the program directly to inquire about eligibility.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

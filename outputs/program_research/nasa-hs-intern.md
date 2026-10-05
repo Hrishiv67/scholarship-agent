@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Majority of interns receive paid stipend based on academic level and session duration
-**Eligibility:** Students; high school students eligible for OSTEM internships
-**Status:** eligible
-**Last verified:** 2026-09-28
-**Confidence:** low
+**Award:** paid internship $500-$800/week, varies by center
+**Eligibility:** Could not determine — check program website
+**Status:** ineligible
+**Last verified:** 2026-10-05
+**Confidence:** none
 
 ## Notes
-NASA offers two internship programs: OSTEM (hands-on skills and mission exposure) and Pathways (structured pipeline to civil service). Official pages provided no specific 2026-2027 cycle open or deadline dates. Metadata indicates typical October open and January deadline, but these are unconfirmed. Student is eligible as high school junior interested in engineering.
+Research failed: official page could not be fetched. Check https://www.nasa.gov/learning-resources/internship-programs/ manually.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

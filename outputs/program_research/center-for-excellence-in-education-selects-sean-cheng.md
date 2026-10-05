@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Free program; includes one week intensive STEM classes and five week research internship under mentors
-**Eligibility:** Select high school students from across the nation; 80 students chosen annually
+**Award:** Fully funded summer research program at MIT; includes week of intensive STEM coursework and five-week research internship with mentors
+**Eligibility:** High school students selected by Center for Excellence in Education; approximately 80 students nationally per year
 **Status:** eligible
-**Last verified:** 2026-09-28
-**Confidence:** low
+**Last verified:** 2026-10-05
+**Confidence:** high
 
 ## Notes
-This is a profile article about a past participant (Sean Cheng, Class of 2021, from OSSM, selected in 2020). No specific 2026-2028 cycle dates provided. Program is MIT Research Science Institute (RSI) run by Center for Excellence in Education in McLean, VA. Article does not contain application dates for current or future cycles.
+This is a news article announcing an individual student's selection (Sean Cheng, Class of 2021 at OSSM). The page does not contain open/deadline dates for the 2026-2028 cycles. Article is from 2020 and references the program being held virtually due to pandemic. No current application information provided. The student in question (Green Hope High School, Class of 2028) does not match the highlighted student.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

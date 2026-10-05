@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Scholarships available; approximately 65 new students enrolled each summer
+**Award:** scholarships available
 **Eligibility:** mathematically talented students ages 13–18
 **Status:** ineligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** medium
 
 ## Notes
-Mathcamp 2026 already occurred (June 28 – August 2, 2026) and is no longer accepting applications. Dates and location for Mathcamp 2027 to be announced in December 2026. Typical deadline is April (unconfirmed metadata), typical open is February (unconfirmed metadata). No specific 2027 or 2028 cycle dates found on current official pages.
+Mathcamp 2026 (June 28–August 2) at Champlain College, Burlington VT is closed to new applications as of 2026-10-05. Student should apply for Mathcamp 2027. 2027 dates and location will be announced in December (2026). Page states typical deadline is April but does not specify confirmed dates for 2027 cycle.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

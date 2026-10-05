@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Paid wages from day one with progressive increases; tuition-free college credits for related coursework; industry-recognized credentials; average $10,000 higher annual pay upon completion
-**Eligibility:** Age 16+, enrolled in high school or high school graduate, interest in high-demand career field, commitment to on-the-job and classroom instruction
+**Award:** Tuition-free college credits for apprenticeship-related coursework; industry-recognized credentials; progressive wage increases; average $10,000 more per year lifetime earnings vs. non-apprentices
+**Eligibility:** Age 16+, enrolled in high school or high school graduate, interest in high-demand career field, commitment to on-the-job learning and classroom instruction
 **Status:** eligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** medium
 
 ## Notes
-Page does not specify application opening date or deadline for 2026-2027 cycle. Students must find specific Youth Apprenticeship opportunity through employer/program sponsor. Contact: apprenticeshipnc@nccommunitycolleges.edu or 919-807-6988. Available in 1,400+ occupations.
+Program varies by employer/sponsor. Students must find and apply to specific Registered Apprenticeship opportunities. Contact apprenticeshipnc@nccommunitycolleges.edu or 919-807-6988 for specific program dates. Available in 1,400+ occupations.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

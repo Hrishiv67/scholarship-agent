@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Merit scholarships range from $1,000 to full cost of attendance (tuition, fees, housing, meals). Partial scholarships up to $32,000/year. Full-tuition scholarships include Dean's Honor Scholarship, Community Service Fellowship, Sotomayor Public Service Scholarship. Stamps Scholarship covers total cost of attendance plus enrichment fund. Grossman & Cohen Scholarship covers tuition, fees, housing, meals (~$400,000 total value). National Merit Scholarships at least $2,000/year. All scholarships are renewable for 4 years.
+**Award:** Merit scholarships range from $1,000 to full tuition/cost of attendance. Partial scholarships up to $32,000/year. Full-tuition options include Dean's Honor Scholarship, Stamps Scholarship (covers total cost of attendance plus enrichment fund), Grossman & Cohen Scholarship (~$400,000 total over 4 years), and Community Service Fellowship. National Merit Scholarships minimum $2,000/year. All renewable for 4 years.
 **Eligibility:** First-year applicants to Tulane University; varies by scholarship type and application round (Early Decision, Early Action, Early Decision II, Regular Decision)
 **Status:** eligible
-**Last verified:** 2026-09-28
-**Confidence:** low
+**Last verified:** 2026-10-05
+**Confidence:** medium
 
 ## Notes
-Student is Class of 2028 (rising junior/11th grade). He will be in the Class of 2027 for college applications (graduating high school spring 2027). The page provides deadlines for different application rounds but does NOT provide specific open or deadline dates for the 2027 cycle—only references to August 1 application opens and various deadlines (November 1, January 15, etc.) without years. The metadata shows 'Typical open' and 'Typical deadline' are unconfirmed. No official 2026, 2027, or 2028 cycle dates appear on the page in the required format.
+Student is a current junior (Class of 2028, rising 11th grade) and would be applying in Fall 2027 for enrollment Fall 2028. No specific deadline dates are confirmed on the official pages—only application round deadlines for admission are provided (November 1 for ED, November 10 for EA, January 15 for ED II/RD), not scholarship-specific deadlines. For Stamps Scholarship, semifinalists submit supplements by January 5; finalists interview spring (no year specified). Community Service Fellowship supplements available on Green Wave Portal (no deadline listed). Test scores preferred for Dean's Honor Scholarship; typical recent recipients had ACT 33+, SAT 1500+, or unweighted GPA 3.7+.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

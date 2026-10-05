@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Apps are displayed on winners page; no prize details specified on main page
-**Eligibility:** High school students in grades 9-12; specific eligibility details not provided on main page
+**Award:** 2026 winners' apps displayed on winners page; described as 'most prestigious prize in student computer science'
+**Eligibility:** US high school students grades 9-12
 **Status:** eligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** low
 
 ## Notes
-Page says 'REGISTER FOR THE 2026 APP CHALLENGE NOW' but provides no specific open or deadline dates. Metadata lists typical deadline as November, but per hard rule #3, this cannot be used. Page references 2025 winners but no 2026 dates are explicitly stated.
+Page calls for registration but does not provide specific 2026 open or deadline dates. Metadata indicates typical June open and November deadline but these are unconfirmed. Student meets eligibility criteria (US citizen, high school junior, Green Hope HS in NC).
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

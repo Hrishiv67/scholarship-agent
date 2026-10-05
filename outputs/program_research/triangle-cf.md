@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 35 scholarship funds administered; amounts range from $1,000 to $80,000 depending on specific scholarship
-**Eligibility:** Student is a rising junior (11th grade), not a graduating senior. Most scholarships listed are for graduating high school seniors only. Student attends Green Hope High School in Cary, NC (Wake County). Some scholarships may be available in future cycles when student is a senior.
+**Award:** 35 scholarship funds ranging from $1,000 to $80,000 depending on specific scholarship
+**Eligibility:** Rising juniors / current 11th graders are not eligible for most scholarships listed, which require graduating seniors or college students. The student is Class of 2028 (graduating 2028), so would be eligible for scholarships in 2027-2028 cycle when they are seniors.
 **Status:** seniors_later
-**Last verified:** 2026-09-28
-**Confidence:** high
+**Last verified:** 2026-10-05
+**Confidence:** low
 
 ## Notes
-Student is currently ineligible as a rising junior. Should revisit in fall 2027 when applying as a graduating senior. Green Hope High School (Cary, NC) is not explicitly mentioned in the listed scholarships. Some scholarships specify particular high schools (e.g., Apex, Durham County, Chapel Hill–Carrboro, Siler City) or counties. The portal uses an eligibility quiz to identify qualifying scholarships.
+Student attends Green Hope High School in Cary, NC (Wake County), which makes them potentially eligible for multiple Triangle Community Foundation scholarships when they become a graduating senior in 2027-2028. Many scholarships listed are for 2026 cycle (already closed or closing soon) and are for Class of 2026 seniors. The program administers 35 total scholarship funds with varying deadlines and eligibility requirements. Specific deadlines for 2027-2028 cycle are not yet published on this page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

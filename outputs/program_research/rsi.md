@@ -2,17 +2,17 @@
 
 **URL:** https://www.cee.org/programs/research-science-institute
 **Track:** Engineering
-**Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** (no quote)
+**Deadline:** 2026-12-11 (confirmed from official page quote)
+**Deadline quote:** Applications for RSI 2027 are open through 11:59pm December 11, 2026.
 **Opens:** Not stated on official page
-**Award:** Cost-free to students. 100 students selected. Six-week summer program at MIT consisting of one week intensive STEM classes and five weeks individual research internship.
-**Eligibility:** High school juniors (grade 11) who are U.S. citizens or permanent residents with one year remaining before graduation. Seniors are not eligible.
+**Award:** 100 students selected. Summer program at MIT. Cost-free to students.
+**Eligibility:** High school juniors (rising seniors / class of 2028) who are U.S. citizens or permanent residents. Seniors are not eligible.
 **Status:** eligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** high
 
 ## Notes
-Applications for RSI 2026 are now closed. Metadata indicates typical opening in October and typical deadline in December, but no specific dates for 2027 cycle are published on the page. Student is currently a rising junior (Class of 2028), making him eligible to apply in fall 2026 for summer 2027 program, but that application window has passed. He would be eligible again in fall 2027 for summer 2028 if he has not yet graduated.
+Program runs for 6 weeks total: 1 week intensive STEM classes + 5 weeks research internship. Students conduct individual research projects and deliver oral and written presentations. No late applications accepted.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

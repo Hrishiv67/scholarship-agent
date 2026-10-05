@@ -8,7 +8,7 @@
 **Award:** all-expenses campus visit to Washington University in St. Louis
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** none
 
 ## Notes

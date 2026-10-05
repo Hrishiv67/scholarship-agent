@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** No financial aid or scholarships offered.
-**Eligibility:** High school students (must be at least 16 years old on or before July 4, 2026); unweighted GPA of 95/100 (3.8/4.0); standardized test scores at least 60 percentile; at least 3 of: English, Chemistry, Mathematics/Calculus, Physics, Biology (Honors or AP/IB preferred). US citizens and international students with legal right to reside in US eligible.
+**Award:** paid summer materials research at Stony Brook
+**Eligibility:** High school students (2026 applicants) who are at least 16 years old by July 4, 2026; unweighted GPA ≥95/100 (3.8/4.0); standardized test scores ≥60th percentile; completed at least 3 of: English, Chemistry, Mathematics/Calculus, Physics, Biology (Honors/AP/IB preferred). US citizens or international students with legal US residency for program duration.
 **Status:** eligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** medium
 
 ## Notes
-2026 Summer Program begins June 24th. Decisions typically released in early-April. No on-campus housing provided. In-person program only; commuting to campus must be possible. No transportation provided.
+Program begins June 24, 2026. Decisions typically released in early April. No financial aid or scholarships offered. In-person only; off-campus housing allowed. No transportation provided. Student is Class of 2028 (11th grade), so not eligible as a 2026 applicant—would be eligible as 2027 or 2028 applicant if age requirement is met.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

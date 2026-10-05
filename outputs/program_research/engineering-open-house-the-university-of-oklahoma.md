@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** Each member of a winning competition team is awarded an OU engineering scholarship.
-**Eligibility:** High school students grades 9-12, any state, including homeschooled students. Student does not need to be enrolled in Oklahoma high school.
+**Eligibility:** High school students grades 9-12, all states, homeschooled students welcome. Does not require Oklahoma high school enrollment.
 **Status:** eligible
-**Last verified:** 2026-09-28
-**Confidence:** high
+**Last verified:** 2026-10-05
+**Confidence:** medium
 
 ## Notes
-Event confirmed for 2027-09-22 and 2028-09-27. Registration opens in August of each year. $10 per student fee due day of event (cash, check, or school invoice only - no credit card). Two engineering competitions available: Egg Car (for less experienced students) and Design, Build, Fly Glider (for more experienced students). Hands-on activities, campus tours, info sessions, and majors fair also offered.
+Next event is September 22, 2027. Registration opens August 2027. Page states 'Registration for Open House 2027 will open in August 2027' but does not provide specific registration deadline date. Event includes engineering design competitions (Egg Car, Design Build Fly Glider), info sessions, tours, majors fair, and hands-on activities.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -8,7 +8,7 @@
 **Award:** mentored AI/health research at Stanford AIMI
 **Eligibility:** high school students
 **Status:** eligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** high
 
 ## Notes

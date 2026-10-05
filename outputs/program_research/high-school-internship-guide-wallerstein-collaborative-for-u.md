@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** High school students grades 9-12; specific organizations listed have varying requirements (some grades 10-12, some ages 13+)
+**Eligibility:** High school students (grades 9-12); specific programs list grades 10-12 or ages 13+
 **Status:** eligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** low
 
 ## Notes
-This is a guide/resource document, not a specific program with fixed dates. It provides general advice on finding internships and lists 20+ NYC-area organizations offering internship opportunities with varying eligibility, pay structures, and time commitments. No specific open or deadline dates are stated for the 2026-2028 cycle. The document notes that summer internship applications are 'usually due around January' but this is general guidance, not confirmed dates. Some listed organizations offer paid internships (e.g., Queens Botanical Garden year-long paid internship) while others are unpaid or volunteer-based.
+This is a guide/resource page, not a specific program with confirmed dates. The page provides general advice on finding internships and lists multiple NYC-area organizations offering internships. It mentions that summer internship deadlines are typically around January (for prior year planning), but provides no specific 2026-2028 cycle dates. Most listed organizations have variable eligibility (some 10-12, some 13+, some unspecified). Many internships mentioned are unpaid, some paid (Queens Botanical Garden noted as paid). Student's location (Cary, NC) differs from programs' location (NYC area), which may affect feasibility.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

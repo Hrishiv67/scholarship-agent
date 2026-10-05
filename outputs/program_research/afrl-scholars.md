@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** stipend-paid internship; hands-on experience with AFRL scientists and engineers on research projects
-**Eligibility:** upper-level high school students, undergraduate and graduate STEM students
-**Status:** eligible
-**Last verified:** 2026-09-28
+**Award:** Stipend-paid internship; typical duration 12-16 weeks (minimum 8 weeks for some locations)
+**Eligibility:** Upper-level high school students and undergraduate/graduate students pursuing STEM degrees
+**Status:** ineligible
+**Last verified:** 2026-10-05
 **Confidence:** medium
 
 ## Notes
-Program metadata indicates typical October open and December deadline, but these dates do not appear on the official pages provided. The student qualifies as an upper-level high school student (rising junior). No specific 2026 cycle dates found in official page text.
+Page confirms high school students are eligible. No specific 2026-2027 cycle dates found on official pages. Metadata indicates typical October open and December deadline, but these are unconfirmed.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

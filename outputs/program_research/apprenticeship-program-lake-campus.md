@@ -1,18 +1,18 @@
 # Apprenticeship Program | Lake Campus
 
 **URL:** https://lake.wright.edu/business-enterprise-center/apprenticeship-program
-**Track:** Engineering
+**Track:** Business
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Certified Manufacturing Associate (CMfgA) certification and Pre-Apprentice Certification upon completion; students earn wages while working 4 days/week at manufacturing employers
-**Eligibility:** High school students (grades 9-12) interested in manufacturing careers; partnership with Mercer County ESC suggests Ohio focus, but page does not explicitly restrict by state or school
+**Award:** Certified Manufacturing Associate (CMfgA) certification and Pre-Apprentice Certification upon completion; wages earned during four days/week of work at manufacturing employer
+**Eligibility:** High school students (grades 9-12) interested in manufacturing careers; appears to prioritize students in Ohio or near Mercer County ESC partnership area
 **Status:** eligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-05
 **Confidence:** medium
 
 ## Notes
-Program described as 'Manufacturing Pre-Apprenticeship Program' for high school students. Students work 4 days/week with employers, attend 1 day/week instruction at Wright State-Lake Campus. Examples cited are from 2024-2025 class at Ohio high schools (Parkway, New Knoxville, St. Henry). Program appears geographically limited to Ohio/Mercer County area. Student attends Green Hope High School in Cary, NC—geographic mismatch suggests likely ineligibility, though page does not explicitly state geographic restrictions.
+This is a pre-apprenticeship program specific to Wright State University–Lake Campus in Ohio. The student attends Green Hope High School in Cary, NC, which is geographically distant from the Lake Campus in Celina, Ohio. Program includes job training (4 days/week), classroom instruction (1 day/week), and career coaching. No specific 2026-2027 cycle open or deadline dates found on the official page. Contact: wdbec-lake@wright.edu or discoverlakecampus@wright.edu for 2026-2027 cycle details.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
