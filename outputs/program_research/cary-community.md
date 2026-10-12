@@ -8,7 +8,7 @@
 **Award:** $1,000-$2,500
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-12
 **Confidence:** none
 
 ## Notes

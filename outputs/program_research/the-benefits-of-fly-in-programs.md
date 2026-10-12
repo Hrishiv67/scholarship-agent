@@ -8,11 +8,11 @@
 **Award:** See program website
 **Eligibility:** Unknown - PDF content is corrupted/unreadable
 **Status:** verify
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-12
 **Confidence:** none
 
 ## Notes
-PDF file appears to be corrupted or improperly encoded. The stream content (object 6 and 13) contains binary/compressed data that cannot be decoded into readable text. No dates, eligibility criteria, or program details could be extracted.
+PDF appears to be binary-encoded or corrupted. No readable text content extracted to determine dates, eligibility requirements, or program details.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

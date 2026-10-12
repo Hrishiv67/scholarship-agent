@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Certified Manufacturing Associate (CMfgA) certification and Pre-Apprentice Certification upon completion; wages earned during four days/week of work at manufacturing employer
-**Eligibility:** High school students (grades 9-12) interested in manufacturing careers; appears to prioritize students in Ohio or near Mercer County ESC partnership area
+**Award:** Certified Manufacturing Associate (CMfgA) certification and Pre-Apprentice Certification upon completion. Students earn wages from four days/week of work at manufacturing company employers.
+**Eligibility:** High school students (grades 9-12); page mentions 2024-2025 participants from Parkway High School, New Knoxville High School, and St. Henry High School. Student attends Green Hope High School in North Carolina; program is in Ohio (Mercer County ESC, Wright State University–Lake Campus in Celina, OH).
 **Status:** eligible
-**Last verified:** 2026-10-05
-**Confidence:** medium
+**Last verified:** 2026-10-12
+**Confidence:** low
 
 ## Notes
-This is a pre-apprenticeship program specific to Wright State University–Lake Campus in Ohio. The student attends Green Hope High School in Cary, NC, which is geographically distant from the Lake Campus in Celina, Ohio. Program includes job training (4 days/week), classroom instruction (1 day/week), and career coaching. No specific 2026-2027 cycle open or deadline dates found on the official page. Contact: wdbec-lake@wright.edu or discoverlakecampus@wright.edu for 2026-2027 cycle details.
+Manufacturing Pre-Apprenticeship Program in partnership with Mercer County ESC and local manufacturers. Student is from North Carolina (Cary, NC); program is in Ohio. Geographic feasibility unknown. Email contact: wdbec-lake@wright.edu. Campus visit dates listed for fall/winter 2026 but no program application timeline provided.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

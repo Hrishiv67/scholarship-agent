@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** High school students (grades 9-12); specific programs list grades 10-12 or ages 13+
+**Eligibility:** High school students interested in environmental careers and internships
 **Status:** eligible
-**Last verified:** 2026-10-05
-**Confidence:** low
+**Last verified:** 2026-10-12
+**Confidence:** none
 
 ## Notes
-This is a guide/resource page, not a specific program with confirmed dates. The page provides general advice on finding internships and lists multiple NYC-area organizations offering internships. It mentions that summer internship deadlines are typically around January (for prior year planning), but provides no specific 2026-2028 cycle dates. Most listed organizations have variable eligibility (some 10-12, some 13+, some unspecified). Many internships mentioned are unpaid, some paid (Queens Botanical Garden noted as paid). Student's location (Cary, NC) differs from programs' location (NYC area), which may affect feasibility.
+This is a guide/resource page, not a specific program with its own application cycle. It provides general advice on finding internships and lists 20+ organizations that offer high school internship opportunities (Alley Pond Environmental Center, American Museum of Natural History, Brooklyn Botanical Garden, Central Park Conservancy, Hudson River Park Trust, NY Aquarium, Student Conservation Association, etc.). The guide recommends applying 2-3 months in advance and notes that most summer internship deadlines are around January. Individual organizations listed have their own deadlines and eligibility criteria not specified here.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

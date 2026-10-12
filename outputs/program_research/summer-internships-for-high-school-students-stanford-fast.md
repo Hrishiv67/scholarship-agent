@@ -8,11 +8,11 @@
 **Award:** See program website
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-12
 **Confidence:** none
 
 ## Notes
-Research failed: Claude returned non-JSON: Expecting property name enclosed in double quotes: line 141 column 39 (char 5086). Check https://fast.stanford.edu/resources/internships/ manually.
+Research failed: Claude returned non-JSON: Unterminated string starting at: line 156 column 5 (char 5152). Check https://fast.stanford.edu/resources/internships/ manually.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

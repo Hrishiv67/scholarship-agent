@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 8-to-10-week paid summer internship. Includes resume development, interview prep, professional headshots, and capstone presentation or skills assessment. Positions available in Field, Manufacturing, Project Management, Engineering, BIM/VDC, Safety, Accounting, HR, IT, Marketing, and Education. Potential full-time employment opportunities.
-**Eligibility:** Current high school students pursuing or interested in construction, engineering, business, safety, or related fields. Must be willing to travel to internship locations.
+**Award:** 8-to-10-week paid summer internship; positions available in Field, Manufacturing, Project Management, Engineering, BIM/VDC, Safety, Accounting, Human Resources, Education, Information Technology, and Marketing; multiple locations across the US; potential full-time employment opportunities
+**Eligibility:** Current high school students; the posting was dated April 11, 2026 for Summer 2026, but explicit application open and close dates are not provided on the page
 **Status:** eligible
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-12
 **Confidence:** medium
 
 ## Notes
-Post date April 11, 2026. Internship locations include Charlotte NC, Indianapolis IN, South Bend IN, West Lafayette IN, Columbus IN, Louisville KY, Columbus OH, Cincinnati OH, Nashville TN, Huntsville AL, Atlanta GA, Fort Myers FL, Orlando FL, and Tampa FL. Program has hosted 200+ students from 70+ institutions in past three years. Status shows 'Accepting Applications' but no explicit deadline date provided on the page.
+Program was posted April 11, 2026 for Summer 2026 positions. Today is October 12, 2026, so this summer program has likely already concluded. The student (Class of 2028, rising junior) would be eligible for future cycles.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

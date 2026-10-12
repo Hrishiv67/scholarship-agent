@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Stipend provided; lunch provided during internship
+**Award:** Students will receive a stipend and will be provided lunch
 **Eligibility:** Junior and Senior high school students interested in cutting edge research at the intersection of physics, chemistry, biology, and engineering
 **Status:** eligible
-**Last verified:** 2026-10-05
-**Confidence:** low
+**Last verified:** 2026-10-12
+**Confidence:** high
 
 ## Notes
-Program dates listed as June 8 – July 17, 2026 (past dates; this appears to be archived content from 2026 cycle). Application deadline stated as May 1, 2026 (already passed as of today 2026-10-05). Transportation to/from campus not provided. For more information: PREM@ucf.edu
+Internship dates listed are June 8 – July 17, 2026, but this is in the past relative to today (2026-10-12). The May 1, 2026 deadline has also passed. This program cycle is closed. No open_date is specified on the page. For future cycles, contact PREM@ucf.edu. Transportation to/from campus is not provided.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

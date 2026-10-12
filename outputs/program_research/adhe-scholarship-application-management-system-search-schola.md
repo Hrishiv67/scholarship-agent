@@ -1,18 +1,18 @@
 # ADHE Scholarship Application Management System - Search Scholarship
 
 **URL:** https://sams.adhe.edu/Scholarship
-**Track:** Engineering
+**Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** A2A: $65/semester credit hour (up to $2,000/year); ACST: varies by institution; ArFuture: tuition and general mandatory fees
-**Eligibility:** Arkansas residents; for A2A: HS freshmen-seniors; for ACST: HS graduates or current college students; for ArFuture: HS graduates with no Associate degree yet enrolled in STEM or high-demand programs
-**Status:** eligible
-**Last verified:** 2026-10-05
-**Confidence:** high
+**Award:** ACCESS to Acceleration: $65/semester credit hour (up to $2,000/year); Arkansas Academic Challenge: varies by institution; Arkansas Future Grant: tuition and general mandatory fees
+**Eligibility:** Multiple programs listed: ACCESS to Acceleration (HS freshmen-seniors), Arkansas Academic Challenge (HS graduates or current college students), Arkansas Future Grant (HS graduates in STEM/high-demand fields), Arkansas Health Education Grant (graduate students only), Arkansas Heroes Scholarship (military/first responder dependents). Page is a search results page, not a specific program.
+**Status:** ineligible
+**Last verified:** 2026-10-12
+**Confidence:** low
 
 ## Notes
-Student is not eligible: resides in North Carolina, not Arkansas. All programs listed (A2A, ACST, ArFuture, ARHEG, HEROES) are Arkansas-specific. PDF provided (SURF Checklist 2023) was not readable. Deadline references on page (July 1, January 10) are stated as 'Annual' or 'Fall/Spring' without specific years, so dates cannot be confirmed for 2026-2028 cycle.
+This is a search/index page for the ADHE Scholarship system listing 18 scholarship programs. No specific program deadlines with 2026-2028 dates appear. July 1 and January 10 deadlines mentioned but year not specified in page text. Student is from North Carolina, not Arkansas, which may affect eligibility for these state-specific scholarships.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

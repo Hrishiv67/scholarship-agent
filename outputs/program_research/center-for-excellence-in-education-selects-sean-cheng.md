@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Fully funded summer research program at MIT; includes week of intensive STEM coursework and five-week research internship with mentors
-**Eligibility:** High school students selected by Center for Excellence in Education; approximately 80 students nationally per year
+**Award:** 80 students selected annually. First cost-free summer science & engineering program combining on-campus STEM coursework with 5-week research internship under experienced scientists. Final week includes written and oral presentations.
+**Eligibility:** Select high school students from across the nation
 **Status:** eligible
-**Last verified:** 2026-10-05
-**Confidence:** high
+**Last verified:** 2026-10-12
+**Confidence:** low
 
 ## Notes
-This is a news article announcing an individual student's selection (Sean Cheng, Class of 2021 at OSSM). The page does not contain open/deadline dates for the 2026-2028 cycles. Article is from 2020 and references the program being held virtually due to pandemic. No current application information provided. The student in question (Green Hope High School, Class of 2028) does not match the highlighted student.
+Page is a news article announcing a past selection (Sean Cheng, Class of 2021, selected in 2020). No current cycle dates provided. RSI is MIT-affiliated program run by Center for Excellence in Education (McLean, VA). Described as 'cost-free to students' and includes week of intensive STEM classes plus 5-week research internship.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

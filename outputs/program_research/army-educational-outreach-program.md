@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Stipended summer and year-round paid research opportunities
+**Award:** Stipended paid, hands-on research opportunity with real-world STEM experiences alongside renowned scientists and engineers
 **Eligibility:** High school and undergraduate students
 **Status:** ineligible
-**Last verified:** 2026-09-21
+**Last verified:** 2026-10-12
 **Confidence:** medium
 
 ## Notes
-AEOP Internships are described as 'A paid, hands-on research opportunity with real-world STEM experiences alongside renowned scientists and engineers in labs throughout the country.' Locations across the country. Page metadata indicates typical deadline is unconfirmed. No specific 2026 cycle dates appear on the official page.
+AEOP Internships offer summer and year-round opportunities at locations across the country. Student is rising 11th grade and eligible. Metadata lists 'typical open' and 'typical deadline' as unconfirmed with no dates provided. Official page does not specify 2026 cycle dates.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

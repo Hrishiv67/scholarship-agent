@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** Unable to determine - page is access-blocked CAPTCHA screen
+**Eligibility:** Unable to determine - page is a CAPTCHA access blocker, not program information
 **Status:** verify
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-12
 **Confidence:** none
 
 ## Notes
-The provided URL (https://unblock.federalregister.gov/) does not contain program information. It is a bot-protection/access request page for the Federal Register. The actual program details are not accessible from the content provided.
+The provided URL (https://unblock.federalregister.gov/) does not contain program details. It is a Federal Register access request page requiring CAPTCHA verification due to scraping protection. The actual program information is not accessible from this page. The correct URL would be on FederalRegister.gov or a specific program announcement page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

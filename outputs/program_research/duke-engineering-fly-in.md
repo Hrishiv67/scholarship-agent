@@ -8,11 +8,11 @@
 **Award:** all-expenses fly-in to Duke Pratt School of Engineering
 **Eligibility:** Unknown - page not found
 **Status:** eligible
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-12
 **Confidence:** none
 
 ## Notes
-Official program page returned 404 error. No current program information available. Only metadata suggests typical November open / January deadline, but per HARD RULE 1, these cannot be used as confirmed dates.
+Official program page returned 404 error. No current program information available. Metadata indicates typical opening in November and typical deadline in January, but these are unconfirmed and do not appear on the official page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** paid internship, varies by program
-**Eligibility:** The provided page text is truncated and does not contain specific eligibility details, application dates, or deadline information for individual programs.
+**Eligibility:** The page is a NOAA student opportunities database landing page with general information about filters and 57 program listings. No specific program details, eligibility requirements, or dates are provided for individual opportunities.
 **Status:** eligible
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-12
 **Confidence:** none
 
 ## Notes
-The official page provided is a database landing page with general instructions and only partial listings of two programs (Alaska Beluga Monitoring Program and American Meteorological Society Graduate Fellowship). The text is cut off mid-sentence. No specific NOAA internship opportunity page with concrete 2026-2028 cycle dates, deadlines, or application details was provided. The metadata notes 'Typical open: October' and 'Typical deadline: January' but these are unconfirmed and cannot be used per HARD RULE 1.
+The excerpt provided is the main landing page for the NOAA student opportunities database. It explains how to use the filters and search the database but does not contain specific program details, application dates, deadlines, or eligibility information. To find relevant internship opportunities, the student would need to use the filters (High School audience, Internship type, U.S. citizen, Fall/Winter application period) or search the database directly. The metadata suggests typical opening in October and deadline in January, but these are unconfirmed estimates, not official dates from the page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -8,11 +8,11 @@
 **Award:** Academic year: up to 4 hours/day, 5 days/week (August-May). Summer: up to full-time (June-August). Students may receive elective credits through work-based learning programs.
 **Eligibility:** High school students interested in business or STEM careers. Must be at least 18 years old to work in laboratory spaces and some field work settings.
 **Status:** eligible
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-12
 **Confidence:** medium
 
 ## Notes
-Page states 'early February' and 'June' for academic year, and 'early February' and 'March' for summer, but no specific dates given. Student is Class of 2028 (rising junior/11th grade) as of 2026-10-05; may not meet age requirement if born after October 2007.
+Page states 'Academic year internship applications open in early February and close in June' and 'Summer internship applications open in early February and close in March' but does not provide specific 2026-2028 cycle dates. Student is currently 11th grade (Class of 2028) and will be eligible as a senior in 2027-2028 cycle. Age requirement (18+) may be a barrier depending on birth date.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

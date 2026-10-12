@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Merit scholarships range from $1,000 to full tuition/cost of attendance. Partial scholarships up to $32,000/year. Full-tuition options include Dean's Honor Scholarship, Stamps Scholarship (covers total cost of attendance plus enrichment fund), Grossman & Cohen Scholarship (~$400,000 total over 4 years), and Community Service Fellowship. National Merit Scholarships minimum $2,000/year. All renewable for 4 years.
-**Eligibility:** First-year applicants to Tulane University; varies by scholarship type and application round (Early Decision, Early Action, Early Decision II, Regular Decision)
+**Award:** Merit scholarships ranging from $1,000 to full tuition/cost of attendance (up to $400,000 total for Grossman & Cohen Scholarship). Specific awards: Partial scholarships up to $32,000/year; Stamps Scholarship (full cost of attendance + enrichment fund); Dean's Honor Scholarship (full tuition); Community Service Fellowship (full tuition option); Grossman & Cohen Scholarship (tuition, fees, housing, meals); National Merit Scholarships (at least $2,000/year).
+**Eligibility:** First-year applicants to Tulane University; US citizen or eligible resident preferred for FAFSA requirement
 **Status:** eligible
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-12
 **Confidence:** medium
 
 ## Notes
-Student is a current junior (Class of 2028, rising 11th grade) and would be applying in Fall 2027 for enrollment Fall 2028. No specific deadline dates are confirmed on the official pages—only application round deadlines for admission are provided (November 1 for ED, November 10 for EA, January 15 for ED II/RD), not scholarship-specific deadlines. For Stamps Scholarship, semifinalists submit supplements by January 5; finalists interview spring (no year specified). Community Service Fellowship supplements available on Green Wave Portal (no deadline listed). Test scores preferred for Dean's Honor Scholarship; typical recent recipients had ACT 33+, SAT 1500+, or unweighted GPA 3.7+.
+Specific deadlines vary by application round (Early Decision Nov 1, Early Action Nov 10, Regular Decision Jan 15). Financial aid applications due Dec 15 (ED), Dec 15 (EA), or Feb 15 (RD). No separate application required for partial merit or full-tuition Dean's Honor Scholarship as of Class of 2026. Test scores optional but preferred for merit consideration. Student is Class of 2028 (rising junior), so would apply in fall 2027 for fall 2028 enrollment — this program is for first-year applicants only.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
