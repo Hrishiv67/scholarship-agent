@@ -2,17 +2,17 @@
 
 **URL:** https://about.bankofamerica.com/en/making-an-impact/student-leaders
 **Track:** Business
-**Deadline:** 2026-03-16 (confirmed from official page quote)
-**Deadline quote:** The deadline for the Student Leaders® application is March 16, 2026, at 11:59 pm eastern/ 8:59 pm pacific.
+**Deadline:** Not stated on official page (not confirmed)
+**Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** $17/hour for full-time (minimum 35 hours weekly) 6-week paid internship; all Leadership Summit expenses covered (June 16-18, 2026)
-**Eligibility:** Post-secondary students (within 2 years of HS diploma) aged 18+, with 12-18 college credit hours, US work authorization, residing in eligible summer 2026 program location
+**Award:** Paid 7-week full-time (minimum 35 hrs/week) nonprofit internship in summer 2027. Includes 3-day Leadership Summit within US during summer 2027.
+**Eligibility:** Rising college sophomores (enrolled full-time in 2026-2027 academic year, entering 2nd year in 2027-2028). Must be at least 18, have HS diploma within last 24 months, cumulative college GPA ≥3.0, US work authorization through July 2027, leadership experience in last 24 months, demonstrated community involvement, reside in eligible BofA location during summer 2027. Not previous awardees, BofA employees, or immediate family of BofA employees.
 **Status:** ineligible
-**Last verified:** 2026-10-12
+**Last verified:** 2026-10-19
 **Confidence:** high
 
 ## Notes
-Student is currently rising junior (11th grade, Class of 2028) and does not meet eligibility requirements. Program requires post-secondary enrollment with 12-18 college credits and student must be 18+ at application. This student would need to complete senior year, graduate, and enroll in college before becoming eligible. Application portal: www.cybergrants.com/boa/slselection. Notifications by end of April 2026.
+Program is for rising college sophomores only; student is currently in high school (rising junior) and therefore ineligible until they meet the college enrollment requirement. Eligible locations include Triangle (Raleigh/Durham/Chapel Hill), NC where student attends school. No specific application dates provided on official page; metadata indicates typical December open and January deadline but these are unconfirmed.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

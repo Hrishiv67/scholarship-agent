@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** Unknown - PDF content is corrupted/unreadable
+**Eligibility:** Unknown - PDF content unreadable
 **Status:** verify
-**Last verified:** 2026-10-12
+**Last verified:** 2026-10-19
 **Confidence:** none
 
 ## Notes
-PDF appears to be binary-encoded or corrupted. No readable text content extracted to determine dates, eligibility requirements, or program details.
+PDF is corrupted or binary-encoded; readable text content is not extractable from the provided source. Cannot verify any dates, eligibility criteria, or program details.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

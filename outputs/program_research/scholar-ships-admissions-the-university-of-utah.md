@@ -1,18 +1,18 @@
 # Scholar­ships | Admissions - The University of Utah
 
 **URL:** https://admissions.utah.edu/financial-aid-scholarships/scholarships/
-**Track:** Engineering
+**Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** Submit your application for admission to the U by December 1.
 **Opens:** Not stated on official page
-**Award:** Merit-based scholarships ranging $3,000–$10,000 annually based on unweighted high school GPA: President John R. Park ($10k at 4.0), Provost's ($8k at 3.9), Bonneville ($6k at 3.8), Red Rock ($4k at 3.7), Great Salt Lake ($3k at 3.5). Renewable for up to 4 years.
-**Eligibility:** Incoming freshman students entering summer or fall 2026. Non-resident US citizens outside WUE states, or WUE-eligible with 3.3+ unweighted GPA.
-**Status:** seniors_later
-**Last verified:** 2026-10-12
+**Award:** Merit-based scholarships ranging from $3,000–$10,000 annually: Great Salt Lake ($3,000 at 3.50 GPA), Red Rock ($4,000 at 3.70 GPA), Bonneville ($6,000 at 3.80 GPA), Provost's ($8,000 at 3.90 GPA), President John R. Park ($10,000 at 4.00 GPA). Renewable for up to 4 years if terms and conditions are met.
+**Eligibility:** Incoming freshman students to University of Utah; merit-based scholarships based on unweighted high school GPA (3.50+ GPA for Great Salt Lake Scholarship; higher GPA for better awards); non-WUE state residents and Utah residents
+**Status:** ineligible
+**Last verified:** 2026-10-19
 **Confidence:** high
 
 ## Notes
-Student is Class of 2028 (rising junior/11th grade), not a senior. This program is for incoming freshmen only (graduating seniors / Class of 2027). Student is ineligible in this cycle. February 1 is FAFSA priority date (not scholarship deadline). WUE tuition rate available for eligible states with 3.3+ GPA and December 1 application.
+Student is currently 10th grade (Class of 2028, rising junior); this scholarship is for incoming freshman students entering summer or fall 2027 term. Student will be eligible to apply in fall 2027 when entering senior year. December 1 is the merit scholarship consideration deadline for the 2027 freshman cycle (when this student applies as a senior).
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

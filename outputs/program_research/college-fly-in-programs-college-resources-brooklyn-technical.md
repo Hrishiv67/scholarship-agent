@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Free or low-cost campus visits for a weekend or day
-**Eligibility:** Unknown; page references general college fly-in programs but provides no specific eligibility criteria or 2026-2028 cycle dates
+**Award:** Free or low cost fly-in programs for weekend or day visits to college campuses
+**Eligibility:** Unknown; page references external resource (College Greenlight blog) without specific eligibility criteria
 **Status:** eligible
-**Last verified:** 2026-10-05
+**Last verified:** 2026-10-19
 **Confidence:** low
 
 ## Notes
-Page is a resource guide directing students to external link (collegegreenlight.com) for fly-in programs. The 'On The Spot Admission Days' section contains only 2017-2018 dates (University of Buffalo 12/5/17, Adelphi 1/10/18), which are historical and not applicable to 2026-2028 cycle. No current program dates provided.
+Page is a resource guide directing students to external blog (College Greenlight) for specific fly-in program information. No 2026-2028 cycle dates or requirements provided on official page. Related 'On The Spot Admission Days' section contains dates from 2017-2018 only, which are past and not applicable.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

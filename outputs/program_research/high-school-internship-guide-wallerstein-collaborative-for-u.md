@@ -8,11 +8,11 @@
 **Award:** See program website
 **Eligibility:** High school students interested in environmental careers and internships
 **Status:** eligible
-**Last verified:** 2026-10-12
+**Last verified:** 2026-10-19
 **Confidence:** none
 
 ## Notes
-This is a guide/resource page, not a specific program with its own application cycle. It provides general advice on finding internships and lists 20+ organizations that offer high school internship opportunities (Alley Pond Environmental Center, American Museum of Natural History, Brooklyn Botanical Garden, Central Park Conservancy, Hudson River Park Trust, NY Aquarium, Student Conservation Association, etc.). The guide recommends applying 2-3 months in advance and notes that most summer internship deadlines are around January. Individual organizations listed have their own deadlines and eligibility criteria not specified here.
+This is a guide/resource page, not a specific internship program. It provides general advice on finding internships and lists 17+ organizations that offer high school internship opportunities (Alley Pond Environmental Center, American Museum of Natural History, Brooklyn Botanical Garden, Central Park Conservancy, etc.). No specific dates are provided for any of these organizations. The page notes that summer internship deadlines are 'usually due around January' but does not provide confirmed dates for the 2026-2028 cycle.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

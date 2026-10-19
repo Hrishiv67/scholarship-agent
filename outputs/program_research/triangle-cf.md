@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 35 scholarship funds ranging from $1,000 to $80,000 depending on specific scholarship. Amounts vary by fund (e.g., Achievement Scholarship up to $16,000; Felicia Brewer up to $80,000; GSK Opportunity up to $20,000).
-**Eligibility:** Student is a rising junior (11th grade) at Green Hope High School in Cary, NC. Most scholarships listed are for graduating high school seniors only. The student does not currently meet eligibility for any of the 35 scholarship funds administered by Triangle Community Foundation, as they are not yet a senior and the program requires senior status or college enrollment.
+**Award:** Triangle Community Foundation administers 35 scholarship funds ranging from $1,000 to $80,000. Individual scholarships have varying award amounts.
+**Eligibility:** Student is a rising junior (11th grade) at Green Hope High School in Cary, NC. Most scholarships on this page are for graduating high school seniors only. The student does not meet the primary eligibility criterion for nearly all listed scholarships, which explicitly require applicants to be 'graduating high school seniors' or 'graduating seniors.' The student will not be a senior until 2027-2028 school year. No scholarships on the page are explicitly open to current juniors.
 **Status:** seniors_later
-**Last verified:** 2026-10-12
+**Last verified:** 2026-10-19
 **Confidence:** high
 
 ## Notes
-Student should revisit this program in fall 2027 when they are a graduating senior. The page states there are 35 scholarship funds with different eligibility criteria. An eligibility quiz is available through the scholarship portal once logged in. Most scholarships shown are closed for the 2026 cycle (which has already passed). A few scholarships remain open with different deadlines (e.g., James M. Schooler Sr. deadline April 15, 2026; North Carolina Jaycees Outstanding Teenager open June 1-July 9, 2026).
+The student should bookmark this resource and return when they become a senior in fall 2027. Many scholarships opened January 7, 2026 with March 9, 2026 deadline (already passed). The page indicates students should take an eligibility quiz after logging into the scholarship portal to discover which scholarships they qualify for.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

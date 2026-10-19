@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** DECA Glass, travel opportunities, recognition, scholarships
-**Eligibility:** High school students who join their school's DECA chapter
+**Award:** DECA Glass, travel opportunities, recognition, scholarships; competitive events across 6 career tracks with ~60 role-play, prepared, and online events
+**Eligibility:** High school students at schools with DECA chapters; no specific grade restrictions stated
 **Status:** eligible
-**Last verified:** 2026-10-12
-**Confidence:** high
+**Last verified:** 2026-10-19
+**Confidence:** medium
 
 ## Notes
-Page lists four upcoming conferences with dates (Ultimate DECA Power Trip Nov 20-22, 2026; Sports and Entertainment Marketing Conference Jan 27-31, 2027; International Career Development Conference Apr 17-20, 2027; Emerging Leader Summit Jul 12-15, 2027) but these are event dates, not program application deadlines. No application deadline or open date specified on page.
+Program is ongoing throughout the school year. Specific conferences listed (Ultimate DECA Power Trip Nov 20-22, 2026; Sports & Entertainment Marketing Jan 27-31, 2027; International Career Development Conference Apr 17-20, 2027; Emerging Leader Summit Jul 12-15, 2027). Student must contact school's DECA advisor to join. No application deadline mentioned on page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Student interns work alongside researchers at DOE national laboratories; access to world-leading expertise, state-of-the-art scientific facilities, capabilities and resources.
-**Eligibility:** The page describes undergraduate student programs but does not specify eligibility criteria for high school students. SULI and CCI are mentioned as closed for Spring 2027 applications.
+**Award:** SULI, CCI, and VFP programs are for undergraduate and faculty; SCGSR is for graduate students; AEF and NSB are for educators and K-12 students respectively
+**Eligibility:** Not clearly stated for high school students on this page
 **Status:** ineligible
-**Last verified:** 2026-10-12
-**Confidence:** low
+**Last verified:** 2026-10-19
+**Confidence:** high
 
 ## Notes
-Page indicates SULI (Science Undergraduate Laboratory Internships) and CCI (Community College Internships) are the primary undergraduate programs, but both are currently closed for Spring 2027 applications. No specific open or deadline dates for the 2026-2027 or 2027-2028 cycle appear on this page. Metadata suggests typical opening in October and deadline in January, but these are unconfirmed. High school eligibility unclear; programs appear targeted at undergraduate/college students.
+The page describes SULI as an undergraduate program. The student is currently in 11th grade (rising junior). SULI applications for Summer 2027 are due January 6, 2027, but the student would not be eligible until college enrollment. NSB and AEF are not internships. No high school-specific internship program is advertised on this main page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

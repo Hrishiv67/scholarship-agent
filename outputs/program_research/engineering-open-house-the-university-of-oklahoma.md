@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Each member of a winning competition team is awarded an OU engineering scholarship.
+**Award:** Each member of a winning team in the engineering design competitions is awarded an OU engineering scholarship.
 **Eligibility:** High school students (grades 9-12) from any state, including home-schooled students. No Oklahoma enrollment required.
 **Status:** eligible
-**Last verified:** 2026-10-12
+**Last verified:** 2026-10-19
 **Confidence:** high
 
 ## Notes
-Event features engineering design competitions (Egg Car for less experienced, Design-Build-Fly Glider for more experienced), hands-on activities led by OU Engineering students, campus tours, majors fair, and info sessions. Registration opens August 2027. Next event: September 27, 2028.
+Registration opens in August 2027. Two competition tracks available: Egg Car (for less experienced engineers) and Design, Build, Fly Glider (for more experienced engineers). Additional activities and info sessions available. Event is September 22, 2027, with a second session on September 27, 2028.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

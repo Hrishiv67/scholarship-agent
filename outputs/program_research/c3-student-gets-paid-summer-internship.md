@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** Unknown - page could not be fetched
-**Status:** eligible
-**Last verified:** 2026-10-12
+**Eligibility:** Could not determine — check program website
+**Status:** ineligible
+**Last verified:** 2026-10-19
 **Confidence:** none
 
 ## Notes
-Official page could not be fetched. No dates or eligibility information available.
+Research failed: official page could not be fetched. Check https://faytechcc.edu/c3-student-gets-paid-summer-internship manually.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

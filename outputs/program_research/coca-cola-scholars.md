@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** $20,000 scholarship; 150 Coca-Cola Scholars selected each year
-**Eligibility:** The 2027 Coca-Cola Scholars application is now closed. This cycle was for high school seniors graduating in the 2026-2027 academic year. The student is a rising junior (Class of 2028) and will not be eligible until the 2027 cycle opens in August 2027.
+**Award:** $20,000 scholarship; 150 Coca-Cola Scholars selected annually
+**Eligibility:** The 2027 Coca-Cola Scholars application is now closed. This student (Class of 2028, rising junior) will be eligible for the 2028 cycle when applications open in August 2027.
 **Status:** seniors_later
-**Last verified:** 2026-10-12
+**Last verified:** 2026-10-19
 **Confidence:** high
 
 ## Notes
-The 2027 cycle (for Class of 2027 seniors) application closed September 30, 2026. Semifinalists will be notified by end of October 2026. The student should apply for the 2028 cycle when it opens August 3, 2027, as he will graduate in 2028.
+The 2027 cycle (for 2027 graduates) is closed. This student is currently a rising junior (Class of 2028) and will be ineligible for Coca-Cola Scholars because the program is seniors-only. The student would need to apply during their senior year (2027-2028 academic year) for the 2028 scholarship cycle. Dates for the 2028 cycle are not yet available on the page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Regeneron ISEF finalists compete for over $7 million in awards, prizes and scholarships across 22 different scientific categories. More than 45 professional organizations give out Special Awards.
-**Eligibility:** Grades 9-12 students who compete in and win at a Regeneron ISEF-affiliated science fair in their state or region. Students may present work with no more than 12 months of continuous research, and research must not be performed more than 18 months before the ISEF competition year.
+**Award:** Finalists compete for over $7 million in awards, prizes and scholarships across 22 different scientific categories. More than 45 professional organizations give out Special Awards at Regeneron ISEF.
+**Eligibility:** Grades 9-12 students must compete in and win at a Society-affiliated science fair to qualify for Regeneron ISEF. Research must be no more than 12 months continuous and not more than 18 months before the ISEF competition date. All affiliated fairs conclude by mid-April.
 **Status:** eligible
-**Last verified:** 2026-10-12
-**Confidence:** high
+**Last verified:** 2026-10-19
+**Confidence:** medium
 
 ## Notes
-Student (Class of 2028, rising junior) is eligible. The 2026 ISEF took place May 9-15, 2026 in Phoenix. The 2027 ISEF will be in Los Angeles in May 2027. Affiliated fairs typically conclude by mid-April. No specific open or deadline dates for the 2027 or 2028 cycles are provided on the official pages.
+This is a multi-tier competition. Students do not enter directly to Regeneron ISEF; they must first compete successfully at an affiliated local, regional, state, or national science fair. The 2026 ISEF already occurred (May 9-15, 2026). For 2027 ISEF (May 2027 in Los Angeles), affiliated fair deadlines are typically in early April but specific dates are not provided on this page. Student is Class of 2028 (rising junior), so eligible to compete in 2027 and 2028 cycles.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

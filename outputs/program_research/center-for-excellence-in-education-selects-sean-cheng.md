@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 80 students selected annually. First cost-free summer science & engineering program combining on-campus STEM coursework with 5-week research internship under experienced scientists. Final week includes written and oral presentations.
-**Eligibility:** Select high school students from across the nation
+**Award:** MIT Research Science Institute (RSI): one week intensive STEM classes, five-week individual research internship with mentors, final week oral and written presentations. Selects 80 students annually. Cost-free to students.
+**Eligibility:** High school students selected by Center for Excellence in Education; article features Class of 2021 alumnus but does not specify current cycle eligibility
 **Status:** eligible
-**Last verified:** 2026-10-12
+**Last verified:** 2026-10-19
 **Confidence:** low
 
 ## Notes
-Page is a news article announcing a past selection (Sean Cheng, Class of 2021, selected in 2020). No current cycle dates provided. RSI is MIT-affiliated program run by Center for Excellence in Education (McLean, VA). Described as 'cost-free to students' and includes week of intensive STEM classes plus 5-week research internship.
+Page is an announcement for Sean Cheng (Class of 2021, not current student). No current cycle dates provided. Article dated 2020-07-15 references pandemic virtual format. Program run by Center for Excellence in Education (McLean, VA) in partnership with MIT.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -8,7 +8,7 @@
 **Award:** paid 7-week research at Texas Tech, $750/week stipend
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-10-12
+**Last verified:** 2026-10-19
 **Confidence:** none
 
 ## Notes

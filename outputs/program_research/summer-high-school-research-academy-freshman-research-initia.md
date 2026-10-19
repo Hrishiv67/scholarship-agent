@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** Application opens in mid-January 2027 and will be due in March.
 **Opens:** Not stated on official page
-**Award:** Limited need-based scholarships available (stipend + free tuition); NSC309 UT Extension college credit (3 credit hours); printed research poster; HSRA t-shirt
-**Eligibility:** Texas residents, age 15+ by June 1, 2027, rising sophomore/junior/senior for 2026-27 academic year (preference for rising juniors/seniors)
+**Award:** Limited need-based scholarships available (stipend + free tuition); no merit-based scholarships offered. NSC309 UT Extension course credit (3 credit hours), printed research poster, HSRA t-shirt included.
+**Eligibility:** Texas residents, age 15+ by June 1, 2027, rising sophomore/junior/senior for 2026-27 school year (preference for rising juniors/seniors). Student is a rising junior and meets all criteria.
 **Status:** ineligible
-**Last verified:** 2026-10-12
-**Confidence:** medium
+**Last verified:** 2026-10-19
+**Confidence:** high
 
 ## Notes
-Non-residential program at UT Austin. $4,500 tuition (payment due only after acceptance and lab placement). Five-week program (June 7 - July 14, 2027, off June 18 and July 5). 15-25 hrs/week in research lab. Selection based on essay and research interests; GPA/class rank not considered. Preference given to rising juniors or seniors.
+In-person, non-residential program at UT Austin. No housing or transportation provided. Selection based on personal essay and research interests; GPA/transcripts/teacher recommendations NOT considered. First round notifications end of April; second round beginning of May. Tuition $4,500 due mid-May only after position accepted. Late submissions may be considered on limited basis.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

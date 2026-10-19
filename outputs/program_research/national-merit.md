@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Merit-based scholarship for high PSAT scores
-**Eligibility:** US citizens and permanent residents taking the PSAT in October of junior year
+**Award:** $2,500 National Merit + corporate/college scholarships
+**Eligibility:** PSAT-based; typically taken October of junior year
 **Status:** eligible
-**Last verified:** 2026-10-12
-**Confidence:** low
+**Last verified:** 2026-10-19
+**Confidence:** none
 
 ## Notes
-Official page provided only a login screen with no substantive content. Dates and details are based on program metadata marked as unconfirmed. Student is currently a rising junior and should take the PSAT in October 2026 (approximately now, given today's date of 2026-10-12).
+Official page was a login screen with no useful content. Dates are based on program metadata indicating PSAT-based selection with typical October junior year testing.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

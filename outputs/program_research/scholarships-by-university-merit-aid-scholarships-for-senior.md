@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Multiple merit-based scholarships listed by university (ranging from $6,000 to full tuition/room & board depending on scholarship)
-**Eligibility:** This page is for Brooklyn Technical High School seniors only. The student attends Green Hope High School in Cary, NC and is a rising junior (Class of 2028), not a senior at BTHS.
+**Award:** Various merit scholarships listed by university (ranging $6,000–$40,000+ total; some full tuition/room & board)
+**Eligibility:** This page lists scholarships for high school seniors (Class of 2027). The student is Class of 2028 (rising junior), so ineligible for most programs on this page.
 **Status:** seniors_later
-**Last verified:** 2026-10-12
+**Last verified:** 2026-10-19
 **Confidence:** high
 
 ## Notes
-This is a resource page for BTHS seniors applying to colleges. The student is ineligible: (1) not a senior, (2) does not attend BTHS, (3) most scholarships listed require BTHS attendance or specific FIRST Robotics/program participation. Page contains many scholarship opportunities but no specific dates confirmed for the 2026-2028 cycle.
+Page is from Brooklyn Technical High School and is designed for their seniors. The student attends Green Hope High School in Cary, NC and is currently a rising junior (Class of 2028). This resource will be relevant in approximately 12 months when the student reaches senior year. Multiple deadlines mentioned (November–February range) but all refer to future senior cycle applications, not current.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
