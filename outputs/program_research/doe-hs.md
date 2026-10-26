@@ -1,18 +1,18 @@
 # DOE Office of Science HS Programs
 
 **URL:** https://science.osti.gov/wdts
-**Track:** Engineering
+**Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** SULI, CCI, and VFP programs are for undergraduate and faculty; SCGSR is for graduate students; AEF and NSB are for educators and K-12 students respectively
-**Eligibility:** Not clearly stated for high school students on this page
+**Award:** paid summer research at DOE national labs
+**Eligibility:** The page lists six core programs at pre-college, postsecondary, and graduate levels. SULI, CCI, and VFP are for undergraduate/faculty. For high school students, only National Science Bowl (NSB) is mentioned, but no details are provided on this page.
 **Status:** ineligible
-**Last verified:** 2026-10-19
-**Confidence:** high
+**Last verified:** 2026-10-26
+**Confidence:** low
 
 ## Notes
-The page describes SULI as an undergraduate program. The student is currently in 11th grade (rising junior). SULI applications for Summer 2027 are due January 6, 2027, but the student would not be eligible until college enrollment. NSB and AEF are not internships. No high school-specific internship program is advertised on this main page.
+The main WDTS page does not provide specific eligibility criteria, open dates, or deadlines for high school students. SULI (Science Undergraduate Laboratory Internships) shows a deadline of January 6, 2027 for Summer 2027, but requires undergraduate status. National Science Bowl is mentioned as a K-12 program but has no details on this page. A rising junior (11th grade) would not be eligible for undergraduate-focused programs like SULI without college enrollment.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

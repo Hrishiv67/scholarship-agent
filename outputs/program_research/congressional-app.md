@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Winning apps are displayed on winners page; apps are recognized as prestigious prizes in student computer science
-**Eligibility:** US high school students; specific grade/age requirements not stated on this page
+**Award:** Winning apps are displayed on the winners page; described as 'the most prestigious prize in student computer science'
+**Eligibility:** High school students in the United States
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** low
 
 ## Notes
-Page calls for registration and mentions 'BUILD THE CHALLENGE EVENT SERIES' RSVP but provides no specific dates. Metadata indicates typical deadline is November and typical open is June, but these are unconfirmed and do not appear on the official page text provided. The 2026 cycle appears to be active (page says 'REGISTER FOR THE 2026 APP CHALLENGE NOW') but exact dates are not stated.
+Page says 'REGISTER FOR THE 2026 APP CHALLENGE NOW' but does not provide specific open or deadline dates. Metadata indicates typical deadline is November (unconfirmed). Page references 2025 winners but no 2026 specific dates are listed.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

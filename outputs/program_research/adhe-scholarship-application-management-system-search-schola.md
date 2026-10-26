@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** ACCESS to Acceleration: $65/semester credit hour (up to $2,000/year); Arkansas Academic Challenge: varies by institution; Arkansas Future Grant: tuition and general mandatory fees
-**Eligibility:** Multiple programs listed: ACCESS to Acceleration (HS freshmen-seniors), Arkansas Academic Challenge (HS graduates or current college students), Arkansas Future Grant (HS graduates in STEM/high-demand fields), Arkansas Health Education Grant (graduate students only), Arkansas Heroes Scholarship (military/first responder dependents). Page is a search results page, not a specific program.
-**Status:** ineligible
-**Last verified:** 2026-10-12
+**Award:** Varies depending on college and college level of individual
+**Eligibility:** Arkansas residents pursuing higher education; traditional students expect to attend approved college/university in academic year following high school graduation; must meet one of three options: (1) Earn Diploma of Merit, (2) HS GPA below 3.00 AND qualifying test score (ACT 19+, Accuplacer 246+, SAT 990+), or (3) HS GPA 3.00+ AND standardized test score on record
+**Status:** eligible
+**Last verified:** 2026-10-26
 **Confidence:** low
 
 ## Notes
-This is a search/index page for the ADHE Scholarship system listing 18 scholarship programs. No specific program deadlines with 2026-2028 dates appear. July 1 and January 10 deadlines mentioned but year not specified in page text. Student is from North Carolina, not Arkansas, which may affect eligibility for these state-specific scholarships.
+Page shows July 1 as annual deadline but no year specified; cannot confirm for 2026-2028 cycle. Student is in NC (not Arkansas) so likely ineligible unless Arkansas residency requirement can be met. Multiple scholarship programs listed; extracted details for Arkansas Academic Challenge Scholarship (ACST) as it matches engineering track suggestion and high school eligibility.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

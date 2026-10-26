@@ -8,7 +8,7 @@
 **Award:** paid summer internship at EPA offices
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** none
 
 ## Notes

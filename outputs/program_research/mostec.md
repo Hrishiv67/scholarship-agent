@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** All educational, food, and boarding costs covered. Students only pay for transportation.
-**Eligibility:** 7th–12th grade students; focus on underserved and under-resourced backgrounds
-**Status:** eligible
-**Last verified:** 2026-10-19
+**Award:** Free program; all educational, food, and boarding costs covered; students pay transportation only; travel scholarships available for MITES Summer
+**Eligibility:** 7th–12th grade students; MITES Semester is for rising high school seniors only
+**Status:** seniors_later
+**Last verified:** 2026-10-26
 **Confidence:** medium
 
 ## Notes
-Program name has changed: MOSTEC is now called MITES Semester (six-month experience for rising high school seniors, June through December). The student is currently a rising junior (11th grade), so would be eligible for MITES Semester in 2027 when rising senior. No specific 2026-2027 cycle dates found on page.
+MOSTEC (mentioned in metadata URL) is now called MITES Semester and is a six-month STEM experience for rising high school seniors (June through December). Student is currently a rising junior (11th grade), so would not be eligible for MITES Semester until 2027-2028 cycle when they are a rising senior. No specific 2026–2027 cycle dates found on page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

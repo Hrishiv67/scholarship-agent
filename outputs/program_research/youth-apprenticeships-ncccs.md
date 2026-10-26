@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Apprentices are paid employees from day one with progressive wage increases. Tuition-free college credits for apprenticeship-related coursework. Industry-recognized credentials. Average $10,000 more per year lifetime earnings vs. non-apprentices.
+**Award:** Industry-recognized credentials, progressive wage increases, tuition waiver for community college coursework (if completed qualifying pre-apprenticeship and enrolled within 120 days of graduation)
 **Eligibility:** Age 16+, enrolled in high school or high school graduate, interest in high-demand career field, commitment to on-the-job and classroom instruction
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** medium
 
 ## Notes
-This is a statewide NCCCS program with 1,400+ occupations available. Students must find a specific Registered Apprenticeship opportunity and apply directly to the program sponsor or employer. Application process varies by individual apprenticeship program. Contact: apprenticeshipnc@nccommunitycolleges.edu or 919-807-6988.
+Application process varies by program sponsor/employer. Contact info: apprenticeshipnc@nccommunitycolleges.edu or 919-807-6988. Available in 1,400+ occupations. Student is eligible (age 16+ and currently in high school). No specific open or deadline dates provided on the page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Eligible to receive up to 8 credits at OCC and 120 Related Technical Instruction (RTI) hours towards a Registered Apprenticeship Program. Certifications earned: OSHA 10, Mike Rowe Work Ethic, Precision Measurement and Inspection. Michigan Apprenticeship Readiness Certificate (MARC) Level I endorsement.
-**Eligibility:** Minimum 18 years of age or will turn 18 prior to program completion. Recent high school graduates welcome. Must be able to attend in-person at Auburn Hills Campus, Monday-Friday 8 a.m. to 4 p.m. for 5 weeks.
+**Award:** OSHA 10 certification, Mike Rowe Work Ethic certification, Precision Measurement and Inspection certification. Up to 8 college credits at OCC and 120 Related Technical Instruction (RTI) hours toward a Registered Apprenticeship Program.
+**Eligibility:** Must be minimum 18 years of age or turn 18 prior to program completion. Cohort 22 is Summer 2027.
 **Status:** ineligible
-**Last verified:** 2026-09-28
+**Last verified:** 2026-10-26
 **Confidence:** medium
 
 ## Notes
-Student is currently 17 (Class of 2028, rising junior). Program runs Summer 2027 (Cohort 22), so student will be 18 by then and eligible. Program is free to participants. Located at Auburn Hills Campus. Student is currently at a North Carolina high school; this Michigan-based program would require relocation or commuting. Alternative 6-week program with welding component also available.
+Student is currently 11th grade (Class of 2028, rising junior) and is 16 or 17 years old. Program requires minimum age 18, which student will not meet until 2027 or 2028. Cohort 22 runs Summer 2027 (5 weeks, Monday-Friday 8am-4pm). Program is free. Auburn Hills Campus location in Michigan. Also offers 6-week Industrial Readiness option with welding. MARC Level I endorsement available.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

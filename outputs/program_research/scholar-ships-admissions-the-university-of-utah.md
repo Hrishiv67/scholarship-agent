@@ -1,18 +1,18 @@
 # Scholar­ships | Admissions - The University of Utah
 
 **URL:** https://admissions.utah.edu/financial-aid-scholarships/scholarships/
-**Track:** General (not field-specific)
+**Track:** Engineering
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** Submit your application for admission to the U by December 1.
 **Opens:** Not stated on official page
-**Award:** Merit-based scholarships ranging from $3,000–$10,000 annually: Great Salt Lake ($3,000 at 3.50 GPA), Red Rock ($4,000 at 3.70 GPA), Bonneville ($6,000 at 3.80 GPA), Provost's ($8,000 at 3.90 GPA), President John R. Park ($10,000 at 4.00 GPA). Renewable for up to 4 years if terms and conditions are met.
-**Eligibility:** Incoming freshman students to University of Utah; merit-based scholarships based on unweighted high school GPA (3.50+ GPA for Great Salt Lake Scholarship; higher GPA for better awards); non-WUE state residents and Utah residents
-**Status:** ineligible
-**Last verified:** 2026-10-19
+**Award:** Merit-based scholarships ranging from $3,000–$10,000 annually (renewable up to 4 years) based on unweighted high school GPA: President John R. Park ($10,000 at 4.0 GPA), Provost's ($8,000 at 3.9), Bonneville ($6,000 at 3.8), Red Rock ($4,000 at 3.7), Great Salt Lake ($3,000 at 3.5). WUE-state students eligible for WUE tuition rate if meeting 3.3 GPA minimum.
+**Eligibility:** Incoming freshman students (fall 2026 or summer 2026 term). US citizens and permanent residents only. Non-WUE state residents or Utah residents competing for merit scholarships based on unweighted high school GPA.
+**Status:** eligible
+**Last verified:** 2026-10-26
 **Confidence:** high
 
 ## Notes
-Student is currently 10th grade (Class of 2028, rising junior); this scholarship is for incoming freshman students entering summer or fall 2027 term. Student will be eligible to apply in fall 2027 when entering senior year. December 1 is the merit scholarship consideration deadline for the 2027 freshman cycle (when this student applies as a senior).
+Student is rising junior (11th grade) in 2026–2027 school year; will apply as senior in fall 2027 for fall 2028 entry. This scholarship cycle is for incoming freshman fall 2026—student is ineligible this cycle but program is relevant for future application. Engineering suggested track aligns with University of Utah engineering programs.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

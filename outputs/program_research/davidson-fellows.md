@@ -3,16 +3,16 @@
 **URL:** https://www.davidsongifted.org/gifted-programs/fellows-scholarship/
 **Track:** Engineering
 **Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** (no quote)
+**Deadline quote:** The deadline for receipt of all application materials is February 18, 2026, 11:59pm Pacific Time.
 **Opens:** Not stated on official page
-**Award:** $100,000, $50,000, and $25,000 scholarships awarded; awards ceremony held in September in Washington, DC with travel and lodging provided
-**Eligibility:** Must be 18 or younger as of application deadline; U.S. citizen or Permanent Resident residing in U.S., or stationed overseas on active military duty; must have completed significant work in one of eight categories; must be able to attend in-person awards event with parent/guardian; can apply solo or as 2-person team
+**Award:** $100,000, $50,000, and $25,000 scholarships awarded. Winners must attend in-person awards reception in Washington, DC in September with one parent/guardian (travel and lodging provided).
+**Eligibility:** U.S. citizens or permanent residents, ages 18 or under as of application deadline, with completed significant work in one of eight categories (Science, Technology, Engineering, Mathematics, Literature, Music, Philosophy, Outside the Box). Teams of two eligible if both members meet requirements.
 **Status:** eligible
-**Last verified:** 2026-10-19
-**Confidence:** medium
+**Last verified:** 2026-10-26
+**Confidence:** high
 
 ## Notes
-2027 application opens Fall 2026 (after today's date of 2026-10-19). Student is currently a rising junior (Class of 2028) and will be eligible to apply in 2027 cycle as a senior. The 2026 application cycle has already closed with a February 18, 2026 deadline. Page lists eight categories: Science, Technology, Engineering, Mathematics, Literature, Music, Philosophy, Outside the Box. Community service projects and descriptions of future majors/occupations are NOT eligible.
+Student is Class of 2028 (rising junior, 11th grade), making him eligible for 2027 cycle if work is completed by February 18, 2027. Date of birth unknown—age eligibility (18 or under by deadline) must be verified before application. Information session scheduled November 12, 2026 at 4pm PT. Note: One source citation contains apparent typo (February 18, 2026 instead of 2027), but context confirms 2027 application cycle with November 2, 2026 opening.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

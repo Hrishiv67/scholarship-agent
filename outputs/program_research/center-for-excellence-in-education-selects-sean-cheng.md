@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** MIT Research Science Institute (RSI): one week intensive STEM classes, five-week individual research internship with mentors, final week oral and written presentations. Selects 80 students annually. Cost-free to students.
-**Eligibility:** High school students selected by Center for Excellence in Education; article features Class of 2021 alumnus but does not specify current cycle eligibility
+**Award:** Cost-free program; includes intensive STEM coursework and 5-week research internship at MIT
+**Eligibility:** 80 select high school students from across the nation
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** low
 
 ## Notes
-Page is an announcement for Sean Cheng (Class of 2021, not current student). No current cycle dates provided. Article dated 2020-07-15 references pandemic virtual format. Program run by Center for Excellence in Education (McLean, VA) in partnership with MIT.
+Page describes a past cycle (2020) where Sean Cheng was selected as Class of 2021. No current cycle dates are provided. RSI is described as cost-free and selecting 80 students annually, but specific 2026/2027/2028 cycle dates are not stated on this page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

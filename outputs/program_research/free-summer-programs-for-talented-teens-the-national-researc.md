@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Free residential summer programs; Clarkson: 4-week program June 27-July 24, 1999 (historical); EarthWatch: 2-3 weeks assisting field research scientists
-**Eligibility:** Rising junior and senior Native American students with strong math background (Clarkson); high school students talented in arts/humanities (EarthWatch)
-**Status:** ineligible
-**Last verified:** 2026-10-12
+**Award:** See program website
+**Eligibility:** The page contains only a cookie policy and general introductory text about free summer programs. No specific program eligibility criteria for the 2026-2028 cycle are present on the extracted text.
+**Status:** eligible
+**Last verified:** 2026-10-26
 **Confidence:** none
 
 ## Notes
-Page is a 1999 newsletter article about historical summer programs. All dates listed are from 1999 and not applicable to 2026-2028 cycle. Metadata indicates program operated 1990-2013 and is no longer active. No current dates provided for 2026-2027-2028 academic years.
+The provided text is primarily a cookie policy for UConn's website. While the page title references 'Free Summer Programs for Talented Teens' and brief program descriptions appear at the end (Clarkson University Math and Engineering Program with 1999 dates, and EarthWatch Student Challenge Awards Program), no current cycle dates (2026-2028) are provided. The Clarkson program explicitly states dates of June 27-July 24, 1999 and deadline February 28, 1999—these are historical and unusable for the current student. The page appears to be archived content from 1999.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

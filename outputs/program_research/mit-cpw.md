@@ -8,7 +8,7 @@
 **Award:** all-expenses 4-day campus visit
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** none
 
 ## Notes

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 8-to-10-week paid summer internship. Positions available in Field, Manufacturing, Project Management, Engineering, BIM/VDC, Safety, Accounting, Human Resources, Education, Information Technology, and Marketing roles. Benefits include on-the-job training, resume development, interview prep, professional headshots, and capstone presentation/skills assessment. Potential full-time employment opportunities.
-**Eligibility:** High school students pursuing degrees in Construction Management, Engineering (Architectural, Electrical, Civil, Construction), Occupational Health & Safety, Business, Finance, Marketing, Accounting, or related fields. Must be willing to travel to internship locations.
+**Award:** 8-to-10-week paid internship; positions available in Field, Manufacturing, Project Management, Engineering, BIM/VDC, Safety, Accounting, Human Resources, Education, IT, and Marketing; potential full-time employment opportunities; locations in IN, KY, OH, TN, AL, GA, NC, FL
+**Eligibility:** Current high school students; prefer those pursuing Construction Management, Engineering (Architectural, Electrical, Civil, Construction), Occupational Health & Safety, Business, Finance, Marketing, or Accounting
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** medium
 
 ## Notes
-Program posted April 11, 2026 and was still accepting applications as of April 13, 2026 fetch date. For Summer 2026, which has already occurred relative to today's date (2026-10-19). No specific open or close dates provided on the official page. The student is a rising junior (Class of 2028) and thus a high school student eligible for this program.
+Post date April 11, 2026; fetched April 13, 2026. Program has welcomed 200+ students from 70+ high school and collegiate institutions over past three years. Includes resume development, interview prep, professional headshots, and academic capstone presentation or craft skills assessment. Student is rising junior (11th grade) and eligible to apply. Note: This program was posted in April 2026 for Summer 2026, which has likely already passed as of today (2026-10-26); applicant should verify current application status.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

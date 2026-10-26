@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** all-expenses campus visit to Georgia Tech
-**Eligibility:** Unable to determine - page not found
+**Eligibility:** Unknown - page not found
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** none
 
 ## Notes
-Official program page returns 404 error. No usable information available from provided source.
+Official page returns 404 error. No program details available. Metadata indicates typical open January / typical deadline February (unconfirmed).
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

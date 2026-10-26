@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** $250 scholarships for returning teams showing need; $500 scholarships for new teams. Funds support registration fees, transportation, and team supplies.
-**Eligibility:** Middle or high schools in Region 12 Michigan (returning teams showing need, or new teams that have not competed in last three cycles: 2023, 2024, or 2025)
+**Award:** $250 scholarships for returning teams or $500 for new teams; funds support registration fees, transportation, and team supplies
+**Eligibility:** Returning or new middle/high school Science Olympiad teams in Michigan Region 12 that meet eligibility criteria (new teams must not have competed in 2023, 2024, or 2025 regional tournaments)
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** low
 
 ## Notes
-The page states 'Applications are due November 14, 2025' which is a past date. The 2024 Team Scholarship Request Form is currently unavailable. No confirmed dates for the 2026-2027 cycle are provided. Green Hope High School is in North Carolina (Cary, NC), not Michigan, making this program geographically ineligible for the student's school despite the student meeting the grade/age criteria.
+Page lists deadline as November 14, 2025 (a past date) and last modified September 3, 2025. The scholarship application form page (dated December 18, 2025) states 'This form is currently unavailable.' Student attends Green Hope High School in Cary, NC, which is not in Michigan Region 12. This program appears to be region-specific and may not be accessible to this student.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

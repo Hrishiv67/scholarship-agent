@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Competitive scholarship package for admitted National Merit Semifinalists or Finalists. College-sponsored scholarship renewable for up to four years. Approximately 80% of Finalists receive College Sponsored awards. Approximately 10% of state Finalists receive $2,500 NMSC® scholarship.
+**Award:** Competitive scholarship package for admitted National Merit Semifinalists and Finalists. Approximately 10% of Finalists receive $2,500 NMSC scholarship. Approximately 80% of Finalists receive college-sponsored award renewable for up to four years. Scholarship amount varies.
 **Eligibility:** National Merit Semifinalists and Finalists applying to University of Oklahoma
 **Status:** seniors_later
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** high
 
 ## Notes
-Student is currently a junior (Class of 2028), so this program is relevant for their senior year (2027-2028 cycle). Key dates mentioned are for senior year: PSAT/NMSQT taken in junior year (already completed or in progress), Semifinalists announced September of senior year, Finalist application ~mid-October of senior year, OU application deadline December 15, Finalist announcement early February. The page provides a 15-step process but specific dates are tied to the senior year cycle, not the current junior year.
+Student is currently a rising junior (Class of 2028), so would be eligible for PSAT/NMSQT in 2026-2027 school year. National Merit process occurs during senior year (2027-2028). The page describes the full 15-step process from PSAT through scholarship acceptance. Open date for OU application is August 1 annually. Key dates mentioned are October (Semifinalist application), December 15 (OU application deadline for scholarships), February (Finalists announced), March-April (Corporate/NMSC winners notified), April 30 (school of choice deadline), May 31 (final deadline if previously undecided).
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Paid internship. Students will be paid a few thousand dollars (exact amount TBD). 8 weeks between June and August. 6 hours per day, Monday through Friday. Work on research project with mentor in Stanford lab.
+**Award:** Paid internship. Participants work 6 hours per day, Monday through Friday, over 8 weeks between June and August. Compensation is a few thousand dollars (exact amount TBD).
 **Eligibility:** Current FAST students only. At least 16 years old. Not a graduating senior (Class of 2027).
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** high
 
 ## Notes
-Student is Class of 2028 (rising junior, 11th grade) and meets grade eligibility. However, student cannot apply because they are NOT a current FAST student — the program is restricted to 'Only for current FAST students.' Date of birth is unknown, so age verification at application time would be required, but student would likely be 16+ by summer 2027. Open and deadline dates listed as 'TBD' on official page.
+Student is Class of 2028 (rising junior/11th grade) and is ineligible because he is not a current FAST student. The page states 'Only for current FAST students.' Exact program dates and application deadline listed as TBD.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Scholarships and financial aid available
-**Eligibility:** mathematically talented students ages 13–18
+**Award:** Scholarships available
+**Eligibility:** Mathematically talented students aged 13-18; no specific restrictions mentioned
 **Status:** ineligible
-**Last verified:** 2026-10-19
-**Confidence:** low
+**Last verified:** 2026-10-26
+**Confidence:** medium
 
 ## Notes
-Mathcamp 2026 (June 28 – August 2, 2026 in Burlington, VT) is no longer accepting applications as of 2026-10-19. The page states 'The dates and location for Mathcamp 2027 will be announced in December' but no specific dates are provided. Metadata lists typical open (February) and deadline (April) as unconfirmed. Student is rising 11th grade (Class of 2028) and eligible by age.
+Mathcamp 2026 already concluded (June 28 - August 2, 2026). Applications for 2026 are closed. Dates for 2027 will be announced in December 2026. Page metadata suggests typical deadline in April, but no specific dates for 2027 cycle are published yet. Student is eligible by age (Class of 2028, rising junior).
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

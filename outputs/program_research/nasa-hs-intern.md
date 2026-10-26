@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Majority of interns receive paid stipend based on academic level and session duration; interns work 8 a.m. to 5 p.m., Monday–Friday
-**Eligibility:** Students; page does not specify high school eligibility or grade restrictions
+**Award:** Majority of interns receive paid stipend award based on academic level and session duration
+**Eligibility:** Students; high school students eligible for OSTEM internships
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** low
 
 ## Notes
-Page confirms NASA OSTEM internship program exists and offers 2,000+ student positions annually. However, no specific 2026/2027 cycle open or deadline dates appear in the provided text. Metadata indicates typical open in October and typical deadline in January, but these are unconfirmed and do not appear verbatim on the official pages provided.
+Program metadata indicates typical open in October and typical deadline in January, but official pages provided do not contain specific 2026-2027 cycle dates. Pages are general overviews of NASA internship programs (OSTEM and Pathways). Student is rising junior (11th grade) and qualifies for OSTEM internships based on high school status.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

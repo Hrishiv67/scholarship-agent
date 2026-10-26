@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** $4,000-$50,000
-**Eligibility:** Unknown - official page content not provided
+**Eligibility:** Unknown - official page contains no program details
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** none
 
 ## Notes
-Official page only contains navigation links (Lodge Locator, Register, Login). No dates, eligibility criteria, or program details are visible in the provided page text.
+Official page provided only navigation elements (Lodge Locator, Register, Login) with no substantive program information. Dates cannot be confirmed from page content.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

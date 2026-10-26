@@ -7,14 +7,14 @@
 Deadline to Complete This Step:
 Tuesday, November 30, 2027
 **Opens:** Not stated on official page
-**Award:** $500 and $40,000 scholarships awarded monthly; students whose families earn less than $60,000/year have double chances to win (half of all awards reserved for this group)
-**Eligibility:** Class of 2028 (rising juniors in 2026-2027 school year); US citizens; no minimum GPA required
-**Status:** seniors_later
-**Last verified:** 2026-10-19
+**Award:** $500 and $40,000 scholarships. Monthly drawings until winter of senior year. Students whose families earn less than $60,000/year have double chances (two entries per step) and half of all awards are reserved for this income group.
+**Eligibility:** Class of 2028 (rising juniors/current sophomores as of 2026-10-26). Student is Class of 2028, so eligible for 2028 cycle. Program targets Class of 2027 (seniors) and Class of 2028 (sophomores).
+**Status:** eligible
+**Last verified:** 2026-10-26
 **Confidence:** medium
 
 ## Notes
-This student is Class of 2028 (rising junior), but the main program page is for Class of 2027 seniors only. However, the 'Apply to Colleges' related page explicitly includes Class of 2028 deadlines (November 30, 2027), indicating Class of 2028 students CAN participate in later steps. The student has already missed some early deadlines (college list by June 30, 2026 and strengthen list by October 31, 2026). Several steps have November 30, 2026 deadlines that are imminent (36 days away). Grade eligibility marked false because the primary program targets seniors, though Class of 2028 appears eligible for senior-year steps.
+Page content primarily targets Class of 2027 (seniors). For Class of 2028 (rising juniors), only the 'Apply to Colleges' deadline is explicitly stated as November 30, 2027. Other step deadlines for Class of 2028 are not provided on the page. No minimum GPA required. No essay required. Student must create/log into College Board account and complete steps on BigFuture dashboard.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

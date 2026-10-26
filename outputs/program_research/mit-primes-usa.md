@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Free year-long research program. Students work on individual or group research projects in mathematics and bioinformatics, mentored by graduate students and faculty from MIT and partner universities.
-**Eligibility:** High school juniors and sophomores (including homeschooled) residing in the United States outside Greater Boston. Preferable but not required: USAMO/USAJMO qualifier, grade A in college-level proof-based math course, participation in summer math program, or letter of recommendation from college math professor.
+**Award:** Free year-long research program. Participants work on mathematics and bioinformatics projects mentored by graduate students and faculty from MIT and partner universities via teleconferencing or local mentors. Juniors work on individual or group projects; sophomores work on group projects.
+**Eligibility:** High school juniors and sophomores (including homeschooled) residing in the United States outside Greater Boston area. Applicants should preferably meet at least one criterion: USAMO/USAJMO qualifier, grade A in college-level proof-based math course, participation in summer math program, or letter of recommendation from college math professor.
 **Status:** ineligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** medium
 
 ## Notes
-Program operates year-round in four phases. Juniors work on individual or group projects; sophomores work on group projects. Mentoring via teleconferencing for non-local students. Student is rising junior (Class of 2028) and US citizen in NC, meeting all stated eligibility. Page mentions 'Typical deadline (unconfirmed): December' in metadata but provides no specific 2026/2027 cycle dates on official pages.
+Page states 'Typical open (unconfirmed): September' and 'Typical deadline (unconfirmed): December' in metadata, but no specific 2026-2027 cycle dates appear in the official pages. The page references 'How to Apply' instructions but does not provide explicit application open or deadline dates for the current cycle. Student is eligible as a rising junior (11th grade) and US citizen residing in North Carolina (outside Greater Boston area).
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

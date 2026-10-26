@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** $2,500 National Merit + corporate/college scholarships
-**Eligibility:** PSAT-based; typically taken October of junior year
+**Eligibility:** Unknown — page did not load
 **Status:** eligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** none
 
 ## Notes
-Official page was a login screen with no useful content. Dates are based on program metadata indicating PSAT-based selection with typical October junior year testing.
+Official page returned login screen only with no scholarship details. PSAT taken in October of junior year (2026 for this student) is the typical selection mechanism per metadata, but no specific deadline date appears on the provided page text.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** 2027-01-26 (confirmed from official page quote)
 **Deadline quote:** The application will close on Tuesday, January 26, 2027 at 12 pm (noon) ET.
 **Opens:** Not stated on official page
-**Award:** Full-time research position at NIH Intramural Research Program (May 10 - August 31, 2027). Stipend adjusted annually based on educational level. Free parking on NIH campuses; some campuses offer Transhare program. Must provide proof of health insurance. No housing provided.
-**Eligibility:** U.S. citizen or permanent resident; must be 18 by September 30, 2027; must be enrolled at least half-time as a high school senior at time of application and have graduated before internship start; or enrolled/accepted into accredited college, university, community college, or graduate program.
+**Award:** Full-time in-person summer internship (May 10–August 31, 2027). Stipend adjusted annually based on educational level. Free parking on NIH campuses. Some interns eligible for Transhare program. No housing provided.
+**Eligibility:** College students, graduate students, professional students, or graduating high school seniors who will be 18 by September 30, 2027. Must be U.S. citizen or permanent resident. High school seniors must have graduated before internship start and meet 40-mile proximity rule if turning 18 after June 1, 2027.
 **Status:** ineligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-10-26
 **Confidence:** high
 
 ## Notes
-Student is currently Class of 2028 (rising junior/11th grade). To be eligible, student must complete 12th grade and graduate before internship start (May 10, 2027). Application requires creating NIH Application Center profile. Selection is decentralized; PIs select their own interns. Reference letters due February 2, 2027. Webinars available Oct 20, 2026 and Nov 17, 2026. Applicants should contact PIs after submitting application to increase chances. No administrative work permitted; only research positions in Intramural Research Program.
+Student is currently 11th grade (rising junior, Class of 2028). This program requires applicants to be college students or graduating high school seniors at time of application. Student will NOT be eligible to apply in 2026–2027 cycle as a current high school junior. Student would become eligible in November 2027 when applying as a high school senior for 2028 internship. The 2027 SIP application opens November 2026 and closes January 26, 2027—during student's junior year. Reference letter deadline: February 2, 2027. Application webinar: November 17, 2026.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

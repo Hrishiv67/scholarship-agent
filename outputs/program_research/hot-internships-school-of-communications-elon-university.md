@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** College students in Elon University's School of Communications
+**Eligibility:** College students only. Page states positions are for 'current college students' and most list bachelor's degree requirements or 'recent graduates.'
 **Status:** ineligible
-**Last verified:** 2026-09-07
+**Last verified:** 2026-10-26
 **Confidence:** high
 
 ## Notes
-This is a clearinghouse page listing internship opportunities from the Elon University School of Communications. The page itself is not an internship application but rather directs students to apply through the Elon Job Network (EJN). The student is a high school junior and does not meet the college enrollment requirement. Individual internships listed (Zscaler, S&P Global, Logitech, Disney, Emerson, Securitas, The Screenwriting Life, Shimmick, IDA) have specific deadlines in May 2026, but these are for college students, not high school students.
+This is a curated list of internship opportunities from Elon University's School of Communications internship director, sent via bi-weekly email. Individual opportunities have their own deadlines (Sept 7-15, 2026 range shown). The student is a rising 11th grader and does not meet college enrollment requirements for any listed positions.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
