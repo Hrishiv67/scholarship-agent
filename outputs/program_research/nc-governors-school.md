@@ -8,7 +8,7 @@
 **Award:** free 4-week residential summer program
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-10-26
+**Last verified:** 2026-11-02
 **Confidence:** none
 
 ## Notes

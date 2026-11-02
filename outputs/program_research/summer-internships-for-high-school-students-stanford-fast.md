@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Paid internship. Participants work 6 hours per day, Monday through Friday, over 8 weeks between June and August. Compensation is a few thousand dollars (exact amount TBD).
-**Eligibility:** Current FAST students only. At least 16 years old. Not a graduating senior (Class of 2027).
+**Award:** Paid internship. Students will work 6 hours per day, Monday through Friday, for 8 weeks between June and August. Compensation: a few thousand dollars (exact amount TBD).
+**Eligibility:** Current FAST students only. At least 16 years old. Not a graduating senior (class of 2027).
 **Status:** eligible
-**Last verified:** 2026-10-26
-**Confidence:** high
+**Last verified:** 2026-11-02
+**Confidence:** medium
 
 ## Notes
-Student is Class of 2028 (rising junior/11th grade) and is ineligible because he is not a current FAST student. The page states 'Only for current FAST students.' Exact program dates and application deadline listed as TBD.
+Student is class of 2028 (rising junior) and therefore eligible by grade level. However, eligibility requires current FAST program enrollment, which is not confirmed for this student. Date information marked TBD on official page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

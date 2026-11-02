@@ -8,11 +8,11 @@
 **Award:** mentored AI/health research at Stanford AIMI
 **Eligibility:** high school students
 **Status:** eligible
-**Last verified:** 2026-10-26
+**Last verified:** 2026-11-02
 **Confidence:** high
 
 ## Notes
-Information session held Tuesday, November 10, 2026, 5–6 PM PT. Program runs summer 2027. Contact: aimi-hs-programs@stanford.edu
+Information session held Tuesday, November 10, 2026, 5–6 PM PT. Contact: aimi-hs-programs@stanford.edu
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

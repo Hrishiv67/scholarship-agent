@@ -8,7 +8,7 @@
 **Award:** paid 10-week internship at NRL Washington DC, competitive stipend
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-10-26
+**Last verified:** 2026-11-02
 **Confidence:** none
 
 ## Notes

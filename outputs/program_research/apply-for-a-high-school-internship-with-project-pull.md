@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** Unknown - page could not be fetched
+**Eligibility:** Unknown - official page could not be fetched
 **Status:** verify
-**Last verified:** 2026-10-26
+**Last verified:** 2026-11-02
 **Confidence:** none
 
 ## Notes
-Official page could not be fetched. No dates or eligibility information available.
+Official page could not be fetched. Unable to confirm any dates, eligibility requirements, or program details.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

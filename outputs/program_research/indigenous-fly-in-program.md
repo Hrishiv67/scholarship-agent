@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** Dartmouth covers travel expenses, housing, and meals for selected participants.
-**Eligibility:** Rising high school seniors (Class of 2027) currently living and attending high school in the U.S., regardless of citizenship status. Students who identify as Indigenous or have demonstrated interest in Indigenous community and/or Native American and Indigenous Studies are encouraged to apply.
+**Eligibility:** Rising high school seniors (Class of 2027) living and attending high school in the U.S., regardless of citizenship status. Students who identify as Indigenous or have demonstrated interest in Indigenous community and/or Native American and Indigenous Studies welcome to apply.
 **Status:** seniors_later
-**Last verified:** 2026-10-26
+**Last verified:** 2026-11-02
 **Confidence:** high
 
 ## Notes
-The student is Class of 2028 (rising junior), not Class of 2027 (rising senior), so ineligible for the 2026 cycle. The page states 'The application period for the 2026 Indigenous Fly-In Program has ended.' No future cycle dates are provided.
+Student is Class of 2028 (rising junior/11th grade), so ineligible for this cycle. Program is for rising seniors only. The 2026 application period has ended per the official page. No specific 2027 dates are published on the page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 6-8 week intensive summer STEM research experience paired with faculty mentor; 220-300 hours of research work expected
-**Eligibility:** High school rising juniors and rising seniors; permanent US residents; ideally completed chemistry, biology, algebra I and II
+**Award:** 6-8 week intensive summer STEM research experience paired with faculty mentor; 220-300 hours total work; participation in 2026 Junior Science & Humanities Symposium required
+**Eligibility:** High school rising juniors and rising seniors; US permanent residents; ideally completed chemistry, biology, algebra I and II
 **Status:** eligible
-**Last verified:** 2026-10-26
+**Last verified:** 2026-11-02
 **Confidence:** medium
 
 ## Notes
-Application for Summer 2026 cycle is CLOSED as of page publication. For 2026 finalists, official notification from The Army Education Outreach Program only. Contact aeopinternships-fellowships.org for status. Page does not specify open or application deadline dates. Contact Alisa Wickliff at abwickli@charlotte.edu for program info.
+Application closed for 2026 cycle as of page posting. Students must apply through AEOP central application (Ideal-Logic platform hosted by RIT). Program runs Summer 2026 only on this page. Contact abwickli@charlotte.edu for info or https://aeopinternships-fellowships.org/ for finalist notification details.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

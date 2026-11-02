@@ -1,18 +1,18 @@
 # Congressional App Challenge
 
 **URL:** https://www.congressionalappchallenge.us/
-**Track:** AI
+**Track:** General (not field-specific)
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Winning apps are displayed on the winners page; described as 'the most prestigious prize in student computer science'
-**Eligibility:** High school students in the United States
+**Award:** 2025 winners' apps displayed on winners page
+**Eligibility:** US high school students; specific grade/age requirements not stated on main page
 **Status:** eligible
-**Last verified:** 2026-10-26
+**Last verified:** 2026-11-02
 **Confidence:** low
 
 ## Notes
-Page says 'REGISTER FOR THE 2026 APP CHALLENGE NOW' but does not provide specific open or deadline dates. Metadata indicates typical deadline is November (unconfirmed). Page references 2025 winners but no 2026 specific dates are listed.
+Main page only mentions 2025 winners and describes the program's impact. No specific dates for 2026 cycle appear on this page. Metadata suggests typical deadline is November and typical open is June, but these are unconfirmed and not on the official page. Student is Class of 2028 (rising junior/11th grade), so would be eligible assuming no seniors-only restriction. Roblox is listed as Presenting Sponsor for 2026 challenge.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

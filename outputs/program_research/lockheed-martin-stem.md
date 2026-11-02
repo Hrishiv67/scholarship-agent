@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** $10,000/year scholarship
-**Eligibility:** Program not currently accepting applications. The 2024 cycle is closed and no new scholarships are being offered in 2025. Only existing scholarship recipients are eligible for renewal.
+**Eligibility:** Program not accepting new applications in 2025-2026 cycle
 **Status:** ineligible
-**Last verified:** 2026-10-26
+**Last verified:** 2026-11-02
 **Confidence:** high
 
 ## Notes
-The official page states: 'The 2024 STEM Scholarship Program application cycle is now closed. Lockheed Martin will not be offering new STEM scholarships in 2025 as we are exploring new ways to support post-secondary students in STEM.' This student cannot apply to this program in the 2026-2027 cycle based on current information.
+The 2024 application cycle is closed. Lockheed Martin is not offering new STEM scholarships in 2025 and is exploring new ways to support post-secondary students. Only existing scholarship recipients will have renewals. Program is not available for this student to apply to in the 2026-2027 cycle.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

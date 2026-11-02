@@ -7,14 +7,14 @@
 Deadline to Complete This Step:
 Tuesday, November 30, 2027
 **Opens:** Not stated on official page
-**Award:** $500 and $40,000 scholarships. Monthly drawings until winter of senior year. Students whose families earn less than $60,000/year have double chances (two entries per step) and half of all awards are reserved for this income group.
-**Eligibility:** Class of 2028 (rising juniors/current sophomores as of 2026-10-26). Student is Class of 2028, so eligible for 2028 cycle. Program targets Class of 2027 (seniors) and Class of 2028 (sophomores).
+**Award:** $500 and $40,000 scholarships. Monthly drawings from completion date through winter of senior year. Students with family income under $60k have double entry chances; half of all awards reserved for this group.
+**Eligibility:** Class of 2028 (rising juniors/current sophomores). US citizens eligible. Enhanced chances if family earns less than $60k/year.
 **Status:** eligible
-**Last verified:** 2026-10-26
-**Confidence:** medium
+**Last verified:** 2026-11-02
+**Confidence:** high
 
 ## Notes
-Page content primarily targets Class of 2027 (seniors). For Class of 2028 (rising juniors), only the 'Apply to Colleges' deadline is explicitly stated as November 30, 2027. Other step deadlines for Class of 2028 are not provided on the page. No minimum GPA required. No essay required. Student must create/log into College Board account and complete steps on BigFuture dashboard.
+Student is Class of 2028 (rising junior). Main page targets 'Seniors' (Class of 2027) but the Apply to Colleges step explicitly lists Class of 2028 deadline as November 30, 2027. Most qualifying step deadlines have already passed (June–October 2026). Only the 'Apply to Colleges' step remains active for this student's cohort. No essay required. No minimum GPA stated.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
