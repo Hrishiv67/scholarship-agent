@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Paid job from day one with competitive wage; average starting salary $86,000; nationally recognized credential; potential college credit or 2–4 year degree
-**Eligibility:** Ages 16–24; high school students can participate through pre-apprenticeships or Registered Apprenticeships that begin in high school
+**Award:** Average starting salary of $86,000; nationally recognized credential; potential college credit or 2- or 4-year degree; over 93% of completers retained as employees
+**Eligibility:** Young people ages 16–24; high school students can participate through pre-apprenticeship or dual enrollment models
 **Status:** eligible
-**Last verified:** 2026-09-07
-**Confidence:** medium
+**Last verified:** 2026-11-09
+**Confidence:** low
 
 ## Notes
-This is a general program framework page without specific 2026–2028 cycle dates. Student is eligible (Class of 2028, rising junior, 16+ by definition). To apply, student should use the Apprenticeship Finder tool or check National Apprenticeship Week event finder. Program blends paid on-the-job experience with technical instruction, often through community/technical colleges.
+This is a general informational page about Registered Apprenticeships for young people, not a specific program application. No specific 2026/2027/2028 cycle dates provided. Students should use the Apprenticeship Finder tool to locate specific apprenticeship opportunities near Cary, NC. The page mentions 415,560 young apprentices were served in 2025, with concentration in construction, public administration, and educational services.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

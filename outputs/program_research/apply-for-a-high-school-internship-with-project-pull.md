@@ -8,11 +8,11 @@
 **Award:** See program website
 **Eligibility:** Unknown - official page could not be fetched
 **Status:** verify
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** none
 
 ## Notes
-Official page could not be fetched. Unable to confirm any dates, eligibility requirements, or program details.
+Official page could not be fetched. No dates or eligibility information available. Student is Class of 2028 (rising junior/11th grade) and would be eligible for internships, but cannot confirm eligibility without page content.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

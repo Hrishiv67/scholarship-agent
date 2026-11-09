@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 7-week paid summer internship (minimum 35 hours/week) at a nonprofit organization, plus 3-day in-person Leadership Summit (Summer 2027). Student resides in eligible location; program does not cover living, moving, or commute expenses.
-**Eligibility:** Rising college sophomores (enrolled full-time in 2026-2027 academic year, entering sophomore year in 2027-2028). Must be at least 18 at application, have HS diploma within last 24 months, minimum 3.0 college GPA, US work authorization through July 2027, leadership experience in last 24 months, community involvement, reside in eligible location for Summer 2027 internship. Not previous awardees or BofA employees/family.
+**Award:** Paid internship (7 weeks, minimum 35 hrs/week, summer 2027) with nonprofit organization. Participation in 3-day Leadership Summit. Leadership training and skills development.
+**Eligibility:** Rising college sophomores (enrolled full-time during 2026-2027 academic year, expecting to begin 2nd year in 2027-2028). Must be at least 18 at application, high school diploma/equivalent within last 24 months, cumulative college GPA ≥3.0, US work authorization without sponsorship through July 2027, leadership role within last 24 months, active community involvement, able to commit to full-time 7-week summer 2027 internship (minimum 35 hrs/week) and 3-day Leadership Summit, reside in eligible program location during summer 2027. Not eligible: previous awardees, current/immediate family of BofA employees.
 **Status:** ineligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** high
 
 ## Notes
-Student is currently in high school (rising junior, Class of 2028) and therefore NOT ELIGIBLE this cycle. Program requires rising college sophomores. Student could potentially apply after freshman year of college (earliest cycle would be 2027-2028 for Summer 2027 internship). Cary, NC is in Triangle (Raleigh/Durham/Chapel Hill) eligible market. Program metadata lists 'Typical open: December, Typical deadline: January' but these dates are unconfirmed and do not appear on official page. No specific 2026, 2027, or 2028 cycle dates found on page.
+Student is currently high school junior (Class of 2028); does NOT meet current eligibility (requires college enrollment and sophomore status for 2027-2028 AY). Would become eligible for 2028 cycle if attends college full-time starting Fall 2027. Eligible locations include Triangle (Raleigh/Durham/Chapel Hill) NC, near Cary NC. Program metadata shows typical December open and January deadline, but no confirmed dates appear on official page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

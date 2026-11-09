@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** paid internship, varies by program
-**Eligibility:** The provided text is a database landing page, not a specific opportunity. It describes how to filter opportunities but does not list individual program details with eligibility criteria.
+**Eligibility:** The provided text is a database landing page with general information and filter descriptions. No specific program details with eligibility criteria are included.
 **Status:** eligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** none
 
 ## Notes
-The text provided is the main NOAA Student Opportunities database landing page with filter instructions and definitions. It includes only two partial example opportunities (Alaska Beluga Monitoring Program and American Meteorological Society Graduate Fellowship), both truncated. No specific dates, deadlines, or complete opportunity details are available for extraction. The student (Class of 2028, 11th grade) would need to search the database using filters for 'high school' audience and 'internship' type to find relevant opportunities.
+Text provided is the main NOAA Student Opportunities database landing page, not a specific program page. It describes how to use the database and lists filter categories (e.g., 'Typical open: October, Typical deadline: January' in metadata are unconfirmed and not from official page text). Two example programs are partially shown (Alaska Beluga Monitoring Program and American Meteorological Society Graduate Fellowship), but neither has complete application dates or details. The Alaska Beluga program appears suitable for high school students, but the AMS Graduate Fellowship requires graduate enrollment.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

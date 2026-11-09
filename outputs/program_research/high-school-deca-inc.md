@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** DECA Glass, travel opportunities, recognition, and scholarships available through competitive events and partner organizations
-**Eligibility:** High school students enrolled in DECA chapters at their schools
+**Award:** Competitive events offer travel opportunities, recognition, scholarships, and DECA Glass; chapter campaigns and leadership activities; school-based enterprise recognition
+**Eligibility:** High school students; contact school DECA advisor to join chapter
 **Status:** eligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** medium
 
 ## Notes
-Student attends Green Hope High School in Cary, NC. Page lists several educational conferences for 2026-2027 (Ultimate DECA Power Trip Nov 20-22, 2026; Sports and Entertainment Marketing Conference Jan 27-31, 2027; DECA International Career Development Conference Apr 17-20, 2027; Emerging Leader Summit Jul 12-15, 2027). No specific application deadline provided on page. Contact school's DECA advisor to join.
+Upcoming conferences listed: Ultimate DECA Power Trip (Nov 20-22, 2026, Louisville); Sports & Entertainment Marketing (Jan 27-31, 2027, Orlando); International Career Development Conference (Apr 17-20, 2027, Anaheim); Emerging Leader Summit (Jul 12-15, 2027, Arlington). Student must join through school chapter advisor. No specific application deadline or open date provided on page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

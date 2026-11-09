@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** Unable to determine - page is access-blocked
+**Eligibility:** Unable to determine - page content not accessible
 **Status:** verify
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** none
 
 ## Notes
-Official page is blocked behind CAPTCHA/bot verification. No program details, dates, or eligibility information accessible.
+The official page (https://unblock.federalregister.gov/) is a Federal Register access request page with CAPTCHA protection. It contains no program details, dates, or eligibility information. The actual program content is not accessible through this URL.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

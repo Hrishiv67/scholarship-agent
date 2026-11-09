@@ -6,13 +6,13 @@
 **Deadline quote:** Registration for Spring 2027 will open on October 26, 2026 thru January 8, 2027 or until capacity is reached for all programs.
 **Opens:** Not stated on official page
 **Award:** Certificate of participation in engineering for 30 hours contact (23) and independent (7) experiences
-**Eligibility:** High school students (grades 9-12) interested in engineering. Student is Class of 2028, rising junior (11th grade), and qualifies.
+**Eligibility:** High school students grades 9-12 interested in engineering. Capacity: 25 students.
 **Status:** eligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** high
 
 ## Notes
-Program held at UNC Charlotte Woodward Building. Cost is $125.00 per participant. Refund policy: requests must be submitted via email to stem-precollege@uncc.edu and received 30 days prior to start date. Non-refundable, non-transferable deposit of $50.00 retained for each enrollment payment.
+$125 application fee (non-refundable $50 deposit retained). Location: UNC Charlotte Woodward Building. Refunds must be requested 30+ days before start date.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

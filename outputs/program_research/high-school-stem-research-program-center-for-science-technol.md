@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 6-8 week intensive summer STEM research experience paired with faculty mentor; 220-300 hours total work; participation in 2026 Junior Science & Humanities Symposium required
-**Eligibility:** High school rising juniors and rising seniors; US permanent residents; ideally completed chemistry, biology, algebra I and II
+**Award:** 6-8 week intensive summer STEM research experience; 220-300 hours of research work; pairing with faculty mentor; registration required for Junior Science & Humanities Symposium (JSHS) at UNC Charlotte
+**Eligibility:** High school rising juniors and rising seniors; US permanent residents; should have taken chemistry, biology, algebra I and II
 **Status:** eligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** medium
 
 ## Notes
-Application closed for 2026 cycle as of page posting. Students must apply through AEOP central application (Ideal-Logic platform hosted by RIT). Program runs Summer 2026 only on this page. Contact abwickli@charlotte.edu for info or https://aeopinternships-fellowships.org/ for finalist notification details.
+Program was closed for 2026 applications at time of page capture. Finalists notified by Army Education Outreach Program (AEOP). Contact abwickli@charlotte.edu for details. Application through AEOP central application (Ideal-Logic platform via RIT).
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

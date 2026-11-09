@@ -6,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** intensive 6-week research (~$8,000 fee, strong need-blind financial aid)
-**Eligibility:** rising high school seniors with passion for science
+**Eligibility:** Rising high school seniors with passion for science
 **Status:** seniors_later
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** high
 
 ## Notes
-Student is Class of 2028 (rising junior/11th grade), but program explicitly targets 'rising high school seniors' and 'highly motivated high school juniors' for five-week residential summer experience. Metadata shows typical deadline January, but official page contains no specific dates for 2026-2028 cycle.
+Student is Class of 2028 (rising junior/11th grade), but program explicitly targets rising seniors only. The page states 'rising high school senior' and 'high school juniors' in program description, but the call-to-action targets seniors. Student will be eligible in summer 2027 when rising senior.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

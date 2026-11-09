@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Multiple scholarships available: merit scholarships $18,000–$27,000/year; Stamps Scholars (full tuition + fees + housing + food + iPad + $16,000 stipend); Bessie Willingham Tift (full tuition + housing + food); Tuition Exchange (full tuition + fees); First Robotics ($1,000); Five Star (full tuition + fees); Lettie Pate Whitehead ($1,000–$8,000); Macon Impact (full tuition + housing + food); Mercer Reach ($5,000); Middle Georgia Innovation ($2,000); Fabian Music (full tuition + housing + food + $4,000 stipend)
-**Eligibility:** High school seniors (Class of 2027); student is Class of 2028 (rising junior) and ineligible for all listed scholarships
+**Award:** Multiple scholarships ranging from $1,000 to full tuition, housing, food, and enrichment stipends depending on program. Merit scholarships for first-year students typically $18,000–$27,000/year.
+**Eligibility:** High school seniors only. Student is rising junior (Class of 2028), not a senior.
 **Status:** seniors_later
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** high
 
 ## Notes
-Student is Class of 2028 (rising junior/11th grade) and therefore not eligible for any of these scholarships, which are all designated for high school seniors (Class of 2027). No specific open dates provided on page; deadlines range from November 1 to February 1 but appear to reference prior/future cycles, not confirmed for 2026–2027. Page contains no actionable deadlines for this student.
+Student is currently a rising junior (Class of 2028, 11th grade). This program is exclusively for high school seniors applying to Mercer. Student will be eligible to apply in fall 2027 (for Class of 2028 entry). Multiple November and December deadlines are listed for 2026–2027 cycle, but those are for current seniors. Specific deadlines for future cycles are not provided on this page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -1,6 +1,4 @@
-# Federal Register
-       :: 
-      Applications for New Awards; Pathways to STEM Apprenticeship for High School Career an
+# Federal Register :: Applications for New Awards; Pathways to STEM Apprenticeship for High School Career and Technical Ed
 
 **URL:** https://www.federalregister.gov/documents/2018/05/18/2018-10671/applications-for-new-awards-pathways-to-stem-apprenticeship-for-high-school-career-and-technical
 **Track:** Engineering
@@ -8,13 +6,13 @@
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
 **Award:** See program website
-**Eligibility:** High school CTE students; document published 2018 with no current cycle dates provided
+**Eligibility:** High school CTE students; this 2018 Federal Register notice does not specify current cycle eligibility or deadlines
 **Status:** eligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** low
 
 ## Notes
-Document from 2018 (83 FR 23263, Document 2018-10671). Only states 'Applications Available: May 18, 2018.' No current 2026-2028 cycle dates found. Full text not provided in source material. Metadata indicates 'Typical deadline (unconfirmed)' is empty. Student (Class of 2028, rising junior/11th grade) is currently eligible by grade, but this program announcement is 8 years old.
+Document is a 2018 Federal Register notice announcing a funding opportunity for STEM apprenticeship programs. The page shows 'Applications Available: May 18, 2018' but this is historical. No 2026, 2027, or 2028 cycle dates appear on the provided pages. Full program details (eligibility, requirements, award amounts) would be in the full PDF document not provided.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

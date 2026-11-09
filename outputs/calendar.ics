@@ -5,88 +5,70 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Hrishiv program deadlines (confirmed)
 BEGIN:VEVENT
 UID:rsi@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261211
 SUMMARY:Research Science Institute (RSI) (Engineering) due
-DESCRIPTION:https://www.cee.org/programs/research-science-institute\nHigh school juniors (rising seniors / grade 11) who are U.S. citizens or permanent residents with one year remaining before graduation. Seniors are not eligible.
+DESCRIPTION:https://www.cee.org/programs/research-science-institute\nHigh school juniors (rising seniors / grade 11) who are U.S. citizens or permanent residents. Seniors are not eligible.
 URL:https://www.cee.org/programs/research-science-institute
 END:VEVENT
 BEGIN:VEVENT
-UID:collegeboard-bigfuture@scholarship-agent
-DTSTAMP:20261102T222628Z
-DTSTART;VALUE=DATE:20271130
-DTEND;VALUE=DATE:20271130
-SUMMARY:College Board BigFuture Scholarships (General (not field-specific)) due
-DESCRIPTION:https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027\nClass of 2028 (rising juniors/current sophomores). US citizens eligible. Enhanced chances if family earns less than $60k/year.
-URL:https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships-2027
-END:VEVENT
-BEGIN:VEVENT
-UID:regeneron-sts@scholarship-agent
-DTSTAMP:20261102T222628Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261105
-SUMMARY:Regeneron Science Talent Search (STS) (General (not field-specific)) due
-DESCRIPTION:https://www.societyforscience.org/regeneron-sts/\nAny student living in and attending their last year of secondary school in the US and its territories may apply\, regardless of citizenship. US citizens living abroad may also qualify. Students must conduct independent\, individual research.
-URL:https://www.societyforscience.org/regeneron-sts/
+UID:coca-cola-scholars@scholarship-agent
+DTSTAMP:20261109T230858Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20260930
+SUMMARY:Coca-Cola Scholars Foundation (General (not field-specific)) due
+DESCRIPTION:https://www.coca-colascholarsfoundation.org/apply/\nHigh school seniors (graduating 2026-2027 academic year) who are U.S. Citizens or eligible nationals\, attending school in 50 U.S. states\, D.C.\, Puerto Rico\, or select DoD schools\, with minimum 3.0 GPA\, planning to attend accredited U.S. post-secondary institution. Not eligible: children/grandchildren of Coca-Cola employees\, international students (except DoD)\, high school graduates\, temporary residents.
+URL:https://www.coca-colascholarsfoundation.org/apply/
 END:VEVENT
 BEGIN:VEVENT
 UID:davidson-fellows@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20270217
 DTEND;VALUE=DATE:20270217
 SUMMARY:Davidson Fellows Scholarship (Engineering) due
-DESCRIPTION:https://www.davidsongifted.org/gifted-programs/fellows-scholarship/\nU.S. citizens or Permanent Residents residing in the United States\, 18 or younger as of the application deadline\, who have completed a significant piece of work in one of eight categories (Science\, Technology\, Engineering\, Mathematics\, Literature\, Music\, Philosophy\, Outside the Box). Must be able to attend in-person awards reception in Washington\, D.C. in September with at least one parent/guardian.
+DESCRIPTION:https://www.davidsongifted.org/gifted-programs/fellows-scholarship/\nU.S. citizens or Permanent Residents residing in the United States (or stationed overseas on active military duty)\, age 18 or younger as of the application deadline\, who have completed a significant piece of work in one of eight categories (Science\, Technology\, Engineering\, Mathematics\, Literature\, Music\, Philosophy\, Outside the Box). No minimum age.
 URL:https://www.davidsongifted.org/gifted-programs/fellows-scholarship/
 END:VEVENT
 BEGIN:VEVENT
 UID:senate-youth@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261201
 SUMMARY:US Senate Youth Program (General (not field-specific)) due
-DESCRIPTION:https://ussenateyouth.org/\nRising high school juniors and seniors actively serving in elected or appointed leadership positions representing a constituency in student government\, education\, public affairs\, or community service. Must be enrolled in high school and living in the state they represent for the entire 2026–2027 academic year.
+DESCRIPTION:https://ussenateyouth.org/\nRising high school juniors and seniors actively serving in elected or appointed leadership positions representing a constituency in student government\, education\, public affairs\, and community service. Must be enrolled in high school and living in the state they represent for the entire 2026–2027 academic year. Not eligible if graduating at close of Fall 2026 semester.
 URL:https://ussenateyouth.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:simons-summer@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270205
 SUMMARY:Simons Summer Research Program (Engineering) due
-DESCRIPTION:https://www.stonybrook.edu/simons/\nHigh school juniors (11th grade) at time of application who are U.S. citizens or permanent residents\, at least 16 years old by program start\, and nominated by their high school (max 3 per school)
+DESCRIPTION:https://www.stonybrook.edu/simons/\nHigh school juniors (11th grade) at time of application\; U.S. citizens or permanent residents\; at least 16 years old by program start\; must be nominated by high school (max 3 per school)
 URL:https://www.stonybrook.edu/simons/
 END:VEVENT
 BEGIN:VEVENT
 UID:deca-scholarships@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20270111
 DTEND;VALUE=DATE:20270111
 SUMMARY:DECA Inc. Scholarships (Business) due
-DESCRIPTION:https://www.deca.org/scholarships\nHigh school DECA members\; specific scholarships have additional criteria (e.g.\, entrepreneurship/finance/hospitality/management/marketing intent\, IBM SkillsBuild certification\, NTHS membership\, employment at specific companies\, property management interest\, school-based enterprise involvement\, retail interest\, RiseUp credential\, regional DECA membership)
+DESCRIPTION:https://www.deca.org/scholarships\nHigh school DECA members\; specific scholarships have additional criteria (e.g.\, entrepreneurship/finance/hospitality/management/marketing major intent\, IBM SkillsBuild certification\, property management interest\, NTHS membership\, RiseUp credential\, school-based enterprise involvement\, employer affiliation with Publix/Raising Cane's/Hilton\, or regional DECA membership)
 URL:https://www.deca.org/scholarships
 END:VEVENT
 BEGIN:VEVENT
-UID:stanford-aimi-summer@scholarship-agent
-DTSTAMP:20261102T222628Z
-DTSTART;VALUE=DATE:20270201
-DTEND;VALUE=DATE:20270201
-SUMMARY:Stanford AIMI Summer Research Internship (AI) due
-DESCRIPTION:https://aimi.stanford.edu/education/summer-research-internship\nhigh school students
-URL:https://aimi.stanford.edu/education/summer-research-internship
-END:VEVENT
-BEGIN:VEVENT
 UID:bcc-summer-research-program-centers-institutes@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20260405
 DTEND;VALUE=DATE:20260405
 SUMMARY:BCC Summer Research Program | Centers & Institutes (General (not field-specific)) due
-DESCRIPTION:https://centers.louisville.edu/brown-cancer-center/prospective-students/summer-research-program\nHigh school students at least 16 years old by June 1\, 2026\, who have taken at least one advanced science course. Must have active bank account and reliable transportation to University of Louisville Health Science Campus. Cannot be directly related to current Brown Cancer Center supported faculty members.
+DESCRIPTION:https://centers.louisville.edu/brown-cancer-center/prospective-students/summer-research-program\nHigh school students at least 16 years old by June 1\, 2026\, who have taken at least one advanced science course\, have an active bank account\, and reliable transportation to University of Louisville Health Science Campus. Students related to Brown Cancer Center faculty are ineligible.
 URL:https://centers.louisville.edu/brown-cancer-center/prospective-students/summer-research-program
 END:VEVENT
 BEGIN:VEVENT
 UID:engineering-exploration-program-for-high-school-students-cen@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20260630
 DTEND;VALUE=DATE:20260630
 SUMMARY:Engineering Exploration Program for High School Students - Center for Science\, Technology\, Engineering and Mathematics ( (Engineering) due
@@ -95,7 +77,7 @@ URL:https://cstem.charlotte.edu/hsengineering
 END:VEVENT
 BEGIN:VEVENT
 UID:kenan-fellows-high-school-summer-internships-the-herbert-wer@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270228
 SUMMARY:Kenan Fellows High School Summer Internships » The Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Tec (Engineering) due
@@ -104,7 +86,7 @@ URL:https://wertheim.scripps.ufl.edu/education/kenan-fellows-high-school-summer-
 END:VEVENT
 BEGIN:VEVENT
 UID:nmnh-summer-high-school-internship-office-of-academic-appoin@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20260320
 DTEND;VALUE=DATE:20260320
 SUMMARY:NMNH Summer High School Internship | Office of Academic Appointments and Internships (General (not field-specific)) due
@@ -113,7 +95,7 @@ URL:https://internships.si.edu/opportunity/nmnh-summer-high-school-internship
 END:VEVENT
 BEGIN:VEVENT
 UID:college-preview-program-for-high-school-students-ccad@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20260427
 DTEND;VALUE=DATE:20260427
 SUMMARY:College Preview Program for High School Students - CCAD (General (not field-specific)) due
@@ -122,7 +104,7 @@ URL:https://www.ccad.edu/academics/college-preview
 END:VEVENT
 BEGIN:VEVENT
 UID:high-school-internship-opportunities-austin-economic-develop@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20260228
 DTEND;VALUE=DATE:20260228
 SUMMARY:High School Internship Opportunities | Austin Economic Development | AustinTexas.gov (General (not field-specific)) due
@@ -131,7 +113,7 @@ URL:https://www.austintexas.gov/economic-development/programs/high-school-intern
 END:VEVENT
 BEGIN:VEVENT
 UID:uchicago-youth-internship-program-college-and-career-readine@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20260423
 DTEND;VALUE=DATE:20260423
 SUMMARY:UChicago Youth Internship Program | College and Career Readiness (General (not field-specific)) due
@@ -140,11 +122,20 @@ URL:https://ccreadiness.uchicago.edu/pages/uchicago-youth-internship-program
 END:VEVENT
 BEGIN:VEVENT
 UID:the-rockefeller-university-summer-science-research-experienc@scholarship-agent
-DTSTAMP:20261102T222628Z
+DTSTAMP:20261109T230858Z
 DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270104
 SUMMARY:The Rockefeller University » Summer Science Research Experience - RockEDU Science Outreach (Engineering) due
-DESCRIPTION:https://www.rockefeller.edu/outreach/ssrp/\nCurrent high school juniors or seniors\; must be at least 16 years old at program start (June 21\, 2027)
+DESCRIPTION:https://www.rockefeller.edu/outreach/ssrp/\nCurrent high school juniors or seniors\; must be at least 16 years old by June 21\, 2027
 URL:https://www.rockefeller.edu/outreach/ssrp/
+END:VEVENT
+BEGIN:VEVENT
+UID:deca-student-scholarship-high-school@scholarship-agent
+DTSTAMP:20261109T230858Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270111
+SUMMARY:DECA Student Scholarship (high school ... (Business) due
+DESCRIPTION:https://www.perrytech.edu/students/finance/scholarships/external/scholarship-detail.html?id=730\nCurrent DECA members only\; high school students
+URL:https://www.perrytech.edu/students/finance/scholarships/external/scholarship-detail.html?id=730
 END:VEVENT
 END:VCALENDAR

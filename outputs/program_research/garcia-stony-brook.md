@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 2026 Summer Program begins June 24th
-**Eligibility:** High school students (2026 applicants): must be at least 16 years old on or before July 4, 2026; unweighted GPA of 95/100 (3.8/4.0); standardized test scores at least 60th percentile; completed at least 3 of: English, Chemistry, Mathematics/Calculus, Physics, Biology (Honors or AP/IB preferred). US citizens and international students with legal US residency eligible.
+**Award:** No financial aid or scholarships offered.
+**Eligibility:** High school students who are at least 16 years old by July 4, 2026; unweighted GPA ≥95/100 (3.8/4.0); standardized test scores ≥60th percentile; completed at least 3 of: English, Chemistry, Mathematics/Calculus, Physics, Biology (Honors/AP/IB preferred). US citizens or international students with valid legal residency for program duration.
 **Status:** eligible
-**Last verified:** 2026-11-02
-**Confidence:** high
+**Last verified:** 2026-11-09
+**Confidence:** medium
 
 ## Notes
-Program involves real experiments and laboratory activities with hazardous chemicals. No financial aid or scholarships offered. No on-campus housing provided; students must commute or live off-campus. No transportation provided. Decisions typically released in early-April. The 2026 cycle open and deadline dates do not appear on the official pages; metadata indicates typical December opening and March deadline but these are unconfirmed.
+Program runs June 24 - mid-August 2026. All-in-person program; commuting to campus must be possible. No housing provided; students may live off-campus. No transportation provided. International students welcome but must have existing legal residency documents; no visa support offered. Leadership, talents, and extracurricular activities receive special consideration.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

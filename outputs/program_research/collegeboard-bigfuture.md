@@ -7,14 +7,14 @@
 Deadline to Complete This Step:
 Tuesday, November 30, 2027
 **Opens:** Not stated on official page
-**Award:** $500 and $40,000 scholarships. Monthly drawings from completion date through winter of senior year. Students with family income under $60k have double entry chances; half of all awards reserved for this group.
-**Eligibility:** Class of 2028 (rising juniors/current sophomores). US citizens eligible. Enhanced chances if family earns less than $60k/year.
-**Status:** eligible
-**Last verified:** 2026-11-02
+**Award:** $500 and $40,000 scholarships awarded monthly. No minimum GPA required. No essay required.
+**Eligibility:** Class of 2028 (rising seniors). US citizens eligible. Family income under $60k increases chances (double entries per step).
+**Status:** ineligible
+**Last verified:** 2026-11-09
 **Confidence:** high
 
 ## Notes
-Student is Class of 2028 (rising junior). Main page targets 'Seniors' (Class of 2027) but the Apply to Colleges step explicitly lists Class of 2028 deadline as November 30, 2027. Most qualifying step deadlines have already passed (June–October 2026). Only the 'Apply to Colleges' step remains active for this student's cohort. No essay required. No minimum GPA stated.
+Student is Class of 2028 (rising junior), so is NOT currently eligible. Program is designed for Class of 2027 seniors and Class of 2028 seniors. Student will become eligible in fall 2027 when entering senior year. Multiple qualifying steps with rolling monthly drawing entries from completion date through winter of senior year.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

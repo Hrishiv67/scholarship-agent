@@ -2,17 +2,17 @@
 
 **URL:** https://www.coca-colascholarsfoundation.org/apply/
 **Track:** General (not field-specific)
-**Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** (no quote)
+**Deadline:** 2026-09-30 (confirmed from official page quote)
+**Deadline quote:** The deadline for the 2027 Coke Scholars application is 5pm Eastern on September 30, 2026.
 **Opens:** Not stated on official page
-**Award:** $20,000 scholarship; 150 Coca-Cola Scholars selected each year
-**Eligibility:** The 2027 Coca-Cola Scholars application is now closed. This program is for high school seniors graduating in 2026-2027 academic year only.
+**Award:** $20,000 scholarship; 150 Coca-Cola Scholars selected annually
+**Eligibility:** High school seniors (graduating 2026-2027 academic year) who are U.S. Citizens or eligible nationals, attending school in 50 U.S. states, D.C., Puerto Rico, or select DoD schools, with minimum 3.0 GPA, planning to attend accredited U.S. post-secondary institution. Not eligible: children/grandchildren of Coca-Cola employees, international students (except DoD), high school graduates, temporary residents.
 **Status:** seniors_later
-**Last verified:** 2026-11-02
-**Confidence:** none
+**Last verified:** 2026-11-09
+**Confidence:** high
 
 ## Notes
-Student is a rising junior (Class of 2028), not a senior. The 2027 application (for Class of 2027/seniors) is already closed as of 2026-11-02. The 2028 cycle dates (for Class of 2028 seniors graduating in 2027-2028) are not yet published on this page. Historical pattern shows Phase 1 opens August 3 and closes September 30, but these specific dates for the 2028 cycle are not confirmed on the official page.
+Student is Class of 2028 (rising junior/11th grade), so NOT currently eligible. This program is for seniors graduating in 2026-2027 academic year only. The 2027 Coca-Cola Scholars application (for Class of 2027 seniors) is now closed as of today (2026-11-09). Student will be eligible to apply in August 2027 for the 2028 program cycle (when graduating Class of 2028 in 2027-2028 academic year). Suggested track in metadata (engineering) is not confirmed by official page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Cost-free to students; all-expenses covered
-**Eligibility:** Rising Class I students (rising seniors/class of 2027); 80 selected from world's most accomplished high school students
+**Award:** Cost-free to students; includes on-campus coursework and 5-week research internship
+**Eligibility:** Rising Class I students (seniors); 80 of the world's most accomplished high school students
 **Status:** seniors_later
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** high
 
 ## Notes
-Student is rising junior (Class of 2028), but program is for rising seniors (Class of 2027/Rising Class I). Student is ineligible for 2027 cycle. Program page does not contain specific open or deadline dates for any cycle.
+Student is Class of 2028 (rising junior/11th grade), but this program is for Rising Class I students (seniors/Class of 2027). Program is not eligible for this student this cycle. Located at MIT in Boston/suburbs, Massachusetts. Duration is 5-6 weeks during summer.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

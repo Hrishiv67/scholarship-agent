@@ -8,11 +8,11 @@
 **Award:** paid summer internship at SAS HQ in Cary NC
 **Eligibility:** Unknown - official page text not provided
 **Status:** eligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** none
 
 ## Notes
-Official page text incomplete - only folder name provided, no dates or eligibility details visible. Cannot extract required information.
+Only page title/header text provided ('Our Future folder | SAS'). No substantive program details, dates, or eligibility information available on the provided text.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

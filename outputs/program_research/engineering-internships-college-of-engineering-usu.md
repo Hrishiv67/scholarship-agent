@@ -3,16 +3,16 @@
 **URL:** https://engineering.usu.edu/students/employment-opportunities/internships
 **Track:** Engineering
 **Deadline:** Not stated on official page (not confirmed)
-**Deadline quote:** (no quote)
+**Deadline quote:** Application Close Date: 11/2/2026
 **Opens:** Not stated on official page
-**Award:** Multiple summer 2027 internship positions with various engineering companies (Medtronic, BAE Systems, Stellantis, GM, GFT, Moog, Aldevron, IDT)
-**Eligibility:** College students and undergraduates; most positions require current enrollment or degree pursuit
+**Award:** Minnesota Power internship: $23.50/hour, in-person in Duluth, MN. Resident Engineer Intern (BPMI): $28/hour. Other positions list various locations and typical summer 2027 dates.
+**Eligibility:** College students; one listing (Minnesota Power) shows a close date of 11/2/2026 which has passed. Most other internships are for Summer 2027 with no specific dates listed on this page.
 **Status:** ineligible
-**Last verified:** 2026-10-19
+**Last verified:** 2026-11-09
 **Confidence:** high
 
 ## Notes
-This is a USU College of Engineering internship listing page. The student is a high school junior (Class of 2028, rising 11th grade) and does not meet the college enrollment requirement for these positions. All listed internships are for Summer 2027 or reference graduate-level roles. No specific application deadlines or open dates are provided on the page.
+This student is a rising 11th grader (high school) and does not meet eligibility for these internships, which are designed for college students. Most listings show Summer 2027 dates but lack specific open/close dates on this page. One Minnesota Power position had a deadline of 11/2/2026 (already passed as of today 11/9/2026).
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

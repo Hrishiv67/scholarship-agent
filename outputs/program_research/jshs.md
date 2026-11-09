@@ -8,7 +8,7 @@
 **Award:** $2,000-$12,000 scholarship prizes at national level
 **Eligibility:** Could not determine — check program website
 **Status:** ineligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** none
 
 ## Notes

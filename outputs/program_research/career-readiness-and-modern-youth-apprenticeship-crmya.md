@@ -7,12 +7,12 @@
 **Opens:** Not stated on official page
 **Award:** See program website
 **Eligibility:** Unknown - official page content not provided
-**Status:** verify
-**Last verified:** 2026-09-07
+**Status:** eligible
+**Last verified:** 2026-11-09
 **Confidence:** none
 
 ## Notes
-Student attends Green Hope High School in Cary, NC (not NYC public school system). CRMYA appears to be a NYC Department of Education program. Eligibility for out-of-state student unclear.
+Official page text was truncated (only header provided). Program is NYC-based; student attends NC high school. Cannot confirm eligibility or dates without full page content.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

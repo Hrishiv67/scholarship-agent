@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** Free or low cost fly-in programs for weekend or day campus visits
-**Eligibility:** Unknown; page references external resource (College Greenlight blog) for specific program details
+**Award:** Free or low cost fly-in programs
+**Eligibility:** Unknown; page references external resource and outdated 2017-2018 examples
 **Status:** eligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** low
 
 ## Notes
-Page is a directory/resource hub that points to external blog (College Greenlight) for actual fly-in program listings. No specific 2026-2028 cycle dates found. Examples shown (University at Buffalo 12/5/17, Adelphi 1/10/18) are from 2017-2018 and not current. Student must visit linked external resource to find active programs.
+Page provides general information about fly-in programs and links to external resource (collegegreenlight.com). The 'On The Spot Admission Days' examples listed are from 2017-2018 and not applicable to 2026-2027 cycle. No specific 2026 dates or deadlines found on page.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*

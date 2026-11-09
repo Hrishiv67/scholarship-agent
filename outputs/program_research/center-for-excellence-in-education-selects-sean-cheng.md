@@ -5,14 +5,14 @@
 **Deadline:** Not stated on official page (not confirmed)
 **Deadline quote:** (no quote)
 **Opens:** Not stated on official page
-**Award:** 80 students selected annually. Program includes one week of intensive STEM classes with professors, followed by five-week individual research internship with mentors, and final week for written/oral presentations. Cost-free to students.
-**Eligibility:** Select high school students from across the nation; no specific eligibility criteria stated on page
+**Award:** Cost-free program; includes one week intensive STEM classes, five-week research internship with mentors, final week for written and oral presentations
+**Eligibility:** 80 select high school students from across the nation
 **Status:** eligible
-**Last verified:** 2026-11-02
+**Last verified:** 2026-11-09
 **Confidence:** low
 
 ## Notes
-Page is a news article about a past participant (Sean Cheng, Class of 2021, selected in 2020). No open or deadline dates for 2026-2028 cycle are provided. Article mentions RSI is typically held each summer but gives no specific dates for upcoming cycles.
+This is a news article about a past student (Sean Cheng, Class of 2021) selected in 2020. No application dates for 2026-2028 cycles are provided. The article does not contain open or deadline dates for prospective applicants. MIT RSI is highly selective (80 students chosen from across the nation). As of today (2026-11-09), the student is a rising junior, so would be eligible in 2027 (junior year) or 2028 (senior year) if he were to be invited.
 
 ---
 *Dates are stored only when the official page states them for this cycle.*
